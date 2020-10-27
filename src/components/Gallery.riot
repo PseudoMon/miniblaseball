@@ -1,0 +1,41 @@
+<gallery>
+    <div class="gallery">
+        <div each={ player in props.players }>
+            <a href="#{ player.id }">
+                <img
+                    src={ `images/${player.sprites[0]}` }>
+            </a>
+        </div>
+        
+    </div>
+
+    <style>
+    .gallery {
+        --grid-width: 200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--grid-width), 1fr))
+    }
+
+    .gallery img {
+        --hover-color: #eeeeee;
+        width: 100%;
+        transition: background-color 0.5s;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .gallery img:hover {
+        background-color: var(--hover-color);
+    }
+    </style>
+
+    <script>
+
+    export default {
+
+        onBeforeMount(props, state) {
+        }
+
+    }
+    </script>
+
+</gallery>

@@ -1,0 +1,160 @@
+[
+    {
+        "id": "richmond-harrison",
+        "full-name": "Richmond Harrison",
+        "size": "large",
+        "team": "Hades Tigers",
+        "former-teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "01Richmond.png",
+            "01RichmondALT.png"
+        ]
+    }, {
+        "id": "mike-townsend",
+        "full-name": "Mike Townsend",
+        "size": "small",
+        "team": "Seattle Garages",
+        "sprites": [
+            "02MikeTownsend.png"
+        ]
+    }, {
+        "id": "wyatt-quitter",
+        "full-name": "Wyatt Quitter",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [
+            "Unlimited Tacos",
+            "THE SHELLED ONE'S PODS"
+        ],
+        "sprites": [
+            "03QuitterALT2.png",
+            "03Quitter.png",
+            "03QuitterALT.png"
+        ]
+    }, {
+        "id": "peanutiel-duffy",
+        "full-name": "Peanutiel Duffy",
+        "size": "huge",
+        "team": "Chicago Firefighters",
+        "former-teams": [
+            "Hades Tigers", 
+            "THE SHELLED ONE'S PODS"
+        ],
+        "sprites": [
+            "Tigers-PeanutielDuffy.png",
+            "Firefighters-PeanutielDuffy.png",
+            "PODS-PeanutielDuffy.png"
+        ]
+    }, {
+        "id": "landry-violence",
+        "full-name": "Landry Violence",
+        "size": "small",
+        "team": "Hall Stars",
+        "former-teams": [
+            "Hades Tigers" 
+        ],
+        "sprites": [
+            "Tigers-LandryViolence.png"
+        ]
+    }, {
+        "id": "sigmund-castillo",
+        "full-name": "Sigmund Castillo",
+        "size": "large",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "Lovers-SigmundCastillo.png"
+        ]
+    }, {
+        "id": "hiroto-wilcox",
+        "full-name": "Hiroto Wilcox",
+        "size": "small",
+        "team": "Hades Tigers",
+        "sprites": [
+            "Tigers-HirotoWilcox.png"
+        ]
+    }, {
+        "id": "zion-aliciakeys",
+        "full-name": "Zion Aliciakeys",
+        "size": "large",
+        "team": "Hades Tigers",
+        "sprites": [
+            "Tigers-ZionAliciakeys.png"
+        ]
+    }, {
+        "id": "ren-morin",
+        "full-name": "Ren Morin",
+        "size": "large",
+        "team": "Hades Tigers",
+        "sprites": [
+            "Tigers-RenMorin.png"
+        ]
+    }, {
+        "id": "valentine-games",
+        "full-name": "Valentine Games",
+        "size": "large",
+        "team": "Unlimited Tacos",
+        "former-teams": [
+            "Baltimore Crabs",
+            "New York Millennials",
+            "Breckenridge Jazz Hands",
+            "Houston Spies"
+        ],
+        "sprites": [
+            "Tacos-ValentineGames.png"
+        ]
+    }, {
+        "id": "jaylen-hotdogfingers",
+        "full-name": "Jaylen Hotdogfingers",
+        "size": "small",
+        "team": "San Francisco Lovers",
+        "former-teams": [
+            "Seattle Garages",
+            "Charleston Shoe Thieves",
+            "Canada Moist Talkers",
+            "Philly Pies",
+            "Hall Stars",
+            "THE SHELLED ONE'S PODS"
+        ],
+        "sprites": [
+            "Lovers-JaylenHotdogfingers.png"
+        ]
+    }, {
+        "id": "emmett-internet",
+        "full-name": "Emmett Internet",
+        "size": "small",
+        "team": "Hellmouth Sunbeams",
+        "sprites": [
+            "Sunbeams-EmmettInternet.png"
+        ]
+    }, {
+        "id": "patel-beyonce",
+        "full-name": "Patel Beyonce",
+        "size": "small",
+        "team": "Dallas Steaks",
+        "former-teams": [
+            "Unlimited Tacos",
+            "THE SHELLED ONE'S PODS"
+        ],
+        "sprites": [
+            "Sunbeams-EmmettInternet.png"
+        ]
+    }, {
+        "id": "nan",
+        "full-name": "NaN",
+        "size": "small",
+        "team": "San Francisco Lovers",
+        "former-teams": [
+            "Unlimited Tacos",
+            "Houston Spies",
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "Tacos-NaN.png"
+        ]
+    }
+]

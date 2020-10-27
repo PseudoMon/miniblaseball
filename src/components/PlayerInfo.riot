@@ -1,0 +1,108 @@
+<player-info>
+    <div class="player-info">
+        <img class="sprite" src="images/{ props.player.sprites[0] }">
+
+        <div class="alt-images">
+            <img each={ sprite in props.player.sprites }
+                src="images/{ sprite }">
+        </div>
+
+        <div class="info">
+            <h2 class="name">
+                { props.player["full-name"] }
+            </h2>
+            <h3 class="team">
+                { props.player["team"] }
+            </h3>
+            <p>{ this.state.formerTeamsText }</p> 
+        </div>
+    </div>
+
+    <style>
+    :host {
+        --size-small: 200px;
+        --size-large: 300px;
+        --size-huge: 500px;
+        --player-size: var(--size-small);
+
+        --player-altscaling: scale(1,1);
+    }
+
+    .sprite {
+        width: var(--player-size);
+        max-width: 100%;
+        height: var(--player-size);
+        object-fit: none;
+    }
+
+    .player-info {
+        width: 500px;
+        max-width: 90%;
+        margin: 10px auto;
+        border: solid 3px #fff;
+        padding: 2em;
+        background-color: #282923;
+        color: #fff;
+        text-align: center;
+    }
+
+    .alt-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .alt-images img {
+        width: 120px;
+        transform: var(--player-altscaling);
+    }
+    </style>
+
+    <script>
+    export default {
+        onMounted() {
+            console.log(this.props.player)
+
+            // Set sizing
+            const playerSize = this.props.player.size
+
+            this.root.style.setProperty("--player-size", `var(--size-${playerSize}`)
+
+            if (playerSize === "small") {
+                this.root.style.setProperty("--player-altscaling", "scale(2, 2)")
+            }
+
+            if (playerSize === "large") {
+                this.root.style.setProperty("--player-altscaling", "scale(1.2, 1.2)")
+            }
+
+            // Set description
+            const formerTeams = this.props.player['former-teams']
+
+            if (formerTeams && formerTeams.length > 0) {
+                let teamsText = ''
+
+                if (formerTeams.length === 1) {
+                    // Only in one team formerly? Just add it.
+                    teamsText = "the " + formerTeams[0]
+                }
+
+                else {
+
+                    for(let i = 0; i < formerTeams.length - 1; i++) {
+                        teamsText += "the " + formerTeams[i] + ', '
+                    }
+
+                    teamsText = teamsText.slice(0, -2)
+                    teamsText += " and the " + formerTeams[formerTeams.length - 1]
+                }
+
+
+                this.update({
+                    formerTeamsText: `Formerly of ${teamsText}.`
+                })
+            } 
+        }
+    }
+    </script>
+</player-info>

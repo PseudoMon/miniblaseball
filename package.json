@@ -1,0 +1,23 @@
+{
+  "name": "miniblaseball",
+  "version": "1.0.0",
+  "description": "A gallery for HetreaSky's MiniBlaseball series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@riotjs/route": "^6.0.2",
+    "riot": "^4.14.0"
+  },
+  "devDependencies": {
+    "@riotjs/compiler": "^4.11.0",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.28.2",
+    "rollup-plugin-riot": "^4.0.2"
+  }
+}

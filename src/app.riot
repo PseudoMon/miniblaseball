@@ -1,0 +1,89 @@
+<app>
+    <router base="/home">
+        <div class="main-container">
+            <header>
+                <h1>#MiniBlaseball by HetreaSky</h1>
+            </header>
+
+            <p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p>
+            <p>TODO: Add everybody, sorting/filter by teams, add alternate color scheme, x button to close in profile</p>
+
+            <filter-control teams={ state.teamsList }></filter-control>
+
+            <gallery
+                players={ playersData }></gallery>
+
+            <overlay 
+                if={ state.overlayOn }
+                player={ state.playerClicked }>
+            </overlay>
+
+            <route path="/#:player">
+                <overlay 
+                    player={ getPlayerData(route.params.player) }>
+                </overlay> 
+            </route>
+
+        </div>
+    </router>
+
+    <style>
+    :host {
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto 0 auto;
+    }
+
+    header {
+        text-align: center;
+    }
+    </style>
+
+    <script>
+    import { Router, Route } from '@riotjs/route'
+    
+    import Gallery from './components/Gallery.riot'
+    import Overlay from './components/Overlay.riot'
+    import FilterControl from './components/FilterControl.riot'
+
+    import PlayersData from './players.json'
+    import TeamColors from './teamcolors.json'
+
+    export default {
+        components: { Gallery, Overlay, Router, Route, FilterControl },
+
+        playersData: PlayersData,
+
+        onBeforeMount() {
+            this.state = {
+                overlayOn: false,
+                scrollDisabled: false,
+                playerClicked: this.playersData[4],
+                teamsList: this.createTeamsList()
+            }
+        },
+
+
+        getPlayerData(id) {
+            return this.playersData.find(player => player.id === id)
+        },
+
+        createTeamsList() {
+            let teams = []
+
+            this.playersData.forEach((player) => {
+                if (!teams.includes(player.team)) {
+                    teams.push(player.team)
+                }
+            })
+
+            return teams
+        }
+    }
+    </script>
+</app>

@@ -1,0 +1,48 @@
+<overlay onclick={ clickAnywhere }>
+    <player-info player={ props.player }></player-info>
+
+    <style>
+    :host {
+        padding: 1em;
+        line-height: 1.4em;
+        font-size: 18px;
+        text-align: left;
+
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    </style>
+
+    <script>
+        import PlayerInfo from './PlayerInfo.riot'
+        import { router } from '@riotjs/route'
+
+        export default {
+            components: { PlayerInfo },
+
+            onMounted() {
+                document.body.style.overflowY = 'hidden'
+            },
+
+            onUnmounted() {
+                document.body.style.overflowY = ''
+            },
+
+            clickAnywhere(e) {
+
+                // Close the overlay if outside the modal panel is clicked
+                if (e.target.tagName === 'OVERLAY' || e.target.tagName === "PLAYER-INFO") {
+                    router.push('/')
+                }                
+            }
+        }
+    </script>
+</overlay>

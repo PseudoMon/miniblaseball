@@ -1,0 +1,18 @@
+<filter-control>
+    <form>
+        <select name="team">
+            <option>Currently a member of</option>
+            <option>Was ever a member of</option>
+        </select>
+         <select name="team">
+            <option></option>
+            <option each={ team in props.teams }>{ team }</option>
+        </select>
+    </form>
+
+    <script>
+    export default {
+        teams: ["a", "B"]
+    }
+    </script>
+</filter-control>
