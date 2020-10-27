@@ -1,5 +1,8 @@
 <overlay onclick={ clickAnywhere }>
-    <player-info player={ props.player }></player-info>
+    <player-info 
+        on-close={ closePanel }
+        player={ props.player }>
+    </player-info>
 
     <style>
     :host {
@@ -16,7 +19,7 @@
         bottom: 0;
         overflow: auto;
 
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.6);
     }
 
     </style>
@@ -40,8 +43,12 @@
 
                 // Close the overlay if outside the modal panel is clicked
                 if (e.target.tagName === 'OVERLAY' || e.target.tagName === "PLAYER-INFO") {
-                    router.push('/')
+                    this.closePanel()
                 }                
+            },
+
+            closePanel() {
+                router.push('/')
             }
         }
     </script>

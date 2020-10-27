@@ -1,20 +1,45 @@
 <player-info>
     <div class="player-info">
-        <img class="sprite" src="images/{ props.player.sprites[0] }">
+        <close-button 
+            onclick={ props.onClose }
+            class="close-button">    
+        </close-button>
 
-        <div class="alt-images">
-            <img each={ sprite in props.player.sprites }
-                src="images/{ sprite }">
+        <img class="sprite" src="images/{ state.viewedSprite }">
+
+        <div if={ props.player.sprites.length > 1 }
+            class="alt-images">
+            <div 
+                each={ sprite in props.player.sprites } 
+                class="img-box">
+                <img
+                    onclick={ (e) => viewSprite(sprite) }
+                    src="images/{ sprite }">
+            </div>
         </div>
 
         <div class="info">
             <h2 class="name">
                 { props.player["full-name"] }
             </h2>
-            <h3 class="team">
+
+            <h3 
+                if={ !state.isRIV }
+                class="team">
+                <div if={ !state.isStars }
+                    class="smol-desc">
+                    Currently playing for the
+                </div>
                 { props.player["team"] }
             </h3>
-            <p>{ this.state.formerTeamsText }</p> 
+
+            <h3
+                if={ state.isRIV }
+                class="team">
+                Rest in Violence
+            </h3>
+
+            <p>{ state.formerTeamsText }</p> 
         </div>
     </div>
 
@@ -41,9 +66,11 @@
         margin: 10px auto;
         border: solid 3px #fff;
         padding: 2em;
-        background-color: #282923;
+        background-color: #494a46;
         color: #fff;
         text-align: center;
+
+        position: relative;
     }
 
     .alt-images {
@@ -51,15 +78,45 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .alt-images .img-box {
+        width: 120px;
+        overflow: hidden;
+    }
 
     .alt-images img {
         width: 120px;
         transform: var(--player-altscaling);
     }
+
+    .close-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .close-button:hover {
+        border: solid 2px;
+        border-radius: 1em;
+    }
+
+    .smol-desc {
+        font-size: 0.7em;
+    }
     </style>
 
     <script>
+    import CloseButton from './CloseButton.riot'
+
     export default {
+        components: { CloseButton },
+
+        onBeforeMount(props, state) {
+            this.state = {
+                viewedSprite: props.player.sprites[0]
+            }
+        },
+
         onMounted() {
             console.log(this.props.player)
 
@@ -78,6 +135,7 @@
 
             // Set description
             const formerTeams = this.props.player['former-teams']
+            let formerTeamsText = ''
 
             if (formerTeams && formerTeams.length > 0) {
                 let teamsText = ''
@@ -97,12 +155,22 @@
                     teamsText += " and the " + formerTeams[formerTeams.length - 1]
                 }
 
+                formerTeamsText = `Formerly of ${teamsText}.`
+            }
 
-                this.update({
-                    formerTeamsText: `Formerly of ${teamsText}.`
-                })
-            } 
-        }
+            this.update({
+                isRIV: this.props.player.team === "RIV" ? true : false,
+                isStars: this.props.player.team === "Hall Stars" ? true : false,
+                formerTeamsText
+            }) 
+        },
+
+        viewSprite(sprite) {
+            this.update({
+                viewedSprite: sprite
+            })
+        },
+
     }
     </script>
 </player-info>

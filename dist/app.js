@@ -3802,14 +3802,14 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr373="expr373"></div></div>', [{
+      return template('<div class="gallery"><div expr6="expr6"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr374="expr374"><img expr375="expr375"/></a>', [{
-          'redundantAttribute': 'expr374',
-          'selector': '[expr374]',
+        'template': template('<a expr7="expr7"><img expr8="expr8"/></a>', [{
+          'redundantAttribute': 'expr7',
+          'selector': '[expr7]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3820,8 +3820,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr375',
-          'selector': '[expr375]',
+          'redundantAttribute': 'expr8',
+          'selector': '[expr8]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3833,8 +3833,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr373',
-        'selector': '[expr373]',
+        'redundantAttribute': 'expr6',
+        'selector': '[expr6]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3847,10 +3847,32 @@
     'name': 'gallery'
   };
 
+  var CloseButton = {
+    'css': `close-button,[is="close-button"]{ background: none; border: none; font-size: 2em; }`,
+    'exports': null,
+
+    'template': function(template, expressionTypes, bindingTypes, getComponent) {
+      return template(
+        '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"/></svg>',
+        []
+      );
+    },
+
+    'name': 'close-button'
+  };
+
   var PlayerInfo = {
-    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .player-info,[is="player-info"] .player-info{ width: 500px; max-width: 90%; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: #282923; color: #fff; text-align: center; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); }`,
+    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .player-info,[is="player-info"] .player-info{ width: 500px; max-width: 90%; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: #494a46; color: #fff; text-align: center; position: relative; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
 
     'exports': {
+      components: { CloseButton },
+
+      onBeforeMount(props, state) {
+          this.state = {
+              viewedSprite: props.player.sprites[0]
+          };
+      },
+
       onMounted() {
           console.log(this.props.player);
 
@@ -3869,6 +3891,7 @@
 
           // Set description
           const formerTeams = this.props.player['former-teams'];
+          let formerTeamsText = '';
 
           if (formerTeams && formerTeams.length > 0) {
               let teamsText = '';
@@ -3888,56 +3911,107 @@
                   teamsText += " and the " + formerTeams[formerTeams.length - 1];
               }
 
+              formerTeamsText = `Formerly of ${teamsText}.`;
+          }
 
-              this.update({
-                  formerTeamsText: `Formerly of ${teamsText}.`
-              });
-          } 
+          this.update({
+              isRIV: this.props.player.team === "RIV" ? true : false,
+              isStars: this.props.player.team === "Hall Stars" ? true : false,
+              formerTeamsText
+          }); 
+      },
+
+      viewSprite(sprite) {
+          this.update({
+              viewedSprite: sprite
+          });
       }
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><img expr479="expr479" class="sprite"/><div class="alt-images"><img expr480="expr480"/></div><div class="info"><h2 expr481="expr481" class="name"> </h2><h3 expr482="expr482" class="team"> </h3><p expr483="expr483"> </p></div></div>',
+        '<div class="player-info"><close-button expr11="expr11" class="close-button"></close-button><img expr12="expr12" class="sprite"/><div expr13="expr13" class="alt-images"></div><div class="info"><h2 expr16="expr16" class="name"> </h2><h3 expr17="expr17" class="team"></h3><h3 expr19="expr19" class="team"></h3><p expr20="expr20"> </p></div></div>',
         [{
-          'redundantAttribute': 'expr479',
-          'selector': '[expr479]',
+          'type': bindingTypes.TAG,
+          'getComponent': getComponent,
+
+          'evaluate': function(scope) {
+            return 'close-button';
+          },
+
+          'slots': [],
+
+          'attributes': [{
+            'type': expressionTypes.EVENT,
+            'name': 'onclick',
+
+            'evaluate': function(scope) {
+              return scope.props.onClose;
+            }
+          }],
+
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]'
+        }, {
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'src',
 
             'evaluate': function(scope) {
-              return ['images/', scope.props.player.sprites[0]].join('');
+              return ['images/', scope.state.viewedSprite].join('');
             }
           }]
         }, {
-          'type': bindingTypes.EACH,
-          'getKey': null,
-          'condition': null,
-
-          'template': template(null, [{
-            'expressions': [{
-              'type': expressionTypes.ATTRIBUTE,
-              'name': 'src',
-
-              'evaluate': function(scope) {
-                return ['images/', scope.sprite].join('');
-              }
-            }]
-          }]),
-
-          'redundantAttribute': 'expr480',
-          'selector': '[expr480]',
-          'itemName': 'sprite',
-          'indexName': null,
+          'type': bindingTypes.IF,
 
           'evaluate': function(scope) {
-            return scope.props.player.sprites;
-          }
+            return scope.props.player.sprites.length > 1;
+          },
+
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
+
+          'template': template('<div expr14="expr14" class="img-box"></div>', [{
+            'type': bindingTypes.EACH,
+            'getKey': null,
+            'condition': null,
+
+            'template': template('<img expr15="expr15"/>', [{
+              'redundantAttribute': 'expr15',
+              'selector': '[expr15]',
+
+              'expressions': [{
+                'type': expressionTypes.EVENT,
+                'name': 'onclick',
+
+                'evaluate': function(scope) {
+                  return (e) => scope.viewSprite(scope.sprite);
+                }
+              }, {
+                'type': expressionTypes.ATTRIBUTE,
+                'name': 'src',
+
+                'evaluate': function(scope) {
+                  return ['images/', scope.sprite].join('');
+                }
+              }]
+            }]),
+
+            'redundantAttribute': 'expr14',
+            'selector': '[expr14]',
+            'itemName': 'sprite',
+            'indexName': null,
+
+            'evaluate': function(scope) {
+              return scope.props.player.sprites;
+            }
+          }])
         }, {
-          'redundantAttribute': 'expr481',
-          'selector': '[expr481]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -3948,20 +4022,52 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr482',
-          'selector': '[expr482]',
+          'type': bindingTypes.IF,
 
-          'expressions': [{
-            'type': expressionTypes.TEXT,
-            'childNodeIndex': 0,
+          'evaluate': function(scope) {
+            return !scope.state.isRIV;
+          },
+
+          'redundantAttribute': 'expr17',
+          'selector': '[expr17]',
+
+          'template': template('<div expr18="expr18" class="smol-desc"></div> ', [{
+            'expressions': [{
+              'type': expressionTypes.TEXT,
+              'childNodeIndex': 1,
+
+              'evaluate': function(scope) {
+                return [scope.props.player["team"]].join('');
+              }
+            }]
+          }, {
+            'type': bindingTypes.IF,
 
             'evaluate': function(scope) {
-              return [scope.props.player["team"]].join('');
-            }
-          }]
+              return !scope.state.isStars;
+            },
+
+            'redundantAttribute': 'expr18',
+            'selector': '[expr18]',
+
+            'template': template(
+              '\r\n                    Currently playing for the\r\n                ',
+              []
+            )
+          }])
         }, {
-          'redundantAttribute': 'expr483',
-          'selector': '[expr483]',
+          'type': bindingTypes.IF,
+
+          'evaluate': function(scope) {
+            return scope.state.isRIV;
+          },
+
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
+          'template': template('\r\n                Rest in Violence\r\n            ', [])
+        }, {
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -3979,7 +4085,7 @@
   };
 
   var Overlay = {
-    'css': `overlay,[is="overlay"]{ padding: 1em; line-height: 1.4em; font-size: 18px; text-align: left; position: fixed; z-index: 20; top: 0; left: 0; right: 0; bottom: 0; overflow: auto; background-color: rgba(0,0,0,0.8); }`,
+    'css': `overlay,[is="overlay"]{ padding: 1em; line-height: 1.4em; font-size: 18px; text-align: left; position: fixed; z-index: 20; top: 0; left: 0; right: 0; bottom: 0; overflow: auto; background-color: rgba(0,0,0,0.6); }`,
 
     'exports': {
       components: { PlayerInfo },
@@ -3996,13 +4102,17 @@
 
           // Close the overlay if outside the modal panel is clicked
           if (e.target.tagName === 'OVERLAY' || e.target.tagName === "PLAYER-INFO") {
-              router.push('/');
+              this.closePanel();
           }                
+      },
+
+      closePanel() {
+          router.push('/');
       }
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr240="expr240"></player-info>', [{
+      return template('<player-info expr9="expr9"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4022,6 +4132,13 @@
         'slots': [],
 
         'attributes': [{
+          'type': expressionTypes.EVENT,
+          'name': 'on-close',
+
+          'evaluate': function(scope) {
+            return scope.closePanel;
+          }
+        }, {
           'type': expressionTypes.ATTRIBUTE,
           'name': 'player',
 
@@ -4030,8 +4147,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr240',
-        'selector': '[expr240]'
+        'redundantAttribute': 'expr9',
+        'selector': '[expr9]'
       }]);
     },
 
@@ -4047,7 +4164,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form><select name="team"><option>Currently a member of</option><option>Was ever a member of</option></select><select name="team"><option></option><option expr473="expr473"></option></select></form>',
+        '<form><select name="team"><option>Currently a member of</option><option>Was ever a member of</option></select><select name="team"><option></option><option expr10="expr10"></option></select></form>',
         [{
           'type': bindingTypes.EACH,
           'getKey': null,
@@ -4064,8 +4181,8 @@
             }]
           }]),
 
-          'redundantAttribute': 'expr473',
-          'selector': '[expr473]',
+          'redundantAttribute': 'expr10',
+          'selector': '[expr10]',
           'itemName': 'team',
           'indexName': null,
 
@@ -4083,21 +4200,23 @@
   	{
   		id: "richmond-harrison",
   		"full-name": "Richmond Harrison",
-  		size: "large",
-  		team: "Hades Tigers",
+  		size: "small",
+  		team: "Seattle Garages",
   		"former-teams": [
-  			"Canada Moist Talkers"
   		],
   		sprites: [
-  			"01Richmond.png",
-  			"01RichmondALT.png"
+  			"01RichmondHarrison.png",
+  			"01RichmondHarrisonALT.png"
   		]
   	},
   	{
   		id: "mike-townsend",
   		"full-name": "Mike Townsend",
   		size: "small",
-  		team: "Seattle Garages",
+  		team: "Hades Tigers",
+  		"former-teams": [
+  			"Canada Moist Talkers"
+  		],
   		sprites: [
   			"02MikeTownsend.png"
   		]
@@ -4112,24 +4231,42 @@
   			"THE SHELLED ONE'S PODS"
   		],
   		sprites: [
-  			"03QuitterALT2.png",
-  			"03Quitter.png",
-  			"03QuitterALT.png"
+  			"03WyattQuitter.png",
+  			"03WyattQuitterALT.png",
+  			"03WyattQuitterALT2.png"
   		]
   	},
   	{
-  		id: "peanutiel-duffy",
-  		"full-name": "Peanutiel Duffy",
-  		size: "huge",
-  		team: "Chicago Firefighters",
+  		id: "conner-haley",
+  		"full-name": "Conner Haley",
+  		size: "small",
+  		team: "Dallas Steaks",
   		"former-teams": [
-  			"Hades Tigers",
-  			"THE SHELLED ONE'S PODS"
   		],
   		sprites: [
-  			"Tigers-PeanutielDuffy.png",
-  			"Firefighters-PeanutielDuffy.png",
-  			"PODS-PeanutielDuffy.png"
+  			"04ConnerHaley.png"
+  		]
+  	},
+  	{
+  		id: "cory-twelve",
+  		"full-name": "Cory Twelve",
+  		size: "small",
+  		team: "Yellowstone Magic",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"05CoryTwelve.png"
+  		]
+  	},
+  	{
+  		id: "stephanie-winters",
+  		"full-name": "Stephanie Winters",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"06StephanieWinters.png"
   		]
   	},
   	{
@@ -4141,61 +4278,219 @@
   			"Hades Tigers"
   		],
   		sprites: [
-  			"Tigers-LandryViolence.png"
+  			"07LandryViolence.png",
+  			"07LandryViolenceALT.png"
   		]
   	},
   	{
-  		id: "sigmund-castillo",
-  		"full-name": "Sigmund Castillo",
+  		id: "caligula-lotus",
+  		"full-name": "Caligula Lotus",
   		size: "large",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Boston Flowers"
+  		],
+  		sprites: [
+  			"08CaligulaLotus.png",
+  			"08CaligulaLotusALT.png"
+  		]
+  	},
+  	{
+  		id: "kiki-familia",
+  		"full-name": "Kiki Familia",
+  		size: "small",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Canada Moist Talkers"
+  		],
+  		sprites: [
+  			"09KikiFamilia.png",
+  			"09KikiFamiliaALT.png"
+  		]
+  	},
+  	{
+  		id: "nagomi-nava",
+  		"full-name": "Nagomi Nava",
+  		size: "small",
   		team: "Hellmouth Sunbeams",
   		"former-teams": [
-  			"San Francisco Lovers"
   		],
   		sprites: [
-  			"Lovers-SigmundCastillo.png"
+  			"10NagomiNava.png"
   		]
   	},
   	{
-  		id: "hiroto-wilcox",
-  		"full-name": "Hiroto Wilcox",
+  		id: "forrest-best",
+  		"full-name": "Forrest Best",
   		size: "small",
-  		team: "Hades Tigers",
-  		sprites: [
-  			"Tigers-HirotoWilcox.png"
-  		]
-  	},
-  	{
-  		id: "zion-aliciakeys",
-  		"full-name": "Zion Aliciakeys",
-  		size: "large",
-  		team: "Hades Tigers",
-  		sprites: [
-  			"Tigers-ZionAliciakeys.png"
-  		]
-  	},
-  	{
-  		id: "ren-morin",
-  		"full-name": "Ren Morin",
-  		size: "large",
-  		team: "Hades Tigers",
-  		sprites: [
-  			"Tigers-RenMorin.png"
-  		]
-  	},
-  	{
-  		id: "valentine-games",
-  		"full-name": "Valentine Games",
-  		size: "large",
-  		team: "Unlimited Tacos",
+  		team: "Baltimore Crabs",
   		"former-teams": [
-  			"Baltimore Crabs",
-  			"New York Millennials",
-  			"Breckenridge Jazz Hands",
-  			"Houston Spies"
   		],
   		sprites: [
-  			"Tacos-ValentineGames.png"
+  			"11ForrestBest.png"
+  		]
+  	},
+  	{
+  		id: "jessica-telephone",
+  		"full-name": "Jessica Telephone",
+  		size: "small",
+  		team: "Kansas City Breath Mints",
+  		"former-teams": [
+  			"Dallas Steaks",
+  			"Philly Pies",
+  			"Hades Tigers",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"12JessicaTelephone.png",
+  			"12JessicaTelephoneALT.png",
+  			"12JessicaTelephoneALT2.png",
+  			"12JessicaTelephoneALT3.png",
+  			"12JessicaTelephoneALT4.png"
+  		]
+  	},
+  	{
+  		id: "don-mitchell",
+  		"full-name": "Don Mitchell",
+  		size: "small",
+  		team: "San Francisco Lovers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"13DonMitchell.png"
+  		]
+  	},
+  	{
+  		id: "baby-triumphant",
+  		"full-name": "Baby Triumphant",
+  		size: "small",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"14BabyTriumphant.png"
+  		]
+  	},
+  	{
+  		id: "alexandria-rosales",
+  		"full-name": "Alexandria Rosales",
+  		size: "small",
+  		team: "Houston Spies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"15AlexandriaRosales.png"
+  		]
+  	},
+  	{
+  		id: "lowe-forbes",
+  		"full-name": "Lowe Forbes",
+  		size: "small",
+  		team: "Breckenridge Jazz Hands",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"16LoweForbes.png"
+  		]
+  	},
+  	{
+  		id: "sixpack-dogwalker",
+  		"full-name": "Sixpack Dogwalker",
+  		size: "large",
+  		team: "Dallas Steaks",
+  		"former-teams": [
+  			"Hawai'i Fridays"
+  		],
+  		sprites: [
+  			"17SixpackDogwalker.png",
+  			"17SixpackDogwalkerALT.png"
+  		]
+  	},
+  	{
+  		id: "dominic-marijuana",
+  		"full-name": "Dominic Marijuana",
+  		size: "small",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"New York Millennials"
+  		],
+  		sprites: [
+  			"18DominicMarijuana.png",
+  			"18DominicMarijuanaALT.png"
+  		]
+  	},
+  	{
+  		id: "randall-marijuana",
+  		"full-name": "Randall Marijuana",
+  		size: "small",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Hellmouth Sunbeams",
+  			"Breckenridge Jazz Hands"
+  		],
+  		sprites: [
+  			"19RandallMarijuana.png",
+  			"19RandallMarijuanaALT.png",
+  			"19RandallMarijuanaALT2.png"
+  		]
+  	},
+  	{
+  		id: "don-elliott",
+  		"full-name": "Don Elliott",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"20DonElliott.png"
+  		]
+  	},
+  	{
+  		id: "boyfriend-monreal",
+  		"full-name": "Boyfriend Monreal",
+  		size: "small",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Kansas City Breath Mints"
+  		],
+  		sprites: [
+  			"21BoyfriendMonreal.png",
+  			"21BoyfriendMonrealALT.png"
+  		]
+  	},
+  	{
+  		id: "gunther-o-brian",
+  		"full-name": "Gunther O Brian",
+  		size: "small",
+  		team: "Charleston Shoe Thieves",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"22GuntherOBrian.png"
+  		]
+  	},
+  	{
+  		id: "fish-summer",
+  		"full-name": "Fish Summer",
+  		size: "large",
+  		team: "Canada Moist Talkers",
+  		"former-teams": [
+  			"Hades Tigers"
+  		],
+  		sprites: [
+  			"23FishSummer.png",
+  			"23FishSummerALT.png"
+  		]
+  	},
+  	{
+  		id: "zion-aliciakeyes",
+  		"full-name": "Zion Aliciakeyes",
+  		size: "large",
+  		team: "Hades Tigers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"24ZionAliciakeyes.png"
   		]
   	},
   	{
@@ -4206,35 +4501,43 @@
   		"former-teams": [
   			"Seattle Garages",
   			"Charleston Shoe Thieves",
-  			"Canada Moist Talkers",
-  			"Philly Pies",
-  			"Hall Stars",
-  			"THE SHELLED ONE'S PODS"
+  			"THE SHELLED ONE'S PODS",
+  			"Hall Stars"
   		],
   		sprites: [
-  			"Lovers-JaylenHotdogfingers.png"
+  			"25JaylenHotdogfingers.png",
+  			"25JaylenHotdogfingersALT.png",
+  			"25JaylenHotdogfingersALT2.png",
+  			"25JaylenHotdogfingersALT3.png",
+  			"25JaylenHotdogfingersALT4.png",
+  			"25JaylenHotdogfingersALT5.png",
+  			"25JaylenHotdogfingersALT6.png"
   		]
   	},
   	{
-  		id: "emmett-internet",
-  		"full-name": "Emmett Internet",
+  		id: "parker-meng",
+  		"full-name": "Parker Meng",
   		size: "small",
-  		team: "Hellmouth Sunbeams",
-  		sprites: [
-  			"Sunbeams-EmmettInternet.png"
-  		]
-  	},
-  	{
-  		id: "patel-beyonce",
-  		"full-name": "Patel Beyonce",
-  		size: "small",
-  		team: "Dallas Steaks",
+  		team: "San Francisco Lovers",
   		"former-teams": [
-  			"Unlimited Tacos",
+  		],
+  		sprites: [
+  			"26ParkerMeng.png"
+  		]
+  	},
+  	{
+  		id: "york-silk",
+  		"full-name": "York Silk",
+  		size: "small",
+  		team: "Canada Moist Talkers",
+  		"former-teams": [
+  			"Hawai'i Fridays",
   			"THE SHELLED ONE'S PODS"
   		],
   		sprites: [
-  			"Sunbeams-EmmettInternet.png"
+  			"27YorkSilk.png",
+  			"27YorkSilkALT.png",
+  			"27YorkSilkALT2.png"
   		]
   	},
   	{
@@ -4248,7 +4551,1636 @@
   			"Mexico City Wild Wings"
   		],
   		sprites: [
-  			"Tacos-NaN.png"
+  			"28NaN.png",
+  			"28NaNALT.png",
+  			"28NaNALT2.png",
+  			"28NaNALT3.png"
+  		]
+  	},
+  	{
+  		id: "rivers-rosa",
+  		"full-name": "Rivers Rosa",
+  		size: "small",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"29RiversRosa.png"
+  		]
+  	},
+  	{
+  		id: "math-velazquez",
+  		"full-name": "Math Velazquez",
+  		size: "large",
+  		team: "Houston Spies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"30MathVelazquez.png"
+  		]
+  	},
+  	{
+  		id: "nagomi-mcdaniel",
+  		"full-name": "Nagomi McDaniel",
+  		size: "small",
+  		team: "Hawai'i Fridays",
+  		"former-teams": [
+  			"Baltimore Crabs",
+  			"Breckenridge Jazz Hands"
+  		],
+  		sprites: [
+  			"31NagomiMcDaniel.png",
+  			"31NagomiMcDanielALT.png",
+  			"31NagomiMcDanielALT2.png",
+  			"31NagomiMcDanielALT3.png"
+  		]
+  	},
+  	{
+  		id: "kline-greenlemon",
+  		"full-name": "Kline Greenlemon",
+  		size: "small",
+  		team: "Dallas Steaks",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"32KlineGreenlemon.png"
+  		]
+  	},
+  	{
+  		id: "nolanestophia-patterson",
+  		"full-name": "Nolanestophia Patterson",
+  		size: "small",
+  		team: "Seattle Garages",
+  		"former-teams": [
+  			"Philly Pies",
+  			"Hades Tigers"
+  		],
+  		sprites: [
+  			"33NolanestophiaPatterson.png",
+  			"33NolanestophiaPattersonALT.png",
+  			"33NolanestophiaPattersonALT2.png",
+  			"33NolanestophiaPattersonALT3.png"
+  		]
+  	},
+  	{
+  		id: "ziwa-mueller",
+  		"full-name": "Ziwa Mueller",
+  		size: "small",
+  		team: "Canada Moist Talkers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"34ZiwaMueller.png"
+  		]
+  	},
+  	{
+  		id: "lars-taylor",
+  		"full-name": "Lars Taylor",
+  		size: "small",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"35LarsTaylor.png"
+  		]
+  	},
+  	{
+  		id: "annie-roland",
+  		"full-name": "Annie Roland",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Yellowstone Magic"
+  		],
+  		sprites: [
+  			"36AnnieRoland.png"
+  		]
+  	},
+  	{
+  		id: "margarito-nava",
+  		"full-name": "Margarito Nava",
+  		size: "small",
+  		team: "Boston Flowers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"37MargaritoNava.png"
+  		]
+  	},
+  	{
+  		id: "sebastian-telephone",
+  		"full-name": "Sebastian Telephone",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Dallas Steaks",
+  			"Hall Stars"
+  		],
+  		sprites: [
+  			"38SebastianTelephone.png",
+  			"38SebastianTelephoneALT.png"
+  		]
+  	},
+  	{
+  		id: "axel-cardenas",
+  		"full-name": "Axel Cardenas",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"39AxelCardenas.png"
+  		]
+  	},
+  	{
+  		id: "miguel-wheeler",
+  		"full-name": "Miguel Wheeler",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Mexico City Wild Wings"
+  		],
+  		sprites: [
+  			"40MiguelWheeler.png"
+  		]
+  	},
+  	{
+  		id: "silvia-rugrat",
+  		"full-name": "Silvia Rugrat",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"41SilviaRugrat.png"
+  		]
+  	},
+  	{
+  		id: "sosa-hayes",
+  		"full-name": "Sosa Hayes",
+  		size: "small",
+  		team: "Houston Spies",
+  		"former-teams": [
+  			"Mexico City Wild Wings"
+  		],
+  		sprites: [
+  			"42SosaHayes.png",
+  			"42SosaHayesALT.png"
+  		]
+  	},
+  	{
+  		id: "hahn-fox",
+  		"full-name": "Hahn Fox",
+  		size: "small",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  			"Miami Dale"
+  		],
+  		sprites: [
+  			"43HahnFox.png",
+  			"43HahnFoxALT.png",
+  			"43HahnFoxALT2.png"
+  		]
+  	},
+  	{
+  		id: "qais-dogwalker",
+  		"full-name": "Qais Dogwalker",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"44QaisDogwalker.png"
+  		]
+  	},
+  	{
+  		id: "rodriguez-internet",
+  		"full-name": "Rodriguez Internet",
+  		size: "small",
+  		team: "Kansas City Breath Mints",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"45RodriguezInternet.png"
+  		]
+  	},
+  	{
+  		id: "cornelius-games",
+  		"full-name": "Cornelius Games",
+  		size: "small",
+  		team: "Charleston Shoe Thieves",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"46CorneliusGames.png"
+  		]
+  	},
+  	{
+  		id: "thomas-dracaena",
+  		"full-name": "Thomas Dracaena",
+  		size: "small",
+  		team: "New York Millennials",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"47ThomasDracaena.png"
+  		]
+  	},
+  	{
+  		id: "pitching-machine",
+  		"full-name": "Pitching Machine",
+  		size: "small",
+  		team: "Seattle Garages",
+  		"former-teams": [
+  			"Unlimited Tacos",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"48PitchingMachine.png",
+  			"48PitchingMachineALT.png",
+  			"48PitchingMachineALT2.png"
+  		]
+  	},
+  	{
+  		id: "isaac-rubberman",
+  		"full-name": "Isaac Rubberman",
+  		size: "large",
+  		team: "RIV",
+  		"former-teams": [
+  			"Boston Flowers"
+  		],
+  		sprites: [
+  			"49IsaacRubberman.png"
+  		]
+  	},
+  	{
+  		id: "nicholas-mora",
+  		"full-name": "Nicholas Mora",
+  		size: "small",
+  		team: "Philly Pies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"50NicholasMora.png",
+  			"50NicholasMoraALT.png"
+  		]
+  	},
+  	{
+  		id: "goobie-ballson",
+  		"full-name": "Goobie Ballson",
+  		size: "large",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"51GoobieBallson.png",
+  			"51GoobieBallson1.png"
+  		]
+  	},
+  	{
+  		id: "joe-voorhees",
+  		"full-name": "Joe Voorhees",
+  		size: "small",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  			"Canada Moist Talkers",
+  			"Charleston Shoe Thieves"
+  		],
+  		sprites: [
+  			"52JoeVoorhees.png",
+  			"52JoeVoorheesALT.png",
+  			"52JoeVoorheesALT2.png",
+  			"52JoeVoorheesALT3.png"
+  		]
+  	},
+  	{
+  		id: "knight-triumphant",
+  		"full-name": "Knight Triumphant",
+  		size: "small",
+  		team: "San Francisco Lovers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"53KnightTriumphant.png"
+  		]
+  	},
+  	{
+  		id: "allison-abbott",
+  		"full-name": "Allison Abbott",
+  		size: "small",
+  		team: "Dallas Steaks",
+  		"former-teams": [
+  			"Seattle Garages"
+  		],
+  		sprites: [
+  			"54AllisonAbbott.png",
+  			"54AllisonAbbottALT.png"
+  		]
+  	},
+  	{
+  		id: "axel-trololol",
+  		"full-name": "Axel Trololol",
+  		size: "large",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Kansas City Breath Mints",
+  			"Chicago Firefighters",
+  			"Baltimore Crabs",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"55AxelTrololol.png",
+  			"55AxelTrolololALT.png",
+  			"55AxelTrolololALT2.png",
+  			"55AxelTrolololALT3.png",
+  			"55AxelTrolololALT4.png"
+  		]
+  	},
+  	{
+  		id: "inky-rutledge",
+  		"full-name": "Inky Rutledge",
+  		size: "small",
+  		team: "Yellowstone Magic",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"56InkyRutledge.png"
+  		]
+  	},
+  	{
+  		id: "sandie-turner",
+  		"full-name": "Sandie Turner",
+  		size: "small",
+  		team: "New York Millennials",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"57SandieTurner.png"
+  		]
+  	},
+  	{
+  		id: "tamara-crankit",
+  		"full-name": "Tamara Crankit",
+  		size: "small",
+  		team: "Breckenridge Jazz Hands",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"58TamaraCrankit.png"
+  		]
+  	},
+  	{
+  		id: "kichiro-guerra",
+  		"full-name": "Kichiro Guerra",
+  		size: "small",
+  		team: "San Francisco Lovers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"59KichiroGuerra.png"
+  		]
+  	},
+  	{
+  		id: "patty-fox",
+  		"full-name": "Patty Fox",
+  		size: "small",
+  		team: "New York Millennials",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"60PattyFox.png"
+  		]
+  	},
+  	{
+  		id: "wyatt-pothos",
+  		"full-name": "Wyatt Pothos",
+  		size: "small",
+  		team: "Breckenridge Jazz Hands",
+  		"former-teams": [
+  			"Unlimited Tacos",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"61WyattPothos.png",
+  			"61WyattPothosALT.png",
+  			"61WyattPothosALT2.png"
+  		]
+  	},
+  	{
+  		id: "cannonball-sports",
+  		"full-name": "Cannonball Sports",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"62CannonballSports.png"
+  		]
+  	},
+  	{
+  		id: "elvis-figueroa",
+  		"full-name": "Elvis Figueroa",
+  		size: "small",
+  		team: "Philly Pies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"63ElvisFigueroa.png"
+  		]
+  	},
+  	{
+  		id: "fitzgerald-blackburn",
+  		"full-name": "Fitzgerald Blackburn",
+  		size: "small",
+  		team: "Houston Spies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"64FitzgeraldBlackburn.png"
+  		]
+  	},
+  	{
+  		id: "tot-fox",
+  		"full-name": "Tot Fox",
+  		size: "small",
+  		team: "Baltimore Crabs",
+  		"former-teams": [
+  			"Breckenridge Jazz Hands"
+  		],
+  		sprites: [
+  			"65TotFox.png",
+  			"65TotFoxALT.png"
+  		]
+  	},
+  	{
+  		id: "tillman-henderson",
+  		"full-name": "Tillman Henderson",
+  		size: "small",
+  		team: "Charleston Shoe Thieves",
+  		"former-teams": [
+  			"Baltimore Crabs"
+  		],
+  		sprites: [
+  			"66TillmanHenderson.png",
+  			"66TillmanHendersonALT.png"
+  		]
+  	},
+  	{
+  		id: "oliver-notarobot",
+  		"full-name": "Oliver Notarobot",
+  		size: "large",
+  		team: "Seattle Garages",
+  		"former-teams": [
+  			"Canada Moist Talkers",
+  			"Baltimore Crabs"
+  		],
+  		sprites: [
+  			"67OliverNotarobot.png",
+  			"67OliverNotarobotALT.png",
+  			"67OliverNotarobotALT2.png"
+  		]
+  	},
+  	{
+  		id: "adalberto-tosser",
+  		"full-name": "Adalberto Tosser",
+  		size: "small",
+  		team: "Baltimore Crabs",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"68AdalbertoTosser.png"
+  		]
+  	},
+  	{
+  		id: "blood-hamburger",
+  		"full-name": "Blood Hamburger",
+  		size: "small",
+  		team: "Charleston Shoe Thieves",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"69BloodHamburger.png"
+  		]
+  	},
+  	{
+  		id: "leach-ingram",
+  		"full-name": "Leach Ingram",
+  		size: "small",
+  		team: "Kansas City Breath Mints",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"70LeachIngram.png"
+  		]
+  	},
+  	{
+  		id: "francisco-preston",
+  		"full-name": "Francisco Preston",
+  		size: "small",
+  		team: "Yellowstone Magic",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"71FranciscoPreston.png"
+  		]
+  	},
+  	{
+  		id: "spears-taylor",
+  		"full-name": "Spears Taylor",
+  		size: "large",
+  		team: "Hawai'i Fridays",
+  		"former-teams": [
+  			"Philly Pies",
+  			"Hades Tigers"
+  		],
+  		sprites: [
+  			"72SpearsTaylor.png",
+  			"72SpearsTaylorALT.png",
+  			"72SpearsTaylorALT2.png"
+  		]
+  	},
+  	{
+  		id: "beck-whitney",
+  		"full-name": "Beck Whitney",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  			"Boston Flowers"
+  		],
+  		sprites: [
+  			"73BeckWhitney.png",
+  			"73BeckWhitneyALT.png"
+  		]
+  	},
+  	{
+  		id: "lou-roseheart",
+  		"full-name": "Lou Roseheart",
+  		size: "small",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"74LouRoseheart.png"
+  		]
+  	},
+  	{
+  		id: "sigmund-castillo",
+  		"full-name": "Sigmund Castillo",
+  		size: "large",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  			"San Francisco Lovers"
+  		],
+  		sprites: [
+  			"75SigmundCastillo.png",
+  			"75SigmundCastilloALT.png"
+  		]
+  	},
+  	{
+  		id: "chorby-soul",
+  		"full-name": "Chorby Soul",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"New York Millennials"
+  		],
+  		sprites: [
+  			"76ChorbySoul.png"
+  		]
+  	},
+  	{
+  		id: "carmelo-plums",
+  		"full-name": "Carmelo Plums",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"77CarmeloPlums.png"
+  		]
+  	},
+  	{
+  		id: "sexton-wheerer",
+  		"full-name": "Sexton Wheerer",
+  		size: "large",
+  		team: "Unlimited Tacos",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"78SextonWheerer.png"
+  		]
+  	},
+  	{
+  		id: "son-scotch",
+  		"full-name": "Son Scotch",
+  		size: "small",
+  		team: "Houston Spies",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"79SonScotch.png"
+  		]
+  	},
+  	{
+  		id: "atlas-jonbois",
+  		"full-name": "Atlas Jonbois",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Charleston Shoe Thieves"
+  		],
+  		sprites: [
+  			"80AtlasJonbois.png"
+  		]
+  	},
+  	{
+  		id: "washer-barajas",
+  		"full-name": "Washer Barajas",
+  		size: "large",
+  		team: "Yellowstone Magic",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"81WasherBarajas.png"
+  		]
+  	},
+  	{
+  		id: "winnie-hess",
+  		"full-name": "Winnie Hess",
+  		size: "small",
+  		team: "Kansas City Breath Mints",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"82WinnieHess.png",
+  			"82WinnieHessALT.png"
+  		]
+  	},
+  	{
+  		id: "cell-barajas",
+  		"full-name": "Cell Barajas",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"83CellBarajas.png"
+  		]
+  	},
+  	{
+  		id: "august-sky",
+  		"full-name": "August Sky",
+  		size: "small",
+  		team: "Dallas Steaks",
+  		"former-teams": [
+  			"Breckenridge Jazz Hands"
+  		],
+  		sprites: [
+  			"84AugustSky.png",
+  			"84AugustSkyALT.png"
+  		]
+  	},
+  	{
+  		id: "malik-destiny",
+  		"full-name": "Malik Destiny",
+  		size: "small",
+  		team: "Seattle Garages",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"85MalikDestiny.png"
+  		]
+  	},
+  	{
+  		id: "farrell-seagull",
+  		"full-name": "Farrell Seagull",
+  		size: "small",
+  		team: "Philly Pies",
+  		"former-teams": [
+  			"Miami Dale",
+  			"Seattle Garages"
+  		],
+  		sprites: [
+  			"86FarrellSeagull.png",
+  			"86FarrellSeagullALT.png",
+  			"86FarrellSeagullALT2.png"
+  		]
+  	},
+  	{
+  		id: "fletcher-yamamoto",
+  		"full-name": "Fletcher Yamamoto",
+  		size: "small",
+  		team: "Hawai'i Fridays",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"87FletcherYamamoto.png"
+  		]
+  	},
+  	{
+  		id: "alaynabella-hollywood",
+  		"full-name": "Alaynabella Hollywood",
+  		size: "small",
+  		team: "Boston Flowers",
+  		"former-teams": [
+  			"Hellmouth Sunbeams"
+  		],
+  		sprites: [
+  			"88AlaynabellaHollywood.png",
+  			"88AlaynabellaHollywoodALT.png"
+  		]
+  	},
+  	{
+  		id: "joshua-butt",
+  		"full-name": "Joshua Butt",
+  		size: "small",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"89JoshuaButt.png"
+  		]
+  	},
+  	{
+  		id: "penelope-mathews",
+  		"full-name": "Penelope Mathews",
+  		size: "small",
+  		team: "New York Millennials",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"90PenelopeMathews.png",
+  			"90PenelopeMathewsALT.png"
+  		]
+  	},
+  	{
+  		id: "ortiz-lopez",
+  		"full-name": "Ortiz Lopez",
+  		size: "small",
+  		team: "San Francisco Lovers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"91OrtizLopez.png"
+  		]
+  	},
+  	{
+  		id: "halexandrey-walton",
+  		"full-name": "Halexandrey Walton",
+  		size: "small",
+  		team: "Unlimited Tacos",
+  		"former-teams": [
+  			"Yellowstone Magic"
+  		],
+  		sprites: [
+  			"92HalexandreyWalton.png",
+  			"92HalexandreyWaltonALT.png"
+  		]
+  	},
+  	{
+  		id: "miki-santana",
+  		"full-name": "Miki Santana",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Houston Spies"
+  		],
+  		sprites: [
+  			"93MikiSantana.png"
+  		]
+  	},
+  	{
+  		id: "stu-trololol",
+  		"full-name": "Stu Trololol",
+  		size: "small",
+  		team: "Charleston Shoe Thieves",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"94StuTrololol.png"
+  		]
+  	},
+  	{
+  		id: "marquez-clark",
+  		"full-name": "Marquez Clark",
+  		size: "small",
+  		team: "Kansas City Breath Mints",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"95MarquezClark.png"
+  		]
+  	},
+  	{
+  		id: "agan-harrison",
+  		"full-name": "Agan Harrison",
+  		size: "small",
+  		team: "Breckenridge Jazz Hands",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"96AganHarrison.png"
+  		]
+  	},
+  	{
+  		id: "tyler-violet",
+  		"full-name": "Tyler Violet",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Canada Moist Talkers"
+  		],
+  		sprites: [
+  			"97TylerViolet.png"
+  		]
+  	},
+  	{
+  		id: "joshua-watson",
+  		"full-name": "Joshua Watson",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  			"Baltimore Crabs",
+  			"Chicago Firefighters"
+  		],
+  		sprites: [
+  			"98JoshuaWatson.png",
+  			"98JoshuaWatsonALT.png",
+  			"98JoshuaWatsonALT2.png"
+  		]
+  	},
+  	{
+  		id: "leach-herman",
+  		"full-name": "Leach Herman",
+  		size: "small",
+  		team: "Dallas Steaks",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"99LeachHerman.png"
+  		]
+  	},
+  	{
+  		id: "yazmin-mason",
+  		"full-name": "Yazmin Mason",
+  		size: "small",
+  		team: "Hall Stars",
+  		"former-teams": [
+  			"Hades Tigers"
+  		],
+  		sprites: [
+  			"100YazminMason.png",
+  			"100YazminMasonALT.png",
+  			"100YazminMasonALT2.png"
+  		]
+  	},
+  	{
+  		id: "juice-collins",
+  		"full-name": "Juice Collins",
+  		size: "small",
+  		team: "Hawai'i Fridays",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"101JuiceCollins.png"
+  		]
+  	},
+  	{
+  		id: "jasmine-washington",
+  		"full-name": "Jasmine Washington",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"102JasmineWashington.png"
+  		]
+  	},
+  	{
+  		id: "inez-owens",
+  		"full-name": "Inez Owens",
+  		size: "small",
+  		team: "Boston Flowers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"103InezOwens.png"
+  		]
+  	},
+  	{
+  		id: "alexander-horne",
+  		"full-name": "Alexander Horne",
+  		size: "small",
+  		team: "San Francisco Lovers",
+  		"former-teams": [
+  			"Hellmouth Sunbeams"
+  		],
+  		sprites: [
+  			"104AlexanderHorne.png",
+  			"104AlexanderHorneALT.png"
+  		]
+  	},
+  	{
+  		id: "pudge-nakatamo",
+  		"full-name": "Pudge Nakatamo",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"105PudgeNakatamo.png"
+  		]
+  	},
+  	{
+  		id: "elijah-valenzuela",
+  		"full-name": "Elijah Valenzuela",
+  		size: "small",
+  		team: "Breckenridge Jazz Hands",
+  		"former-teams": [
+  			"Hawai'i Fridays"
+  		],
+  		sprites: [
+  			"106ElijahValenzuela.png",
+  			"106ElijahValenzuelaALT.png"
+  		]
+  	},
+  	{
+  		id: "alejandro-leaf",
+  		"full-name": "Alejandro Leaf",
+  		size: "small",
+  		team: "New York Millennials",
+  		"former-teams": [
+  			"Unlimited Tacos"
+  		],
+  		sprites: [
+  			"107AlejandroLeaf.png",
+  			"107AlejandroLeafALT.png",
+  			"107AlejandroLeafALT2.png"
+  		]
+  	},
+  	{
+  		id: "luis-acevedo",
+  		"full-name": "Luis Acevedo",
+  		size: "small",
+  		team: "Baltimore Crabs",
+  		"former-teams": [
+  			"Seattle Garages"
+  		],
+  		sprites: [
+  			"108LuisAcevedo.png",
+  			"108LuisAcevedoALT.png"
+  		]
+  	},
+  	{
+  		id: "fynn-doyle",
+  		"full-name": "Fynn Doyle",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"109FynnDoyle.png"
+  		]
+  	},
+  	{
+  		id: "thomas-kirby",
+  		"full-name": "Thomas Kirby",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Dallas Steaks",
+  			"Chicago Firefighters"
+  		],
+  		sprites: [
+  			"110ThomasKirby.png",
+  			"110ThomasKirbyALT.png"
+  		]
+  	},
+  	{
+  		id: "chorby-short",
+  		"full-name": "Chorby Short",
+  		size: "small",
+  		team: "Yellowstone Magic",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"111ChorbyShort.png"
+  		]
+  	},
+  	{
+  		id: "logan-horseman",
+  		"full-name": "Logan Horseman",
+  		size: "small",
+  		team: "Miami Dale",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"112LoganHorseman.png"
+  		]
+  	},
+  	{
+  		id: "peanutiel-duffy",
+  		"full-name": "Peanutiel Duffy",
+  		size: "huge",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  			"Hades Tigers",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"113PeanutielDuffy.png",
+  			"113PeanutielDuffyALT.png",
+  			"113PeanutielDuffyALT2.png"
+  		]
+  	},
+  	{
+  		id: "peanut-holloway",
+  		"full-name": "Peanut Holloway",
+  		size: "small",
+  		team: "Chicago Firefighters",
+  		"former-teams": [
+  			"Philly Pies",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"114PeanutHolloway.png",
+  			"114PeanutHollowayALT.png",
+  			"114PeanutHollowayALT2.png"
+  		]
+  	},
+  	{
+  		id: "peanut-bong",
+  		"full-name": "Peanut Bong",
+  		size: "small",
+  		team: "Unlimited Tacos",
+  		"former-teams": [
+  			"Miami Dale",
+  			"THE SHELLED ONE'S PODS"
+  		],
+  		sprites: [
+  			"115PeanutBong.png",
+  			"115PeanutBongALT.png",
+  			"115PeanutBongALT2.png"
+  		]
+  	},
+  	{
+  		id: "hotbox-sato",
+  		"full-name": "Hotbox Sato",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"116HotboxSato.png",
+  			"116HotboxSatoALT.png"
+  		]
+  	},
+  	{
+  		id: "howell-franklin",
+  		"full-name": "Howell Franklin",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"117HowellFranklin.png",
+  			"117HowellFranklinALT.png"
+  		]
+  	},
+  	{
+  		id: "workman-gloom",
+  		"full-name": "Workman Gloom",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"118WorkmanGloom.png",
+  			"118WorkmanGloomALT.png",
+  			"118WorkmanGloomALT2.png"
+  		]
+  	},
+  	{
+  		id: "beasley-gloom",
+  		"full-name": "Beasley Gloom",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"119BeasleyGloom.png",
+  			"119BeasleyGloomALT.png"
+  		]
+  	},
+  	{
+  		id: "esme-ramsey",
+  		"full-name": "Esme Ramsey",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"120EsmeRamsey.png"
+  		]
+  	},
+  	{
+  		id: "wyatt-dovenpart",
+  		"full-name": "Wyatt Dovenpart",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"121WyattDovenpart.png"
+  		]
+  	},
+  	{
+  		id: "basilio-fig",
+  		"full-name": "Basilio Fig",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"122BasilioFig.png",
+  			"122BasilioFigALT.png"
+  		]
+  	},
+  	{
+  		id: "quack-enjoyable",
+  		"full-name": "Quack Enjoyable",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"123QuackEnjoyable.png",
+  			"123QuackEnjoyableALT.png"
+  		]
+  	},
+  	{
+  		id: "summers-pony",
+  		"full-name": "Summers Pony",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"124SummersPony.png",
+  			"124SummersPonyALT.png",
+  			"124SummersPonyALT2.png"
+  		]
+  	},
+  	{
+  		id: "evelton-mcblase",
+  		"full-name": "Evelton McBlase",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"125EveltonMcBlase.png"
+  		]
+  	},
+  	{
+  		id: "evelton-mcblase-i-i",
+  		"full-name": "Evelton McBlase I I",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"126EveltonMcBlaseII.png",
+  			"126EveltonMcBlaseIIALT.png",
+  			"126EveltonMcBlaseIIALT2.png"
+  		]
+  	},
+  	{
+  		id: "lenny-spruce",
+  		"full-name": "Lenny Spruce",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"127LennySpruce.png"
+  		]
+  	},
+  	{
+  		id: "hiroto-cerna",
+  		"full-name": "Hiroto Cerna",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"128HirotoCerna.png"
+  		]
+  	},
+  	{
+  		id: "miguel-javier",
+  		"full-name": "Miguel Javier",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"129MiguelJavier.png"
+  		]
+  	},
+  	{
+  		id: "paul-barnes",
+  		"full-name": "Paul Barnes",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"130PaulBarnes.png"
+  		]
+  	},
+  	{
+  		id: "walton-sports",
+  		"full-name": "Walton Sports",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"131WaltonSports.png"
+  		]
+  	},
+  	{
+  		id: "emmett-internet",
+  		"full-name": "Emmett Internet",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"132EmmettInternet.png",
+  			"132EmmettInternetALT.png"
+  		]
+  	},
+  	{
+  		id: "valentine-games",
+  		"full-name": "Valentine Games",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"133ValentineGames.png",
+  			"133ValentineGamesALT.png",
+  			"133ValentineGamesALT2.png",
+  			"133ValentineGamesALT3.png",
+  			"133ValentineGamesALT4.png"
+  		]
+  	},
+  	{
+  		id: "betsy-trombone",
+  		"full-name": "Betsy Trombone",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"134BetsyTrombone.png",
+  			"134BetsyTromboneALT.png"
+  		]
+  	},
+  	{
+  		id: "nandy-fantastic",
+  		"full-name": "Nandy Fantastic",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"135NandyFantastic.png"
+  		]
+  	},
+  	{
+  		id: "oscar-dollie",
+  		"full-name": "Oscar Dollie",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"136OscarDollie.png"
+  		]
+  	},
+  	{
+  		id: "socks-maybe",
+  		"full-name": "Socks Maybe",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"137SocksMaybe.png"
+  		]
+  	},
+  	{
+  		id: "kennedy-meh",
+  		"full-name": "Kennedy Meh",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"138KennedyMeh.png",
+  			"138KennedyMehALT.png"
+  		]
+  	},
+  	{
+  		id: "forrest-bookbaby",
+  		"full-name": "Forrest Bookbaby",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"139ForrestBookbaby.png",
+  			"139ForrestBookbabyALT.png"
+  		]
+  	},
+  	{
+  		id: "gray-alvarado",
+  		"full-name": "Gray Alvarado",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"140GrayAlvarado.png"
+  		]
+  	},
+  	{
+  		id: "sutton-dreamy",
+  		"full-name": "Sutton Dreamy",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"141SuttonDreamy.png",
+  			"141SuttonDreamyALT.png"
+  		]
+  	},
+  	{
+  		id: "kennedy-loser",
+  		"full-name": "Kennedy Loser",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"142KennedyLoser.png"
+  		]
+  	},
+  	{
+  		id: "silvaire-roadhouse",
+  		"full-name": "Silvaire Roadhouse",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"143SilvaireRoadhouse.png"
+  		]
+  	},
+  	{
+  		id: "combs-duende",
+  		"full-name": "Combs Duende",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"144CombsDuende.png"
+  		]
+  	},
+  	{
+  		id: "moody-cookbook",
+  		"full-name": "Moody Cookbook",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"145MoodyCookbook.png"
+  		]
+  	},
+  	{
+  		id: "nagomi-meng",
+  		"full-name": "Nagomi Meng",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"146NagomiMeng.png"
+  		]
+  	},
+  	{
+  		id: "hiroto-wilcox",
+  		"full-name": "Hiroto Wilcox",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"147HirotoWilcox.png"
+  		]
+  	},
+  	{
+  		id: "dunlap-figueroa",
+  		"full-name": "Dunlap Figueroa",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"148DunlapFigueroa.png"
+  		]
+  	},
+  	{
+  		id: "tyreek-olive",
+  		"full-name": "Tyreek Olive",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"149TyreekOlive.png",
+  			"149TyreekOliveALT.png"
+  		]
+  	},
+  	{
+  		id: "morrow-doyle",
+  		"full-name": "Morrow Doyle",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"150MorrowDoyle.png",
+  			"150MorrowDoyleALT.png",
+  			"150MorrowDoyleALT2.png"
+  		]
+  	},
+  	{
+  		id: "sebastian-sunshine",
+  		"full-name": "Sebastian Sunshine",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"151SebastianSunshine.png",
+  			"151SebastianSunshineALT.png"
+  		]
+  	},
+  	{
+  		id: "scrap-murphy",
+  		"full-name": "Scrap Murphy",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"152ScrapMurphy.png",
+  			"152ScrapMurphyALT.png"
+  		]
+  	},
+  	{
+  		id: "aldon-cashmoney",
+  		"full-name": "Aldon Cashmoney",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"153AldonCashmoney.png",
+  			"153AldonCashmoneyALT.png",
+  			"153AldonCashmoneyALT2.png"
+  		]
+  	},
+  	{
+  		id: "mcdowell-mason",
+  		"full-name": "McDowell Mason",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"154McDowellMason.png"
+  		]
+  	},
+  	{
+  		id: "francisca-sasquatch",
+  		"full-name": "Francisca Sasquatch",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"155FranciscaSasquatch.png",
+  			"155FranciscaSasquatchALT.png",
+  			"155FranciscaSasquatchALT2.png"
+  		]
+  	},
+  	{
+  		id: "patel-beyonce",
+  		"full-name": "Patel Beyonce",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"156PatelBeyonce.png",
+  			"156PatelBeyonceALT.png",
+  			"156PatelBeyonceALT2.png"
+  		]
+  	},
+  	{
+  		id: "mummy-melcon",
+  		"full-name": "Mummy Melcon",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"157MummyMelcon.png"
+  		]
+  	},
+  	{
+  		id: "paula-turnip",
+  		"full-name": "Paula Turnip",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"158PaulaTurnip.png",
+  			"158PaulaTurnipALT.png"
+  		]
+  	},
+  	{
+  		id: "ren-morin",
+  		"full-name": "Ren Morin",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"159RenMorin.png"
+  		]
+  	},
+  	{
+  		id: "usurper-violet",
+  		"full-name": "Usurper Violet",
+  		size: "large",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"160UsurperViolet.png"
+  		]
+  	},
+  	{
+  		id: "dudley-mueller",
+  		"full-name": "Dudley Mueller",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"161DudleyMueller.png"
+  		]
+  	},
+  	{
+  		id: "sandoval-crossing",
+  		"full-name": "Sandoval Crossing",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"162SandovalCrossing.png"
+  		]
+  	},
+  	{
+  		id: "sutton-bishop",
+  		"full-name": "Sutton Bishop",
+  		size: "small",
+  		team: "Pending Team",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"163SuttonBishop.png"
   		]
   	}
   ];
@@ -4287,7 +6219,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<router expr467="expr467" base="/home"></router>', [{
+      return template('<router expr0="expr0" base="/home"></router>', [{
         'type': bindingTypes.TAG,
         'getComponent': getComponent,
 
@@ -4297,7 +6229,7 @@
 
         'slots': [{
           'id': 'default',
-          'html': '<div class="main-container"><header><h1>#MiniBlaseball by HetreaSky</h1></header><p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p><p>TODO: Add everybody, sorting/filter by teams, add alternate color scheme, x button to close in profile</p><filter-control expr468="expr468"></filter-control><gallery expr469="expr469"></gallery><overlay expr470="expr470"></overlay><route expr471="expr471" path="/#:player"></route></div>',
+          'html': '<div class="main-container"><header><h1>#MiniBlaseball by HetreaSky</h1></header><p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p><p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p><filter-control expr1="expr1"></filter-control><gallery expr2="expr2"></gallery><overlay expr3="expr3"></overlay><route expr4="expr4" path="/#:player"></route></div>',
 
           'bindings': [{
             'type': bindingTypes.TAG,
@@ -4318,8 +6250,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr468',
-            'selector': '[expr468]'
+            'redundantAttribute': 'expr1',
+            'selector': '[expr1]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -4339,8 +6271,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr469',
-            'selector': '[expr469]'
+            'redundantAttribute': 'expr2',
+            'selector': '[expr2]'
           }, {
             'type': bindingTypes.IF,
 
@@ -4348,8 +6280,8 @@
               return scope.state.overlayOn;
             },
 
-            'redundantAttribute': 'expr470',
-            'selector': '[expr470]',
+            'redundantAttribute': 'expr3',
+            'selector': '[expr3]',
 
             'template': template(null, [{
               'type': bindingTypes.TAG,
@@ -4380,7 +6312,7 @@
 
             'slots': [{
               'id': 'default',
-              'html': '<overlay expr472="expr472"></overlay>',
+              'html': '<overlay expr5="expr5"></overlay>',
 
               'bindings': [{
                 'type': bindingTypes.TAG,
@@ -4401,20 +6333,20 @@
                   }
                 }],
 
-                'redundantAttribute': 'expr472',
-                'selector': '[expr472]'
+                'redundantAttribute': 'expr5',
+                'selector': '[expr5]'
               }]
             }],
 
             'attributes': [],
-            'redundantAttribute': 'expr471',
-            'selector': '[expr471]'
+            'redundantAttribute': 'expr4',
+            'selector': '[expr4]'
           }]
         }],
 
         'attributes': [],
-        'redundantAttribute': 'expr467',
-        'selector': '[expr467]'
+        'redundantAttribute': 'expr0',
+        'selector': '[expr0]'
       }]);
     },
 
