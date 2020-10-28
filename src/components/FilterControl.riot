@@ -1,18 +1,109 @@
 <filter-control>
-    <form>
-        <select name="team">
-            <option>Currently a member of</option>
-            <option>Was ever a member of</option>
-        </select>
-         <select name="team">
-            <option></option>
-            <option each={ team in props.teams }>{ team }</option>
-        </select>
+    <form class="gallery-filter">
+        <div>
+            <input type="text" name="playername" placeholder="Search for player..." oninput={ onInputName }>
+        </div>
+
+        <div>
+            <h2>Filter</h2>
+            <h3>Show players who are</h3>
+
+            <label class="filter-selector">
+                <input 
+                    type="checkbox" 
+                    onchange={ onChangeFilter }
+                    value="ismemberof">
+                Currently a member of
+            </label>
+
+            <label class="filter-selector">
+                <input 
+                    type="checkbox" 
+                    onchange={ onChangeFilter }
+                    value="wasmemberof">
+                Was a member of
+            </label>
+
+             <select
+                if={ state.appliedFilters.length }
+                onchange={ onSelectTeam }>
+                <option value="" selected>Select a team</option>
+                <option each={ team in props.teams }>{ team }</option>
+            </select>
+        </div>
     </form>
+
+    <style>
+    .gallery-filter {
+        text-align: left;
+    }
+
+    .gallery-filter > div {
+        margin: 1em 0;
+    }
+
+    input {
+        border: none;
+        background: hsl(0 0% 93%);
+        border-radius: .25rem;
+        padding: .75rem 1rem;
+    }
+
+    .filter-selector {
+        display: block;
+    }
+    </style>
 
     <script>
     export default {
-        teams: ["a", "B"]
+
+        onBeforeMount() {
+            this.state = {
+                appliedFilters: [],
+                teamFilter: ''
+            }
+        },
+
+        onInputName(e) {
+            this.props.onFilterPlayerName(e.target.value)
+        },
+
+        onChangeFilter(e) {
+            // Add value to filter list if box is checked
+            const filter = e.target.value
+            const currentFilters = this.state.appliedFilters
+
+            if (e.target.checked) {
+                this.update({
+                    appliedFilters: currentFilters.concat([filter])
+                })
+            }
+
+            // Remove it if the box is unchecked
+            else {
+                this.update({
+                    appliedFilters: currentFilters.filter(elem => elem != filter) 
+                })
+            }
+
+            if (!this.state.appliedFilters.length) {
+                // If no filter is applied, reset chosen team
+                this.update({
+                    teamFilter: ''
+                })
+            }
+
+            this.props.onChangeFilter(this.state)
+        },
+
+        onSelectTeam(e) {
+            this.update({
+                teamFilter: e.target.value
+            })
+
+            this.props.onChangeFilter(this.state)
+        }
+
     }
     </script>
 </filter-control>

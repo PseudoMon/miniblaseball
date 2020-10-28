@@ -92,7 +92,9 @@ def decidesize(nameid):
         'ren-morin',
         'usurper-violet',
         'morrow-doyle',
-        'axel-trololol'
+        'axel-trololol',
+        'conner-haley',
+        'moody-cookbook'
     ]
 
     peanutiel = ['peanutiel-duffy']

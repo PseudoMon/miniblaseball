@@ -1,43 +1,64 @@
 <app>
     <router base="/home">
         <div class="main-container">
-            <header>
-                <h1>#MiniBlaseball by HetreaSky</h1>
-            </header>
+            <div class="sidebar">
+                <header>
+                    <h1>#MiniBlaseball</h1>
+                </header>
 
-            <p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p>
-            <p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p>
+                <p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p>
+                <p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p>
 
-            <filter-control teams={ state.teamsList }></filter-control>
+                <filter-control
+                    teams={ state.teamsList }
+                    on-filter-player-name={ filterPlayerName }
+                    on-change-filter={ applyFilter }>
+                    
+                </filter-control>
+            </div>
 
-            <gallery
-                players={ playersData }></gallery>
-
-            <overlay 
-                if={ state.overlayOn }
-                player={ state.playerClicked }>
-            </overlay>
-
-            <route path="/#:player">
-                <overlay 
-                    player={ getPlayerData(route.params.player) }>
-                </overlay> 
-            </route>
+            <div class="main-content">
+                <gallery
+                    players={ state.playersShown }
+                    players-map={ playersIdMap }>
+                </gallery>
+            </div>
 
         </div>
+        <route path="/#:player">
+            <overlay 
+                player={ getPlayerData(route.params.player) }>
+            </overlay> 
+        </route>
     </router>
 
     <style>
     :host {
         font-family: "Raleway", sans-serif;
-        text-align: center;
     }
 
     .main-container {
         width: 100%;
-        max-width: 960px;
+        max-width: 1000px;
         margin: 20px auto 0 auto;
+
+        height: calc(100vh - 20px);
+
+        display: grid;
+        grid-template-columns: 1fr;
     }
+
+    @media (min-width: 900px) {
+        .main-container {
+            overflow: hidden;
+            grid-template-columns: 280px 1fr;
+        }
+
+        .sidebar, .main-content {
+            overflow-y: auto;
+        }
+    }
+
 
     header {
         text-align: center;
@@ -59,12 +80,13 @@
 
         playersData: PlayersData,
 
+        playersIdMap: PlayersData,
+
         onBeforeMount() {
             this.state = {
-                overlayOn: false,
-                scrollDisabled: false,
                 playerClicked: this.playersData[4],
-                teamsList: this.createTeamsList()
+                teamsList: this.createTeamsList(),
+                playersShown: this.playersData
             }
         },
 
@@ -77,12 +99,83 @@
             let teams = []
 
             this.playersData.forEach((player) => {
-                if (!teams.includes(player.team)) {
+                if (player.team === "Hall Stars" || player.team === "RIV") {
+                    // Move Hall Stars and PODS to the bottom
+                } 
+
+                else if (!teams.includes(player.team)) {
                     teams.push(player.team)
                 }
             })
 
+            teams.push("THE SHELLED ONE'S PODS")
+            teams.push("Hall Stars")
+            teams.push("RIV")
+
             return teams
+        },
+
+        filterPlayerName(nameToSearch) {
+            const playersShown = this.playersData.filter(player => {
+                    return player['full-name'].toLowerCase().includes( nameToSearch.toLowerCase())
+            })
+
+            this.update({
+                playersShown
+            })
+        },
+
+        applyFilter(filterState) {
+            const filters = filterState.appliedFilters
+            const team = filterState.teamFilter
+
+            if (!filters.length) {
+                // No filter checkbox is checked
+                this.update({
+                    playersShown: this.playersData
+                })
+                return
+            }
+
+            if (!team) {
+                // No team to filter to is selected
+                this.update({
+                    playersShown: this.playersData
+                })
+                return
+            }
+
+            console.log(filters)
+            console.log(team)
+
+            const playersShown = this.playersData.filter(player => {
+                if (filters.includes("wasmemberof")) {
+                    console.log('WASMEMBER')
+
+                    if (player['former-teams'].includes(team)) {
+                        return true
+                    }
+
+                }
+
+                if (filters.includes("ismemberof")) {
+                    console.log("ISMEMBER")
+
+                    if (player['team'] === team) {
+                        return true
+                    }
+            
+                }
+
+                return false
+            })
+
+            console.log(playersShown)
+
+            this.update({
+                playersShown
+            })
+
         }
     }
     </script>

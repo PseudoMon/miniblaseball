@@ -3802,14 +3802,14 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr6="expr6"></div></div>', [{
+      return template('<div class="gallery"><div expr10="expr10"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr7="expr7"><img expr8="expr8"/></a>', [{
-          'redundantAttribute': 'expr7',
-          'selector': '[expr7]',
+        'template': template('<a expr11="expr11"><img expr12="expr12"/></a>', [{
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3820,8 +3820,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr8',
-          'selector': '[expr8]',
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3833,8 +3833,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr6',
-        'selector': '[expr6]',
+        'redundantAttribute': 'expr10',
+        'selector': '[expr10]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3862,7 +3862,7 @@
   };
 
   var PlayerInfo = {
-    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .player-info,[is="player-info"] .player-info{ width: 500px; max-width: 90%; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: #494a46; color: #fff; text-align: center; position: relative; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
+    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .player-info,[is="player-info"] .player-info{ width: 600px; max-width: 95%; box-sizing: border-box; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: #494a46; color: #fff; text-align: center; position: relative; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
 
     'exports': {
       components: { CloseButton },
@@ -3930,7 +3930,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr11="expr11" class="close-button"></close-button><img expr12="expr12" class="sprite"/><div expr13="expr13" class="alt-images"></div><div class="info"><h2 expr16="expr16" class="name"> </h2><h3 expr17="expr17" class="team"></h3><h3 expr19="expr19" class="team"></h3><p expr20="expr20"> </p></div></div>',
+        '<div class="player-info"><close-button expr14="expr14" class="close-button"></close-button><img expr15="expr15" class="sprite"/><div expr16="expr16" class="alt-images"></div><div class="info"><h2 expr19="expr19" class="name"> </h2><h3 expr20="expr20" class="team"></h3><h3 expr22="expr22" class="team"></h3><p expr23="expr23"> </p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -3950,11 +3950,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr11',
-          'selector': '[expr11]'
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]'
         }, {
-          'redundantAttribute': 'expr12',
-          'selector': '[expr12]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3971,17 +3971,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
 
-          'template': template('<div expr14="expr14" class="img-box"></div>', [{
+          'template': template('<div expr17="expr17" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr15="expr15"/>', [{
-              'redundantAttribute': 'expr15',
-              'selector': '[expr15]',
+            'template': template('<img expr18="expr18"/>', [{
+              'redundantAttribute': 'expr18',
+              'selector': '[expr18]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4000,8 +4000,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr14',
-            'selector': '[expr14]',
+            'redundantAttribute': 'expr17',
+            'selector': '[expr17]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4010,8 +4010,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4028,10 +4028,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr17',
-          'selector': '[expr17]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
-          'template': template('<div expr18="expr18" class="smol-desc"></div> ', [{
+          'template': template('<div expr21="expr21" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4047,8 +4047,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr18',
-            'selector': '[expr18]',
+            'redundantAttribute': 'expr21',
+            'selector': '[expr21]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4062,12 +4062,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr22',
+          'selector': '[expr22]',
           'template': template('\r\n                Rest in Violence\r\n            ', [])
         }, {
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4085,7 +4085,7 @@
   };
 
   var Overlay = {
-    'css': `overlay,[is="overlay"]{ padding: 1em; line-height: 1.4em; font-size: 18px; text-align: left; position: fixed; z-index: 20; top: 0; left: 0; right: 0; bottom: 0; overflow: auto; background-color: rgba(0,0,0,0.6); }`,
+    'css': `overlay,[is="overlay"]{ display: block; line-height: 1.4em; font-size: 18px; text-align: left; position: fixed; z-index: 20; top: 0; left: 0; right: 0; bottom: 0; overflow-y: auto; background-color: rgba(0,0,0,0.6); }`,
 
     'exports': {
       components: { PlayerInfo },
@@ -4112,7 +4112,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr9="expr9"></player-info>', [{
+      return template('<player-info expr13="expr13"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4147,8 +4147,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr9',
-        'selector': '[expr9]'
+        'redundantAttribute': 'expr13',
+        'selector': '[expr13]'
       }]);
     },
 
@@ -4156,39 +4156,143 @@
   };
 
   var FilterControl = {
-    'css': null,
+    'css': `filter-control .gallery-filter,[is="filter-control"] .gallery-filter{ text-align: left; } filter-control .gallery-filter > div,[is="filter-control"] .gallery-filter > div{ margin: 1em 0; } filter-control input,[is="filter-control"] input{ border: none; background: hsl(0 0% 93%); border-radius: .25rem; padding: .75rem 1rem; } filter-control .filter-selector,[is="filter-control"] .filter-selector{ display: block; }`,
 
     'exports': {
-      teams: ["a", "B"]
+      onBeforeMount() {
+          this.state = {
+              appliedFilters: [],
+              teamFilter: ''
+          };
+      },
+
+      onInputName(e) {
+          this.props.onFilterPlayerName(e.target.value);
+      },
+
+      onChangeFilter(e) {
+          // Add value to filter list if box is checked
+          const filter = e.target.value;
+          const currentFilters = this.state.appliedFilters;
+
+          if (e.target.checked) {
+              this.update({
+                  appliedFilters: currentFilters.concat([filter])
+              });
+          }
+
+          // Remove it if the box is unchecked
+          else {
+              this.update({
+                  appliedFilters: currentFilters.filter(elem => elem != filter) 
+              });
+          }
+
+          if (!this.state.appliedFilters.length) {
+              // If no filter is applied, reset chosen team
+              this.update({
+                  teamFilter: ''
+              });
+          }
+
+          this.props.onChangeFilter(this.state);
+      },
+
+      onSelectTeam(e) {
+          this.update({
+              teamFilter: e.target.value
+          });
+
+          this.props.onChangeFilter(this.state);
+      }
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form><select name="team"><option>Currently a member of</option><option>Was ever a member of</option></select><select name="team"><option></option><option expr10="expr10"></option></select></form>',
+        '<form class="gallery-filter"><div><input expr5="expr5" type="text" name="playername" placeholder="Search for player..."/></div><div><h2>Filter</h2><h3>Show players who are</h3><label class="filter-selector"><input expr6="expr6" type="checkbox" value="ismemberof"/>\r\n                Currently a member of\r\n            </label><label class="filter-selector"><input expr7="expr7" type="checkbox" value="wasmemberof"/>\r\n                Was a member of\r\n            </label><select expr8="expr8"></select></div></form>',
         [{
-          'type': bindingTypes.EACH,
-          'getKey': null,
-          'condition': null,
+          'redundantAttribute': 'expr5',
+          'selector': '[expr5]',
 
-          'template': template(' ', [{
-            'expressions': [{
-              'type': expressionTypes.TEXT,
-              'childNodeIndex': 0,
+          'expressions': [{
+            'type': expressionTypes.EVENT,
+            'name': 'oninput',
 
-              'evaluate': function(scope) {
-                return scope.team;
-              }
-            }]
-          }]),
+            'evaluate': function(scope) {
+              return scope.onInputName;
+            }
+          }]
+        }, {
+          'redundantAttribute': 'expr6',
+          'selector': '[expr6]',
 
-          'redundantAttribute': 'expr10',
-          'selector': '[expr10]',
-          'itemName': 'team',
-          'indexName': null,
+          'expressions': [{
+            'type': expressionTypes.EVENT,
+            'name': 'onchange',
+
+            'evaluate': function(scope) {
+              return scope.onChangeFilter;
+            }
+          }]
+        }, {
+          'redundantAttribute': 'expr7',
+          'selector': '[expr7]',
+
+          'expressions': [{
+            'type': expressionTypes.EVENT,
+            'name': 'onchange',
+
+            'evaluate': function(scope) {
+              return scope.onChangeFilter;
+            }
+          }]
+        }, {
+          'type': bindingTypes.IF,
 
           'evaluate': function(scope) {
-            return scope.props.teams;
-          }
+            return scope.state.appliedFilters.length;
+          },
+
+          'redundantAttribute': 'expr8',
+          'selector': '[expr8]',
+
+          'template': template(
+            '<option value selected>Select a team</option><option expr9="expr9"></option>',
+            [{
+              'expressions': [{
+                'type': expressionTypes.EVENT,
+                'name': 'onchange',
+
+                'evaluate': function(scope) {
+                  return scope.onSelectTeam;
+                }
+              }]
+            }, {
+              'type': bindingTypes.EACH,
+              'getKey': null,
+              'condition': null,
+
+              'template': template(' ', [{
+                'expressions': [{
+                  'type': expressionTypes.TEXT,
+                  'childNodeIndex': 0,
+
+                  'evaluate': function(scope) {
+                    return scope.team;
+                  }
+                }]
+              }]),
+
+              'redundantAttribute': 'expr9',
+              'selector': '[expr9]',
+              'itemName': 'team',
+              'indexName': null,
+
+              'evaluate': function(scope) {
+                return scope.props.teams;
+              }
+            }]
+          )
         }]
       );
     },
@@ -6186,18 +6290,18 @@
   ];
 
   var App = {
-    'css': `app,[is="app"]{ font-family: "Raleway", sans-serif; text-align: center; } app .main-container,[is="app"] .main-container{ width: 100%; max-width: 960px; margin: 20px auto 0 auto; } app header,[is="app"] header{ text-align: center; }`,
+    'css': `app,[is="app"]{ font-family: "Raleway", sans-serif; } app .main-container,[is="app"] .main-container{ width: 100%; max-width: 1000px; margin: 20px auto 0 auto; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow: hidden; grid-template-columns: 280px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } app header,[is="app"] header{ text-align: center; }`,
 
     'exports': {
       components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl },
       playersData: PlayersData,
+      playersIdMap: PlayersData,
 
       onBeforeMount() {
           this.state = {
-              overlayOn: false,
-              scrollDisabled: false,
               playerClicked: this.playersData[4],
-              teamsList: this.createTeamsList()
+              teamsList: this.createTeamsList(),
+              playersShown: this.playersData
           };
       },
 
@@ -6209,12 +6313,81 @@
           let teams = [];
 
           this.playersData.forEach((player) => {
-              if (!teams.includes(player.team)) {
+              if (player.team === "Hall Stars" || player.team === "RIV") ; 
+
+              else if (!teams.includes(player.team)) {
                   teams.push(player.team);
               }
           });
 
+          teams.push("THE SHELLED ONE'S PODS");
+          teams.push("Hall Stars");
+          teams.push("RIV");
+
           return teams
+      },
+
+      filterPlayerName(nameToSearch) {
+          const playersShown = this.playersData.filter(player => {
+                  return player['full-name'].toLowerCase().includes( nameToSearch.toLowerCase())
+          });
+
+          this.update({
+              playersShown
+          });
+      },
+
+      applyFilter(filterState) {
+          const filters = filterState.appliedFilters;
+          const team = filterState.teamFilter;
+
+          if (!filters.length) {
+              // No filter checkbox is checked
+              this.update({
+                  playersShown: this.playersData
+              });
+              return
+          }
+
+          if (!team) {
+              // No team to filter to is selected
+              this.update({
+                  playersShown: this.playersData
+              });
+              return
+          }
+
+          console.log(filters);
+          console.log(team);
+
+          const playersShown = this.playersData.filter(player => {
+              if (filters.includes("wasmemberof")) {
+                  console.log('WASMEMBER');
+
+                  if (player['former-teams'].includes(team)) {
+                      return true
+                  }
+
+              }
+
+              if (filters.includes("ismemberof")) {
+                  console.log("ISMEMBER");
+
+                  if (player['team'] === team) {
+                      return true
+                  }
+          
+              }
+
+              return false
+          });
+
+          console.log(playersShown);
+
+          this.update({
+              playersShown
+          });
+
       }
     },
 
@@ -6229,7 +6402,7 @@
 
         'slots': [{
           'id': 'default',
-          'html': '<div class="main-container"><header><h1>#MiniBlaseball by HetreaSky</h1></header><p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p><p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p><filter-control expr1="expr1"></filter-control><gallery expr2="expr2"></gallery><overlay expr3="expr3"></overlay><route expr4="expr4" path="/#:player"></route></div>',
+          'html': '<div class="main-container"><div class="sidebar"><header><h1>#MiniBlaseball</h1></header><p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p><p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p><filter-control expr1="expr1"></filter-control></div><div class="main-content"><gallery expr2="expr2"></gallery></div></div><route expr3="expr3" path="/#:player"></route>',
 
           'bindings': [{
             'type': bindingTypes.TAG,
@@ -6247,6 +6420,20 @@
 
               'evaluate': function(scope) {
                 return scope.state.teamsList;
+              }
+            }, {
+              'type': expressionTypes.EVENT,
+              'name': 'on-filter-player-name',
+
+              'evaluate': function(scope) {
+                return scope.filterPlayerName;
+              }
+            }, {
+              'type': expressionTypes.EVENT,
+              'name': 'on-change-filter',
+
+              'evaluate': function(scope) {
+                return scope.applyFilter;
               }
             }],
 
@@ -6267,41 +6454,19 @@
               'name': 'players',
 
               'evaluate': function(scope) {
-                return scope.playersData;
+                return scope.state.playersShown;
+              }
+            }, {
+              'type': expressionTypes.ATTRIBUTE,
+              'name': 'players-map',
+
+              'evaluate': function(scope) {
+                return scope.playersIdMap;
               }
             }],
 
             'redundantAttribute': 'expr2',
             'selector': '[expr2]'
-          }, {
-            'type': bindingTypes.IF,
-
-            'evaluate': function(scope) {
-              return scope.state.overlayOn;
-            },
-
-            'redundantAttribute': 'expr3',
-            'selector': '[expr3]',
-
-            'template': template(null, [{
-              'type': bindingTypes.TAG,
-              'getComponent': getComponent,
-
-              'evaluate': function(scope) {
-                return 'overlay';
-              },
-
-              'slots': [],
-
-              'attributes': [{
-                'type': expressionTypes.ATTRIBUTE,
-                'name': 'player',
-
-                'evaluate': function(scope) {
-                  return scope.state.playerClicked;
-                }
-              }]
-            }])
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -6312,7 +6477,7 @@
 
             'slots': [{
               'id': 'default',
-              'html': '<overlay expr5="expr5"></overlay>',
+              'html': '<overlay expr4="expr4"></overlay>',
 
               'bindings': [{
                 'type': bindingTypes.TAG,
@@ -6333,14 +6498,14 @@
                   }
                 }],
 
-                'redundantAttribute': 'expr5',
-                'selector': '[expr5]'
+                'redundantAttribute': 'expr4',
+                'selector': '[expr4]'
               }]
             }],
 
             'attributes': [],
-            'redundantAttribute': 'expr4',
-            'selector': '[expr4]'
+            'redundantAttribute': 'expr3',
+            'selector': '[expr3]'
           }]
         }],
 
