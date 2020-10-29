@@ -62,8 +62,8 @@ def getname(filename):
     # special cases
     if name == "Na N":
         name = "NaN"
-    elif name == "evelton-mcblase-i-i":
-        name = "evelton-mcblase-ii"
+    elif name == "Evelton McBlase I I":
+        name = "Evelton McBlase II"
 
     return name
 
@@ -72,13 +72,10 @@ def idify(fullname):
 
 def decidesize(nameid):
     bigboys = [
-        'sixpack-dogwalker',
-        'zion-aliciakeyes', 
+        'sixpack-dogwalker', 
         'math-velazquez',
         'oliver-notarobot',
-        'sigmund-castillo',
         'sexton-wheerer',
-        'washer-barajas',
         'lenny-spruce',
         'oscar-dollie',
         'spears-taylor',
@@ -92,22 +89,39 @@ def decidesize(nameid):
         'ren-morin',
         'usurper-violet',
         'morrow-doyle',
-        'axel-trololol',
         'conner-haley',
-        'moody-cookbook'
+        'moody-cookbook',
+        'nagomi-nava',
+
+        'basilio-fig',
+        'agan-harrison',
+        'leach-herman',
+        'alexander-horne',
+        'dominic-marijuana',
+        'sandie-turner',
+        'agan-harrison'
+    ]
+
+    biggerboys = [
+        'sigmund-castillo',
+        'washer-barajas',
+        'axel-trololol',
+        'zion-aliciakeyes',
     ]
 
     peanutiel = ['peanutiel-duffy']
 
     if nameid in bigboys:
         return 'large'
+    elif nameid in biggerboys:
+        return 'xlarge'
     elif nameid in peanutiel:
         return 'huge'
     else:
         return 'small'
 
 def fillinTeams(players):
-    with open('teamplacement.eno', 'r') as file:
+    with open('extradata.eno', 'r') as file:
         input = file.read()
 
     placements = enolib.parse(input)
@@ -161,6 +175,7 @@ for i in range(1,164):
     print("Who is deemed " + size.upper())
 
     players.append({
+        "index": i,
         "id": name_id,
         "full-name": player_name,
         "size": size,

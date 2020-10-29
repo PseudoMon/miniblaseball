@@ -7,13 +7,13 @@
                 </header>
 
                 <p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p>
-                <p>TODO: Add teams for everybody, sorting/filter by teams, add alternate color scheme, make website looks nicer?</p>
+                <p>TODO: Make website looks nicer, improve filter control UX, make layout better on mobile. Night mode? Change default color schemes for players?</p>
 
                 <filter-control
                     teams={ state.teamsList }
                     on-filter-player-name={ filterPlayerName }
-                    on-change-filter={ applyFilter }>
-                    
+                    on-change-filter={ applyFilter }
+                    on-change-sort={ changeSort }>      
                 </filter-control>
             </div>
 
@@ -34,11 +34,11 @@
 
     <style>
     :host {
-        font-family: "Raleway", sans-serif;
+        font-family: "Lora", sans-serif;
     }
 
     .main-container {
-        width: 100%;
+        width: 98%;
         max-width: 1000px;
         margin: 20px auto 0 auto;
 
@@ -59,9 +59,14 @@
         }
     }
 
+    @media (min-width: 1400px) {
+        .main-container {
+            max-width: 80%;
+        }
+    }
+
 
     header {
-        text-align: center;
     }
     </style>
 
@@ -84,9 +89,9 @@
 
         onBeforeMount() {
             this.state = {
-                playerClicked: this.playersData[4],
                 teamsList: this.createTeamsList(),
-                playersShown: this.playersData
+                playersShown: this.playersData,
+                currentSortType: ''
             }
         },
 
@@ -131,22 +136,14 @@
 
             if (!filters.length) {
                 // No filter checkbox is checked
-                this.update({
-                    playersShown: this.playersData
-                })
                 return
             }
 
             if (!team) {
                 // No team to filter to is selected
-                this.update({
-                    playersShown: this.playersData
-                })
                 return
             }
 
-            console.log(filters)
-            console.log(team)
 
             const playersShown = this.playersData.filter(player => {
                 if (filters.includes("wasmemberof")) {
@@ -176,7 +173,45 @@
                 playersShown
             })
 
-        }
+        },
+
+        changeSort(e) {
+            const sortType = e.target.value
+            let playersShown = this.state.playersShown
+
+            console.log(sortType)
+
+            if (sortType === 'original') {
+                playersShown = playersShown.slice().sort((playera, playerb) => {
+
+                    return playera.index - playerb.index
+
+                })
+            }
+
+            else if (sortType === 'alphabetical') {
+                // Slice so we don't modify the original
+                playersShown = playersShown.slice().sort((playera, playerb) => {
+
+                    if (playera['full-name'] < playerb['full-name']) {
+                        return -1
+                    }
+
+                    if (playera['full-name'] > playerb['full-name']) {
+                        return 1
+                    }
+
+                    return 0
+
+                })
+            }
+
+            this.update({
+                playersShown,
+                currentSortType: sortType
+            })
+        },
+
     }
     </script>
 </app>

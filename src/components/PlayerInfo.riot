@@ -47,6 +47,7 @@
     :host {
         --size-small: 200px;
         --size-large: 300px;
+        --size-xlarge: 320px;
         --size-huge: 500px;
         --player-size: var(--size-small);
 
@@ -72,6 +73,10 @@
         text-align: center;
 
         position: relative;
+    }
+
+    .smol-desc {
+        font-weight: 400;
     }
 
     .alt-images {
@@ -130,8 +135,8 @@
                 this.root.style.setProperty("--player-altscaling", "scale(2, 2)")
             }
 
-            if (playerSize === "large") {
-                this.root.style.setProperty("--player-altscaling", "scale(1.2, 1.2)")
+            if (playerSize === "large" || playerSize === "xlarge") {
+                this.root.style.setProperty("--player-altscaling", "scale(1.5, 1.5)")
             }
 
             // Set description

@@ -1,10 +1,10 @@
 # mike-townsend
-team: tigers
-former-teams: 
-- moist talkers
+team: garages
 
 # richmond-harrison
-team: garages
+team: tigers
+former-teams:
+- moist talkers
 
 # wyatt-quitter
 team: lift
@@ -102,8 +102,8 @@ team: lovers
 former-teams:
 - garages
 - shoe thieves
-- pods
 - stars
+- pods
 
 # parker-meng
 team: lovers
@@ -139,8 +139,9 @@ team: steaks
 # nolanestophia-patterson
 team: garages
 former-teams:
-- pies
+- fridays
 - tigers
+- pies
 
 # ziwa-mueller
 team: moist talkers
@@ -182,6 +183,7 @@ former-teams:
 team: sunbeams
 former-teams:
 - dale
+- flowers
 
 # qais-dogwalker
 team: dale
@@ -208,6 +210,8 @@ former-teams:
 
 # nicholas-mora
 team: pies
+former-teams:
+- tigers
 
 # goobie-ballson
 team: firefighters
@@ -217,6 +221,7 @@ team: sunbeams
 former-teams:
 - moist talkers
 - shoe thieves
+- spies
 
 # knight-triumphant
 team: lovers
@@ -316,7 +321,7 @@ team: riv
 former-teams:
 - millennials
 
-# carmelo-plum
+# carmelo-plums
 team: tigers
 
 # sexton-wheerer
@@ -338,6 +343,8 @@ team: wild wings
 
 # winnie-hess
 team: breath mints
+former-teams:
+- crabs
 
 # august-sky
 team: steaks
@@ -366,6 +373,8 @@ team: firefighters
 
 # penelope-mathews
 team: millennials
+former-teams:
+- magic
 
 # ortiz-lopez
 team: lovers
@@ -407,6 +416,7 @@ team: steaks
 team: stars
 former-teams:
 - tigers
+- pies
 
 # juice-collins
 team: fridays
@@ -434,13 +444,14 @@ former-teams:
 team: millennials
 former-teams: 
 - tacos
+- pods
 
 # luis-acevedo
 team: crabs
 former-teams: 
 - garages
 
-# flynn-doyle
+# fynn-doyle
 team: millennials
 
 # thomas-kirby
@@ -473,4 +484,209 @@ former-teams:
 - dale
 - pods
 
+# hotbox-sato
+team: shoe thieves
+former-teams:
+- flowers
 
+# howell-franklin
+team: shoe thieves
+former-teams:
+- spies
+
+# workman-gloom
+team: stars
+former-teams:
+-shoe thieves
+-moist talkers
+
+#beasley-gloom
+team: moist talkers
+former-teams:
+-shoe thieves
+
+# esme-ramsey
+team: shoe thieves
+
+#summers-pony
+team: garages
+former-teams:
+-steaks
+-pies
+
+#evelton-mcblase
+team: fridays
+
+#evelton-mcblase-ii
+team: crabs
+former-teams:
+-spies
+-fridays
+
+#lenny-spruce
+team: breath mints
+
+#hiroto-cerna
+team: flowers
+
+#miguel-javier
+team: riv
+former-teams:
+-lovers
+
+#paul-barnes
+team: riv
+former-teams:
+-lovers
+
+#walton-sports
+team: jazz hands
+
+#emmett-internet
+team: stars
+former-teams:
+-sunbeams
+
+#valentine-games
+team: tacos
+former-teams:
+-crabs
+-jazz hands
+-millennials
+-spies
+
+#betsy-trombone
+team: garages
+former-teams:
+-pies
+
+#nandy-fantastic
+team: millennials
+
+#oscar-dollie
+team: magic
+
+#socks-maybe
+team: firefighters
+
+#kennedy-meh
+team: wild wings
+former-teams:
+-lovers
+
+#forrest-bookbaby
+team: riv
+former-teams:
+-shoe thieves
+-pies
+
+#grey-alvarado
+team: breath mints
+
+#sutton-dreamy
+team: fridays
+former-teams:
+-crabs
+
+#kennedy-loser
+team: crabs
+
+#silvaire-roadhouse
+team: crabs
+
+#combs-duende
+team: riv
+former-teams:
+-crabs
+
+#moody-cookbook
+team: riv
+former-teams:
+-tigers
+
+#nagomi-meng
+team: tigers
+
+#hiroto-wilcox
+team: tigers
+
+#dunlap-figueroa
+team: tigers
+
+#tyreek-olive
+team: stars
+former-teams:
+-firefighters
+
+#morrow-doyle
+team: stars
+former-teams:
+-shoe thieves
+-flowers
+
+#sebastian-sunshine
+team: stars
+former-teams:
+-fridays
+
+#scrap-murphy
+team: stars
+former-teams:
+-millennials
+
+#aldon-cashmoney
+team: tigers
+former-teams:
+-jazz hands
+-fridays
+
+#mcdowell-mason
+team: tacos
+
+#francisca-sasquatch
+team: dale
+former-teams:
+-tacos
+-pods
+
+#patel-beyonce
+team: steaks
+former-teams:
+-tacos
+-pods
+
+#mummy-melcon
+team: tigers
+
+#paula-turnip
+team: garages
+former-teams:
+-tigers
+
+#ren-morin
+team: tigers
+
+#usurper-violet
+team: tigers
+
+#dudley-mueller
+team: sunbeams
+
+#sandoval-crossing
+team: sunbeams
+
+#sutton-bishop
+team: sunbeams
+
+# wyatt-dovenpart
+team: tacos
+
+# basilio-fig
+team: tacos
+former-teams:
+- fridays
+
+# quack-enjoyable
+team: garages
+former-teams:
+- moist talkers

@@ -5,6 +5,12 @@
         </div>
 
         <div>
+            <sort-control
+                on-change-sort={ props.onChangeSort }>
+            </sort-control>
+        </div>
+
+        <div>
             <h2>Filter</h2>
             <h3>Show players who are</h3>
 
@@ -42,20 +48,30 @@
         margin: 1em 0;
     }
 
-    input {
+    input[type="text"] {
         border: none;
-        background: hsl(0 0% 93%);
+        background: #eeeeee;
         border-radius: .25rem;
         padding: .75rem 1rem;
     }
 
     .filter-selector {
         display: block;
+        margin-top: 0.5em;
     }
+
+    select {
+        margin-top: 0.5em;
+    }
+
     </style>
 
     <script>
+    import SortControl from './SortControl.riot'
+    
     export default {
+
+        components: { SortControl },
 
         onBeforeMount() {
             this.state = {
