@@ -31,7 +31,6 @@
             </label>
 
              <select
-                if={ state.appliedFilters.length }
                 onchange={ onSelectTeam }>
                 <option value="" selected>Select a team</option>
                 <option each={ team in props.teams }>{ team }</option>

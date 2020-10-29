@@ -4,12 +4,20 @@
             <div class="sidebar">
                 <header>
                     <h1>#MiniBlaseball</h1>
+                    <h5>Blaseball players art by @HetreaSky</h5>
                 </header>
 
-                <p>Under construction! Art by @HetreaSky, website by @PseudoMonious</p>
-                <p>TODO: Make website looks nicer, improve filter control UX, make layout better on mobile. Night mode? Change default color schemes for players?</p>
+                <sidebar-nav
+                    selected-screen={ state.sidebarScreen }
+                    open-screen={ selectSidebarScreen }>
+                </sidebar-nav>
+
+                <aboutbox
+                    if={ state.sidebarScreen === 'about' }>
+                </aboutbox>
 
                 <filter-control
+                    if= { state.sidebarScreen === 'filter' }
                     teams={ state.teamsList }
                     on-filter-player-name={ filterPlayerName }
                     on-change-filter={ applyFilter }
@@ -65,8 +73,20 @@
         }
     }
 
+    .sidebar {
+        padding-right: 0.2em;
+        max-width: 500px;
+    }
 
-    header {
+
+    header h1 {
+        margin-bottom: 0.2em;
+    }
+
+    header h5 {
+        margin-top: 0;
+        font-weight: 600;
+        font-size: 1em;
     }
     </style>
 
@@ -76,12 +96,14 @@
     import Gallery from './components/Gallery.riot'
     import Overlay from './components/Overlay.riot'
     import FilterControl from './components/FilterControl.riot'
+    import Aboutbox from './components/Aboutbox.riot'
+    import SidebarNav from './components/SidebarNav.riot'
 
     import PlayersData from './players.json'
     import TeamColors from './teamcolors.json'
 
     export default {
-        components: { Gallery, Overlay, Router, Route, FilterControl },
+        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav },
 
         playersData: PlayersData,
 
@@ -91,7 +113,8 @@
             this.state = {
                 teamsList: this.createTeamsList(),
                 playersShown: this.playersData,
-                currentSortType: ''
+                currentSortType: '',
+                sidebarScreen: 'filter'
             }
         },
 
@@ -211,6 +234,12 @@
                 currentSortType: sortType
             })
         },
+
+        selectSidebarScreen(screen) {
+            this.update({
+                sidebarScreen: screen
+            })
+        }
 
     }
     </script>
