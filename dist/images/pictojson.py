@@ -99,7 +99,8 @@ def decidesize(nameid):
         'alexander-horne',
         'dominic-marijuana',
         'sandie-turner',
-        'agan-harrison'
+        'agan-harrison',
+        'freemium-seraph'
     ]
 
     biggerboys = [
@@ -143,10 +144,10 @@ def fillinTeams(players):
 
     return players
 
-# Manually add to this when there are more blaseballers!
+# Manually add to the range when there are more blaseballers!
 players = []
 
-for i in range(1,164):
+for i in range(1,173):
 
     if i < 10:
         playerid = "0" + str(i)

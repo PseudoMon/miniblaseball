@@ -2,10 +2,7 @@
     <router base="/home">
         <div class="main-container">
             <div class="sidebar">
-                <header>
-                    <h1>#MiniBlaseball</h1>
-                    <h5>Blaseball players art by @HetreaSky</h5>
-                </header>
+                <site-header></site-header>
 
                 <sidebar-nav
                     selected-screen={ state.sidebarScreen }
@@ -18,7 +15,7 @@
 
                 <filter-control
                     if= { state.sidebarScreen === 'filter' }
-                    teams={ state.teamsList }
+                    teams={ teamsData }
                     on-filter-player-name={ filterPlayerName }
                     on-change-filter={ applyFilter }
                     on-change-sort={ changeSort }>      
@@ -54,6 +51,9 @@
 
         display: grid;
         grid-template-columns: 1fr;
+        
+        /* Prevent Peanutiel from overflowing */
+        overflow-x: hidden; 
     }
 
     @media (min-width: 900px) {
@@ -77,17 +77,6 @@
         padding-right: 0.2em;
         max-width: 500px;
     }
-
-
-    header h1 {
-        margin-bottom: 0.2em;
-    }
-
-    header h5 {
-        margin-top: 0;
-        font-weight: 600;
-        font-size: 1em;
-    }
     </style>
 
     <script>
@@ -98,49 +87,38 @@
     import FilterControl from './components/FilterControl.riot'
     import Aboutbox from './components/Aboutbox.riot'
     import SidebarNav from './components/SidebarNav.riot'
+    import SiteHeader from './components/SiteHeader.riot'
 
     import PlayersData from './players.json'
-    import TeamColors from './teamcolors.json'
+    import TeamsData from './teams.json'
+    import TeamsList from './teamsReverseId.js'
 
     export default {
-        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav },
+        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader },
 
         playersData: PlayersData,
 
-        playersIdMap: PlayersData,
+        teamsData: TeamsData,
+
+        teamsList: TeamsList,
+        // This list contains teams in {teamname: index} format
+        // For sorting by teams
 
         onBeforeMount() {
             this.state = {
-                teamsList: this.createTeamsList(),
                 playersShown: this.playersData,
                 currentSortType: '',
                 sidebarScreen: 'filter'
             }
+            
+            console.log(this.teamsData.map(subleague => {
+                return subleague.teams
+            }).flat())
         },
 
 
         getPlayerData(id) {
             return this.playersData.find(player => player.id === id)
-        },
-
-        createTeamsList() {
-            let teams = []
-
-            this.playersData.forEach((player) => {
-                if (player.team === "Hall Stars" || player.team === "RIV") {
-                    // Move Hall Stars and PODS to the bottom
-                } 
-
-                else if (!teams.includes(player.team)) {
-                    teams.push(player.team)
-                }
-            })
-
-            teams.push("THE SHELLED ONE'S PODS")
-            teams.push("Hall Stars")
-            teams.push("RIV")
-
-            return teams
         },
 
         filterPlayerName(nameToSearch) {
@@ -151,26 +129,31 @@
             this.update({
                 playersShown
             })
+
+            this.applySort()
         },
 
         applyFilter(filterState) {
             const filters = filterState.appliedFilters
             const team = filterState.teamFilter
 
-            if (!filters.length) {
+
+            if (!filters.length || !team) {
                 // No filter checkbox is checked
+                // Or no team to filter to is checked
+                // Return to default
+
+                this.update({
+                    playersShown: this.playersData
+                })
+
+                this.applySort()
+
                 return
             }
-
-            if (!team) {
-                // No team to filter to is selected
-                return
-            }
-
 
             const playersShown = this.playersData.filter(player => {
                 if (filters.includes("wasmemberof")) {
-                    console.log('WASMEMBER')
 
                     if (player['former-teams'].includes(team)) {
                         return true
@@ -179,7 +162,6 @@
                 }
 
                 if (filters.includes("ismemberof")) {
-                    console.log("ISMEMBER")
 
                     if (player['team'] === team) {
                         return true
@@ -190,21 +172,39 @@
                 return false
             })
 
-            console.log(playersShown)
-
             this.update({
                 playersShown
             })
+
+            this.applySort()
 
         },
 
         changeSort(e) {
             const sortType = e.target.value
-            let playersShown = this.state.playersShown
+
+            this.update({
+                currentSortType: sortType
+            })
+
+            this.applySort()
+        },
+
+        applySort() {
+            const sortType = this.state.currentSortType
+
+            if (!sortType) {
+                // If no sortType is set (so it's still default)
+                // don't sort anything
+                return
+            }
 
             console.log(sortType)
 
+            let playersShown = this.state.playersShown
+
             if (sortType === 'original') {
+                // Slice so we don't modify the original
                 playersShown = playersShown.slice().sort((playera, playerb) => {
 
                     return playera.index - playerb.index
@@ -229,9 +229,28 @@
                 })
             }
 
+            else if (sortType === 'currentteam') {
+
+                // Slice so we don't modify the original
+                const teamsList = this.teamsList
+
+                playersShown = playersShown.slice().sort((playera, playerb) => {
+
+                    if (teamsList[playera['team']] < teamsList[playerb['team']]) {
+                        return -1
+                    }
+
+                    if (teamsList[playera['team']] > teamsList[playerb['team']]) {
+                        return 1
+                    }
+
+                    return 0
+
+                })
+            }
+
             this.update({
                 playersShown,
-                currentSortType: sortType
             })
         },
 

@@ -1,7 +1,12 @@
 <filter-control>
     <form class="gallery-filter">
         <div>
-            <input type="text" name="playername" placeholder="Search for player..." oninput={ onInputName }>
+            <input 
+                type="text" 
+                name="playername" 
+                placeholder="Search for player..." 
+                oninput={ onInputName }
+                value={ state.nameBeingSearched }>
         </div>
 
         <div>
@@ -18,7 +23,8 @@
                 <input 
                     type="checkbox" 
                     onchange={ onChangeFilter }
-                    value="ismemberof">
+                    value="ismemberof"
+                    checked={ state.appliedFilters.includes('ismemberof') }>
                 Currently a member of
             </label>
 
@@ -26,14 +32,25 @@
                 <input 
                     type="checkbox" 
                     onchange={ onChangeFilter }
-                    value="wasmemberof">
+                    value="wasmemberof"
+                    checked={ state.appliedFilters.includes('wasmemberof') }>
                 Was a member of
             </label>
 
              <select
                 onchange={ onSelectTeam }>
                 <option value="" selected>Select a team</option>
-                <option each={ team in props.teams }>{ team }</option>
+                <optgroup 
+                    each={ subleague in props.teams} 
+                    label="{ subleague.name }">
+                    
+                    <option 
+                        each={ team in subleague.teams }
+                        selected={ team === state.teamFilter }>
+                        { team }
+                    </option>
+
+                </optgroup>
             </select>
         </div>
     </form>
@@ -75,11 +92,19 @@
         onBeforeMount() {
             this.state = {
                 appliedFilters: [],
-                teamFilter: ''
+                teamFilter: '',
+                nameBeingSearched: ''
             }
         },
 
         onInputName(e) {
+            // Reset all filters when name is inputted
+            this.update({
+                appliedFilters: [],
+                teamFilter: '',
+                nameBeingSearched: e.target.value
+            })
+
             this.props.onFilterPlayerName(e.target.value)
         },
 
@@ -87,33 +112,42 @@
             // Add value to filter list if box is checked
             const filter = e.target.value
             const currentFilters = this.state.appliedFilters
+            let appliedFilters
 
             if (e.target.checked) {
-                this.update({
-                    appliedFilters: currentFilters.concat([filter])
-                })
+                
+                appliedFilters = currentFilters.concat([filter])
+                
             }
 
-            // Remove it if the box is unchecked
             else {
-                this.update({
-                    appliedFilters: currentFilters.filter(elem => elem != filter) 
-                })
+                // Remove it if the box is unchecked                
+                appliedFilters = currentFilters.filter(elem => elem != filter) 
+                
             }
 
-            if (!this.state.appliedFilters.length) {
-                // If no filter is applied, reset chosen team
-                this.update({
-                    teamFilter: ''
-                })
+            let updatedStates = {
+                appliedFilters,
+                nameBeingSearched: '' // Reset searchbar
             }
+
+            // Reset team if all filters are turned off
+            if (!appliedFilters) {
+                updatedStates['teamFilter'] = ''
+            }
+
+            
+            this.update(updatedStates)
 
             this.props.onChangeFilter(this.state)
         },
 
         onSelectTeam(e) {
+
+            // Reset searchbar
             this.update({
-                teamFilter: e.target.value
+                teamFilter: e.target.value,
+                nameBeingSearched: ''
             })
 
             this.props.onChangeFilter(this.state)

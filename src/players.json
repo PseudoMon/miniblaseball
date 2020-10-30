@@ -2109,5 +2109,111 @@
         "sprites": [
             "163SuttonBishop.png"
         ]
+    },
+    {
+        "index": 164,
+        "id": "nerd-pacheco",
+        "full-name": "Nerd Pacheco",
+        "size": "small",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [],
+        "sprites": [
+            "164NerdPacheco.png"
+        ]
+    },
+    {
+        "index": 165,
+        "id": "scores-baserunner",
+        "full-name": "Scores Baserunner",
+        "size": "small",
+        "team": "Boston Flowers",
+        "former-teams": [],
+        "sprites": [
+            "165ScoresBaserunner.png"
+        ]
+    },
+    {
+        "index": 166,
+        "id": "sosa-elftower",
+        "full-name": "Sosa Elftower",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "166SosaElftower.png"
+        ]
+    },
+    {
+        "index": 167,
+        "id": "summers-preston",
+        "full-name": "Summers Preston",
+        "size": "small",
+        "team": "Mexico City Wild Wings",
+        "former-teams": [],
+        "sprites": [
+            "167SummersPreston.png"
+        ]
+    },
+    {
+        "index": 168,
+        "id": "cedric-gonzalez",
+        "full-name": "Cedric Gonzalez",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "168CedricGonzalez.png"
+        ]
+    },
+    {
+        "index": 169,
+        "id": "freemium-seraph",
+        "full-name": "Freemium Seraph",
+        "size": "large",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "169FreemiumSeraph.png"
+        ]
+    },
+    {
+        "index": 170,
+        "id": "vito-kravitz",
+        "full-name": "Vito Kravitz",
+        "size": "small",
+        "team": "Unlimited Tacos",
+        "former-teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "170VitoKravitz.png",
+            "170VitoKravitzALT.png"
+        ]
+    },
+    {
+        "index": 171,
+        "id": "rat-mason",
+        "full-name": "Rat Mason",
+        "size": "small",
+        "team": "Unlimited Tacos",
+        "former-teams": [],
+        "sprites": [
+            "171RatMason.png"
+        ]
+    },
+    {
+        "index": 172,
+        "id": "igneus-delacruz",
+        "full-name": "Igneus Delacruz",
+        "size": "small",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [],
+        "sprites": [
+            "172IgneusDelacruz.png"
+        ]
     }
 ]

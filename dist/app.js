@@ -3802,12 +3802,12 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr12="expr12"></div></div>', [{
+      return template('<div class="gallery"><div expr7="expr7"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr13="expr13"><img expr14="expr14"/></a>', [{
+        'template': template('<a expr8="expr8"><img expr9="expr9"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3817,8 +3817,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr8',
+          'selector': '[expr8]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3829,8 +3829,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr9',
+          'selector': '[expr9]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3842,8 +3842,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr12',
-        'selector': '[expr12]',
+        'redundantAttribute': 'expr7',
+        'selector': '[expr7]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3939,7 +3939,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr17="expr17" class="close-button"></close-button><img expr18="expr18" class="sprite"/><div expr19="expr19" class="alt-images"></div><div class="info"><h2 expr22="expr22" class="name"> </h2><h3 expr23="expr23" class="team"></h3><h3 expr25="expr25" class="team"></h3><p expr26="expr26"> </p></div></div>',
+        '<div class="player-info"><close-button expr19="expr19" class="close-button"></close-button><img expr20="expr20" class="sprite"/><div expr21="expr21" class="alt-images"></div><div class="info"><h2 expr24="expr24" class="name"> </h2><h3 expr25="expr25" class="team"></h3><h3 expr27="expr27" class="team"></h3><p expr28="expr28"> </p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -3959,11 +3959,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr17',
-          'selector': '[expr17]'
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]'
         }, {
-          'redundantAttribute': 'expr18',
-          'selector': '[expr18]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3980,17 +3980,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr21',
+          'selector': '[expr21]',
 
-          'template': template('<div expr20="expr20" class="img-box"></div>', [{
+          'template': template('<div expr22="expr22" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr21="expr21"/>', [{
-              'redundantAttribute': 'expr21',
-              'selector': '[expr21]',
+            'template': template('<img expr23="expr23"/>', [{
+              'redundantAttribute': 'expr23',
+              'selector': '[expr23]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4009,8 +4009,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr20',
-            'selector': '[expr20]',
+            'redundantAttribute': 'expr22',
+            'selector': '[expr22]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4019,8 +4019,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr24',
+          'selector': '[expr24]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4037,10 +4037,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr25',
+          'selector': '[expr25]',
 
-          'template': template('<div expr24="expr24" class="smol-desc"></div> ', [{
+          'template': template('<div expr26="expr26" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4056,8 +4056,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr24',
-            'selector': '[expr24]',
+            'redundantAttribute': 'expr26',
+            'selector': '[expr26]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4071,12 +4071,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr25',
-          'selector': '[expr25]',
+          'redundantAttribute': 'expr27',
+          'selector': '[expr27]',
           'template': template('\r\n                Rest in Violence\r\n            ', [])
         }, {
-          'redundantAttribute': 'expr26',
-          'selector': '[expr26]',
+          'redundantAttribute': 'expr28',
+          'selector': '[expr28]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4121,7 +4121,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr15="expr15"></player-info>', [{
+      return template('<player-info expr10="expr10"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4156,8 +4156,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr15',
-        'selector': '[expr15]'
+        'redundantAttribute': 'expr10',
+        'selector': '[expr10]'
       }]);
     },
 
@@ -4170,10 +4170,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr16="expr16" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currenteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr295="expr295" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr295',
+          'selector': '[expr295]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4199,11 +4199,19 @@
       onBeforeMount() {
           this.state = {
               appliedFilters: [],
-              teamFilter: ''
+              teamFilter: '',
+              nameBeingSearched: ''
           };
       },
 
       onInputName(e) {
+          // Reset all filters when name is inputted
+          this.update({
+              appliedFilters: [],
+              teamFilter: '',
+              nameBeingSearched: e.target.value
+          });
+
           this.props.onFilterPlayerName(e.target.value);
       },
 
@@ -4211,33 +4219,42 @@
           // Add value to filter list if box is checked
           const filter = e.target.value;
           const currentFilters = this.state.appliedFilters;
+          let appliedFilters;
 
           if (e.target.checked) {
-              this.update({
-                  appliedFilters: currentFilters.concat([filter])
-              });
+              
+              appliedFilters = currentFilters.concat([filter]);
+              
           }
 
-          // Remove it if the box is unchecked
           else {
-              this.update({
-                  appliedFilters: currentFilters.filter(elem => elem != filter) 
-              });
+              // Remove it if the box is unchecked                
+              appliedFilters = currentFilters.filter(elem => elem != filter); 
+              
           }
 
-          if (!this.state.appliedFilters.length) {
-              // If no filter is applied, reset chosen team
-              this.update({
-                  teamFilter: ''
-              });
+          let updatedStates = {
+              appliedFilters,
+              nameBeingSearched: '' // Reset searchbar
+          };
+
+          // Reset team if all filters are turned off
+          if (!appliedFilters) {
+              updatedStates['teamFilter'] = '';
           }
+
+          
+          this.update(updatedStates);
 
           this.props.onChangeFilter(this.state);
       },
 
       onSelectTeam(e) {
+
+          // Reset searchbar
           this.update({
-              teamFilter: e.target.value
+              teamFilter: e.target.value,
+              nameBeingSearched: ''
           });
 
           this.props.onChangeFilter(this.state);
@@ -4246,10 +4263,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form class="gallery-filter"><div><input expr195="expr195" type="text" name="playername" placeholder="Search for player..."/></div><div><sort-control expr196="expr196"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><label class="filter-selector"><input expr197="expr197" type="checkbox" value="ismemberof"/>\r\n                Currently a member of\r\n            </label><label class="filter-selector"><input expr198="expr198" type="checkbox" value="wasmemberof"/>\r\n                Was a member of\r\n            </label><select expr199="expr199"><option value selected>Select a team</option><option expr200="expr200"></option></select></div></form>',
+        '<form class="gallery-filter"><div><input expr370="expr370" type="text" name="playername" placeholder="Search for player..."/></div><div><sort-control expr371="expr371"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><label class="filter-selector"><input expr372="expr372" type="checkbox" value="ismemberof"/>\r\n                Currently a member of\r\n            </label><label class="filter-selector"><input expr373="expr373" type="checkbox" value="wasmemberof"/>\r\n                Was a member of\r\n            </label><select expr374="expr374"><option value selected>Select a team</option><optgroup expr375="expr375"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr195',
-          'selector': '[expr195]',
+          'redundantAttribute': 'expr370',
+          'selector': '[expr370]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4257,6 +4274,12 @@
 
             'evaluate': function(scope) {
               return scope.onInputName;
+            }
+          }, {
+            'type': expressionTypes.VALUE,
+
+            'evaluate': function(scope) {
+              return scope.state.nameBeingSearched;
             }
           }]
         }, {
@@ -4278,11 +4301,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr196',
-          'selector': '[expr196]'
+          'redundantAttribute': 'expr371',
+          'selector': '[expr371]'
         }, {
-          'redundantAttribute': 'expr197',
-          'selector': '[expr197]',
+          'redundantAttribute': 'expr372',
+          'selector': '[expr372]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4291,10 +4314,17 @@
             'evaluate': function(scope) {
               return scope.onChangeFilter;
             }
+          }, {
+            'type': expressionTypes.ATTRIBUTE,
+            'name': 'checked',
+
+            'evaluate': function(scope) {
+              return scope.state.appliedFilters.includes('ismemberof');
+            }
           }]
         }, {
-          'redundantAttribute': 'expr198',
-          'selector': '[expr198]',
+          'redundantAttribute': 'expr373',
+          'selector': '[expr373]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4303,10 +4333,17 @@
             'evaluate': function(scope) {
               return scope.onChangeFilter;
             }
+          }, {
+            'type': expressionTypes.ATTRIBUTE,
+            'name': 'checked',
+
+            'evaluate': function(scope) {
+              return scope.state.appliedFilters.includes('wasmemberof');
+            }
           }]
         }, {
-          'redundantAttribute': 'expr199',
-          'selector': '[expr199]',
+          'redundantAttribute': 'expr374',
+          'selector': '[expr374]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4321,20 +4358,51 @@
           'getKey': null,
           'condition': null,
 
-          'template': template(' ', [{
+          'template': template('<option expr376="expr376"></option>', [{
             'expressions': [{
-              'type': expressionTypes.TEXT,
-              'childNodeIndex': 0,
+              'type': expressionTypes.ATTRIBUTE,
+              'name': 'label',
 
               'evaluate': function(scope) {
-                return scope.team;
+                return scope.subleague.name;
               }
             }]
+          }, {
+            'type': bindingTypes.EACH,
+            'getKey': null,
+            'condition': null,
+
+            'template': template(' ', [{
+              'expressions': [{
+                'type': expressionTypes.TEXT,
+                'childNodeIndex': 0,
+
+                'evaluate': function(scope) {
+                  return [scope.team].join('');
+                }
+              }, {
+                'type': expressionTypes.ATTRIBUTE,
+                'name': 'selected',
+
+                'evaluate': function(scope) {
+                  return scope.team === scope.state.teamFilter;
+                }
+              }]
+            }]),
+
+            'redundantAttribute': 'expr376',
+            'selector': '[expr376]',
+            'itemName': 'team',
+            'indexName': null,
+
+            'evaluate': function(scope) {
+              return scope.subleague.teams;
+            }
           }]),
 
-          'redundantAttribute': 'expr200',
-          'selector': '[expr200]',
-          'itemName': 'team',
+          'redundantAttribute': 'expr375',
+          'selector': '[expr375]',
+          'itemName': 'subleague',
           'indexName': null,
 
           'evaluate': function(scope) {
@@ -4353,7 +4421,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<p>#MiniBlaseball is a collection of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/HetreaSky" target="_blank">@PseudoMonious</a>! Source code is available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p><p>TODO: Make website looks nicer, improve filter control UX, make layout better on mobile. Use CSS variables for the colours. Night mode? Change default alt version for players?</p>',
+        '<p>#MiniBlaseball is a series of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/HetreaSky" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p><p>TODO: Add credits for the design. Improve filter control UX. Make layout better on mobile. Use CSS variables for the colours. Minify the JS. Anything else we can do to make this site look nicer? Night mode? Change default alt version for players?</p>',
         []
       );
     },
@@ -4367,10 +4435,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr193="expr193">\r\n            Sort & Filter\r\n        </li><li expr194="expr194">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr17="expr17">\r\n            Sort & Filter\r\n        </li><li expr18="expr18">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr193',
-          'selector': '[expr193]',
+          'redundantAttribute': 'expr17',
+          'selector': '[expr17]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4388,8 +4456,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr194',
-          'selector': '[expr194]',
+          'redundantAttribute': 'expr18',
+          'selector': '[expr18]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4411,6 +4479,20 @@
     },
 
     'name': 'sidebar-nav'
+  };
+
+  var SiteHeader = {
+    'css': `site-header header h1,[is="site-header"] header h1{ margin-bottom: 0.2em; } site-header header h5,[is="site-header"] header h5{ margin-top: 0; font-weight: 600; font-size: 1em; }`,
+    'exports': null,
+
+    'template': function(template, expressionTypes, bindingTypes, getComponent) {
+      return template(
+        '<header><h4>UNDER CONSTRUCTION!</h4><h1>#MiniBlaseball</h1><h5>Blaseball players art by @HetreaSky</h5></header>',
+        []
+      );
+    },
+
+    'name': 'site-header'
   };
 
   var PlayersData = [
@@ -6607,46 +6689,214 @@
   		sprites: [
   			"163SuttonBishop.png"
   		]
+  	},
+  	{
+  		index: 164,
+  		id: "nerd-pacheco",
+  		"full-name": "Nerd Pacheco",
+  		size: "small",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"164NerdPacheco.png"
+  		]
+  	},
+  	{
+  		index: 165,
+  		id: "scores-baserunner",
+  		"full-name": "Scores Baserunner",
+  		size: "small",
+  		team: "Boston Flowers",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"165ScoresBaserunner.png"
+  		]
+  	},
+  	{
+  		index: 166,
+  		id: "sosa-elftower",
+  		"full-name": "Sosa Elftower",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Yellowstone Magic"
+  		],
+  		sprites: [
+  			"166SosaElftower.png"
+  		]
+  	},
+  	{
+  		index: 167,
+  		id: "summers-preston",
+  		"full-name": "Summers Preston",
+  		size: "small",
+  		team: "Mexico City Wild Wings",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"167SummersPreston.png"
+  		]
+  	},
+  	{
+  		index: 168,
+  		id: "cedric-gonzalez",
+  		"full-name": "Cedric Gonzalez",
+  		size: "small",
+  		team: "RIV",
+  		"former-teams": [
+  			"Philly Pies"
+  		],
+  		sprites: [
+  			"168CedricGonzalez.png"
+  		]
+  	},
+  	{
+  		index: 169,
+  		id: "freemium-seraph",
+  		"full-name": "Freemium Seraph",
+  		size: "large",
+  		team: "Tokyo Lift",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"169FreemiumSeraph.png"
+  		]
+  	},
+  	{
+  		index: 170,
+  		id: "vito-kravitz",
+  		"full-name": "Vito Kravitz",
+  		size: "small",
+  		team: "Unlimited Tacos",
+  		"former-teams": [
+  			"Boston Flowers"
+  		],
+  		sprites: [
+  			"170VitoKravitz.png",
+  			"170VitoKravitzALT.png"
+  		]
+  	},
+  	{
+  		index: 171,
+  		id: "rat-mason",
+  		"full-name": "Rat Mason",
+  		size: "small",
+  		team: "Unlimited Tacos",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"171RatMason.png"
+  		]
+  	},
+  	{
+  		index: 172,
+  		id: "igneus-delacruz",
+  		"full-name": "Igneus Delacruz",
+  		size: "small",
+  		team: "Hellmouth Sunbeams",
+  		"former-teams": [
+  		],
+  		sprites: [
+  			"172IgneusDelacruz.png"
+  		]
   	}
   ];
 
+  var TeamsData = [
+  	{
+  		name: "Wild High",
+  		teams: [
+  			"Hades Tigers",
+  			"Chicago Firefighters",
+  			"Breckenridge Jazz Hands",
+  			"Mexico City Wild Wings",
+  			"Tokyo Lift"
+  		]
+  	},
+  	{
+  		name: "Wild Low",
+  		teams: [
+  			"Hellmouth Sunbeams",
+  			"Unlimited Tacos",
+  			"Houston Spies",
+  			"Miami Dale",
+  			"Boston Flowers"
+  		]
+  	},
+  	{
+  		name: "Mild High",
+  		teams: [
+  			"Seattle Garages",
+  			"Dallas Steaks",
+  			"San Francisco Lovers",
+  			"New York Millennials",
+  			"Philly Pies"
+  		]
+  	},
+  	{
+  		name: "Mild Low",
+  		teams: [
+  			"Charleston Shoe Thieves",
+  			"Canada Moist Talkers",
+  			"Hawai'i Fridays",
+  			"Kansas City Breath Mints",
+  			"Yellowstone Magic"
+  		]
+  	},
+  	{
+  		name: "Ascended",
+  		teams: [
+  			"Baltimore Crabs"
+  		]
+  	},
+  	{
+  		name: "Others",
+  		teams: [
+  			"THE SHELLED ONE'S PODS",
+  			"Hall Stars",
+  			"RIV"
+  		]
+  	}
+  ];
+
+  const teamsList = TeamsData.map(subleague => {
+      return subleague.teams
+  }).flat();
+
+  let teamsReverseId = {};
+
+  teamsList.forEach((teamname, index) => {
+      teamsReverseId[teamname] = index;
+  });
+
   var App = {
-    'css': `app,[is="app"]{ font-family: "Lora", sans-serif; } app .main-container,[is="app"] .main-container{ width: 98%; max-width: 1000px; margin: 20px auto 0 auto; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow: hidden; grid-template-columns: 280px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } @media (min-width: 1400px) { app .main-container,[is="app"] .main-container{ max-width: 80%; } } app .sidebar,[is="app"] .sidebar{ padding-right: 0.2em; max-width: 500px; } app header h1,[is="app"] header h1{ margin-bottom: 0.2em; } app header h5,[is="app"] header h5{ margin-top: 0; font-weight: 600; font-size: 1em; }`,
+    'css': `app,[is="app"]{ font-family: "Lora", sans-serif; } app .main-container,[is="app"] .main-container{ width: 98%; max-width: 1000px; margin: 20px auto 0 auto; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; overflow-x: hidden; } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow: hidden; grid-template-columns: 280px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } @media (min-width: 1400px) { app .main-container,[is="app"] .main-container{ max-width: 80%; } } app .sidebar,[is="app"] .sidebar{ padding-right: 0.2em; max-width: 500px; }`,
 
     'exports': {
-      components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl, Aboutbox, SidebarNav },
+      components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl, Aboutbox, SidebarNav, SiteHeader },
       playersData: PlayersData,
-      playersIdMap: PlayersData,
+      teamsData: TeamsData,
+      teamsList: teamsReverseId,
+
+      // This list contains teams in {teamname: index} format
+      // For sorting by teams
 
       onBeforeMount() {
           this.state = {
-              teamsList: this.createTeamsList(),
               playersShown: this.playersData,
               currentSortType: '',
               sidebarScreen: 'filter'
           };
+          
+          console.log(this.teamsData.map(subleague => {
+              return subleague.teams
+          }).flat());
       },
 
       getPlayerData(id) {
           return this.playersData.find(player => player.id === id)
-      },
-
-      createTeamsList() {
-          let teams = [];
-
-          this.playersData.forEach((player) => {
-              if (player.team === "Hall Stars" || player.team === "RIV") ; 
-
-              else if (!teams.includes(player.team)) {
-                  teams.push(player.team);
-              }
-          });
-
-          teams.push("THE SHELLED ONE'S PODS");
-          teams.push("Hall Stars");
-          teams.push("RIV");
-
-          return teams
       },
 
       filterPlayerName(nameToSearch) {
@@ -6657,26 +6907,31 @@
           this.update({
               playersShown
           });
+
+          this.applySort();
       },
 
       applyFilter(filterState) {
           const filters = filterState.appliedFilters;
           const team = filterState.teamFilter;
 
-          if (!filters.length) {
+
+          if (!filters.length || !team) {
               // No filter checkbox is checked
+              // Or no team to filter to is checked
+              // Return to default
+
+              this.update({
+                  playersShown: this.playersData
+              });
+
+              this.applySort();
+
               return
           }
-
-          if (!team) {
-              // No team to filter to is selected
-              return
-          }
-
 
           const playersShown = this.playersData.filter(player => {
               if (filters.includes("wasmemberof")) {
-                  console.log('WASMEMBER');
 
                   if (player['former-teams'].includes(team)) {
                       return true
@@ -6685,7 +6940,6 @@
               }
 
               if (filters.includes("ismemberof")) {
-                  console.log("ISMEMBER");
 
                   if (player['team'] === team) {
                       return true
@@ -6696,21 +6950,39 @@
               return false
           });
 
-          console.log(playersShown);
-
           this.update({
               playersShown
           });
+
+          this.applySort();
 
       },
 
       changeSort(e) {
           const sortType = e.target.value;
-          let playersShown = this.state.playersShown;
+
+          this.update({
+              currentSortType: sortType
+          });
+
+          this.applySort();
+      },
+
+      applySort() {
+          const sortType = this.state.currentSortType;
+
+          if (!sortType) {
+              // If no sortType is set (so it's still default)
+              // don't sort anything
+              return
+          }
 
           console.log(sortType);
 
+          let playersShown = this.state.playersShown;
+
           if (sortType === 'original') {
+              // Slice so we don't modify the original
               playersShown = playersShown.slice().sort((playera, playerb) => {
 
                   return playera.index - playerb.index
@@ -6735,9 +7007,28 @@
               });
           }
 
+          else if (sortType === 'currentteam') {
+
+              // Slice so we don't modify the original
+              const teamsList = this.teamsList;
+
+              playersShown = playersShown.slice().sort((playera, playerb) => {
+
+                  if (teamsList[playera['team']] < teamsList[playerb['team']]) {
+                      return -1
+                  }
+
+                  if (teamsList[playera['team']] > teamsList[playerb['team']]) {
+                      return 1
+                  }
+
+                  return 0
+
+              });
+          }
+
           this.update({
               playersShown,
-              currentSortType: sortType
           });
       },
 
@@ -6749,7 +7040,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<router expr215="expr215" base="/home"></router>', [{
+      return template('<router expr362="expr362" base="/home"></router>', [{
         'type': bindingTypes.TAG,
         'getComponent': getComponent,
 
@@ -6759,9 +7050,21 @@
 
         'slots': [{
           'id': 'default',
-          'html': '<div class="main-container"><div class="sidebar"><header><h1>#MiniBlaseball</h1><h5>Blaseball players art by @HetreaSky</h5></header><sidebar-nav expr216="expr216"></sidebar-nav><aboutbox expr217="expr217"></aboutbox><filter-control expr218="expr218"></filter-control></div><div class="main-content"><gallery expr219="expr219"></gallery></div></div><route expr220="expr220" path="/#:player"></route>',
+          'html': '<div class="main-container"><div class="sidebar"><site-header expr363="expr363"></site-header><sidebar-nav expr364="expr364"></sidebar-nav><aboutbox expr365="expr365"></aboutbox><filter-control expr366="expr366"></filter-control></div><div class="main-content"><gallery expr367="expr367"></gallery></div></div><route expr368="expr368" path="/#:player"></route>',
 
           'bindings': [{
+            'type': bindingTypes.TAG,
+            'getComponent': getComponent,
+
+            'evaluate': function(scope) {
+              return 'site-header';
+            },
+
+            'slots': [],
+            'attributes': [],
+            'redundantAttribute': 'expr363',
+            'selector': '[expr363]'
+          }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
 
@@ -6787,8 +7090,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr216',
-            'selector': '[expr216]'
+            'redundantAttribute': 'expr364',
+            'selector': '[expr364]'
           }, {
             'type': bindingTypes.IF,
 
@@ -6796,8 +7099,8 @@
               return scope.state.sidebarScreen === 'about';
             },
 
-            'redundantAttribute': 'expr217',
-            'selector': '[expr217]',
+            'redundantAttribute': 'expr365',
+            'selector': '[expr365]',
 
             'template': template(null, [{
               'type': bindingTypes.TAG,
@@ -6817,8 +7120,8 @@
               return scope.state.sidebarScreen === 'filter';
             },
 
-            'redundantAttribute': 'expr218',
-            'selector': '[expr218]',
+            'redundantAttribute': 'expr366',
+            'selector': '[expr366]',
 
             'template': template(null, [{
               'type': bindingTypes.TAG,
@@ -6835,7 +7138,7 @@
                 'name': 'teams',
 
                 'evaluate': function(scope) {
-                  return scope.state.teamsList;
+                  return scope.teamsData;
                 }
               }, {
                 'type': expressionTypes.EVENT,
@@ -6886,8 +7189,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr219',
-            'selector': '[expr219]'
+            'redundantAttribute': 'expr367',
+            'selector': '[expr367]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -6898,7 +7201,7 @@
 
             'slots': [{
               'id': 'default',
-              'html': '<overlay expr221="expr221"></overlay>',
+              'html': '<overlay expr369="expr369"></overlay>',
 
               'bindings': [{
                 'type': bindingTypes.TAG,
@@ -6919,20 +7222,20 @@
                   }
                 }],
 
-                'redundantAttribute': 'expr221',
-                'selector': '[expr221]'
+                'redundantAttribute': 'expr369',
+                'selector': '[expr369]'
               }]
             }],
 
             'attributes': [],
-            'redundantAttribute': 'expr220',
-            'selector': '[expr220]'
+            'redundantAttribute': 'expr368',
+            'selector': '[expr368]'
           }]
         }],
 
         'attributes': [],
-        'redundantAttribute': 'expr215',
-        'selector': '[expr215]'
+        'redundantAttribute': 'expr362',
+        'selector': '[expr362]'
       }]);
     },
 

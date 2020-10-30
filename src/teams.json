@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Wild High",
+        "teams": [
+            "Hades Tigers",
+            "Chicago Firefighters",
+            "Breckenridge Jazz Hands",
+            "Mexico City Wild Wings",
+            "Tokyo Lift"
+        ]
+    }, {
+        "name": "Wild Low",
+        "teams": [
+            "Hellmouth Sunbeams",
+            "Unlimited Tacos",
+            "Houston Spies",
+            "Miami Dale",
+            "Boston Flowers"
+        ]
+    }, {
+        "name": "Mild High",
+        "teams": [
+            "Seattle Garages",
+            "Dallas Steaks",
+            "San Francisco Lovers",
+            "New York Millennials",
+            "Philly Pies"
+        ]
+    }, {
+        "name": "Mild Low",
+        "teams": [
+            "Charleston Shoe Thieves",
+            "Canada Moist Talkers",
+            "Hawai'i Fridays",
+            "Kansas City Breath Mints",
+            "Yellowstone Magic"
+        ]
+    }, {
+        "name": "Ascended",
+        "teams": [
+            "Baltimore Crabs"
+        ]
+    }, {
+        "name": "Others",
+        "teams": [
+            "THE SHELLED ONE'S PODS",
+            "Hall Stars",
+            "RIV"
+        ]
+    } 
+]
