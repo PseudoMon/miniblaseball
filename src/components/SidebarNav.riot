@@ -20,6 +20,7 @@
         display: flex;
         justify-content: center;
     }
+    
     .sidebar-nav li {
         display: block;
         text-align: center;
@@ -30,16 +31,17 @@
         flex-grow: 1;
         border-radius: 0.5em;
         font-weight: 600;
+
+        cursor: pointer;
     }
 
     .sidebar-nav li:hover {
-        cursor: pointer;
-        background-color: #eeeeee;
+        background-color: var(--color-soft);
     }
 
     .sidebar-nav li.active {
-        border: solid black;
-        background-color: black;
+        border: solid var(--color-text);
+        background-color: var(--color-text);
         color: white;
     }
     </style>

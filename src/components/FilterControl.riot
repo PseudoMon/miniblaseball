@@ -1,13 +1,12 @@
 <filter-control>
     <form class="gallery-filter">
-        <div>
-            <input 
-                type="text" 
-                name="playername" 
-                placeholder="Search for player..." 
-                oninput={ onInputName }
-                value={ state.nameBeingSearched }>
-        </div>
+        <input 
+            type="text" 
+            name="playername" 
+            placeholder="Search for player..." 
+            oninput={ onInputName }
+            value={ state.nameBeingSearched }>
+      
 
         <div>
             <sort-control
@@ -19,26 +18,37 @@
             <h2>Filter</h2>
             <h3>Show players who are</h3>
 
-            <label class="filter-selector">
-                <input 
-                    type="checkbox" 
-                    onchange={ onChangeFilter }
-                    value="ismemberof"
-                    checked={ state.appliedFilters.includes('ismemberof') }>
-                Currently a member of
-            </label>
+            <div class="filter-selector">   
+                <div>
+                    <input 
+                        id="checkismemberof"
+                        type="checkbox" 
+                        onchange={ onChangeFilter }
+                        value="ismemberof"
+                        checked={ state.appliedFilters.includes('ismemberof') }>
+                    <label
+                        for="checkismemberof">
+                        Currently a member of
+                    </label>
+                </div>
 
-            <label class="filter-selector">
-                <input 
-                    type="checkbox" 
-                    onchange={ onChangeFilter }
-                    value="wasmemberof"
-                    checked={ state.appliedFilters.includes('wasmemberof') }>
-                Was a member of
-            </label>
+                <div>
+                    <input 
+                        id="checkwasmemberof"
+                        type="checkbox" 
+                        onchange={ onChangeFilter }
+                        value="wasmemberof"
+                        checked={ state.appliedFilters.includes('wasmemberof') }>
+                    <label
+                        for="checkwasmemberof">
+                        Was a member of
+                    </label>
+                </div>
+            </div>
 
              <select
-                onchange={ onSelectTeam }>
+                onchange={ onSelectTeam }
+                disabled={ !state.appliedFilters.length }>
                 <option value="" selected>Select a team</option>
                 <optgroup 
                     each={ subleague in props.teams} 
@@ -56,6 +66,10 @@
     </form>
 
     <style>
+    :host {
+        display: block;
+    }
+    
     .gallery-filter {
         text-align: left;
     }
@@ -72,8 +86,26 @@
     }
 
     .filter-selector {
-        display: block;
+    }
+
+    .filter-selector > div {
         margin-top: 0.5em;
+        cursor: pointer;
+
+        display: flex;
+    }
+
+    .filter-selector label {
+        display: block;
+        flex: 10;
+        padding-left: 0.5em;
+    }
+
+    .filter-selector input[type="checkbox"] {
+        width: 1em;
+    }
+
+    .filter-selector input:checked + label {
     }
 
     select {

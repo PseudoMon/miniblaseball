@@ -3,25 +3,27 @@
 
     <p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p>
 
-    <p>This website is built by <a href="https://twitter.com/HetreaSky" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p>
+    <p>This website is built by <a href="https://twitter.com/PseudoMonious" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p>
 
-
-    <p>TODO: Add credits for the design. Improve filter control UX. Make layout better on mobile. Use CSS variables for the colours. Minify the JS. Anything else we can do to make this site look nicer? Night mode? Change default alt version for players?</p>
+    <p>TODO: Add credits for the players' design. Make layout better on mobile. Use CSS variables for the colours. Minify the JS. Anything else we can do to make this site look nicer? Night mode? Change default alt version for players?</p>
 
     <style>
+    :host {
+        display: block;
+    }
     p { 
         line-height: 1.2; 
         letter-spacing: -0.016em;
     }
 
     a {
-        color: #5c5c5c;
+        color: var(--color-link);
         text-decoration: none;
         font-weight: 600;
     }
 
     a:hover {
-       color: #000;
+       color: var(--color-text);
        text-decoration: underline;
     }
     </style>

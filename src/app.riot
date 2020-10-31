@@ -9,17 +9,20 @@
                     open-screen={ selectSidebarScreen }>
                 </sidebar-nav>
 
-                <aboutbox
-                    if={ state.sidebarScreen === 'about' }>
-                </aboutbox>
 
                 <filter-control
-                    if= { state.sidebarScreen === 'filter' }
+                    style="{ setScreenDisplay('filter') }"
                     teams={ teamsData }
                     on-filter-player-name={ filterPlayerName }
                     on-change-filter={ applyFilter }
                     on-change-sort={ changeSort }>      
                 </filter-control>
+
+                <aboutbox
+                    if={ state.sidebarScreen === 'about' }>
+                </aboutbox>
+
+
             </div>
 
             <div class="main-content">
@@ -30,6 +33,12 @@
             </div>
 
         </div>
+
+        <totop-button
+            class="totop-button"
+            onClick={ scrollToTop }>
+        </totop-button>
+
         <route path="/#:player">
             <overlay 
                 player={ getPlayerData(route.params.player) }>
@@ -40,12 +49,27 @@
     <style>
     :host {
         font-family: "Lora", sans-serif;
+        --color-bg: #fff;
+        --color-text: #000;
+        --color-soft: #eee;
+        --color-link: #5c5c5c;
+
+        --color-modalbg: #494a46;
+        --color-overlaybg: rgba(0,0,0,0.6);
+
+        background-color: var(--color-bg);
     }
+
+    :host.darkmode {
+        --color-bg: #000;
+        --color-text: #fff;
+    };
 
     .main-container {
         width: 98%;
         max-width: 1000px;
-        margin: 20px auto 0 auto;
+        margin: 0 auto;
+        padding-top: 20px;
 
         height: calc(100vh - 20px);
 
@@ -54,6 +78,8 @@
         
         /* Prevent Peanutiel from overflowing */
         overflow-x: hidden; 
+
+        color: var(--color-text);
     }
 
     @media (min-width: 900px) {
@@ -74,8 +100,21 @@
     }
 
     .sidebar {
-        padding-right: 0.2em;
+        padding: 0 1em;
         max-width: 500px;
+        width: calc(100% - 2em);
+        margin: 0 auto;
+    }
+
+    @media (min-width: 900px) {
+        .sidebar {
+            padding: 0 0.2em;
+            width: 100%;
+        }
+
+        .totop-button {
+            display: none;
+        }
     }
     </style>
 
@@ -88,13 +127,14 @@
     import Aboutbox from './components/Aboutbox.riot'
     import SidebarNav from './components/SidebarNav.riot'
     import SiteHeader from './components/SiteHeader.riot'
+    import TotopButton from './components/TotopButton.riot'
 
     import PlayersData from './players.json'
     import TeamsData from './teams.json'
     import TeamsList from './teamsReverseId.js'
 
     export default {
-        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader },
+        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton },
 
         playersData: PlayersData,
 
@@ -258,6 +298,20 @@
             this.update({
                 sidebarScreen: screen
             })
+        },
+
+        setScreenDisplay(screen) {
+            if (screen === this.state.sidebarScreen) {
+                return 'display: block'
+            }
+
+            else {
+                return 'display: none'
+            }
+        },
+
+        scrollToTop() {
+            this.$('.main-container').scrollTo(0,0)
         }
 
     }
