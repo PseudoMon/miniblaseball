@@ -2,6 +2,7 @@
     <router base="/home">
         <div class="main-container">
             <div class="sidebar">
+                <button onclick={ toggleDarkmode }>Toggle dark mode</button>
                 <site-header></site-header>
 
                 <sidebar-nav
@@ -56,13 +57,18 @@
 
         --color-modalbg: #494a46;
         --color-overlaybg: rgba(0,0,0,0.6);
+        --color-modaltext: #fff;
 
         background-color: var(--color-bg);
     }
 
     :host.darkmode {
-        --color-bg: #000;
+        --color-bg: #111;
         --color-text: #fff;
+        --color-soft: #1b1b1b;
+        --color-link: #848484;
+
+        --color-modalbg: #1c1d1b;
     };
 
     .main-container {
@@ -84,8 +90,8 @@
 
     @media (min-width: 900px) {
         .main-container {
-            overflow: hidden;
-            grid-template-columns: 280px 1fr;
+            overflow-x: hidden;
+            grid-template-columns: 290px 1fr;
         }
 
         .sidebar, .main-content {
@@ -104,12 +110,15 @@
         max-width: 500px;
         width: calc(100% - 2em);
         margin: 0 auto;
+
+        box-sizing: border-box;
     }
 
     @media (min-width: 900px) {
         .sidebar {
             padding: 0 0.2em;
             width: 100%;
+            border-right: solid 3px var(--color-soft);
         }
 
         .totop-button {
@@ -150,10 +159,14 @@
                 currentSortType: '',
                 sidebarScreen: 'filter'
             }
-            
-            console.log(this.teamsData.map(subleague => {
-                return subleague.teams
-            }).flat())
+        },
+
+        onMounted() {
+            // this.root.classList.add('darkmode')
+
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+              this.root.classList.toggle('darkmode')
+            }
         },
 
 
@@ -312,6 +325,11 @@
 
         scrollToTop() {
             this.$('.main-container').scrollTo(0,0)
+        },
+
+        toggleDarkmode(e) {
+            e.preventDefault()
+            this.root.classList.toggle('darkmode')
         }
 
     }

@@ -1,5 +1,5 @@
 <filter-control>
-    <form class="gallery-filter">
+    <form class="gallery-filter" onsubmit={ (e) => {e.preventDefault()} }>
         <input 
             type="text" 
             name="playername" 
@@ -80,7 +80,8 @@
 
     input[type="text"] {
         border: none;
-        background: #eeeeee;
+        background: var(--color-soft);
+        color: var(--color-text);
         border-radius: .25rem;
         padding: .75rem 1rem;
     }
