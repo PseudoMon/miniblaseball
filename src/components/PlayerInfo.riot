@@ -5,7 +5,7 @@
             class="close-button">    
         </close-button>
 
-        <img class="sprite" src="images/{ state.viewedSprite }">
+        <img class="{ props.player.size === 'huge' ? 'sprite peanutiel' : 'sprite'}" src="images/{ state.viewedSprite }">
 
         <div if={ props.player.sprites.length > 1 }
             class="alt-images">
@@ -59,6 +59,13 @@
         max-width: 100%;
         height: var(--player-size);
         object-fit: none;
+    }
+
+    .sprite.peanutiel {
+        /* Will allow huge sprite to go over the limit */
+        max-width: initial;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     .player-info {

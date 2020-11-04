@@ -1,5 +1,6 @@
 dependencies:
   '@riotjs/route': 6.0.2
+  esbuild: 0.8.2
   riot: 4.14.0
 devDependencies:
   '@riotjs/compiler': 4.11.0
@@ -7,6 +8,7 @@ devDependencies:
   '@rollup/plugin-json': 4.1.0_rollup@2.32.1
   '@rollup/plugin-node-resolve': 9.0.0_rollup@2.32.1
   rollup: 2.32.1
+  rollup-plugin-esbuild: 2.5.2_esbuild@0.8.2+rollup@2.32.1
   rollup-plugin-riot: 4.0.2_7438a88e17945afc7e1af943b391ac52
 lockfileVersion: 5.2
 packages:
@@ -108,6 +110,18 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@rollup/pluginutils/4.1.0_rollup@2.32.1:
+    dependencies:
+      estree-walker: 2.0.1
+      picomatch: 2.2.2
+      rollup: 2.32.1
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==
   /@types/estree/0.0.39:
     dev: true
     resolution:
@@ -219,6 +233,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rM+EfZdJCC17CSBGyULHRHfHiUpElGLfAv0g2Eu+xQZOMPAaCZon0odOXKa3EsrCeO4VFKMpXNAGziUzIY0PEA==
+  /esbuild/0.8.2:
+    dev: false
+    hasBin: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-kR3+OtVSx8cRDmz4PcfQU4FsXnfhiBfJzAV3nX4oK84pH5y7HaGKiTKBl4e7lKzFSiHo05Lzpo2r2B89u5Vspg==
   /esprima/4.0.1:
     engines:
       node: '>=4'
@@ -307,6 +327,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==
+  /joycon/2.2.5:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-YqvUxoOcVPnCp0VU1/56f+iKSdvIRJYPznH22BdXV3xMk75SFXhWeJkZ8C9XxUWt1b5x2X1SxuFygW1U0FmkEQ==
   /magic-string/0.25.7:
     dependencies:
       sourcemap-codec: 1.4.8
@@ -383,6 +409,20 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-0qZgOZbcYa2IpDhh1u7aCBnL1CnnxUI1IaXrzuuKOOLAn+VK5Rd4yID5SraCHy38j+LzJBLDYFXdrUc56mJSrQ==
+  /rollup-plugin-esbuild/2.5.2_esbuild@0.8.2+rollup@2.32.1:
+    dependencies:
+      '@rollup/pluginutils': 4.1.0_rollup@2.32.1
+      esbuild: 0.8.2
+      joycon: 2.2.5
+      strip-json-comments: 3.1.1
+    dev: true
+    engines:
+      node: '>=12'
+    peerDependencies:
+      esbuild: ^0.6.0
+      rollup: '*'
+    resolution:
+      integrity: sha512-E4q3ac1AlMd0m0ZRYffdiorOt2eZcxfbdPaqBLs7JLnPE8krgIAihOD6cTUc54UJjoOMA9WcY63TR+JKWLzYNw==
   /rollup-plugin-riot/4.0.2_7438a88e17945afc7e1af943b391ac52:
     dependencies:
       '@riotjs/compiler': 4.11.0
@@ -427,6 +467,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+  /strip-json-comments/3.1.1:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
   /tslib/2.0.3:
     resolution:
       integrity: sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
@@ -449,6 +495,8 @@ specifiers:
   '@rollup/plugin-commonjs': ^15.1.0
   '@rollup/plugin-json': ^4.1.0
   '@rollup/plugin-node-resolve': ^9.0.0
+  esbuild: ^0.8.2
   riot: ^4.14.0
   rollup: ^2.28.2
+  rollup-plugin-esbuild: ^2.5.2
   rollup-plugin-riot: ^4.0.2

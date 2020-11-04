@@ -3871,7 +3871,7 @@
   };
 
   var PlayerInfo = {
-    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-xlarge: 320px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .player-info,[is="player-info"] .player-info{ width: 600px; max-width: 95%; box-sizing: border-box; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: var(--color-modalbg); color: var(--color-modaltext); text-align: center; position: relative; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-weight: 400; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
+    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-xlarge: 320px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .sprite.peanutiel,[is="player-info"] .sprite.peanutiel{ max-width: initial; margin-left: 50%; transform: translateX(-50%); } player-info .player-info,[is="player-info"] .player-info{ width: 600px; max-width: 95%; box-sizing: border-box; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: var(--color-modalbg); color: var(--color-modaltext); text-align: center; position: relative; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-weight: 400; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
 
     'exports': {
       components: { CloseButton },
@@ -3939,7 +3939,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr25="expr25" class="close-button"></close-button><img expr26="expr26" class="sprite"/><div expr27="expr27" class="alt-images"></div><div class="info"><h2 expr30="expr30" class="name"> </h2><h3 expr31="expr31" class="team"></h3><h3 expr33="expr33" class="team"></h3><p expr34="expr34"> </p></div></div>',
+        '<div class="player-info"><close-button expr26="expr26" class="close-button"></close-button><img expr27="expr27"/><div expr28="expr28" class="alt-images"></div><div class="info"><h2 expr31="expr31" class="name"> </h2><h3 expr32="expr32" class="team"></h3><h3 expr34="expr34" class="team"></h3><p expr35="expr35"> </p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -3959,13 +3959,20 @@
             }
           }],
 
-          'redundantAttribute': 'expr25',
-          'selector': '[expr25]'
-        }, {
           'redundantAttribute': 'expr26',
-          'selector': '[expr26]',
+          'selector': '[expr26]'
+        }, {
+          'redundantAttribute': 'expr27',
+          'selector': '[expr27]',
 
           'expressions': [{
+            'type': expressionTypes.ATTRIBUTE,
+            'name': 'class',
+
+            'evaluate': function(scope) {
+              return scope.props.player.size === 'huge' ? 'sprite peanutiel' : 'sprite';
+            }
+          }, {
             'type': expressionTypes.ATTRIBUTE,
             'name': 'src',
 
@@ -3980,17 +3987,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr27',
-          'selector': '[expr27]',
+          'redundantAttribute': 'expr28',
+          'selector': '[expr28]',
 
-          'template': template('<div expr28="expr28" class="img-box"></div>', [{
+          'template': template('<div expr29="expr29" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr29="expr29"/>', [{
-              'redundantAttribute': 'expr29',
-              'selector': '[expr29]',
+            'template': template('<img expr30="expr30"/>', [{
+              'redundantAttribute': 'expr30',
+              'selector': '[expr30]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4009,8 +4016,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr28',
-            'selector': '[expr28]',
+            'redundantAttribute': 'expr29',
+            'selector': '[expr29]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4019,8 +4026,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr30',
-          'selector': '[expr30]',
+          'redundantAttribute': 'expr31',
+          'selector': '[expr31]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4037,10 +4044,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr31',
-          'selector': '[expr31]',
+          'redundantAttribute': 'expr32',
+          'selector': '[expr32]',
 
-          'template': template('<div expr32="expr32" class="smol-desc"></div> ', [{
+          'template': template('<div expr33="expr33" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4056,8 +4063,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr32',
-            'selector': '[expr32]',
+            'redundantAttribute': 'expr33',
+            'selector': '[expr33]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4071,12 +4078,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr33',
-          'selector': '[expr33]',
-          'template': template('\r\n                Rest in Violence\r\n            ', [])
-        }, {
           'redundantAttribute': 'expr34',
           'selector': '[expr34]',
+          'template': template('\r\n                Rest in Violence\r\n            ', [])
+        }, {
+          'redundantAttribute': 'expr35',
+          'selector': '[expr35]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4121,7 +4128,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr13="expr13"></player-info>', [{
+      return template('<player-info expr23="expr23"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4156,8 +4163,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr13',
-        'selector': '[expr13]'
+        'redundantAttribute': 'expr23',
+        'selector': '[expr23]'
       }]);
     },
 
@@ -4170,10 +4177,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr35="expr35" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr25="expr25" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr35',
-          'selector': '[expr35]',
+          'redundantAttribute': 'expr25',
+          'selector': '[expr25]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4263,10 +4270,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr14="expr14" class="gallery-filter"><input expr15="expr15" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr16="expr16"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr17="expr17" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr18="expr18" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr19="expr19"><option value selected>Select a team</option><optgroup expr20="expr20"></optgroup></select></div></form>',
+        '<form expr15="expr15" class="gallery-filter"><input expr16="expr16" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr17="expr17"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr18="expr18" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr19="expr19" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr20="expr20"><option value selected>Select a team</option><optgroup expr21="expr21"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4277,8 +4284,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4313,11 +4320,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]'
-        }, {
           'redundantAttribute': 'expr17',
-          'selector': '[expr17]',
+          'selector': '[expr17]'
+        }, {
+          'redundantAttribute': 'expr18',
+          'selector': '[expr18]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4335,8 +4342,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr18',
-          'selector': '[expr18]',
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4354,8 +4361,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4377,7 +4384,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr21="expr21"></option>', [{
+          'template': template('<option expr22="expr22"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4409,8 +4416,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr21',
-            'selector': '[expr21]',
+            'redundantAttribute': 'expr22',
+            'selector': '[expr22]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4419,8 +4426,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr21',
+          'selector': '[expr21]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4440,7 +4447,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<p>#MiniBlaseball is a series of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/PseudoMonious" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p><p>TODO: Add credits for the players\' design. Minify the JS. Anything else we can do to make this site look nicer? Night mode? Change default alt version for players?</p>',
+        '<p>#MiniBlaseball is a series of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/PseudoMonious" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p><p>TODO: Add credits data for the players\' design. Make the night mode toggle look nicer. Minify the JS. Anything else we can do to make this site look nicer? Change default alt version for players?</p>',
         []
       );
     },
@@ -4454,10 +4461,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr22="expr22">\r\n            Sort & Filter\r\n        </li><li expr23="expr23">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr13="expr13">\r\n            Sort & Filter\r\n        </li><li expr14="expr14">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4475,8 +4482,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -6923,7 +6930,7 @@
   });
 
   var App = {
-    'css': `app,[is="app"]{ font-family: "Lora", sans-serif; --color-bg: #fff; --color-text: #000; --color-soft: #eee; --color-link: #5c5c5c; --color-modalbg: #494a46; --color-overlaybg: rgba(0,0,0,0.6); --color-modaltext: #fff; background-color: var(--color-bg); } app.darkmode,[is="app"].darkmode{ --color-bg: #111; --color-text: #fff; --color-soft: #1b1b1b; --color-link: #848484; --color-modalbg: #1c1d1b; } app .main-container,[is="app"] .main-container{ width: 98%; max-width: 1000px; margin: 0 auto; padding-top: 20px; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; overflow-x: hidden; color: var(--color-text); } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow-x: hidden; grid-template-columns: 290px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } @media (min-width: 1400px) { app .main-container,[is="app"] .main-container{ max-width: 80%; } } app .sidebar,[is="app"] .sidebar{ padding: 0 1em; max-width: 500px; width: calc(100% - 2em); margin: 0 auto; box-sizing: border-box; } @media (min-width: 900px) { app .sidebar,[is="app"] .sidebar{ padding: 0 0.2em; width: 100%; border-right: solid 3px var(--color-soft); } app .totop-button,[is="app"] .totop-button{ display: none; } }`,
+    'css': `app,[is="app"]{ font-family: "Lora", sans-serif; --color-bg: #fff; --color-text: #000; --color-soft: #eee; --color-link: #5c5c5c; --color-modalbg: #494a46; --color-overlaybg: rgba(0,0,0,0.6); --color-modaltext: #fff; background-color: var(--color-bg); } app.darkmode,[is="app"].darkmode{ --color-bg: #1c1d1b; --color-text: #fff; --color-soft: #2d2f32; --color-link: #848484; --color-modalbg: #1c1d1b; } app .main-container,[is="app"] .main-container{ width: 98%; max-width: 1000px; margin: 0 auto; padding-top: 20px; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; overflow-x: hidden; color: var(--color-text); } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow-x: hidden; grid-template-columns: 290px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } @media (min-width: 1400px) { app .main-container,[is="app"] .main-container{ max-width: 80%; } } app .sidebar,[is="app"] .sidebar{ padding: 0 1em; max-width: 500px; width: calc(100% - 2em); margin: 0 auto; box-sizing: border-box; } @media (min-width: 900px) { app .sidebar,[is="app"] .sidebar{ padding: 0 0.2em; width: 100%; border-right: solid 3px var(--color-soft); } app .totop-button,[is="app"] .totop-button{ display: none; } }`,
 
     'exports': {
       components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton },
