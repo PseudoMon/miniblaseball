@@ -3798,12 +3798,12 @@
     'exports': null,
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr11="expr11"></div></div>', [{
+      return template('<div class="gallery"><div expr22="expr22"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr12="expr12"><img expr13="expr13"/></a>', [{
+        'template': template('<a expr23="expr23"><img expr24="expr24"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3813,8 +3813,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr12',
-          'selector': '[expr12]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3825,8 +3825,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr24',
+          'selector': '[expr24]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3838,8 +3838,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr11',
-        'selector': '[expr11]',
+        'redundantAttribute': 'expr22',
+        'selector': '[expr22]',
         'itemName': 'player',
         'indexName': null,
 
@@ -4004,7 +4004,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr26="expr26" class="close-button"></close-button><img expr27="expr27"/><div expr28="expr28" class="alt-images"></div><div class="info"><h2 expr31="expr31" class="name"> </h2><h3 expr32="expr32" class="team"></h3><h3 expr34="expr34" class="team"></h3><p expr35="expr35"> </p><p expr36="expr36" class="credits-info"></p></div></div>',
+        '<div class="player-info"><close-button expr27="expr27" class="close-button"></close-button><img expr28="expr28"/><div expr29="expr29" class="alt-images"></div><div class="info"><h2 expr32="expr32" class="name"> </h2><h3 expr33="expr33" class="team"></h3><h3 expr35="expr35" class="team"></h3><p expr36="expr36"> </p><p expr37="expr37" class="credits-info"></p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -4024,11 +4024,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr26',
-          'selector': '[expr26]'
-        }, {
           'redundantAttribute': 'expr27',
-          'selector': '[expr27]',
+          'selector': '[expr27]'
+        }, {
+          'redundantAttribute': 'expr28',
+          'selector': '[expr28]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4052,17 +4052,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr28',
-          'selector': '[expr28]',
+          'redundantAttribute': 'expr29',
+          'selector': '[expr29]',
 
-          'template': template('<div expr29="expr29" class="img-box"></div>', [{
+          'template': template('<div expr30="expr30" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr30="expr30"/>', [{
-              'redundantAttribute': 'expr30',
-              'selector': '[expr30]',
+            'template': template('<img expr31="expr31"/>', [{
+              'redundantAttribute': 'expr31',
+              'selector': '[expr31]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4081,8 +4081,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr29',
-            'selector': '[expr29]',
+            'redundantAttribute': 'expr30',
+            'selector': '[expr30]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4091,8 +4091,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr31',
-          'selector': '[expr31]',
+          'redundantAttribute': 'expr32',
+          'selector': '[expr32]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4109,10 +4109,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr32',
-          'selector': '[expr32]',
+          'redundantAttribute': 'expr33',
+          'selector': '[expr33]',
 
-          'template': template('<div expr33="expr33" class="smol-desc"></div> ', [{
+          'template': template('<div expr34="expr34" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4128,8 +4128,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr33',
-            'selector': '[expr33]',
+            'redundantAttribute': 'expr34',
+            'selector': '[expr34]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4143,12 +4143,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr34',
-          'selector': '[expr34]',
-          'template': template('\r\n                Rest in Violence\r\n            ', [])
-        }, {
           'redundantAttribute': 'expr35',
           'selector': '[expr35]',
+          'template': template('\r\n                Rest in Violence\r\n            ', [])
+        }, {
+          'redundantAttribute': 'expr36',
+          'selector': '[expr36]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4165,10 +4165,10 @@
             return scope.state.credits;
           },
 
-          'redundantAttribute': 'expr36',
-          'selector': '[expr36]',
+          'redundantAttribute': 'expr37',
+          'selector': '[expr37]',
 
-          'template': template('<raw expr37="expr37"></raw>', [{
+          'template': template('<raw expr38="expr38"></raw>', [{
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
 
@@ -4187,8 +4187,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr37',
-            'selector': '[expr37]'
+            'redundantAttribute': 'expr38',
+            'selector': '[expr38]'
           }])
         }]
       );
@@ -4225,7 +4225,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr25="expr25"></player-info>', [{
+      return template('<player-info expr10="expr10"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4260,8 +4260,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr25',
-        'selector': '[expr25]'
+        'redundantAttribute': 'expr10',
+        'selector': '[expr10]'
       }]);
     },
 
@@ -4274,10 +4274,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr38="expr38" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr26="expr26" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr38',
-          'selector': '[expr38]',
+          'redundantAttribute': 'expr26',
+          'selector': '[expr26]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4367,10 +4367,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr14="expr14" class="gallery-filter"><input expr15="expr15" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr16="expr16"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr17="expr17" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr18="expr18" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr19="expr19"><option value selected>Select a team</option><optgroup expr20="expr20"></optgroup></select></div></form>',
+        '<form expr11="expr11" class="gallery-filter"><input expr12="expr12" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr13="expr13"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr14="expr14" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr15="expr15" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr16="expr16"><option value selected>Select a team</option><optgroup expr17="expr17"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4381,8 +4381,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]',
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4417,11 +4417,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]'
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]'
         }, {
-          'redundantAttribute': 'expr17',
-          'selector': '[expr17]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4439,8 +4439,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr18',
-          'selector': '[expr18]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4458,8 +4458,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4481,7 +4481,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr21="expr21"></option>', [{
+          'template': template('<option expr18="expr18"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4513,8 +4513,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr21',
-            'selector': '[expr21]',
+            'redundantAttribute': 'expr18',
+            'selector': '[expr18]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4523,8 +4523,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr17',
+          'selector': '[expr17]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4544,7 +4544,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<p>#MiniBlaseball is a series of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/PseudoMonious" target="_blank">@PseudoMonious</a>! Source code will be available <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>.</p><p>TODO: Add credits data for the players\' design. Make the night mode toggle look nicer. Minify the JS. Anything else we can do to make this site look nicer? Change default alt version for players?</p>',
+        '<p>#MiniBlaseball is a series of minis by <a href="https://twitter.com/HetreaSky" target="_blank">HetreaSky</a>, depicting the many players in <a href="https://blaseball.com" target="_blank">Internet League Blaseball</a>.</p><p>More players are still being added! Follow <a href="https://twitter.com/HetreaSky" target="_blank">@HetreaSky</a> on Twitter or the <a href="https://twitter.com/hashtag/MiniBlaseball" target="_blank">#MiniBlaseball</a> hashtag for updates!</p><p>This website is built by <a href="https://twitter.com/PseudoMonious" target="_blank">@PseudoMonious</a>. You can see the source code <a href="https://github.com/PseudoMon/miniblaseball" target="_blank">here</a>. DM her if there\'s anything wrong with the site!</p>',
         []
       );
     },
@@ -4558,10 +4558,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr22="expr22">\r\n            Sort & Filter\r\n        </li><li expr23="expr23">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr19="expr19">\r\n            Sort & Filter\r\n        </li><li expr20="expr20">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4579,8 +4579,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4610,7 +4610,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<header><h4>UNDER CONSTRUCTION!</h4><h1>#MiniBlaseball</h1><h5>Blaseball players art by @HetreaSky</h5></header>',
+        '<header><h1>#MiniBlaseball</h1><h5>Blaseball players art by @HetreaSky</h5></header>',
         []
       );
     },
@@ -4630,10 +4630,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<svg expr24="expr24" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
+        '<svg expr21="expr21" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
         [{
-          'redundantAttribute': 'expr24',
-          'selector': '[expr24]',
+          'redundantAttribute': 'expr21',
+          'selector': '[expr21]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4663,10 +4663,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<input id="theme-toggle" type="checkbox"/><span class="light">Light</span><div expr209="expr209" class="toggle"><span></span></div><span class="dark">Dark</span>',
+        '<input id="theme-toggle" type="checkbox"/><span class="light">Light</span><div expr25="expr25" class="toggle"><span></span></div><span class="dark">Dark</span>',
         [{
-          'redundantAttribute': 'expr209',
-          'selector': '[expr209]',
+          'redundantAttribute': 'expr25',
+          'selector': '[expr25]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -8403,7 +8403,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<router expr185="expr185" base="/home"></router>', [{
+      return template('<router expr0="expr0" base="/home"></router>', [{
         'type': bindingTypes.TAG,
         'getComponent': getComponent,
 
@@ -8413,7 +8413,7 @@
 
         'slots': [{
           'id': 'default',
-          'html': '<div class="main-container"><div class="sidebar"><dark-mode-toggle expr186="expr186"></dark-mode-toggle><site-header expr187="expr187"></site-header><sidebar-nav expr188="expr188"></sidebar-nav><filter-control expr189="expr189"></filter-control><aboutbox expr190="expr190"></aboutbox></div><div class="main-content"><gallery expr191="expr191"></gallery></div></div><totop-button expr192="expr192" class="totop-button"></totop-button><route expr193="expr193" path="/#:player"></route>',
+          'html': '<div class="main-container"><div class="sidebar"><dark-mode-toggle expr1="expr1"></dark-mode-toggle><site-header expr2="expr2"></site-header><sidebar-nav expr3="expr3"></sidebar-nav><filter-control expr4="expr4"></filter-control><aboutbox expr5="expr5"></aboutbox></div><div class="main-content"><gallery expr6="expr6"></gallery></div></div><totop-button expr7="expr7" class="totop-button"></totop-button><route expr8="expr8" path="/#:player"></route>',
 
           'bindings': [{
             'type': bindingTypes.TAG,
@@ -8434,8 +8434,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr186',
-            'selector': '[expr186]'
+            'redundantAttribute': 'expr1',
+            'selector': '[expr1]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8446,8 +8446,8 @@
 
             'slots': [],
             'attributes': [],
-            'redundantAttribute': 'expr187',
-            'selector': '[expr187]'
+            'redundantAttribute': 'expr2',
+            'selector': '[expr2]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8474,8 +8474,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr188',
-            'selector': '[expr188]'
+            'redundantAttribute': 'expr3',
+            'selector': '[expr3]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8523,8 +8523,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr189',
-            'selector': '[expr189]'
+            'redundantAttribute': 'expr4',
+            'selector': '[expr4]'
           }, {
             'type': bindingTypes.IF,
 
@@ -8532,8 +8532,8 @@
               return scope.state.sidebarScreen === 'about';
             },
 
-            'redundantAttribute': 'expr190',
-            'selector': '[expr190]',
+            'redundantAttribute': 'expr5',
+            'selector': '[expr5]',
 
             'template': template(null, [{
               'type': bindingTypes.TAG,
@@ -8572,8 +8572,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr191',
-            'selector': '[expr191]'
+            'redundantAttribute': 'expr6',
+            'selector': '[expr6]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8593,8 +8593,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr192',
-            'selector': '[expr192]'
+            'redundantAttribute': 'expr7',
+            'selector': '[expr7]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8605,7 +8605,7 @@
 
             'slots': [{
               'id': 'default',
-              'html': '<overlay expr194="expr194"></overlay>',
+              'html': '<overlay expr9="expr9"></overlay>',
 
               'bindings': [{
                 'type': bindingTypes.TAG,
@@ -8626,20 +8626,20 @@
                   }
                 }],
 
-                'redundantAttribute': 'expr194',
-                'selector': '[expr194]'
+                'redundantAttribute': 'expr9',
+                'selector': '[expr9]'
               }]
             }],
 
             'attributes': [],
-            'redundantAttribute': 'expr193',
-            'selector': '[expr193]'
+            'redundantAttribute': 'expr8',
+            'selector': '[expr8]'
           }]
         }],
 
         'attributes': [],
-        'redundantAttribute': 'expr185',
-        'selector': '[expr185]'
+        'redundantAttribute': 'expr0',
+        'selector': '[expr0]'
       }]);
     },
 
