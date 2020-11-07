@@ -1,8 +1,10 @@
 <gallery>
     <div class="gallery">
+
         <div each={ player in props.players } style="{ player.id === 'peanutiel-duffy' ? 'overflow: visible' : '' }">
             <a href="#{ player.id }">
                 <img
+                    onload={ onImageLoaded }
                     src={ `images/${player.sprites[ player['default-sprite'] ]}` }>
             </a>
         </div>
@@ -40,5 +42,30 @@
         height: 100%;
     }
     </style>
+
+    <script>
+    export default {
+        onBeforeMount() {
+            this.state = {
+                imagesLoaded: 0,
+                fullyLoaded: false
+            }
+        },
+
+        onImageLoaded() {
+            const imagesLoaded = this.state.imagesLoaded + 1
+
+            console.log('Total image loaded: ' + imagesLoaded)
+
+            if (imagesLoaded >= this.props.players.length) {
+                alert("All images loaded!")
+            } 
+
+            this.update({
+                imagesLoaded
+            })
+        }
+    }
+    </script>
 
 </gallery>
