@@ -3795,19 +3795,15 @@
 
   var Gallery = {
     'css': `gallery .gallery,[is="gallery"] .gallery{ --hover-color: var(--color-soft); --grid-width: 150px; display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--grid-width), 1fr)) } gallery .gallery img,[is="gallery"] .gallery img{ width: 100%; transition: background-color 0.5s; background-color: rgba(0,0,0,0); transform: scale(1.4, 1.4); } gallery .gallery > div,[is="gallery"] .gallery > div{ overflow: hidden; } gallery .gallery a:hover,[is="gallery"] .gallery a:hover{ background-color: var(--hover-color); } gallery .gallery a,[is="gallery"] .gallery a{ display: block; width: 100%; height: 100%; }`,
-
-    'exports': {
-      onBeforeMount(props, state) {
-      }
-    },
+    'exports': null,
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr19="expr19"></div></div>', [{
+      return template('<div class="gallery"><div expr21="expr21"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr20="expr20"><img expr21="expr21"/></a>', [{
+        'template': template('<a expr22="expr22"><img expr23="expr23"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3817,8 +3813,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr22',
+          'selector': '[expr22]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3829,8 +3825,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr21',
-          'selector': '[expr21]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3842,8 +3838,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr19',
-        'selector': '[expr19]',
+        'redundantAttribute': 'expr21',
+        'selector': '[expr21]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3999,7 +3995,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr146="expr146" class="close-button"></close-button><img expr147="expr147"/><div expr148="expr148" class="alt-images"></div><div class="info"><h2 expr151="expr151" class="name"> </h2><h3 expr152="expr152" class="team"></h3><h3 expr154="expr154" class="team"></h3><p expr155="expr155"> </p><p expr156="expr156" class="credits-info"></p></div></div>',
+        '<div class="player-info"><close-button expr25="expr25" class="close-button"></close-button><img expr26="expr26"/><div expr27="expr27" class="alt-images"></div><div class="info"><h2 expr30="expr30" class="name"> </h2><h3 expr31="expr31" class="team"></h3><h3 expr33="expr33" class="team"></h3><p expr34="expr34"> </p><p expr35="expr35" class="credits-info"></p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -4019,11 +4015,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr146',
-          'selector': '[expr146]'
+          'redundantAttribute': 'expr25',
+          'selector': '[expr25]'
         }, {
-          'redundantAttribute': 'expr147',
-          'selector': '[expr147]',
+          'redundantAttribute': 'expr26',
+          'selector': '[expr26]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4047,17 +4043,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr148',
-          'selector': '[expr148]',
+          'redundantAttribute': 'expr27',
+          'selector': '[expr27]',
 
-          'template': template('<div expr149="expr149" class="img-box"></div>', [{
+          'template': template('<div expr28="expr28" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr150="expr150"/>', [{
-              'redundantAttribute': 'expr150',
-              'selector': '[expr150]',
+            'template': template('<img expr29="expr29"/>', [{
+              'redundantAttribute': 'expr29',
+              'selector': '[expr29]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4076,8 +4072,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr149',
-            'selector': '[expr149]',
+            'redundantAttribute': 'expr28',
+            'selector': '[expr28]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4086,8 +4082,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr151',
-          'selector': '[expr151]',
+          'redundantAttribute': 'expr30',
+          'selector': '[expr30]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4104,10 +4100,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr152',
-          'selector': '[expr152]',
+          'redundantAttribute': 'expr31',
+          'selector': '[expr31]',
 
-          'template': template('<div expr153="expr153" class="smol-desc"></div> ', [{
+          'template': template('<div expr32="expr32" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4123,8 +4119,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr153',
-            'selector': '[expr153]',
+            'redundantAttribute': 'expr32',
+            'selector': '[expr32]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4138,12 +4134,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr154',
-          'selector': '[expr154]',
+          'redundantAttribute': 'expr33',
+          'selector': '[expr33]',
           'template': template('\r\n                Rest in Violence\r\n            ', [])
         }, {
-          'redundantAttribute': 'expr155',
-          'selector': '[expr155]',
+          'redundantAttribute': 'expr34',
+          'selector': '[expr34]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4160,10 +4156,10 @@
             return scope.state.credits;
           },
 
-          'redundantAttribute': 'expr156',
-          'selector': '[expr156]',
+          'redundantAttribute': 'expr35',
+          'selector': '[expr35]',
 
-          'template': template('<raw expr157="expr157"></raw>', [{
+          'template': template('<raw expr36="expr36"></raw>', [{
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
 
@@ -4182,8 +4178,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr157',
-            'selector': '[expr157]'
+            'redundantAttribute': 'expr36',
+            'selector': '[expr36]'
           }])
         }]
       );
@@ -4220,7 +4216,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr18="expr18"></player-info>', [{
+      return template('<player-info expr12="expr12"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4255,8 +4251,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr18',
-        'selector': '[expr18]'
+        'redundantAttribute': 'expr12',
+        'selector': '[expr12]'
       }]);
     },
 
@@ -4362,10 +4358,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr10="expr10" class="gallery-filter"><input expr11="expr11" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr12="expr12"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr13="expr13" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr14="expr14" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr15="expr15"><option value selected>Select a team</option><optgroup expr16="expr16"></optgroup></select></div></form>',
+        '<form expr13="expr13" class="gallery-filter"><input expr14="expr14" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr15="expr15"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr16="expr16" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr17="expr17" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr18="expr18"><option value selected>Select a team</option><optgroup expr19="expr19"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr10',
-          'selector': '[expr10]',
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4376,8 +4372,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr11',
-          'selector': '[expr11]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4412,11 +4408,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr12',
-          'selector': '[expr12]'
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]'
         }, {
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4434,8 +4430,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr17',
+          'selector': '[expr17]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4453,8 +4449,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]',
+          'redundantAttribute': 'expr18',
+          'selector': '[expr18]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4476,7 +4472,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr17="expr17"></option>', [{
+          'template': template('<option expr20="expr20"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4508,8 +4504,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr17',
-            'selector': '[expr17]',
+            'redundantAttribute': 'expr20',
+            'selector': '[expr20]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4518,8 +4514,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4553,10 +4549,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr22="expr22">\r\n            Sort & Filter\r\n        </li><li expr23="expr23">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr10="expr10">\r\n            Sort & Filter\r\n        </li><li expr11="expr11">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr10',
+          'selector': '[expr10]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4574,8 +4570,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,

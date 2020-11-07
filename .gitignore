@@ -1,3 +1,4 @@
 node_modules/*
 dist/images/*.png
 src/placeholders*
+dist/pycache/*

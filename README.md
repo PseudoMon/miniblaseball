@@ -15,15 +15,15 @@ If you want to run the scripts that generate players data, you'll need Python 3 
 You'll need something to run a server from the `dist` directory. I use Python's builtin simple server, but anything else will work. 
 
 ## Generating player data
-Running `pictojson.py` inside `dist/images` will generate a JSON file containing the data for all players. Players and their names are determined from the images and their filename. Size determination is (for now) manually coded into the script. Other metadata (like team placement) is in `extradata.eno`
+Running `processplayers.py` inside `dist/images` will generate a JSON file containing the data for all players. Players and their names are determined from the images and their filename. Size determination is (for now) manually coded into the script. Other metadata (like team placement) is in `extradata.eno`
 
 Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script already adjusts for players with "Mc" in their name (e.g. McDowell Mason), NaN, and Evelton McBlase II.
-
-For now you'll have to manually add the number of players into the Python file. 
 
 A player's "size" decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
 
 The generated JSON is automatically placed in `src/players.json`.
+
+Team data should be manually inputted into `teams.eno`. Running `processplayers.json` will also create the file containing teams data `src/teams.json`. 
 
 ## Running the website on your machine
 Install with this (or however your package manager install).

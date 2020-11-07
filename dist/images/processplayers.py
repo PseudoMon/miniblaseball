@@ -1,35 +1,6 @@
 import glob, json, enolib
-
-TEAMS = {
-    'tacos': "Unlimited Tacos",
-    'flowers': "Boston Flowers",
-    'sunbeams': "Hellmouth Sunbeams",
-    'spies': "Houston Spies",
-    'dale': "Miami Dale",
-
-    'tigers': "Hades Tigers",
-    'crabs': "Baltimore Crabs",
-    'lift': "Tokyo Lift",
-    'wild wings': "Mexico City Wild Wings",
-    'firefighters': "Chicago Firefighters",
-    'jazz hands': "Breckenridge Jazz Hands",
-
-    'garages': "Seattle Garages",
-    'steaks': "Dallas Steaks",
-    'lovers': "San Francisco Lovers",
-    'millennials': "New York Millennials",
-    'pies': "Philly Pies",
-
-    'shoe thieves': "Charleston Shoe Thieves",
-    'moist talkers': "Canada Moist Talkers",
-    'fridays': "Hawai'i Fridays",
-    'breath mints': "Kansas City Breath Mints",
-    'magic': "Yellowstone Magic",
-
-    'stars': "Hall Stars",
-    'riv': "RIV",
-    'pods': "THE SHELLED ONE'S PODS"  
-}
+from exportteams import teams_for_py as TEAMS
+# importing from exportteams should also create teams.json file
 
 with open('extradata.eno', 'r') as file:
     extradata_input = file.read()
@@ -218,10 +189,22 @@ def fillinCredits(players):
     return players
 
 
-# Manually add to the range when there are more blaseballers!
+def get_max_id():
+    """Get the largest ID / latest miniblaseballer created"""
+
+    # Get all images with 3 digits id 
+    # Since it's sorted alphabetically, the one at the end
+    # Is the one with the largest ID
+    max_id_sprite = glob.glob('[0-9][0-9][0-9]*.png')[-1]
+    max_id = int(max_id_sprite[0:3])
+
+    return max_id
+
+
+max_id = get_max_id()
 players = []
 
-for i in range(1,173):
+for i in range(1, max_id + 1):
 
     if i < 10:
         playerid = "0" + str(i)

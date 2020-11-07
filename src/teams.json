@@ -8,7 +8,8 @@
             "Mexico City Wild Wings",
             "Tokyo Lift"
         ]
-    }, {
+    },
+    {
         "name": "Wild Low",
         "teams": [
             "Hellmouth Sunbeams",
@@ -17,7 +18,8 @@
             "Miami Dale",
             "Boston Flowers"
         ]
-    }, {
+    },
+    {
         "name": "Mild High",
         "teams": [
             "Seattle Garages",
@@ -26,7 +28,8 @@
             "New York Millennials",
             "Philly Pies"
         ]
-    }, {
+    },
+    {
         "name": "Mild Low",
         "teams": [
             "Charleston Shoe Thieves",
@@ -35,17 +38,19 @@
             "Kansas City Breath Mints",
             "Yellowstone Magic"
         ]
-    }, {
+    },
+    {
         "name": "Ascended",
         "teams": [
             "Baltimore Crabs"
         ]
-    }, {
+    },
+    {
         "name": "Others",
         "teams": [
             "THE SHELLED ONE'S PODS",
             "Hall Stars",
             "RIV"
         ]
-    } 
+    }
 ]
