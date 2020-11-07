@@ -1,7 +1,9 @@
 # MiniBlaseball Website
-Hullo, this repository is for the code that runs the #MiniBlaseball website. I wrote this readme to my future self so I don't get lost if I want to get back to this, and well, I guess anyone who want to help fix bugs, or is learning frontend development!
+Hullo, this repository is for the code that runs the #MiniBlaseball website. I wrote this readme to my future self so I don't get lost if I want to get back to this, and well, I guess also for anyone who want to help fix bugs or is learning web development!
 
-This website is built with Riot and Rollup. It's designed to only run only in the frontend from a single file and a single address. I use some Python scripting to grab and collate metadata for each players, which is exported into a JSON and then loaded into the app.
+This website is built with Riot and Rollup. It's designed to only run only in the frontend from a single file and a single address. I use some Python scripting to grab and collate metadata for each players, which is exported into a JSON and then loaded into the app. 
+
+Metadata is taken from the images' filename and in a file written using the [Eno notation language](https://eno-lang.org/).
 
 Note that this repository does not contain the images! The website will look broken and you won't be able to run the Python scripts without them.
 
@@ -13,15 +15,13 @@ If you want to run the scripts that generate players data, you'll need Python 3 
 You'll need something to run a server from the `dist` directory. I use Python's builtin simple server, but anything else will work. 
 
 ## Generating player data
-Running `pictojson.py` inside `dist/images` will generate a JSON file containing the data for all players. Players and their names are determined from the images and their filename! Size determination is (for now) manually coded into the script. Other metadata (like team placement) is in `extradata.eno`
+Running `pictojson.py` inside `dist/images` will generate a JSON file containing the data for all players. Players and their names are determined from the images and their filename. Size determination is (for now) manually coded into the script. Other metadata (like team placement) is in `extradata.eno`
 
 Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script already adjusts for players with "Mc" in their name (e.g. McDowell Mason), NaN, and Evelton McBlase II.
 
 For now you'll have to manually add the number of players into the Python file. 
 
-A player's "size" just decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
-
-One day I'll figure out how to move these settings into a separate config file instead of hardcoded into the script.
+A player's "size" decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
 
 The generated JSON is automatically placed in `src/players.json`.
 
@@ -49,7 +49,7 @@ Most of the processing happens in the main `app.riot` file, with some components
 
 `teamsReverseId.js` contain codes that flatten that teams JSON into a single array, and then transform that array into an object in which team names become keys and their values is their index within that array. Savvy? It's for sorting by teams, so you can just compare their team index.
 
-Someday we'll find a way to integrate this with the Python script that generate players data, so it'll generate both players and teams data.
+Someday we'll find a way to automate creation of the team file.
 
 ## Readying for distribution
 Run rollup without using watch. It'll result in a minified production-ready file (todo: this is not yet true)
