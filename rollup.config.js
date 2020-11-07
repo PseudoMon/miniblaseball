@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json';
 
-import esbuild from 'rollup-plugin-esbuild'
+import { terser }  from 'rollup-plugin-terser'
 import riot from 'rollup-plugin-riot'
 
 const production = !process.env.ROLLUP_WATCH;
@@ -18,9 +18,6 @@ export default {
         json(),
         riot({ ext: 'riot' }),
         resolve(),
-        esbuild({
-          minify: production,
-          target: 'es2015'
-        }),
+        production ? terser() : null
     ]
 }
