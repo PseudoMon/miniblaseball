@@ -3,7 +3,7 @@
         <div each={ player in props.players } style="{ player.id === 'peanutiel-duffy' ? 'overflow: visible' : '' }">
             <a href="#{ player.id }">
                 <img
-                    src={ `images/${player.sprites[0]}` }>
+                    src={ `images/${player.sprites[ player['default-sprite'] ]}` }>
             </a>
         </div>
         

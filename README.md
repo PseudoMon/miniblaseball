@@ -8,9 +8,9 @@ Note that this repository does not contain the images! The website will look bro
 ## Requirements
 A recent version of Node and a Node package manager. I use PNPM, but it should work the same way if you use NPM or other package manager that uses the same package.json format.
 
-If you want to run the scripts that generate players data, you'll need Python 3.
+If you want to run the scripts that generate players data, you'll need Python 3 and the Python enolib package.
 
-You'll need something to run a server from the `dist` directory. I use Python's builtin simple server.  
+You'll need something to run a server from the `dist` directory. I use Python's builtin simple server, but anything else will work. 
 
 ## Generating player data
 Running `pictojson.py` inside `dist/images` will generate a JSON file containing the data for all players. Players and their names are determined from the images and their filename! Size determination is (for now) manually coded into the script. Other metadata (like team placement) is in `extradata.eno`

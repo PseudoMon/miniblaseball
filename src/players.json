@@ -11,6 +11,13 @@
         "sprites": [
             "01RichmondHarrison.png",
             "01RichmondHarrisonALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
         ]
     },
     {
@@ -22,6 +29,13 @@
         "former-teams": [],
         "sprites": [
             "02MikeTownsend.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://averybee.tumblr.com",
+                "text": "averybee"
+            }
         ]
     },
     {
@@ -38,6 +52,13 @@
             "03WyattQuitter.png",
             "03WyattQuitterALT.png",
             "03WyattQuitterALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -49,6 +70,13 @@
         "former-teams": [],
         "sprites": [
             "04ConnerHaley.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -60,6 +88,13 @@
         "former-teams": [],
         "sprites": [
             "05CoryTwelve.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
         ]
     },
     {
@@ -71,6 +106,13 @@
         "former-teams": [],
         "sprites": [
             "06StephanieWinters.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -85,7 +127,8 @@
         "sprites": [
             "07LandryViolence.png",
             "07LandryViolenceALT.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 8,
@@ -99,6 +142,13 @@
         "sprites": [
             "08CaligulaLotus.png",
             "08CaligulaLotusALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/freyquinn",
+                "text": "@freyquinn"
+            }
         ]
     },
     {
@@ -113,6 +163,13 @@
         "sprites": [
             "09KikiFamilia.png",
             "09KikiFamiliaALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
         ]
     },
     {
@@ -124,6 +181,17 @@
         "former-teams": [],
         "sprites": [
             "10NagomiNava.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/proximart0",
+                "text": "@proximart0"
+            },
+            {
+                "link": "https://twitter.com/alienmandy_",
+                "text": "@alienmandy_"
+            }
         ]
     },
     {
@@ -135,6 +203,13 @@
         "former-teams": [],
         "sprites": [
             "11ForrestBest.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/okaybutwhy9",
+                "text": "@okaybutwhy9"
+            }
         ]
     },
     {
@@ -155,6 +230,13 @@
             "12JessicaTelephoneALT2.png",
             "12JessicaTelephoneALT3.png",
             "12JessicaTelephoneALT4.png"
+        ],
+        "default-sprite": 4,
+        "credits": [
+            {
+                "link": "https://twitter.com/telekeys",
+                "text": "@telekeys"
+            }
         ]
     },
     {
@@ -166,6 +248,13 @@
         "former-teams": [],
         "sprites": [
             "13DonMitchell.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/gfclass",
+                "text": "@gfclass"
+            }
         ]
     },
     {
@@ -177,6 +266,13 @@
         "former-teams": [],
         "sprites": [
             "14BabyTriumphant.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {
@@ -188,6 +284,13 @@
         "former-teams": [],
         "sprites": [
             "15AlexandriaRosales.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
         ]
     },
     {
@@ -199,6 +302,13 @@
         "former-teams": [],
         "sprites": [
             "16LoweForbes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -213,7 +323,8 @@
         "sprites": [
             "17SixpackDogwalker.png",
             "17SixpackDogwalkerALT.png"
-        ]
+        ],
+        "default-sprite": 1
     },
     {
         "index": 18,
@@ -227,6 +338,13 @@
         "sprites": [
             "18DominicMarijuana.png",
             "18DominicMarijuanaALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
         ]
     },
     {
@@ -243,6 +361,13 @@
             "19RandallMarijuana.png",
             "19RandallMarijuanaALT.png",
             "19RandallMarijuanaALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alienmandy_",
+                "text": "@alienmandy_"
+            }
         ]
     },
     {
@@ -254,6 +379,13 @@
         "former-teams": [],
         "sprites": [
             "20DonElliott.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -268,6 +400,13 @@
         "sprites": [
             "21BoyfriendMonreal.png",
             "21BoyfriendMonrealALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/dancynrew",
+                "text": "@dancynrew"
+            }
         ]
     },
     {
@@ -279,7 +418,8 @@
         "former-teams": [],
         "sprites": [
             "22GuntherOBrian.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 23,
@@ -293,6 +433,13 @@
         "sprites": [
             "23FishSummer.png",
             "23FishSummerALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://instagram.com/lote_lake",
+                "text": "lote_lake"
+            }
         ]
     },
     {
@@ -304,6 +451,13 @@
         "former-teams": [],
         "sprites": [
             "24ZionAliciakeyes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
         ]
     },
     {
@@ -326,6 +480,13 @@
             "25JaylenHotdogfingersALT4.png",
             "25JaylenHotdogfingersALT5.png",
             "25JaylenHotdogfingersALT6.png"
+        ],
+        "default-sprite": 6,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -337,6 +498,13 @@
         "former-teams": [],
         "sprites": [
             "26ParkerMeng.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cari_guevara",
+                "text": "@cari_guevara"
+            }
         ]
     },
     {
@@ -353,6 +521,17 @@
             "27YorkSilk.png",
             "27YorkSilkALT.png",
             "27YorkSilkALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/fairchart",
+                "text": "@fairchart"
+            },
+            {
+                "link": "https://twitter.com/skelebells",
+                "text": "@skelebells"
+            }
         ]
     },
     {
@@ -371,6 +550,13 @@
             "28NaNALT.png",
             "28NaNALT2.png",
             "28NaNALT3.png"
+        ],
+        "default-sprite": 3,
+        "credits": [
+            {
+                "link": "https://twitter.com/Fancymancer",
+                "text": "@Fancymancer"
+            }
         ]
     },
     {
@@ -382,6 +568,13 @@
         "former-teams": [],
         "sprites": [
             "29RiversRosa.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
         ]
     },
     {
@@ -393,7 +586,8 @@
         "former-teams": [],
         "sprites": [
             "30MathVelazquez.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 31,
@@ -402,6 +596,7 @@
         "size": "small",
         "team": "Hawai'i Fridays",
         "former-teams": [
+            "Hades Tigers",
             "Baltimore Crabs",
             "Breckenridge Jazz Hands"
         ],
@@ -410,6 +605,17 @@
             "31NagomiMcDanielALT.png",
             "31NagomiMcDanielALT2.png",
             "31NagomiMcDanielALT3.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/kayleerowena",
+                "text": "@kayleerowena"
+            },
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -421,6 +627,13 @@
         "former-teams": [],
         "sprites": [
             "32KlineGreenlemon.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alienmandy_",
+                "text": "@alienmandy_"
+            }
         ]
     },
     {
@@ -439,6 +652,13 @@
             "33NolanestophiaPattersonALT.png",
             "33NolanestophiaPattersonALT2.png",
             "33NolanestophiaPattersonALT3.png"
+        ],
+        "default-sprite": 3,
+        "credits": [
+            {
+                "link": "https://twitter.com/ouhhoh",
+                "text": "@ouhhoh"
+            }
         ]
     },
     {
@@ -450,6 +670,13 @@
         "former-teams": [],
         "sprites": [
             "34ZiwaMueller.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
         ]
     },
     {
@@ -461,6 +688,13 @@
         "former-teams": [],
         "sprites": [
             "35LarsTaylor.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mimimicee",
+                "text": "@mimimicee"
+            }
         ]
     },
     {
@@ -474,7 +708,8 @@
         ],
         "sprites": [
             "36AnnieRoland.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 37,
@@ -485,6 +720,13 @@
         "former-teams": [],
         "sprites": [
             "37MargaritoNava.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -500,6 +742,13 @@
         "sprites": [
             "38SebastianTelephone.png",
             "38SebastianTelephoneALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fairchart",
+                "text": "@fairchart"
+            }
         ]
     },
     {
@@ -511,6 +760,13 @@
         "former-teams": [],
         "sprites": [
             "39AxelCardenas.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -524,6 +780,13 @@
         ],
         "sprites": [
             "40MiguelWheeler.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -535,6 +798,13 @@
         "former-teams": [],
         "sprites": [
             "41SilviaRugrat.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -549,6 +819,13 @@
         "sprites": [
             "42SosaHayes.png",
             "42SosaHayesALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -565,6 +842,13 @@
             "43HahnFox.png",
             "43HahnFoxALT.png",
             "43HahnFoxALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/artplebe",
+                "text": "@artplebe"
+            }
         ]
     },
     {
@@ -576,7 +860,8 @@
         "former-teams": [],
         "sprites": [
             "44QaisDogwalker.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 45,
@@ -587,7 +872,8 @@
         "former-teams": [],
         "sprites": [
             "45RodriguezInternet.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 46,
@@ -598,6 +884,13 @@
         "former-teams": [],
         "sprites": [
             "46CorneliusGames.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/kyl_armstrong",
+                "text": "@kyl_armstrong"
+            }
         ]
     },
     {
@@ -609,6 +902,13 @@
         "former-teams": [],
         "sprites": [
             "47ThomasDracaena.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
         ]
     },
     {
@@ -625,6 +925,13 @@
             "48PitchingMachine.png",
             "48PitchingMachineALT.png",
             "48PitchingMachineALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -638,6 +945,13 @@
         ],
         "sprites": [
             "49IsaacRubberman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -652,6 +966,13 @@
         "sprites": [
             "50NicholasMora.png",
             "50NicholasMoraALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/isitsernik",
+                "text": "@isitsernik"
+            }
         ]
     },
     {
@@ -664,6 +985,13 @@
         "sprites": [
             "51GoobieBallson.png",
             "51GoobieBallson1.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {
@@ -682,6 +1010,13 @@
             "52JoeVoorheesALT.png",
             "52JoeVoorheesALT2.png",
             "52JoeVoorheesALT3.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Spiral_Joe",
+                "text": "@Spiral_Joe"
+            }
         ]
     },
     {
@@ -693,6 +1028,13 @@
         "former-teams": [],
         "sprites": [
             "53KnightTriumphant.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -707,6 +1049,13 @@
         "sprites": [
             "54AllisonAbbott.png",
             "54AllisonAbbottALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -727,6 +1076,13 @@
             "55AxelTrolololALT2.png",
             "55AxelTrolololALT3.png",
             "55AxelTrolololALT4.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -738,6 +1094,13 @@
         "former-teams": [],
         "sprites": [
             "56InkyRutledge.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
         ]
     },
     {
@@ -749,6 +1112,13 @@
         "former-teams": [],
         "sprites": [
             "57SandieTurner.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/XtraJewrestrial",
+                "text": "@XtraJewrestrial"
+            }
         ]
     },
     {
@@ -760,7 +1130,8 @@
         "former-teams": [],
         "sprites": [
             "58TamaraCrankit.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 59,
@@ -771,6 +1142,13 @@
         "former-teams": [],
         "sprites": [
             "59KichiroGuerra.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cari_guevara",
+                "text": "@cari_guevara"
+            }
         ]
     },
     {
@@ -782,6 +1160,13 @@
         "former-teams": [],
         "sprites": [
             "60PattyFox.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mimimicee",
+                "text": "@mimimicee"
+            }
         ]
     },
     {
@@ -798,6 +1183,13 @@
             "61WyattPothos.png",
             "61WyattPothosALT.png",
             "61WyattPothosALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -809,6 +1201,13 @@
         "former-teams": [],
         "sprites": [
             "62CannonballSports.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CHURGALAX",
+                "text": "@CHURGALAX"
+            }
         ]
     },
     {
@@ -820,6 +1219,13 @@
         "former-teams": [],
         "sprites": [
             "63ElvisFigueroa.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/this_is_onjit",
+                "text": "@this_is_onjit"
+            }
         ]
     },
     {
@@ -831,6 +1237,13 @@
         "former-teams": [],
         "sprites": [
             "64FitzgeraldBlackburn.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/tsawac",
+                "text": "@tsawac"
+            }
         ]
     },
     {
@@ -845,6 +1258,13 @@
         "sprites": [
             "65TotFox.png",
             "65TotFoxALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://instagram.com/snortcrab",
+                "text": "snortcrab"
+            }
         ]
     },
     {
@@ -859,6 +1279,13 @@
         "sprites": [
             "66TillmanHenderson.png",
             "66TillmanHendersonALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/corpserevivers",
+                "text": "@corpserevivers"
+            }
         ]
     },
     {
@@ -875,6 +1302,13 @@
             "67OliverNotarobot.png",
             "67OliverNotarobotALT.png",
             "67OliverNotarobotALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CDPNhyphenK",
+                "text": "@CDPNhyphenK"
+            }
         ]
     },
     {
@@ -886,6 +1320,13 @@
         "former-teams": [],
         "sprites": [
             "68AdalbertoTosser.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -897,6 +1338,13 @@
         "former-teams": [],
         "sprites": [
             "69BloodHamburger.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
         ]
     },
     {
@@ -908,6 +1356,13 @@
         "former-teams": [],
         "sprites": [
             "70LeachIngram.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "RealHaman"
+            }
         ]
     },
     {
@@ -919,7 +1374,8 @@
         "former-teams": [],
         "sprites": [
             "71FranciscoPreston.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 72,
@@ -935,6 +1391,13 @@
             "72SpearsTaylor.png",
             "72SpearsTaylorALT.png",
             "72SpearsTaylorALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/wrendorphin",
+                "text": "@wrendorphin"
+            }
         ]
     },
     {
@@ -949,6 +1412,13 @@
         "sprites": [
             "73BeckWhitney.png",
             "73BeckWhitneyALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/pewterbee",
+                "text": "@pewterbee"
+            }
         ]
     },
     {
@@ -960,6 +1430,13 @@
         "former-teams": [],
         "sprites": [
             "74LouRoseheart.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/kayleerowena",
+                "text": "@kayleerowena"
+            }
         ]
     },
     {
@@ -974,7 +1451,8 @@
         "sprites": [
             "75SigmundCastillo.png",
             "75SigmundCastilloALT.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 76,
@@ -987,6 +1465,13 @@
         ],
         "sprites": [
             "76ChorbySoul.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/apolante_art",
+                "text": "@apolante_art"
+            }
         ]
     },
     {
@@ -998,6 +1483,13 @@
         "former-teams": [],
         "sprites": [
             "77CarmeloPlums.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Sovenas_Ark",
+                "text": "@Sovenas_Ark"
+            }
         ]
     },
     {
@@ -1009,6 +1501,13 @@
         "former-teams": [],
         "sprites": [
             "78SextonWheerer.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -1020,6 +1519,13 @@
         "former-teams": [],
         "sprites": [
             "79SonScotch.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1033,6 +1539,13 @@
         ],
         "sprites": [
             "80AtlasJonbois.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1044,7 +1557,8 @@
         "former-teams": [],
         "sprites": [
             "81WasherBarajas.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 82,
@@ -1058,6 +1572,13 @@
         "sprites": [
             "82WinnieHess.png",
             "82WinnieHessALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ghostwriterish",
+                "text": "@ghostwriterish"
+            }
         ]
     },
     {
@@ -1069,6 +1590,13 @@
         "former-teams": [],
         "sprites": [
             "83CellBarajas.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
         ]
     },
     {
@@ -1083,7 +1611,8 @@
         "sprites": [
             "84AugustSky.png",
             "84AugustSkyALT.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 85,
@@ -1094,6 +1623,13 @@
         "former-teams": [],
         "sprites": [
             "85MalikDestiny.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -1110,6 +1646,13 @@
             "86FarrellSeagull.png",
             "86FarrellSeagullALT.png",
             "86FarrellSeagullALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -1121,6 +1664,13 @@
         "former-teams": [],
         "sprites": [
             "87FletcherYamamoto.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/phrenicquake",
+                "text": "@phrenicquake"
+            }
         ]
     },
     {
@@ -1135,6 +1685,13 @@
         "sprites": [
             "88AlaynabellaHollywood.png",
             "88AlaynabellaHollywoodALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1146,6 +1703,13 @@
         "former-teams": [],
         "sprites": [
             "89JoshuaButt.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {
@@ -1160,6 +1724,13 @@
         "sprites": [
             "90PenelopeMathews.png",
             "90PenelopeMathewsALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/freddeye",
+                "text": "@freddeye"
+            }
         ]
     },
     {
@@ -1171,6 +1742,13 @@
         "former-teams": [],
         "sprites": [
             "91OrtizLopez.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cari_guevara",
+                "text": "@cari_guevara"
+            }
         ]
     },
     {
@@ -1185,6 +1763,13 @@
         "sprites": [
             "92HalexandreyWalton.png",
             "92HalexandreyWaltonALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -1198,6 +1783,13 @@
         ],
         "sprites": [
             "93MikiSantana.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mimimicee",
+                "text": "@mimimicee"
+            }
         ]
     },
     {
@@ -1209,6 +1801,13 @@
         "former-teams": [],
         "sprites": [
             "94StuTrololol.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/stutrololol",
+                "text": "@stutrololol"
+            }
         ]
     },
     {
@@ -1220,7 +1819,8 @@
         "former-teams": [],
         "sprites": [
             "95MarquezClark.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 96,
@@ -1231,6 +1831,13 @@
         "former-teams": [],
         "sprites": [
             "96AganHarrison.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1244,6 +1851,17 @@
         ],
         "sprites": [
             "97TylerViolet.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            },
+            {
+                "link": "https://twitter.com/telekeys",
+                "text": "@telekeys"
+            }
         ]
     },
     {
@@ -1260,6 +1878,13 @@
             "98JoshuaWatson.png",
             "98JoshuaWatsonALT.png",
             "98JoshuaWatsonALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1271,6 +1896,13 @@
         "former-teams": [],
         "sprites": [
             "99LeachHerman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BearOverdrive",
+                "text": "@BearOverdrive"
+            }
         ]
     },
     {
@@ -1287,6 +1919,13 @@
             "100YazminMason.png",
             "100YazminMasonALT.png",
             "100YazminMasonALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
         ]
     },
     {
@@ -1298,6 +1937,13 @@
         "former-teams": [],
         "sprites": [
             "101JuiceCollins.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/jellibeaver",
+                "text": "@jellibeaver"
+            }
         ]
     },
     {
@@ -1309,6 +1955,13 @@
         "former-teams": [],
         "sprites": [
             "102JasmineWashington.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MiamiD_Jasmine",
+                "text": "@MiamiD_Jasmine"
+            }
         ]
     },
     {
@@ -1320,6 +1973,13 @@
         "former-teams": [],
         "sprites": [
             "103InezOwens.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://instagram.com/whyica",
+                "text": "whyica"
+            }
         ]
     },
     {
@@ -1334,6 +1994,17 @@
         "sprites": [
             "104AlexanderHorne.png",
             "104AlexanderHorneALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/karanga_",
+                "text": "@karanga_"
+            },
+            {
+                "link": "https://twitter.com/cryptmilk",
+                "text": "@cryptmilk"
+            }
         ]
     },
     {
@@ -1345,6 +2016,13 @@
         "former-teams": [],
         "sprites": [
             "105PudgeNakamoto.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1359,6 +2037,13 @@
         "sprites": [
             "106ElijahValenzuela.png",
             "106ElijahValenzuelaALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
         ]
     },
     {
@@ -1375,6 +2060,13 @@
             "107AlejandroLeaf.png",
             "107AlejandroLeafALT.png",
             "107AlejandroLeafALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/ElevenQuietSeas",
+                "text": "@ElevenQuietSeas"
+            }
         ]
     },
     {
@@ -1389,6 +2081,13 @@
         "sprites": [
             "108LuisAcevedo.png",
             "108LuisAcevedoALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/corpserevivers",
+                "text": "@corpserevivers"
+            }
         ]
     },
     {
@@ -1400,6 +2099,13 @@
         "former-teams": [],
         "sprites": [
             "109FynnDoyle.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1415,6 +2121,13 @@
         "sprites": [
             "110ThomasKirby.png",
             "110ThomasKirbyALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {
@@ -1426,6 +2139,13 @@
         "former-teams": [],
         "sprites": [
             "111ChorbyShort.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
         ]
     },
     {
@@ -1437,6 +2157,13 @@
         "former-teams": [],
         "sprites": [
             "112LoganHorseman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CHURGALAX",
+                "text": "@CHURGALAX"
+            }
         ]
     },
     {
@@ -1453,6 +2180,13 @@
             "113PeanutielDuffy.png",
             "113PeanutielDuffyALT.png",
             "113PeanutielDuffyALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/tombofnull",
+                "text": "@tombofnull"
+            }
         ]
     },
     {
@@ -1469,6 +2203,13 @@
             "114PeanutHolloway.png",
             "114PeanutHollowayALT.png",
             "114PeanutHollowayALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/this_is_onjit",
+                "text": "@this_is_onjit"
+            }
         ]
     },
     {
@@ -1485,6 +2226,13 @@
             "115PeanutBong.png",
             "115PeanutBongALT.png",
             "115PeanutBongALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/CHURGALAX",
+                "text": "@CHURGALAX"
+            }
         ]
     },
     {
@@ -1499,6 +2247,17 @@
         "sprites": [
             "116HotboxSato.png",
             "116HotboxSatoALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "big Opus"
+            },
+            {
+                "link": "",
+                "text": "Faevolf"
+            }
         ]
     },
     {
@@ -1513,6 +2272,13 @@
         "sprites": [
             "117HowellFranklin.png",
             "117HowellFranklinALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/kyl_armstrong",
+                "text": "@kyl_armstrong"
+            }
         ]
     },
     {
@@ -1529,6 +2295,13 @@
             "118WorkmanGloom.png",
             "118WorkmanGloomALT.png",
             "118WorkmanGloomALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
         ]
     },
     {
@@ -1543,6 +2316,13 @@
         "sprites": [
             "119BeasleyGloom.png",
             "119BeasleyGloomALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
         ]
     },
     {
@@ -1554,6 +2334,13 @@
         "former-teams": [],
         "sprites": [
             "120EsmeRamsey.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "grr"
+            }
         ]
     },
     {
@@ -1565,6 +2352,13 @@
         "former-teams": [],
         "sprites": [
             "121WyattDovenpart.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -1579,6 +2373,13 @@
         "sprites": [
             "122BasilioFig.png",
             "122BasilioFigALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1593,6 +2394,13 @@
         "sprites": [
             "123QuackEnjoyable.png",
             "123QuackEnjoyableALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
         ]
     },
     {
@@ -1609,6 +2417,17 @@
             "124SummersPony.png",
             "124SummersPonyALT.png",
             "124SummersPonyALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "snerkus"
+            },
+            {
+                "link": "https://twitter.com/_GreyWhite",
+                "text": "@_GreyWhite"
+            }
         ]
     },
     {
@@ -1620,6 +2439,13 @@
         "former-teams": [],
         "sprites": [
             "125EveltonMcBlase.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
         ]
     },
     {
@@ -1636,6 +2462,13 @@
             "126EveltonMcBlaseII.png",
             "126EveltonMcBlaseIIALT.png",
             "126EveltonMcBlaseIIALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
         ]
     },
     {
@@ -1647,6 +2480,13 @@
         "former-teams": [],
         "sprites": [
             "127LennySpruce.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "RealHaman"
+            }
         ]
     },
     {
@@ -1658,6 +2498,17 @@
         "former-teams": [],
         "sprites": [
             "128HirotoCerna.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/anarcourier",
+                "text": "@anarcourier"
+            },
+            {
+                "link": "https://twitter.com/annapullara",
+                "text": "@annapullara"
+            }
         ]
     },
     {
@@ -1671,6 +2522,13 @@
         ],
         "sprites": [
             "129MiguelJavier.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1684,6 +2542,13 @@
         ],
         "sprites": [
             "130PaulBarnes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1695,6 +2560,13 @@
         "former-teams": [],
         "sprites": [
             "131WaltonSports.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "rocketknife"
+            }
         ]
     },
     {
@@ -1709,6 +2581,13 @@
         "sprites": [
             "132EmmettInternet.png",
             "132EmmettInternetALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/churgalax",
+                "text": "@churgalax"
+            }
         ]
     },
     {
@@ -1729,6 +2608,13 @@
             "133ValentineGamesALT2.png",
             "133ValentineGamesALT3.png",
             "133ValentineGamesALT4.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/deerstained",
+                "text": "@deerstained"
+            }
         ]
     },
     {
@@ -1743,6 +2629,13 @@
         "sprites": [
             "134BetsyTrombone.png",
             "134BetsyTromboneALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "cassiterine"
+            }
         ]
     },
     {
@@ -1754,6 +2647,13 @@
         "former-teams": [],
         "sprites": [
             "135NandyFantastic.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -1765,7 +2665,8 @@
         "former-teams": [],
         "sprites": [
             "136OscarDollie.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 137,
@@ -1776,6 +2677,13 @@
         "former-teams": [],
         "sprites": [
             "137SocksMaybe.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {
@@ -1790,6 +2698,13 @@
         "sprites": [
             "138KennedyMeh.png",
             "138KennedyMehALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Lucacrafts",
+                "text": "@Lucacrafts"
+            }
         ]
     },
     {
@@ -1805,6 +2720,13 @@
         "sprites": [
             "139ForrestBookbaby.png",
             "139ForrestBookbabyALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/raevpet",
+                "text": "@raevpet"
+            }
         ]
     },
     {
@@ -1816,6 +2738,13 @@
         "former-teams": [],
         "sprites": [
             "140GreyAlvarado.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1830,6 +2759,13 @@
         "sprites": [
             "141SuttonDreamy.png",
             "141SuttonDreamyALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/kayleerowena",
+                "text": "@kayleerowena"
+            }
         ]
     },
     {
@@ -1841,6 +2777,13 @@
         "former-teams": [],
         "sprites": [
             "142KennedyLoser.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1852,6 +2795,13 @@
         "former-teams": [],
         "sprites": [
             "143SilvaireRoadhouse.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/toasthaste",
+                "text": "@toasthaste"
+            }
         ]
     },
     {
@@ -1865,6 +2815,13 @@
         ],
         "sprites": [
             "144CombsDuende.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Shiraffetopus",
+                "text": "@Shiraffetopus"
+            }
         ]
     },
     {
@@ -1878,6 +2835,13 @@
         ],
         "sprites": [
             "145MoodyCookbook.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1889,6 +2853,13 @@
         "former-teams": [],
         "sprites": [
             "146NagomiMeng.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/RedBirdRabbit",
+                "text": "@RedBirdRabbit"
+            }
         ]
     },
     {
@@ -1900,6 +2871,13 @@
         "former-teams": [],
         "sprites": [
             "147HirotoWilcox.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
         ]
     },
     {
@@ -1911,6 +2889,13 @@
         "former-teams": [],
         "sprites": [
             "148DunlapFigueroa.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Gatrdile",
+                "text": "@Gatrdile"
+            }
         ]
     },
     {
@@ -1925,7 +2910,8 @@
         "sprites": [
             "149TyreekOlive.png",
             "149TyreekOliveALT.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 150,
@@ -1941,6 +2927,13 @@
             "150MorrowDoyle.png",
             "150MorrowDoyleALT.png",
             "150MorrowDoyleALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -1955,6 +2948,13 @@
         "sprites": [
             "151SebastianSunshine.png",
             "151SebastianSunshineALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CocacolaGarlic",
+                "text": "@CocacolaGarlic"
+            }
         ]
     },
     {
@@ -1969,6 +2969,13 @@
         "sprites": [
             "152ScrapMurphy.png",
             "152ScrapMurphyALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "wormtongue"
+            }
         ]
     },
     {
@@ -1985,6 +2992,13 @@
             "153AldonCashmoney.png",
             "153AldonCashmoneyALT.png",
             "153AldonCashmoneyALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/skelebells",
+                "text": "@skelebells"
+            }
         ]
     },
     {
@@ -1996,6 +3010,13 @@
         "former-teams": [],
         "sprites": [
             "154McDowellMason.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -2012,6 +3033,13 @@
             "155FranciscaSasquatch.png",
             "155FranciscaSasquatchALT.png",
             "155FranciscaSasquatchALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -2028,6 +3056,13 @@
             "156PatelBeyonce.png",
             "156PatelBeyonceALT.png",
             "156PatelBeyonceALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/annapullara",
+                "text": "@annapullara"
+            }
         ]
     },
     {
@@ -2039,6 +3074,13 @@
         "former-teams": [],
         "sprites": [
             "157MummyMelcon.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
         ]
     },
     {
@@ -2053,6 +3095,17 @@
         "sprites": [
             "158PaulaTurnip.png",
             "158PaulaTurnipALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mossbabe_",
+                "text": "@mossbabe_"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -2064,6 +3117,13 @@
         "former-teams": [],
         "sprites": [
             "159RenMorin.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Sphr_AM",
+                "text": "@Sphr_AM"
+            }
         ]
     },
     {
@@ -2075,6 +3135,17 @@
         "former-teams": [],
         "sprites": [
             "160UsurperViolet.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            },
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
         ]
     },
     {
@@ -2086,6 +3157,17 @@
         "former-teams": [],
         "sprites": [
             "161DudleyMueller.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/larkiiiine",
+                "text": "@larkiiiine"
+            },
+            {
+                "link": "https://twitter.com/karagna_",
+                "text": "@karagna_"
+            }
         ]
     },
     {
@@ -2097,6 +3179,13 @@
         "former-teams": [],
         "sprites": [
             "162SandovalCrossing.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/proximart0",
+                "text": "@proximart0"
+            }
         ]
     },
     {
@@ -2108,6 +3197,13 @@
         "former-teams": [],
         "sprites": [
             "163SuttonBishop.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/churgalax",
+                "text": "@churgalax"
+            }
         ]
     },
     {
@@ -2119,6 +3215,13 @@
         "former-teams": [],
         "sprites": [
             "164NerdPacheco.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Karagna_",
+                "text": "@Karagna_"
+            }
         ]
     },
     {
@@ -2130,6 +3233,13 @@
         "former-teams": [],
         "sprites": [
             "165ScoresBaserunner.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://alangdorf.tumblr.com",
+                "text": "alangdorf"
+            }
         ]
     },
     {
@@ -2143,6 +3253,13 @@
         ],
         "sprites": [
             "166SosaElftower.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -2154,6 +3271,13 @@
         "former-teams": [],
         "sprites": [
             "167SummersPreston.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -2167,6 +3291,13 @@
         ],
         "sprites": [
             "168CedricGonzalez.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -2178,6 +3309,13 @@
         "former-teams": [],
         "sprites": [
             "169FreemiumSeraph.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/starfauna",
+                "text": "@starfauna"
+            }
         ]
     },
     {
@@ -2192,6 +3330,13 @@
         "sprites": [
             "170VitoKravitz.png",
             "170VitoKravitzALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -2203,7 +3348,8 @@
         "former-teams": [],
         "sprites": [
             "171RatMason.png"
-        ]
+        ],
+        "default-sprite": 0
     },
     {
         "index": 172,
@@ -2214,6 +3360,13 @@
         "former-teams": [],
         "sprites": [
             "172IgneusDelacruz.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Karagna_",
+                "text": "@Karagna_"
+            }
         ]
     }
 ]

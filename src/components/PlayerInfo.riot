@@ -40,6 +40,10 @@
             </h3>
 
             <p>{ state.formerTeamsText }</p> 
+
+            <p if={ state.credits } class="credits-info">
+                <raw html={ state.credits }></raw>
+            </p>
         </div>
     </div>
 
@@ -117,17 +121,29 @@
     .smol-desc {
         font-size: 0.7em;
     }
+
+    .credits-info {
+        font-size: 0.85em;
+    }
+
+    .credits-info a {
+        color: inherit;
+    }
     </style>
 
     <script>
     import CloseButton from './CloseButton.riot'
+    import Raw from './Raw.riot'
 
     export default {
-        components: { CloseButton },
+        components: { CloseButton, Raw },
 
         onBeforeMount(props, state) {
+            const player = props.player
+
             this.state = {
-                viewedSprite: props.player.sprites[0]
+                viewedSprite: player.sprites[ player['default-sprite'] ],
+                credits: this.createCreditsText(player['credits'])
             }
         },
 
@@ -165,7 +181,7 @@
                         teamsText += "the " + formerTeams[i] + ', '
                     }
 
-                    teamsText = teamsText.slice(0, -2)
+                    teamsText = teamsText.slice(0, -2) // remove comma
                     teamsText += " and the " + formerTeams[formerTeams.length - 1]
                 }
 
@@ -184,6 +200,42 @@
                 viewedSprite: sprite
             })
         },
+
+        createCreditsText(creditsArray) {
+            if (!creditsArray) {
+                // No credit is listed
+                return
+            }
+
+            let text = "Art inspired by "
+
+            const createLine = function(credit) {
+                if (credit['link']) {
+                    return `<a href="${ credit['link'] }" target="_blank">${ credit['text'] }</a>`
+                }
+
+                else {
+                    return credit['text']
+                }
+            } 
+
+            if (creditsArray.length === 1) {
+                text += createLine(creditsArray[0])
+            }
+
+            else {
+                for(let i = 0; i < creditsArray.length - 1; i++) {
+                        text += createLine(creditsArray[i]) + ', '
+                }   
+
+                text = text.slice(0, -2) // remove comma
+
+                const lastCredit = creditsArray[creditsArray.length - 1]
+                text += " and " + createLine(lastCredit)
+            }
+
+            return text
+        }
 
     }
     </script>

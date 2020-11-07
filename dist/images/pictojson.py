@@ -1,6 +1,4 @@
-import glob
-import json
-import enolib
+import glob, json, enolib
 
 TEAMS = {
     'tacos': "Unlimited Tacos",
@@ -33,7 +31,14 @@ TEAMS = {
     'pods': "THE SHELLED ONE'S PODS"  
 }
 
+with open('extradata.eno', 'r') as file:
+    extradata_input = file.read()
+
+EXTRADATA = enolib.parse(extradata_input)
+
 def getname(filename):
+    """Get player name from the filename"""
+
     name = ""
 
     # Slice to remove the file extension
@@ -67,8 +72,11 @@ def getname(filename):
 
     return name
 
+
 def idify(fullname):
+    """Transforms e.g. Wyatt Quitter to wyatt-quitter"""
     return fullname.lower().replace(" ", "-")
+
 
 def decidesize(nameid):
     bigboys = [
@@ -121,28 +129,94 @@ def decidesize(nameid):
     else:
         return 'small'
 
-def fillinTeams(players):
-    with open('extradata.eno', 'r') as file:
-        input = file.read()
 
-    placements = enolib.parse(input)
+def fillinTeams(players):
+    placements = EXTRADATA
 
     for player in players:
         try:
+            # Put in current team
             team = placements.section(player['id']).field('team').required_string_value()
             player['team'] = TEAMS[team]
 
         except enolib.error_types.ValidationError:
+            # Data not inputted (properly)
             pass
 
         try:
+            # Put in former teams
             formerteams = placements.section(player['id']).list('former-teams').required_string_values()
             player['former-teams'] = list(map(lambda team: TEAMS[team], formerteams))
 
         except enolib.error_types.ValidationError:
+            # Data not inputted (properly)
             pass
 
     return players
+
+
+def rawcred_to_link(raw_credit):
+    if raw_credit[0] == '@':
+        # Link to twitter profile
+        # e.g. @BearOverdrive
+        link = "https://twitter.com/{}".format(raw_credit[1:])
+        text = raw_credit 
+
+    elif 'instagram.com' in raw_credit:
+        # Link to Instagram profile
+        # e.g. instagram.com/whyica
+        link = "https://{}".format(raw_credit)
+        text = raw_credit.split('/')[1]
+
+    elif 'tumblr.com' in raw_credit:
+        # Link to Tumblr page
+        # e.g. alangdorf.tumblr.com
+        link = "https://{}".format(raw_credit)
+        text = raw_credit.split('.')[0]
+
+    elif '"' in raw_credit:
+        # Unlinked
+        link = ""
+        text = raw_credit.split('"')[1]
+
+    else:
+        link = "https://{}".format(raw_credit)
+        text =  raw_credit
+
+    return { "link": link, "text": text }
+
+
+def fillinCredits(players):
+
+    for player in players:
+        # result in the JSON should be a list either way
+
+        try:
+            raw_credit = EXTRADATA.section(player['id']).field('credit').optional_string_value()
+            # If there are are no elements called "credit", this will give out None
+            # If "credit" is a list instead, ValidationError will occur
+        
+        except enolib.error_types.ValidationError:
+            raw_credit = EXTRADATA.section(player['id']).list('credit').optional_string_values()
+
+
+        if raw_credit == None:
+            continue
+
+        if type(raw_credit) != list:
+            raw_credits = [raw_credit]
+        else:
+            raw_credits = raw_credit 
+
+        credits = []
+
+        for rawcred in raw_credits:
+            credits.append(rawcred_to_link(rawcred))
+
+        player['credits'] = credits
+
+    return players
+
 
 # Manually add to the range when there are more blaseballers!
 players = []
@@ -168,12 +242,20 @@ for i in range(1,173):
     # Get a nice SIBR-compatible id
     name_id = idify(player_name)
 
-    
-
+    # Set size
     size = decidesize(name_id)
 
     print("Processing " + player_name)
     print("Who is deemed " + size.upper())
+
+    # Set default sprite
+    try:
+        default_sprite = EXTRADATA.section(name_id).field('default').required_string_value()
+    except enolib.error_types.ValidationError:
+        default_sprite = 0
+    finally:
+        default_sprite = int(default_sprite)
+        print("With a default sprite of " + str(default_sprite))
 
     players.append({
         "index": i,
@@ -182,10 +264,18 @@ for i in range(1,173):
         "size": size,
         "team": "Pending Team",
         "former-teams": [],
-        "sprites": sprites
+        "sprites": sprites,
+        "default-sprite": default_sprite
     })
 
+print("Processing team placements...")
 players = fillinTeams(players)
 
+print("Processing design credits...")
+players = fillinCredits(players)
+
+print("Dumping to file...")
 with open('../../src/players.json', 'w') as file:
     json.dump(players, file, indent=4)
+
+print("Done!")

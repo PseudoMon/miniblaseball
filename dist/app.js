@@ -3802,12 +3802,12 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr10="expr10"></div></div>', [{
+      return template('<div class="gallery"><div expr19="expr19"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr11="expr11"><img expr12="expr12"/></a>', [{
+        'template': template('<a expr20="expr20"><img expr21="expr21"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3817,8 +3817,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr11',
-          'selector': '[expr11]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3829,21 +3829,21 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr12',
-          'selector': '[expr12]',
+          'redundantAttribute': 'expr21',
+          'selector': '[expr21]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'src',
 
             'evaluate': function(scope) {
-              return `images/${scope.player.sprites[0]}`;
+              return `images/${scope.player.sprites[ scope.player['default-sprite'] ]}`;
             }
           }]
         }]),
 
-        'redundantAttribute': 'expr10',
-        'selector': '[expr10]',
+        'redundantAttribute': 'expr19',
+        'selector': '[expr19]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3870,15 +3870,39 @@
     'name': 'close-button'
   };
 
-  var PlayerInfo = {
-    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-xlarge: 320px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .sprite.peanutiel,[is="player-info"] .sprite.peanutiel{ max-width: initial; margin-left: 50%; transform: translateX(-50%); } player-info .player-info,[is="player-info"] .player-info{ width: 600px; max-width: 95%; box-sizing: border-box; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: var(--color-modalbg); color: var(--color-modaltext); text-align: center; position: relative; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-weight: 400; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; }`,
+  var Raw = {
+    'css': null,
 
     'exports': {
-      components: { CloseButton },
+      setInnerHTML() {
+        this.root.innerHTML = this.props.html;
+      },
+
+      onMounted() {
+        this.setInnerHTML();
+      },
+
+      onUpdated() {
+        this.setInnerHTML();
+      }
+    },
+
+    'template': null,
+    'name': 'raw'
+  };
+
+  var PlayerInfo = {
+    'css': `player-info,[is="player-info"]{ --size-small: 200px; --size-large: 300px; --size-xlarge: 320px; --size-huge: 500px; --player-size: var(--size-small); --player-altscaling: scale(1,1); } player-info .sprite,[is="player-info"] .sprite{ width: var(--player-size); max-width: 100%; height: var(--player-size); object-fit: none; } player-info .sprite.peanutiel,[is="player-info"] .sprite.peanutiel{ max-width: initial; margin-left: 50%; transform: translateX(-50%); } player-info .player-info,[is="player-info"] .player-info{ width: 600px; max-width: 95%; box-sizing: border-box; margin: 10px auto; border: solid 3px #fff; padding: 2em; background-color: var(--color-modalbg); color: var(--color-modaltext); text-align: center; position: relative; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-weight: 400; } player-info .alt-images,[is="player-info"] .alt-images{ display: flex; flex-wrap: wrap; justify-content: center; } player-info .alt-images .img-box,[is="player-info"] .alt-images .img-box{ width: 120px; overflow: hidden; } player-info .alt-images img,[is="player-info"] .alt-images img{ width: 120px; transform: var(--player-altscaling); } player-info .close-button,[is="player-info"] .close-button{ position: absolute; right: 10px; top: 10px; cursor: pointer; } player-info .close-button:hover,[is="player-info"] .close-button:hover{ border: solid 2px; border-radius: 1em; } player-info .smol-desc,[is="player-info"] .smol-desc{ font-size: 0.7em; } player-info .credits-info,[is="player-info"] .credits-info{ font-size: 0.85em; } player-info .credits-info a,[is="player-info"] .credits-info a{ color: inherit; }`,
+
+    'exports': {
+      components: { CloseButton, Raw },
 
       onBeforeMount(props, state) {
+          const player = props.player;
+
           this.state = {
-              viewedSprite: props.player.sprites[0]
+              viewedSprite: player.sprites[ player['default-sprite'] ],
+              credits: this.createCreditsText(player['credits'])
           };
       },
 
@@ -3916,7 +3940,7 @@
                       teamsText += "the " + formerTeams[i] + ', ';
                   }
 
-                  teamsText = teamsText.slice(0, -2);
+                  teamsText = teamsText.slice(0, -2); // remove comma
                   teamsText += " and the " + formerTeams[formerTeams.length - 1];
               }
 
@@ -3934,12 +3958,48 @@
           this.update({
               viewedSprite: sprite
           });
+      },
+
+      createCreditsText(creditsArray) {
+          if (!creditsArray) {
+              // No credit is listed
+              return
+          }
+
+          let text = "Art inspired by ";
+
+          const createLine = function(credit) {
+              if (credit['link']) {
+                  return `<a href="${ credit['link'] }" target="_blank">${ credit['text'] }</a>`
+              }
+
+              else {
+                  return credit['text']
+              }
+          }; 
+
+          if (creditsArray.length === 1) {
+              text += createLine(creditsArray[0]);
+          }
+
+          else {
+              for(let i = 0; i < creditsArray.length - 1; i++) {
+                      text += createLine(creditsArray[i]) + ', ';
+              }   
+
+              text = text.slice(0, -2); // remove comma
+
+              const lastCredit = creditsArray[creditsArray.length - 1];
+              text += " and " + createLine(lastCredit);
+          }
+
+          return text
       }
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr26="expr26" class="close-button"></close-button><img expr27="expr27"/><div expr28="expr28" class="alt-images"></div><div class="info"><h2 expr31="expr31" class="name"> </h2><h3 expr32="expr32" class="team"></h3><h3 expr34="expr34" class="team"></h3><p expr35="expr35"> </p></div></div>',
+        '<div class="player-info"><close-button expr146="expr146" class="close-button"></close-button><img expr147="expr147"/><div expr148="expr148" class="alt-images"></div><div class="info"><h2 expr151="expr151" class="name"> </h2><h3 expr152="expr152" class="team"></h3><h3 expr154="expr154" class="team"></h3><p expr155="expr155"> </p><p expr156="expr156" class="credits-info"></p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -3959,11 +4019,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr26',
-          'selector': '[expr26]'
+          'redundantAttribute': 'expr146',
+          'selector': '[expr146]'
         }, {
-          'redundantAttribute': 'expr27',
-          'selector': '[expr27]',
+          'redundantAttribute': 'expr147',
+          'selector': '[expr147]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3987,17 +4047,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr28',
-          'selector': '[expr28]',
+          'redundantAttribute': 'expr148',
+          'selector': '[expr148]',
 
-          'template': template('<div expr29="expr29" class="img-box"></div>', [{
+          'template': template('<div expr149="expr149" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr30="expr30"/>', [{
-              'redundantAttribute': 'expr30',
-              'selector': '[expr30]',
+            'template': template('<img expr150="expr150"/>', [{
+              'redundantAttribute': 'expr150',
+              'selector': '[expr150]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4016,8 +4076,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr29',
-            'selector': '[expr29]',
+            'redundantAttribute': 'expr149',
+            'selector': '[expr149]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4026,8 +4086,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr31',
-          'selector': '[expr31]',
+          'redundantAttribute': 'expr151',
+          'selector': '[expr151]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4044,10 +4104,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr32',
-          'selector': '[expr32]',
+          'redundantAttribute': 'expr152',
+          'selector': '[expr152]',
 
-          'template': template('<div expr33="expr33" class="smol-desc"></div> ', [{
+          'template': template('<div expr153="expr153" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4063,8 +4123,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr33',
-            'selector': '[expr33]',
+            'redundantAttribute': 'expr153',
+            'selector': '[expr153]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4078,12 +4138,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr34',
-          'selector': '[expr34]',
+          'redundantAttribute': 'expr154',
+          'selector': '[expr154]',
           'template': template('\r\n                Rest in Violence\r\n            ', [])
         }, {
-          'redundantAttribute': 'expr35',
-          'selector': '[expr35]',
+          'redundantAttribute': 'expr155',
+          'selector': '[expr155]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4093,6 +4153,38 @@
               return scope.state.formerTeamsText;
             }
           }]
+        }, {
+          'type': bindingTypes.IF,
+
+          'evaluate': function(scope) {
+            return scope.state.credits;
+          },
+
+          'redundantAttribute': 'expr156',
+          'selector': '[expr156]',
+
+          'template': template('<raw expr157="expr157"></raw>', [{
+            'type': bindingTypes.TAG,
+            'getComponent': getComponent,
+
+            'evaluate': function(scope) {
+              return 'raw';
+            },
+
+            'slots': [],
+
+            'attributes': [{
+              'type': expressionTypes.ATTRIBUTE,
+              'name': 'html',
+
+              'evaluate': function(scope) {
+                return scope.state.credits;
+              }
+            }],
+
+            'redundantAttribute': 'expr157',
+            'selector': '[expr157]'
+          }])
         }]
       );
     },
@@ -4128,7 +4220,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr23="expr23"></player-info>', [{
+      return template('<player-info expr18="expr18"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4163,8 +4255,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr23',
-        'selector': '[expr23]'
+        'redundantAttribute': 'expr18',
+        'selector': '[expr18]'
       }]);
     },
 
@@ -4177,10 +4269,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr25="expr25" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr37="expr37" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr25',
-          'selector': '[expr25]',
+          'redundantAttribute': 'expr37',
+          'selector': '[expr37]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4270,10 +4362,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr15="expr15" class="gallery-filter"><input expr16="expr16" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr17="expr17"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr18="expr18" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr19="expr19" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr20="expr20"><option value selected>Select a team</option><optgroup expr21="expr21"></optgroup></select></div></form>',
+        '<form expr10="expr10" class="gallery-filter"><input expr11="expr11" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr12="expr12"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr13="expr13" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr14="expr14" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr15="expr15"><option value selected>Select a team</option><optgroup expr16="expr16"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]',
+          'redundantAttribute': 'expr10',
+          'selector': '[expr10]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4284,8 +4376,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4320,11 +4412,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr17',
-          'selector': '[expr17]'
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]'
         }, {
-          'redundantAttribute': 'expr18',
-          'selector': '[expr18]',
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4342,8 +4434,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4361,8 +4453,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4384,7 +4476,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr22="expr22"></option>', [{
+          'template': template('<option expr17="expr17"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4416,8 +4508,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr22',
-            'selector': '[expr22]',
+            'redundantAttribute': 'expr17',
+            'selector': '[expr17]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4426,8 +4518,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr21',
-          'selector': '[expr21]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4461,10 +4553,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr13="expr13">\r\n            Sort & Filter\r\n        </li><li expr14="expr14">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr22="expr22">\r\n            Sort & Filter\r\n        </li><li expr23="expr23">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr22',
+          'selector': '[expr22]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4482,8 +4574,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4566,6 +4658,13 @@
   		sprites: [
   			"01RichmondHarrison.png",
   			"01RichmondHarrisonALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/avery_helm",
+  				text: "@avery_helm"
+  			}
   		]
   	},
   	{
@@ -4578,6 +4677,13 @@
   		],
   		sprites: [
   			"02MikeTownsend.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://averybee.tumblr.com",
+  				text: "averybee"
+  			}
   		]
   	},
   	{
@@ -4594,6 +4700,13 @@
   			"03WyattQuitter.png",
   			"03WyattQuitterALT.png",
   			"03WyattQuitterALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -4606,6 +4719,13 @@
   		],
   		sprites: [
   			"04ConnerHaley.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -4618,6 +4738,13 @@
   		],
   		sprites: [
   			"05CoryTwelve.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/graciedarts",
+  				text: "@graciedarts"
+  			}
   		]
   	},
   	{
@@ -4630,6 +4757,13 @@
   		],
   		sprites: [
   			"06StephanieWinters.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -4644,7 +4778,8 @@
   		sprites: [
   			"07LandryViolence.png",
   			"07LandryViolenceALT.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 8,
@@ -4658,6 +4793,13 @@
   		sprites: [
   			"08CaligulaLotus.png",
   			"08CaligulaLotusALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/freyquinn",
+  				text: "@freyquinn"
+  			}
   		]
   	},
   	{
@@ -4672,6 +4814,13 @@
   		sprites: [
   			"09KikiFamilia.png",
   			"09KikiFamiliaALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/avery_helm",
+  				text: "@avery_helm"
+  			}
   		]
   	},
   	{
@@ -4684,6 +4833,17 @@
   		],
   		sprites: [
   			"10NagomiNava.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/proximart0",
+  				text: "@proximart0"
+  			},
+  			{
+  				link: "https://twitter.com/alienmandy_",
+  				text: "@alienmandy_"
+  			}
   		]
   	},
   	{
@@ -4696,6 +4856,13 @@
   		],
   		sprites: [
   			"11ForrestBest.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/okaybutwhy9",
+  				text: "@okaybutwhy9"
+  			}
   		]
   	},
   	{
@@ -4716,6 +4883,13 @@
   			"12JessicaTelephoneALT2.png",
   			"12JessicaTelephoneALT3.png",
   			"12JessicaTelephoneALT4.png"
+  		],
+  		"default-sprite": 4,
+  		credits: [
+  			{
+  				link: "https://twitter.com/telekeys",
+  				text: "@telekeys"
+  			}
   		]
   	},
   	{
@@ -4728,6 +4902,13 @@
   		],
   		sprites: [
   			"13DonMitchell.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/gfclass",
+  				text: "@gfclass"
+  			}
   		]
   	},
   	{
@@ -4740,6 +4921,13 @@
   		],
   		sprites: [
   			"14BabyTriumphant.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/_waalkr",
+  				text: "@_waalkr"
+  			}
   		]
   	},
   	{
@@ -4752,6 +4940,13 @@
   		],
   		sprites: [
   			"15AlexandriaRosales.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/crikadelic",
+  				text: "@crikadelic"
+  			}
   		]
   	},
   	{
@@ -4764,6 +4959,13 @@
   		],
   		sprites: [
   			"16LoweForbes.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -4778,7 +4980,8 @@
   		sprites: [
   			"17SixpackDogwalker.png",
   			"17SixpackDogwalkerALT.png"
-  		]
+  		],
+  		"default-sprite": 1
   	},
   	{
   		index: 18,
@@ -4792,6 +4995,13 @@
   		sprites: [
   			"18DominicMarijuana.png",
   			"18DominicMarijuanaALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mermeag",
+  				text: "@mermeag"
+  			}
   		]
   	},
   	{
@@ -4808,6 +5018,13 @@
   			"19RandallMarijuana.png",
   			"19RandallMarijuanaALT.png",
   			"19RandallMarijuanaALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/alienmandy_",
+  				text: "@alienmandy_"
+  			}
   		]
   	},
   	{
@@ -4820,6 +5037,13 @@
   		],
   		sprites: [
   			"20DonElliott.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -4834,6 +5058,13 @@
   		sprites: [
   			"21BoyfriendMonreal.png",
   			"21BoyfriendMonrealALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/dancynrew",
+  				text: "@dancynrew"
+  			}
   		]
   	},
   	{
@@ -4846,7 +5077,8 @@
   		],
   		sprites: [
   			"22GuntherOBrian.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 23,
@@ -4860,6 +5092,13 @@
   		sprites: [
   			"23FishSummer.png",
   			"23FishSummerALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://instagram.com/lote_lake",
+  				text: "lote_lake"
+  			}
   		]
   	},
   	{
@@ -4872,6 +5111,13 @@
   		],
   		sprites: [
   			"24ZionAliciakeyes.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/juangeedraws",
+  				text: "@juangeedraws"
+  			}
   		]
   	},
   	{
@@ -4894,6 +5140,13 @@
   			"25JaylenHotdogfingersALT4.png",
   			"25JaylenHotdogfingersALT5.png",
   			"25JaylenHotdogfingersALT6.png"
+  		],
+  		"default-sprite": 6,
+  		credits: [
+  			{
+  				link: "https://twitter.com/MLeeLunsford",
+  				text: "@MLeeLunsford"
+  			}
   		]
   	},
   	{
@@ -4906,6 +5159,13 @@
   		],
   		sprites: [
   			"26ParkerMeng.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/cari_guevara",
+  				text: "@cari_guevara"
+  			}
   		]
   	},
   	{
@@ -4922,6 +5182,17 @@
   			"27YorkSilk.png",
   			"27YorkSilkALT.png",
   			"27YorkSilkALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fairchart",
+  				text: "@fairchart"
+  			},
+  			{
+  				link: "https://twitter.com/skelebells",
+  				text: "@skelebells"
+  			}
   		]
   	},
   	{
@@ -4940,6 +5211,13 @@
   			"28NaNALT.png",
   			"28NaNALT2.png",
   			"28NaNALT3.png"
+  		],
+  		"default-sprite": 3,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Fancymancer",
+  				text: "@Fancymancer"
+  			}
   		]
   	},
   	{
@@ -4952,6 +5230,13 @@
   		],
   		sprites: [
   			"29RiversRosa.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/crikadelic",
+  				text: "@crikadelic"
+  			}
   		]
   	},
   	{
@@ -4964,7 +5249,8 @@
   		],
   		sprites: [
   			"30MathVelazquez.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 31,
@@ -4973,6 +5259,7 @@
   		size: "small",
   		team: "Hawai'i Fridays",
   		"former-teams": [
+  			"Hades Tigers",
   			"Baltimore Crabs",
   			"Breckenridge Jazz Hands"
   		],
@@ -4981,6 +5268,17 @@
   			"31NagomiMcDanielALT.png",
   			"31NagomiMcDanielALT2.png",
   			"31NagomiMcDanielALT3.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/kayleerowena",
+  				text: "@kayleerowena"
+  			},
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -4993,6 +5291,13 @@
   		],
   		sprites: [
   			"32KlineGreenlemon.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/alienmandy_",
+  				text: "@alienmandy_"
+  			}
   		]
   	},
   	{
@@ -5011,6 +5316,13 @@
   			"33NolanestophiaPattersonALT.png",
   			"33NolanestophiaPattersonALT2.png",
   			"33NolanestophiaPattersonALT3.png"
+  		],
+  		"default-sprite": 3,
+  		credits: [
+  			{
+  				link: "https://twitter.com/ouhhoh",
+  				text: "@ouhhoh"
+  			}
   		]
   	},
   	{
@@ -5023,6 +5335,13 @@
   		],
   		sprites: [
   			"34ZiwaMueller.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/avery_helm",
+  				text: "@avery_helm"
+  			}
   		]
   	},
   	{
@@ -5035,6 +5354,13 @@
   		],
   		sprites: [
   			"35LarsTaylor.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mimimicee",
+  				text: "@mimimicee"
+  			}
   		]
   	},
   	{
@@ -5048,7 +5374,8 @@
   		],
   		sprites: [
   			"36AnnieRoland.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 37,
@@ -5060,6 +5387,13 @@
   		],
   		sprites: [
   			"37MargaritoNava.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5075,6 +5409,13 @@
   		sprites: [
   			"38SebastianTelephone.png",
   			"38SebastianTelephoneALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fairchart",
+  				text: "@fairchart"
+  			}
   		]
   	},
   	{
@@ -5087,6 +5428,13 @@
   		],
   		sprites: [
   			"39AxelCardenas.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -5100,6 +5448,13 @@
   		],
   		sprites: [
   			"40MiguelWheeler.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -5112,6 +5467,13 @@
   		],
   		sprites: [
   			"41SilviaRugrat.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -5126,6 +5488,13 @@
   		sprites: [
   			"42SosaHayes.png",
   			"42SosaHayesALT.png"
+  		],
+  		"default-sprite": 1,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -5142,6 +5511,13 @@
   			"43HahnFox.png",
   			"43HahnFoxALT.png",
   			"43HahnFoxALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/artplebe",
+  				text: "@artplebe"
+  			}
   		]
   	},
   	{
@@ -5154,7 +5530,8 @@
   		],
   		sprites: [
   			"44QaisDogwalker.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 45,
@@ -5166,7 +5543,8 @@
   		],
   		sprites: [
   			"45RodriguezInternet.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 46,
@@ -5178,6 +5556,13 @@
   		],
   		sprites: [
   			"46CorneliusGames.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/kyl_armstrong",
+  				text: "@kyl_armstrong"
+  			}
   		]
   	},
   	{
@@ -5190,6 +5575,13 @@
   		],
   		sprites: [
   			"47ThomasDracaena.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mermeag",
+  				text: "@mermeag"
+  			}
   		]
   	},
   	{
@@ -5206,6 +5598,13 @@
   			"48PitchingMachine.png",
   			"48PitchingMachineALT.png",
   			"48PitchingMachineALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5219,6 +5618,13 @@
   		],
   		sprites: [
   			"49IsaacRubberman.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5233,6 +5639,13 @@
   		sprites: [
   			"50NicholasMora.png",
   			"50NicholasMoraALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/isitsernik",
+  				text: "@isitsernik"
+  			}
   		]
   	},
   	{
@@ -5246,6 +5659,13 @@
   		sprites: [
   			"51GoobieBallson.png",
   			"51GoobieBallson1.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/_waalkr",
+  				text: "@_waalkr"
+  			}
   		]
   	},
   	{
@@ -5264,6 +5684,13 @@
   			"52JoeVoorheesALT.png",
   			"52JoeVoorheesALT2.png",
   			"52JoeVoorheesALT3.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Spiral_Joe",
+  				text: "@Spiral_Joe"
+  			}
   		]
   	},
   	{
@@ -5276,6 +5703,13 @@
   		],
   		sprites: [
   			"53KnightTriumphant.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5290,6 +5724,13 @@
   		sprites: [
   			"54AllisonAbbott.png",
   			"54AllisonAbbottALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/MLeeLunsford",
+  				text: "@MLeeLunsford"
+  			}
   		]
   	},
   	{
@@ -5310,6 +5751,13 @@
   			"55AxelTrolololALT2.png",
   			"55AxelTrolololALT3.png",
   			"55AxelTrolololALT4.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5322,6 +5770,13 @@
   		],
   		sprites: [
   			"56InkyRutledge.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/graciedarts",
+  				text: "@graciedarts"
+  			}
   		]
   	},
   	{
@@ -5334,6 +5789,13 @@
   		],
   		sprites: [
   			"57SandieTurner.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/XtraJewrestrial",
+  				text: "@XtraJewrestrial"
+  			}
   		]
   	},
   	{
@@ -5346,7 +5808,8 @@
   		],
   		sprites: [
   			"58TamaraCrankit.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 59,
@@ -5358,6 +5821,13 @@
   		],
   		sprites: [
   			"59KichiroGuerra.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/cari_guevara",
+  				text: "@cari_guevara"
+  			}
   		]
   	},
   	{
@@ -5370,6 +5840,13 @@
   		],
   		sprites: [
   			"60PattyFox.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mimimicee",
+  				text: "@mimimicee"
+  			}
   		]
   	},
   	{
@@ -5386,6 +5863,13 @@
   			"61WyattPothos.png",
   			"61WyattPothosALT.png",
   			"61WyattPothosALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -5398,6 +5882,13 @@
   		],
   		sprites: [
   			"62CannonballSports.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/CHURGALAX",
+  				text: "@CHURGALAX"
+  			}
   		]
   	},
   	{
@@ -5410,6 +5901,13 @@
   		],
   		sprites: [
   			"63ElvisFigueroa.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/this_is_onjit",
+  				text: "@this_is_onjit"
+  			}
   		]
   	},
   	{
@@ -5422,6 +5920,13 @@
   		],
   		sprites: [
   			"64FitzgeraldBlackburn.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/tsawac",
+  				text: "@tsawac"
+  			}
   		]
   	},
   	{
@@ -5436,6 +5941,13 @@
   		sprites: [
   			"65TotFox.png",
   			"65TotFoxALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://instagram.com/snortcrab",
+  				text: "snortcrab"
+  			}
   		]
   	},
   	{
@@ -5450,6 +5962,13 @@
   		sprites: [
   			"66TillmanHenderson.png",
   			"66TillmanHendersonALT.png"
+  		],
+  		"default-sprite": 1,
+  		credits: [
+  			{
+  				link: "https://twitter.com/corpserevivers",
+  				text: "@corpserevivers"
+  			}
   		]
   	},
   	{
@@ -5466,6 +5985,13 @@
   			"67OliverNotarobot.png",
   			"67OliverNotarobotALT.png",
   			"67OliverNotarobotALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/CDPNhyphenK",
+  				text: "@CDPNhyphenK"
+  			}
   		]
   	},
   	{
@@ -5478,6 +6004,13 @@
   		],
   		sprites: [
   			"68AdalbertoTosser.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5490,6 +6023,13 @@
   		],
   		sprites: [
   			"69BloodHamburger.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/shenaniglenn",
+  				text: "@shenaniglenn"
+  			}
   		]
   	},
   	{
@@ -5502,6 +6042,13 @@
   		],
   		sprites: [
   			"70LeachIngram.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "RealHaman"
+  			}
   		]
   	},
   	{
@@ -5514,7 +6061,8 @@
   		],
   		sprites: [
   			"71FranciscoPreston.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 72,
@@ -5530,6 +6078,13 @@
   			"72SpearsTaylor.png",
   			"72SpearsTaylorALT.png",
   			"72SpearsTaylorALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/wrendorphin",
+  				text: "@wrendorphin"
+  			}
   		]
   	},
   	{
@@ -5544,6 +6099,13 @@
   		sprites: [
   			"73BeckWhitney.png",
   			"73BeckWhitneyALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/pewterbee",
+  				text: "@pewterbee"
+  			}
   		]
   	},
   	{
@@ -5556,6 +6118,13 @@
   		],
   		sprites: [
   			"74LouRoseheart.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/kayleerowena",
+  				text: "@kayleerowena"
+  			}
   		]
   	},
   	{
@@ -5570,7 +6139,8 @@
   		sprites: [
   			"75SigmundCastillo.png",
   			"75SigmundCastilloALT.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 76,
@@ -5583,6 +6153,13 @@
   		],
   		sprites: [
   			"76ChorbySoul.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/apolante_art",
+  				text: "@apolante_art"
+  			}
   		]
   	},
   	{
@@ -5595,6 +6172,13 @@
   		],
   		sprites: [
   			"77CarmeloPlums.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Sovenas_Ark",
+  				text: "@Sovenas_Ark"
+  			}
   		]
   	},
   	{
@@ -5607,6 +6191,13 @@
   		],
   		sprites: [
   			"78SextonWheerer.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -5619,6 +6210,13 @@
   		],
   		sprites: [
   			"79SonScotch.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5632,6 +6230,13 @@
   		],
   		sprites: [
   			"80AtlasJonbois.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5644,7 +6249,8 @@
   		],
   		sprites: [
   			"81WasherBarajas.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 82,
@@ -5658,6 +6264,13 @@
   		sprites: [
   			"82WinnieHess.png",
   			"82WinnieHessALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/ghostwriterish",
+  				text: "@ghostwriterish"
+  			}
   		]
   	},
   	{
@@ -5670,6 +6283,13 @@
   		],
   		sprites: [
   			"83CellBarajas.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/thr33h3ad3ddrag",
+  				text: "@thr33h3ad3ddrag"
+  			}
   		]
   	},
   	{
@@ -5684,7 +6304,8 @@
   		sprites: [
   			"84AugustSky.png",
   			"84AugustSkyALT.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 85,
@@ -5696,6 +6317,13 @@
   		],
   		sprites: [
   			"85MalikDestiny.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/MLeeLunsford",
+  				text: "@MLeeLunsford"
+  			}
   		]
   	},
   	{
@@ -5712,6 +6340,13 @@
   			"86FarrellSeagull.png",
   			"86FarrellSeagullALT.png",
   			"86FarrellSeagullALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/MLeeLunsford",
+  				text: "@MLeeLunsford"
+  			}
   		]
   	},
   	{
@@ -5724,6 +6359,13 @@
   		],
   		sprites: [
   			"87FletcherYamamoto.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/phrenicquake",
+  				text: "@phrenicquake"
+  			}
   		]
   	},
   	{
@@ -5738,6 +6380,13 @@
   		sprites: [
   			"88AlaynabellaHollywood.png",
   			"88AlaynabellaHollywoodALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5750,6 +6399,13 @@
   		],
   		sprites: [
   			"89JoshuaButt.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/_waalkr",
+  				text: "@_waalkr"
+  			}
   		]
   	},
   	{
@@ -5764,6 +6420,13 @@
   		sprites: [
   			"90PenelopeMathews.png",
   			"90PenelopeMathewsALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/freddeye",
+  				text: "@freddeye"
+  			}
   		]
   	},
   	{
@@ -5776,6 +6439,13 @@
   		],
   		sprites: [
   			"91OrtizLopez.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/cari_guevara",
+  				text: "@cari_guevara"
+  			}
   		]
   	},
   	{
@@ -5790,6 +6460,13 @@
   		sprites: [
   			"92HalexandreyWalton.png",
   			"92HalexandreyWaltonALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -5803,6 +6480,13 @@
   		],
   		sprites: [
   			"93MikiSantana.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mimimicee",
+  				text: "@mimimicee"
+  			}
   		]
   	},
   	{
@@ -5815,6 +6499,13 @@
   		],
   		sprites: [
   			"94StuTrololol.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/stutrololol",
+  				text: "@stutrololol"
+  			}
   		]
   	},
   	{
@@ -5827,7 +6518,8 @@
   		],
   		sprites: [
   			"95MarquezClark.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 96,
@@ -5839,6 +6531,13 @@
   		],
   		sprites: [
   			"96AganHarrison.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5852,6 +6551,17 @@
   		],
   		sprites: [
   			"97TylerViolet.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/avery_helm",
+  				text: "@avery_helm"
+  			},
+  			{
+  				link: "https://twitter.com/telekeys",
+  				text: "@telekeys"
+  			}
   		]
   	},
   	{
@@ -5868,6 +6578,13 @@
   			"98JoshuaWatson.png",
   			"98JoshuaWatsonALT.png",
   			"98JoshuaWatsonALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5880,6 +6597,13 @@
   		],
   		sprites: [
   			"99LeachHerman.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/BearOverdrive",
+  				text: "@BearOverdrive"
+  			}
   		]
   	},
   	{
@@ -5896,6 +6620,13 @@
   			"100YazminMason.png",
   			"100YazminMasonALT.png",
   			"100YazminMasonALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/juangeedraws",
+  				text: "@juangeedraws"
+  			}
   		]
   	},
   	{
@@ -5908,6 +6639,13 @@
   		],
   		sprites: [
   			"101JuiceCollins.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/jellibeaver",
+  				text: "@jellibeaver"
+  			}
   		]
   	},
   	{
@@ -5920,6 +6658,13 @@
   		],
   		sprites: [
   			"102JasmineWashington.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/MiamiD_Jasmine",
+  				text: "@MiamiD_Jasmine"
+  			}
   		]
   	},
   	{
@@ -5932,6 +6677,13 @@
   		],
   		sprites: [
   			"103InezOwens.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://instagram.com/whyica",
+  				text: "whyica"
+  			}
   		]
   	},
   	{
@@ -5946,6 +6698,17 @@
   		sprites: [
   			"104AlexanderHorne.png",
   			"104AlexanderHorneALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/karanga_",
+  				text: "@karanga_"
+  			},
+  			{
+  				link: "https://twitter.com/cryptmilk",
+  				text: "@cryptmilk"
+  			}
   		]
   	},
   	{
@@ -5958,6 +6721,13 @@
   		],
   		sprites: [
   			"105PudgeNakamoto.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -5972,6 +6742,13 @@
   		sprites: [
   			"106ElijahValenzuela.png",
   			"106ElijahValenzuelaALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mermeag",
+  				text: "@mermeag"
+  			}
   		]
   	},
   	{
@@ -5988,6 +6765,13 @@
   			"107AlejandroLeaf.png",
   			"107AlejandroLeafALT.png",
   			"107AlejandroLeafALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/ElevenQuietSeas",
+  				text: "@ElevenQuietSeas"
+  			}
   		]
   	},
   	{
@@ -6002,6 +6786,13 @@
   		sprites: [
   			"108LuisAcevedo.png",
   			"108LuisAcevedoALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/corpserevivers",
+  				text: "@corpserevivers"
+  			}
   		]
   	},
   	{
@@ -6014,6 +6805,13 @@
   		],
   		sprites: [
   			"109FynnDoyle.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6029,6 +6827,13 @@
   		sprites: [
   			"110ThomasKirby.png",
   			"110ThomasKirbyALT.png"
+  		],
+  		"default-sprite": 1,
+  		credits: [
+  			{
+  				link: "https://twitter.com/_waalkr",
+  				text: "@_waalkr"
+  			}
   		]
   	},
   	{
@@ -6041,6 +6846,13 @@
   		],
   		sprites: [
   			"111ChorbyShort.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/graciedarts",
+  				text: "@graciedarts"
+  			}
   		]
   	},
   	{
@@ -6053,6 +6865,13 @@
   		],
   		sprites: [
   			"112LoganHorseman.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/CHURGALAX",
+  				text: "@CHURGALAX"
+  			}
   		]
   	},
   	{
@@ -6069,6 +6888,13 @@
   			"113PeanutielDuffy.png",
   			"113PeanutielDuffyALT.png",
   			"113PeanutielDuffyALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/tombofnull",
+  				text: "@tombofnull"
+  			}
   		]
   	},
   	{
@@ -6085,6 +6911,13 @@
   			"114PeanutHolloway.png",
   			"114PeanutHollowayALT.png",
   			"114PeanutHollowayALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/this_is_onjit",
+  				text: "@this_is_onjit"
+  			}
   		]
   	},
   	{
@@ -6101,6 +6934,13 @@
   			"115PeanutBong.png",
   			"115PeanutBongALT.png",
   			"115PeanutBongALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/CHURGALAX",
+  				text: "@CHURGALAX"
+  			}
   		]
   	},
   	{
@@ -6115,6 +6955,17 @@
   		sprites: [
   			"116HotboxSato.png",
   			"116HotboxSatoALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "big Opus"
+  			},
+  			{
+  				link: "",
+  				text: "Faevolf"
+  			}
   		]
   	},
   	{
@@ -6129,6 +6980,13 @@
   		sprites: [
   			"117HowellFranklin.png",
   			"117HowellFranklinALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/kyl_armstrong",
+  				text: "@kyl_armstrong"
+  			}
   		]
   	},
   	{
@@ -6145,6 +7003,13 @@
   			"118WorkmanGloom.png",
   			"118WorkmanGloomALT.png",
   			"118WorkmanGloomALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/shenaniglenn",
+  				text: "@shenaniglenn"
+  			}
   		]
   	},
   	{
@@ -6159,6 +7024,13 @@
   		sprites: [
   			"119BeasleyGloom.png",
   			"119BeasleyGloomALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/shenaniglenn",
+  				text: "@shenaniglenn"
+  			}
   		]
   	},
   	{
@@ -6171,6 +7043,13 @@
   		],
   		sprites: [
   			"120EsmeRamsey.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "grr"
+  			}
   		]
   	},
   	{
@@ -6183,6 +7062,13 @@
   		],
   		sprites: [
   			"121WyattDovenpart.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6197,6 +7083,13 @@
   		sprites: [
   			"122BasilioFig.png",
   			"122BasilioFigALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6211,6 +7104,13 @@
   		sprites: [
   			"123QuackEnjoyable.png",
   			"123QuackEnjoyableALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/avery_helm",
+  				text: "@avery_helm"
+  			}
   		]
   	},
   	{
@@ -6227,6 +7127,17 @@
   			"124SummersPony.png",
   			"124SummersPonyALT.png",
   			"124SummersPonyALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "snerkus"
+  			},
+  			{
+  				link: "https://twitter.com/_GreyWhite",
+  				text: "@_GreyWhite"
+  			}
   		]
   	},
   	{
@@ -6239,6 +7150,13 @@
   		],
   		sprites: [
   			"125EveltonMcBlase.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/shenaniglenn",
+  				text: "@shenaniglenn"
+  			}
   		]
   	},
   	{
@@ -6255,6 +7173,13 @@
   			"126EveltonMcBlaseII.png",
   			"126EveltonMcBlaseIIALT.png",
   			"126EveltonMcBlaseIIALT2.png"
+  		],
+  		"default-sprite": 2,
+  		credits: [
+  			{
+  				link: "https://twitter.com/shenaniglenn",
+  				text: "@shenaniglenn"
+  			}
   		]
   	},
   	{
@@ -6267,6 +7192,13 @@
   		],
   		sprites: [
   			"127LennySpruce.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "RealHaman"
+  			}
   		]
   	},
   	{
@@ -6279,6 +7211,17 @@
   		],
   		sprites: [
   			"128HirotoCerna.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/anarcourier",
+  				text: "@anarcourier"
+  			},
+  			{
+  				link: "https://twitter.com/annapullara",
+  				text: "@annapullara"
+  			}
   		]
   	},
   	{
@@ -6292,6 +7235,13 @@
   		],
   		sprites: [
   			"129MiguelJavier.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6305,6 +7255,13 @@
   		],
   		sprites: [
   			"130PaulBarnes.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6317,6 +7274,13 @@
   		],
   		sprites: [
   			"131WaltonSports.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "rocketknife"
+  			}
   		]
   	},
   	{
@@ -6331,6 +7295,13 @@
   		sprites: [
   			"132EmmettInternet.png",
   			"132EmmettInternetALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/churgalax",
+  				text: "@churgalax"
+  			}
   		]
   	},
   	{
@@ -6351,6 +7322,13 @@
   			"133ValentineGamesALT2.png",
   			"133ValentineGamesALT3.png",
   			"133ValentineGamesALT4.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/deerstained",
+  				text: "@deerstained"
+  			}
   		]
   	},
   	{
@@ -6365,6 +7343,13 @@
   		sprites: [
   			"134BetsyTrombone.png",
   			"134BetsyTromboneALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "cassiterine"
+  			}
   		]
   	},
   	{
@@ -6377,6 +7362,13 @@
   		],
   		sprites: [
   			"135NandyFantastic.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6389,7 +7381,8 @@
   		],
   		sprites: [
   			"136OscarDollie.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 137,
@@ -6401,6 +7394,13 @@
   		],
   		sprites: [
   			"137SocksMaybe.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/_waalkr",
+  				text: "@_waalkr"
+  			}
   		]
   	},
   	{
@@ -6415,6 +7415,13 @@
   		sprites: [
   			"138KennedyMeh.png",
   			"138KennedyMehALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Lucacrafts",
+  				text: "@Lucacrafts"
+  			}
   		]
   	},
   	{
@@ -6430,6 +7437,13 @@
   		sprites: [
   			"139ForrestBookbaby.png",
   			"139ForrestBookbabyALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/raevpet",
+  				text: "@raevpet"
+  			}
   		]
   	},
   	{
@@ -6442,6 +7456,13 @@
   		],
   		sprites: [
   			"140GreyAlvarado.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6456,6 +7477,13 @@
   		sprites: [
   			"141SuttonDreamy.png",
   			"141SuttonDreamyALT.png"
+  		],
+  		"default-sprite": 1,
+  		credits: [
+  			{
+  				link: "https://twitter.com/kayleerowena",
+  				text: "@kayleerowena"
+  			}
   		]
   	},
   	{
@@ -6468,6 +7496,13 @@
   		],
   		sprites: [
   			"142KennedyLoser.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6480,6 +7515,13 @@
   		],
   		sprites: [
   			"143SilvaireRoadhouse.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/toasthaste",
+  				text: "@toasthaste"
+  			}
   		]
   	},
   	{
@@ -6493,6 +7535,13 @@
   		],
   		sprites: [
   			"144CombsDuende.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Shiraffetopus",
+  				text: "@Shiraffetopus"
+  			}
   		]
   	},
   	{
@@ -6506,6 +7555,13 @@
   		],
   		sprites: [
   			"145MoodyCookbook.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6518,6 +7574,13 @@
   		],
   		sprites: [
   			"146NagomiMeng.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/RedBirdRabbit",
+  				text: "@RedBirdRabbit"
+  			}
   		]
   	},
   	{
@@ -6530,6 +7593,13 @@
   		],
   		sprites: [
   			"147HirotoWilcox.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/crikadelic",
+  				text: "@crikadelic"
+  			}
   		]
   	},
   	{
@@ -6542,6 +7612,13 @@
   		],
   		sprites: [
   			"148DunlapFigueroa.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Gatrdile",
+  				text: "@Gatrdile"
+  			}
   		]
   	},
   	{
@@ -6556,7 +7633,8 @@
   		sprites: [
   			"149TyreekOlive.png",
   			"149TyreekOliveALT.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 150,
@@ -6572,6 +7650,13 @@
   			"150MorrowDoyle.png",
   			"150MorrowDoyleALT.png",
   			"150MorrowDoyleALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6586,6 +7671,13 @@
   		sprites: [
   			"151SebastianSunshine.png",
   			"151SebastianSunshineALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/CocacolaGarlic",
+  				text: "@CocacolaGarlic"
+  			}
   		]
   	},
   	{
@@ -6600,6 +7692,13 @@
   		sprites: [
   			"152ScrapMurphy.png",
   			"152ScrapMurphyALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "",
+  				text: "wormtongue"
+  			}
   		]
   	},
   	{
@@ -6616,6 +7715,13 @@
   			"153AldonCashmoney.png",
   			"153AldonCashmoneyALT.png",
   			"153AldonCashmoneyALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/skelebells",
+  				text: "@skelebells"
+  			}
   		]
   	},
   	{
@@ -6628,6 +7734,13 @@
   		],
   		sprites: [
   			"154McDowellMason.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6644,6 +7757,13 @@
   			"155FranciscaSasquatch.png",
   			"155FranciscaSasquatchALT.png",
   			"155FranciscaSasquatchALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6660,6 +7780,13 @@
   			"156PatelBeyonce.png",
   			"156PatelBeyonceALT.png",
   			"156PatelBeyonceALT2.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/annapullara",
+  				text: "@annapullara"
+  			}
   		]
   	},
   	{
@@ -6672,6 +7799,13 @@
   		],
   		sprites: [
   			"157MummyMelcon.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/juangeedraws",
+  				text: "@juangeedraws"
+  			}
   		]
   	},
   	{
@@ -6686,6 +7820,17 @@
   		sprites: [
   			"158PaulaTurnip.png",
   			"158PaulaTurnipALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/mossbabe_",
+  				text: "@mossbabe_"
+  			},
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6698,6 +7843,13 @@
   		],
   		sprites: [
   			"159RenMorin.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Sphr_AM",
+  				text: "@Sphr_AM"
+  			}
   		]
   	},
   	{
@@ -6710,6 +7862,17 @@
   		],
   		sprites: [
   			"160UsurperViolet.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			},
+  			{
+  				link: "https://twitter.com/juangeedraws",
+  				text: "@juangeedraws"
+  			}
   		]
   	},
   	{
@@ -6722,6 +7885,17 @@
   		],
   		sprites: [
   			"161DudleyMueller.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/larkiiiine",
+  				text: "@larkiiiine"
+  			},
+  			{
+  				link: "https://twitter.com/karagna_",
+  				text: "@karagna_"
+  			}
   		]
   	},
   	{
@@ -6734,6 +7908,13 @@
   		],
   		sprites: [
   			"162SandovalCrossing.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/proximart0",
+  				text: "@proximart0"
+  			}
   		]
   	},
   	{
@@ -6746,6 +7927,13 @@
   		],
   		sprites: [
   			"163SuttonBishop.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/churgalax",
+  				text: "@churgalax"
+  			}
   		]
   	},
   	{
@@ -6758,6 +7946,13 @@
   		],
   		sprites: [
   			"164NerdPacheco.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Karagna_",
+  				text: "@Karagna_"
+  			}
   		]
   	},
   	{
@@ -6770,6 +7965,13 @@
   		],
   		sprites: [
   			"165ScoresBaserunner.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://alangdorf.tumblr.com",
+  				text: "alangdorf"
+  			}
   		]
   	},
   	{
@@ -6783,6 +7985,13 @@
   		],
   		sprites: [
   			"166SosaElftower.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6795,6 +8004,13 @@
   		],
   		sprites: [
   			"167SummersPreston.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6808,6 +8024,13 @@
   		],
   		sprites: [
   			"168CedricGonzalez.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/hetreasky",
+  				text: "@hetreasky"
+  			}
   		]
   	},
   	{
@@ -6820,6 +8043,13 @@
   		],
   		sprites: [
   			"169FreemiumSeraph.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/starfauna",
+  				text: "@starfauna"
+  			}
   		]
   	},
   	{
@@ -6834,6 +8064,13 @@
   		sprites: [
   			"170VitoKravitz.png",
   			"170VitoKravitzALT.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/fancymancer",
+  				text: "@fancymancer"
+  			}
   		]
   	},
   	{
@@ -6846,7 +8083,8 @@
   		],
   		sprites: [
   			"171RatMason.png"
-  		]
+  		],
+  		"default-sprite": 0
   	},
   	{
   		index: 172,
@@ -6858,6 +8096,13 @@
   		],
   		sprites: [
   			"172IgneusDelacruz.png"
+  		],
+  		"default-sprite": 0,
+  		credits: [
+  			{
+  				link: "https://twitter.com/Karagna_",
+  				text: "@Karagna_"
+  			}
   		]
   	}
   ];

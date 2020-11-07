@@ -1,46 +1,69 @@
-# mike-townsend
-team: garages
-
 # richmond-harrison
 team: tigers
 former-teams:
 - moist talkers
+credit: @avery_helm
+default: 0
+
+# mike-townsend
+team: garages
+credit: averybee.tumblr.com
+default: 0
 
 # wyatt-quitter
 team: lift
 former-teams: 
 - tacos
 - pods
+credit: @fancymancer
+default: 2
 
 # conner-haley
 team: steaks
+credit: @hetreasky
+default: 0
 
 # cory-twelve
 team: magic
+credit: @graciedarts
+default: 0
 
 # stephanie-winters
 team: wild wings
+credit: @thr33h3ad3ddrag
+default: 0
 
 # landry-violence
 team: stars
 former-teams:
 - tigers
+default: 0
 
 # caligula-lotus
 team: stars
 former-teams:
 - flowers
+credit: @freyquinn
+default: 0
 
 # kiki-familia
 team: stars
 former-teams:
 - moist talkers
+credit: @avery_helm
+default: 0
 
 # nagomi-nava
 team: sunbeams
+credit:
+- @proximart0
+- @alienmandy_
+default: 0
 
 # forrest-best
 team: crabs
+credit: @okaybutwhy9
+default: 0
 
 # jessica-telephone
 team: breath mints
@@ -49,53 +72,77 @@ former-teams:
 - pies
 - tigers
 - pods
+credit: @telekeys
+default: 4
 
 # don-mitchell
 team: lovers
+credit: @gfclass
+default: 0
 
 # baby-triumphant
 team: firefighters
+credit: @_waalkr
+default: 0
 
 # alexandria-rosales
 team: spies
+credit: @crikadelic
+default: 0
 
 # lowe-forbes
 team: jazz hands
+credit: @hetreasky
+default: 0
 
 # sixpack-dogwalker
 team: steaks
 former-teams:
 - fridays
+default: 1
 
 # dominic-marijuana
 team: stars
 former-teams:
 - millennials
+credit: @mermeag
+default: 0
 
 # randall-marijuana
 team: stars
 former-teams: 
 - sunbeams
 - jazz hands
+credit: @alienmandy_
+default: 0
 
 # don-elliott
 team: dale
+credit: @hetreasky
+default: 0
 
 # boyfriend-monreal
 team: stars
 former-teams:
 - breath mints
+credit: @dancynrew
+default: 0
 
 #gunther-o-brian
 team: shoe thieves
+default: 0
 
 # fish-summer
 team: moist talkers
 former-teams:
 -  tigers
+credit: instagram.com/lote_lake
+default: 0
 
 # zion-aliciakeyes
 team: tigers
+credit: @juangeedraws
+default: 0
 
 # jaylen-hotdogfingers
 team: lovers
@@ -104,15 +151,23 @@ former-teams:
 - shoe thieves
 - stars
 - pods
+credit: @MLeeLunsford
+default: 6
 
 # parker-meng
 team: lovers
+credit: @cari_guevara
+default: 0
 
 # york-silk
 team: moist talkers
 former-teams:
 - fridays
 - pods
+credit: 
+- @fairchart
+- @skelebells
+default: 2
 
 # nan
 team: lovers
@@ -120,21 +175,33 @@ former-teams:
 - tacos
 - spies
 - wild wings
+credit: @Fancymancer
+default: 3
 
 # rivers-rosa
 team: firefighters
+credit: @crikadelic
+default: 0
 
 # math-velazquez
 team: spies
+default: 0
 
 # nagomi-mcdaniel
 team: fridays
 former-teams:
+- tigers
 - crabs
 - jazz hands
+credit:
+- @kayleerowena
+- @fancymancer
+default: 2
 
 # kline-greenlemon
 team: steaks
+credit: @alienmandy_
+default: 0
 
 # nolanestophia-patterson
 team: garages
@@ -142,79 +209,114 @@ former-teams:
 - fridays
 - tigers
 - pies
+credit: @ouhhoh
+default: 3 
 
 # ziwa-mueller
 team: moist talkers
+credit: @avery_helm
+default: 0
 
 # lars-taylor
 team: sunbeams
+credit: @mimimicee
+default: 0
 
 # annie-roland
 team: riv
 former-teams:
 - magic
+default: 0
 
 # margarito-nava
 team: flowers
+credit: @hetreasky
+default: 0
 
 # sebastian-telephone
 team: riv
 former-teams:
 - steaks
 - stars
+credit: @fairchart
+default: 0
 
 # axel-cardenas
 team: wild wings
+credit: @thr33h3ad3ddrag
+default: 0
 
 # miguel-wheeler
 team: riv
 former-teams:
 - wild wings
+credit: @thr33h3ad3ddrag
+default: 0
 
 # silvia-rugrat
 team: wild wings
+credit: @thr33h3ad3ddrag
+default: 0
 
 # sosa-hayes
 team: spies
 former-teams:
 - wild wings
+credit: @thr33h3ad3ddrag
+default: 1
 
 # hahn-fox
 team: sunbeams
 former-teams:
 - dale
 - flowers
+credit: @artplebe
+default: 0
 
 # qais-dogwalker
 team: dale
+default: 0
 
 # rodriguez-internet
 team: breath mints
+default: 0
 
 # cornelius-games
 team: shoe thieves
+credit: @kyl_armstrong
+default: 0
 
 # thomas-dracaena 
 team: millennials
+credit: @mermeag
+default: 0
 
 # pitching-machine
 team: garages
 former-teams:
 - tacos
 - pods
+credit: @hetreasky
+default: 2
 
 # isaac-rubberman
 team: riv
 former-teams:
 - flowers
+credit: @hetreasky
+default: 0
 
 # nicholas-mora
 team: pies
 former-teams:
 - tigers
+credit: @isitsernik
+default: 0
 
 # goobie-ballson
 team: firefighters
+credit: @_waalkr
+default: 0
 
 # joe-voorhees
 team: sunbeams
@@ -222,14 +324,20 @@ former-teams:
 - moist talkers
 - shoe thieves
 - spies
+credit: @Spiral_Joe
+default: 0
 
 # knight-triumphant
 team: lovers
+credit: @hetreasky
+default: 0
 
 # allison-abbott
 team: steaks
 former-teams:
 - garages
+credit: @MLeeLunsford
+default: 0
 
 # axel-trololol
 team: stars
@@ -238,314 +346,488 @@ former-teams:
 - firefighters
 - crabs
 - pods
+credit: @hetreasky
+default: 0
 
 # inky-rutledge
 team: magic
+credit: @graciedarts
+default: 0
 
 # sandie-turner
 team: millennials
+credit: @XtraJewrestrial
+default: 0
 
 # tamara-crankit
 team: jazz hands
+default: 0
 
 # kichiro-guerra
 team: lovers
+credit: @cari_guevara
+default: 0
 
 # patty-fox
 team: millennials
+credit: @mimimicee
+default: 0
 
 # wyatt-pothos
 team: jazz hands
 former-teams:
 - tacos
 - pods
+credit: @fancymancer
+default: 2
 
 # cannonball-sports
 team: dale
+credit: @CHURGALAX
+default: 0
 
 # elvis-figueroa
 team: pies
+credit: @this_is_onjit
+default: 0
 
 # fitzgerald-blackburn
 team: spies
+credit: @tsawac
+default: 0
 
 # tot-fox
 team: crabs
 former-teams:
 - jazz hands
+credit: instagram.com/snortcrab
+default: 0
 
 # tillman-henderson
 team: shoe thieves
 former-teams:
 - crabs
+credit: @corpserevivers
+default: 1
 
 # oliver-notarobot
 team: garages
 former-teams:
 - moist talkers
 - crabs
+credit: @CDPNhyphenK
+default: 0
 
 # adalberto-tosser
 team: crabs
+credit: @hetreasky
+default: 0
 
 # blood-hamburger
 team: shoe thieves
+credit: @shenaniglenn
+default: 0
 
 # leach-ingram
 team: breath mints
+credit: "RealHaman"
+default: 0
 
 # francisco-preston
 team: magic
+default: 0
 
 # spears-taylor
 team: fridays
 former-teams:
 - pies
 - tigers
+credit: @wrendorphin
+default: 0
 
 # beck-whitney
 team: dale
 former-teams:
 - flowers
+credit: @pewterbee
+default: 0
 
 # lou-roseheart
 team: firefighters
+credit: @kayleerowena
+default: 0
 
 # sigmund-castillo
 team: sunbeams
 former-teams:
 - lovers
+credits: @hetreasky
+default: 0
 
 # chorby-soul
 team: riv
 former-teams:
 - millennials
+credit: @apolante_art
+default: 0
 
 # carmelo-plums
 team: tigers
+credit: @Sovenas_Ark
+default: 0
 
 # sexton-wheerer
 team: tacos
+credit: @fancymancer
+default: 0
 
 # son-scotch
 team: spies
+credit: @hetreasky
+default: 0
 
 # atlas-jonbois
 team: riv
 former-teams:
 - shoe thieves
+credit: @hetreasky
+default: 0
 
 # washer-barajas
 team: magic
-
-# cell-barajas
-team: wild wings
+default: 0
 
 # winnie-hess
 team: breath mints
 former-teams:
 - crabs
+credit: @ghostwriterish
+default: 0
+
+# cell-barajas
+team: wild wings
+credit: @thr33h3ad3ddrag
+default: 0
 
 # august-sky
 team: steaks
 former-teams:
 - jazz hands
+default: 0
 
 # malik-destiny
 team: garages
+credit: @MLeeLunsford
+default: 0
 
 # farrell-seagull
 team: pies
 former-teams:
 - dale
 - garages
+credit: @MLeeLunsford
+default: 0
 
 # fletcher-yamamoto
 team: fridays
+credit: @phrenicquake
+default: 0
 
 # alaynabella-hollywood
 team: flowers
 former-teams:
 - sunbeams
+credit: @hetreasky
+default: 0
 
 # joshua-butt
 team: firefighters
+credit: @_waalkr
+default: 0
 
 # penelope-mathews
 team: millennials
 former-teams:
 - magic
+credit: @freddeye
+default: 0
 
 # ortiz-lopez
 team: lovers
+credit: @cari_guevara
+default: 0
 
 # halexandrey-walton
 team: tacos
 former-teams:
 - magic
+credit: @fancymancer
+default: 0
 
 # miki-santana
 team: riv
 former-teams:
 - spies
+credit: @mimimicee
+default: 0
 
 # stu-trololol
 team: shoe thieves
+credit: @stutrololol
+default: 0
 
 # marquez-clark
 team: breath mints
+default: 0
 
 # agan-harrison
 team: jazz hands
+credit: @hetreasky
+default: 0
 
 # tyler-violet
 team: riv
 former-teams:
 - moist talkers
+credit: 
+- @avery_helm
+- @telekeys
+default: 0
 
 # joshua-watson
 team: wild wings
 former-teams:
 - crabs
 - firefighters
+credit: @hetreasky
+default: 0
 
 # leach-herman
 team: steaks
+credit: @BearOverdrive
+default: 0
 
 # yazmin-mason
 team: stars
 former-teams:
 - tigers
 - pies
+credit: @juangeedraws
+default: 0
 
 # juice-collins
 team: fridays
+credit: @jellibeaver
+default: 0
 
 # jasmine-washington
 team: dale
+credit: @MiamiD_Jasmine
+default: 0
 
 # inez-owens
 team: flowers
+credit: instagram.com/whyica
+defualt: 0
 
 # alexander-horne
 team: lovers
 former-teams:
 - sunbeams
+credit: 
+- @karanga_
+- @cryptmilk
+default: 0
 
 # pudge-nakamoto
 team: breath mints
+credit: @hetreasky
+default: 0
 
 # elijah-valenzuela
 team: jazz hands
 former-teams:
 - fridays
+credit: @mermeag
+default: 0
 
 # alejandro-leaf
 team: millennials
 former-teams: 
 - tacos
 - pods
+credit: @ElevenQuietSeas
+default: 2
 
 # luis-acevedo
 team: crabs
 former-teams: 
 - garages
+credit: @corpserevivers
+default: 0
 
 # fynn-doyle
 team: millennials
+credit: @hetreasky
+default: 0
 
 # thomas-kirby
 team: riv
 former-teams: 
 - steaks
 - firefighters
+credit: @_waalkr
+default: 1
 
 # chorby-short
 team: magic
+credit: @graciedarts
+default: 0
 
 # logan-horseman
 team: dale
+credit: @CHURGALAX
+default: 0
 
 # peanutiel-duffy
 team: firefighters
 former-teams:
 - tigers
 - pods
+credit: @tombofnull
+default: 2
 
 # peanut-holloway
 team: firefighters
 former-teams:
 - pies
 - pods
+credit: @this_is_onjit
+default: 2
 
 # peanut-bong
 team: tacos
 former-teams:
 - dale
 - pods
+credit: @CHURGALAX
+default: 2
 
 # hotbox-sato
 team: shoe thieves
 former-teams:
 - flowers
+credit: 
+- "big Opus"
+- "Faevolf"
+default: 0
 
 # howell-franklin
 team: shoe thieves
 former-teams:
 - spies
+credit: @kyl_armstrong
+default: 0
 
 # workman-gloom
 team: stars
 former-teams:
 -shoe thieves
 -moist talkers
+credit: @shenaniglenn
+default: 0
 
 #beasley-gloom
 team: moist talkers
 former-teams:
 -shoe thieves
+credit: @shenaniglenn
+default: 0
 
 # esme-ramsey
 team: shoe thieves
+credit: "grr"
+default: 0
+
+# wyatt-dovenpart
+team: tacos
+credit: @fancymancer
+default: 0
+
+# basilio-fig
+team: tacos
+former-teams:
+- fridays
+credit: @hetreasky
+default: 0
+
+# quack-enjoyable
+team: garages
+former-teams:
+- moist talkers
+credit: @avery_helm
+default: 0
 
 #summers-pony
 team: garages
 former-teams:
 -steaks
 -pies
+credit: 
+- "snerkus"
+- @_GreyWhite
+default: 0
 
 #evelton-mcblase
 team: fridays
+credit: @shenaniglenn
+default: 0
 
 #evelton-mcblase-ii
 team: crabs
 former-teams:
 -spies
 -fridays
+credit: @shenaniglenn
+default: 2
 
 #lenny-spruce
 team: breath mints
+credit: "RealHaman"
+default: 0
 
 #hiroto-cerna
 team: flowers
+credit:
+- @anarcourier
+- @annapullara
+default: 0
 
 #miguel-javier
 team: riv
 former-teams:
 -lovers
+credit: @hetreasky
+default: 0
 
 #paul-barnes
 team: riv
 former-teams:
 -lovers
+credit: @hetreasky
+default: 0
 
 #walton-sports
 team: jazz hands
+credit: "rocketknife"
+default: 0
 
 #emmett-internet
 team: stars
 former-teams:
 -sunbeams
+credit: @churgalax
+default: 0
 
 #valentine-games
 team: tacos
@@ -554,172 +836,243 @@ former-teams:
 -jazz hands
 -millennials
 -spies
+credit: @deerstained
+default: 0
 
 #betsy-trombone
 team: garages
 former-teams:
 -pies
+credit: "cassiterine"
+default: 0
 
 #nandy-fantastic
 team: millennials
+credit: @fancymancer
+default: 0
 
 #oscar-dollie
 team: magic
+@graciedarts
+default: 0
 
 #socks-maybe
 team: firefighters
+credit: @_waalkr
+default: 0
 
 #kennedy-meh
 team: wild wings
 former-teams:
 -lovers
+credit: @Lucacrafts
+default: 0
 
 #forrest-bookbaby
 team: riv
 former-teams:
 -shoe thieves
 -pies
+credit: @raevpet
+default: 0
 
 #grey-alvarado
 team: breath mints
+credit: @hetreasky
+default: 0
 
 #sutton-dreamy
 team: fridays
 former-teams:
 -crabs
+credit: @kayleerowena
+default: 1
 
 #kennedy-loser
 team: crabs
+credit: @hetreasky
+default: 0
 
 #silvaire-roadhouse
 team: crabs
+credit: @toasthaste
+default: 0
 
 #combs-duende
 team: riv
 former-teams:
 -crabs
+credit: @Shiraffetopus
+default: 0
 
 #moody-cookbook
 team: riv
 former-teams:
 -tigers
+credit: @hetreasky
+default: 0
 
 #nagomi-meng
 team: tigers
+credit: @RedBirdRabbit
+default: 0
 
 #hiroto-wilcox
 team: tigers
+credit: @crikadelic
+default: 0
 
 #dunlap-figueroa
 team: tigers
+credit: @Gatrdile
+default: 0
 
 #tyreek-olive
 team: stars
 former-teams:
 -firefighters
+default: 0
 
 #morrow-doyle
 team: stars
 former-teams:
 -shoe thieves
 -flowers
+credit: @hetreasky
+default: 0
 
 #sebastian-sunshine
 team: stars
 former-teams:
 -fridays
+credit: @CocacolaGarlic
+default: 0
 
 #scrap-murphy
 team: stars
 former-teams:
 -millennials
+credit: "wormtongue"
+default: 0
 
 #aldon-cashmoney
 team: tigers
 former-teams:
 -jazz hands
 -fridays
+credit: @skelebells
+default: 0
 
 #mcdowell-mason
 team: tacos
+credit: @fancymancer
+default: 0
 
 #francisca-sasquatch
 team: dale
 former-teams:
 -tacos
 -pods
+credit: @fancymancer
+default: 0
 
 #patel-beyonce
 team: steaks
 former-teams:
 -tacos
 -pods
+credit: @annapullara
+default: 0
 
 #mummy-melcon
 team: tigers
+credit: @juangeedraws
+default: 0
 
 #paula-turnip
 team: garages
 former-teams:
 -tigers
+credit: 
+- @mossbabe_
+- @hetreasky
+default: 0
 
 #ren-morin
 team: tigers
+credit: @Sphr_AM
+default: 0
 
 #usurper-violet
 team: tigers
+credit: 
+- @hetreasky
+- @juangeedraws
+default: 0
 
 #dudley-mueller
 team: sunbeams
+credit:
+- @larkiiiine
+- @karagna_
+default: 0
 
 #sandoval-crossing
 team: sunbeams
+credit: @proximart0
+default: 0
 
 #sutton-bishop
 team: sunbeams
+credit: @churgalax
+default: 0
 
-# wyatt-dovenpart
-team: tacos
-
-# basilio-fig
-team: tacos
-former-teams:
-- fridays
-
-# quack-enjoyable
-team: garages
-former-teams:
-- moist talkers
-
-# nerd-pacheco
+#nerd-pacheco
 team: sunbeams
+credit: @Karagna_
+default: 0
 
-# scores-baserunner
+#scores-baserunner
 team: flowers
+credit: alangdorf.tumblr.com
+default: 0
 
-# sosa-elftower
+#sosa-elftower
+team: riv
+former-teams: 
+-magic
+credit: @hetreasky
+default: 0
+
+#summers-preston
+team: wild wings 
+credit: @fancymancer
+default: 0
+
+#cedric-gonzalez
 team: riv
 former-teams:
-- magic
+-pies
+credit: @hetreasky
+default: 0
 
-# summers-preston
-team: wild wings
-
-# cedric-gonzalez
-team: riv
-former-teams:
-- pies
-
-# freemium-seraph
+#freemium-seraph
 team: lift
+credit: @starfauna
+default: 0
 
-# vito-kravitz
+#vito-kravitz
 team: tacos
 former-teams:
-- flowers
+-flowers
+credit: @fancymancer
+default: 0
 
-# rat-mason
+#rat-mason
 team: tacos
+default: 0
 
-# igneus-delacruz
+#igneus-delacruz
 team: sunbeams
+credit: @Karagna_
+default: 0
