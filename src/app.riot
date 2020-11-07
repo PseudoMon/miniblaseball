@@ -2,7 +2,9 @@
     <router base="/home">
         <div class="main-container">
             <div class="sidebar">
-                <button onclick={ toggleDarkmode }>Toggle dark mode</button>
+                <dark-mode-toggle on-toggle={ toggleDarkmode }>
+                </dark-mode-toggle>
+
                 <site-header></site-header>
 
                 <sidebar-nav
@@ -137,13 +139,14 @@
     import SidebarNav from './components/SidebarNav.riot'
     import SiteHeader from './components/SiteHeader.riot'
     import TotopButton from './components/TotopButton.riot'
+    import DarkModeToggle from './components/DarkModeToggle.riot'
 
     import PlayersData from './players.json'
     import TeamsData from './teams.json'
     import TeamsList from './teamsReverseId.js'
 
     export default {
-        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton },
+        components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton, DarkModeToggle },
 
         playersData: PlayersData,
 
@@ -327,8 +330,7 @@
             this.$('.main-container').scrollTo(0,0)
         },
 
-        toggleDarkmode(e) {
-            e.preventDefault()
+        toggleDarkmode() {
             this.root.classList.toggle('darkmode')
         }
 

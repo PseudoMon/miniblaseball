@@ -3798,12 +3798,12 @@
     'exports': null,
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr19="expr19"></div></div>', [{
+      return template('<div class="gallery"><div expr11="expr11"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr20="expr20"><img expr21="expr21"/></a>', [{
+        'template': template('<a expr12="expr12"><img expr13="expr13"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3813,8 +3813,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr20',
-          'selector': '[expr20]',
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3825,8 +3825,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr21',
-          'selector': '[expr21]',
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3838,8 +3838,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr19',
-        'selector': '[expr19]',
+        'redundantAttribute': 'expr11',
+        'selector': '[expr11]',
         'itemName': 'player',
         'indexName': null,
 
@@ -4225,7 +4225,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr18="expr18"></player-info>', [{
+      return template('<player-info expr25="expr25"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4260,8 +4260,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr18',
-        'selector': '[expr18]'
+        'redundantAttribute': 'expr25',
+        'selector': '[expr25]'
       }]);
     },
 
@@ -4274,10 +4274,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr25="expr25" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr38="expr38" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr25',
-          'selector': '[expr25]',
+          'redundantAttribute': 'expr38',
+          'selector': '[expr38]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4367,10 +4367,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr10="expr10" class="gallery-filter"><input expr11="expr11" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr12="expr12"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr13="expr13" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr14="expr14" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr15="expr15"><option value selected>Select a team</option><optgroup expr16="expr16"></optgroup></select></div></form>',
+        '<form expr14="expr14" class="gallery-filter"><input expr15="expr15" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr16="expr16"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr17="expr17" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr18="expr18" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr19="expr19"><option value selected>Select a team</option><optgroup expr20="expr20"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr10',
-          'selector': '[expr10]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4381,8 +4381,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr11',
-          'selector': '[expr11]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4417,11 +4417,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr12',
-          'selector': '[expr12]'
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]'
         }, {
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr17',
+          'selector': '[expr17]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4439,8 +4439,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr18',
+          'selector': '[expr18]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4458,8 +4458,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]',
+          'redundantAttribute': 'expr19',
+          'selector': '[expr19]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4481,7 +4481,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr17="expr17"></option>', [{
+          'template': template('<option expr21="expr21"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4513,8 +4513,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr17',
-            'selector': '[expr17]',
+            'redundantAttribute': 'expr21',
+            'selector': '[expr21]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4523,8 +4523,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4558,10 +4558,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr23="expr23">\r\n            Sort & Filter\r\n        </li><li expr24="expr24">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr22="expr22">\r\n            Sort & Filter\r\n        </li><li expr23="expr23">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr22',
+          'selector': '[expr22]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4579,8 +4579,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr24',
-          'selector': '[expr24]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4630,10 +4630,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<svg expr22="expr22" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
+        '<svg expr24="expr24" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
         [{
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr24',
+          'selector': '[expr24]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4648,6 +4648,39 @@
     },
 
     'name': 'totop-button'
+  };
+
+  var DarkModeToggle = {
+    'css': `dark-mode-toggle,[is="dark-mode-toggle"]{ display: flex; justify-content: center; align-items: center; font-size: 0.8em; font-weight: 600; } dark-mode-toggle input[type="checkbox"],[is="dark-mode-toggle"] input[type="checkbox"]{ position: absolute; display: none; } dark-mode-toggle .toggle,[is="dark-mode-toggle"] .toggle{ display: inline-block; font-size: 20px; height: 1em; width: 2em; border-radius: 1em; margin: 0 0.5em; background-color: var(--color-text); transition: all 300ms; cursor: pointer; } dark-mode-toggle .toggle span,[is="dark-mode-toggle"] .toggle span{ display: block; height: 1em; width: 1em; border-radius: 1em; margin-left: -2px; background-color: #fff; box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.3); transition: all 300ms; } dark-mode-toggle input:checked ~ .toggle span,[is="dark-mode-toggle"] input:checked ~ .toggle span{ transform: translateX(1.2em); } dark-mode-toggle .light,[is="dark-mode-toggle"] .light{ opacity: 0.6; } dark-mode-toggle input:checked ~ .light,[is="dark-mode-toggle"] input:checked ~ .light{ opacity: 1; } dark-mode-toggle .dark,[is="dark-mode-toggle"] .dark{ opacity: 1; } dark-mode-toggle input:checked ~ .dark,[is="dark-mode-toggle"] input:checked ~ .dark{ opacity: 0.6; }`,
+
+    'exports': {
+      onToggle(e) {
+          this.$('#theme-toggle').checked = !this.$('#theme-toggle').checked;
+
+          this.props.onToggle();
+      }
+    },
+
+    'template': function(template, expressionTypes, bindingTypes, getComponent) {
+      return template(
+        '<input id="theme-toggle" type="checkbox"/><span class="light">Light</span><div expr209="expr209" class="toggle"><span></span></div><span class="dark">Dark</span>',
+        [{
+          'redundantAttribute': 'expr209',
+          'selector': '[expr209]',
+
+          'expressions': [{
+            'type': expressionTypes.EVENT,
+            'name': 'onclick',
+
+            'evaluate': function(scope) {
+              return scope.onToggle;
+            }
+          }]
+        }]
+      );
+    },
+
+    'name': 'dark-mode-toggle'
   };
 
   var PlayersData = [
@@ -8183,7 +8216,7 @@
     'css': `app,[is="app"]{ font-family: "Lora", sans-serif; --color-bg: #fff; --color-text: #000; --color-soft: #eee; --color-link: #5c5c5c; --color-modalbg: #494a46; --color-overlaybg: rgba(0,0,0,0.6); --color-modaltext: #fff; background-color: var(--color-bg); } app.darkmode,[is="app"].darkmode{ --color-bg: #1c1d1b; --color-text: #fff; --color-soft: #2d2f32; --color-link: #848484; --color-modalbg: #1c1d1b; } app .main-container,[is="app"] .main-container{ width: 98%; max-width: 1000px; margin: 0 auto; padding-top: 20px; height: calc(100vh - 20px); display: grid; grid-template-columns: 1fr; overflow-x: hidden; color: var(--color-text); } @media (min-width: 900px) { app .main-container,[is="app"] .main-container{ overflow-x: hidden; grid-template-columns: 290px 1fr; } app .sidebar,[is="app"] .sidebar,app .main-content,[is="app"] .main-content{ overflow-y: auto; } } @media (min-width: 1400px) { app .main-container,[is="app"] .main-container{ max-width: 80%; } } app .sidebar,[is="app"] .sidebar{ padding: 0 1em; max-width: 500px; width: calc(100% - 2em); margin: 0 auto; box-sizing: border-box; } @media (min-width: 900px) { app .sidebar,[is="app"] .sidebar{ padding: 0 0.2em; width: 100%; border-right: solid 3px var(--color-soft); } app .totop-button,[is="app"] .totop-button{ display: none; } }`,
 
     'exports': {
-      components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton },
+      components: { Gallery, Overlay, Router: routerHoc, Route: routeHoc, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton, DarkModeToggle },
       playersData: PlayersData,
       teamsData: TeamsData,
       teamsList: teamsReverseId,
@@ -8364,14 +8397,13 @@
           this.$('.main-container').scrollTo(0,0);
       },
 
-      toggleDarkmode(e) {
-          e.preventDefault();
+      toggleDarkmode() {
           this.root.classList.toggle('darkmode');
       }
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<router expr0="expr0" base="/home"></router>', [{
+      return template('<router expr185="expr185" base="/home"></router>', [{
         'type': bindingTypes.TAG,
         'getComponent': getComponent,
 
@@ -8381,20 +8413,29 @@
 
         'slots': [{
           'id': 'default',
-          'html': '<div class="main-container"><div class="sidebar"><button expr1="expr1">Toggle dark mode</button><site-header expr2="expr2"></site-header><sidebar-nav expr3="expr3"></sidebar-nav><filter-control expr4="expr4"></filter-control><aboutbox expr5="expr5"></aboutbox></div><div class="main-content"><gallery expr6="expr6"></gallery></div></div><totop-button expr7="expr7" class="totop-button"></totop-button><route expr8="expr8" path="/#:player"></route>',
+          'html': '<div class="main-container"><div class="sidebar"><dark-mode-toggle expr186="expr186"></dark-mode-toggle><site-header expr187="expr187"></site-header><sidebar-nav expr188="expr188"></sidebar-nav><filter-control expr189="expr189"></filter-control><aboutbox expr190="expr190"></aboutbox></div><div class="main-content"><gallery expr191="expr191"></gallery></div></div><totop-button expr192="expr192" class="totop-button"></totop-button><route expr193="expr193" path="/#:player"></route>',
 
           'bindings': [{
-            'redundantAttribute': 'expr1',
-            'selector': '[expr1]',
+            'type': bindingTypes.TAG,
+            'getComponent': getComponent,
 
-            'expressions': [{
+            'evaluate': function(scope) {
+              return 'dark-mode-toggle';
+            },
+
+            'slots': [],
+
+            'attributes': [{
               'type': expressionTypes.EVENT,
-              'name': 'onclick',
+              'name': 'on-toggle',
 
               'evaluate': function(scope) {
                 return scope.toggleDarkmode;
               }
-            }]
+            }],
+
+            'redundantAttribute': 'expr186',
+            'selector': '[expr186]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8405,8 +8446,8 @@
 
             'slots': [],
             'attributes': [],
-            'redundantAttribute': 'expr2',
-            'selector': '[expr2]'
+            'redundantAttribute': 'expr187',
+            'selector': '[expr187]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8433,8 +8474,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr3',
-            'selector': '[expr3]'
+            'redundantAttribute': 'expr188',
+            'selector': '[expr188]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8482,8 +8523,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr4',
-            'selector': '[expr4]'
+            'redundantAttribute': 'expr189',
+            'selector': '[expr189]'
           }, {
             'type': bindingTypes.IF,
 
@@ -8491,8 +8532,8 @@
               return scope.state.sidebarScreen === 'about';
             },
 
-            'redundantAttribute': 'expr5',
-            'selector': '[expr5]',
+            'redundantAttribute': 'expr190',
+            'selector': '[expr190]',
 
             'template': template(null, [{
               'type': bindingTypes.TAG,
@@ -8531,8 +8572,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr6',
-            'selector': '[expr6]'
+            'redundantAttribute': 'expr191',
+            'selector': '[expr191]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8552,8 +8593,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr7',
-            'selector': '[expr7]'
+            'redundantAttribute': 'expr192',
+            'selector': '[expr192]'
           }, {
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
@@ -8564,7 +8605,7 @@
 
             'slots': [{
               'id': 'default',
-              'html': '<overlay expr9="expr9"></overlay>',
+              'html': '<overlay expr194="expr194"></overlay>',
 
               'bindings': [{
                 'type': bindingTypes.TAG,
@@ -8585,20 +8626,20 @@
                   }
                 }],
 
-                'redundantAttribute': 'expr9',
-                'selector': '[expr9]'
+                'redundantAttribute': 'expr194',
+                'selector': '[expr194]'
               }]
             }],
 
             'attributes': [],
-            'redundantAttribute': 'expr8',
-            'selector': '[expr8]'
+            'redundantAttribute': 'expr193',
+            'selector': '[expr193]'
           }]
         }],
 
         'attributes': [],
-        'redundantAttribute': 'expr0',
-        'selector': '[expr0]'
+        'redundantAttribute': 'expr185',
+        'selector': '[expr185]'
       }]);
     },
 
