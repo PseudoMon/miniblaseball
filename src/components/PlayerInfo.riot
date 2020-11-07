@@ -181,8 +181,13 @@
                         teamsText += "the " + formerTeams[i] + ', '
                     }
 
-                    teamsText = teamsText.slice(0, -2) // remove comma
-                    teamsText += " and the " + formerTeams[formerTeams.length - 1]
+                    if (formerTeams.length === 2) {
+                        teamsText = teamsText.slice(0, -2) 
+                        teamsText += " "
+                        // remove comma when there's only two    
+                    }
+                
+                    teamsText += "and the " + formerTeams[formerTeams.length - 1]
                 }
 
                 formerTeamsText = `Formerly of ${teamsText}.`
@@ -228,7 +233,11 @@
                         text += createLine(creditsArray[i]) + ', '
                 }   
 
-                text = text.slice(0, -2) // remove comma
+                if (creditsArray.length === 2) {
+                    text = text.slice(0, -2) 
+                    text += " "
+                    // remove comma when there's only two    
+                }
 
                 const lastCredit = creditsArray[creditsArray.length - 1]
                 text += " and " + createLine(lastCredit)

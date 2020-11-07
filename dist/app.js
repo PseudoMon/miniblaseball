@@ -3798,12 +3798,12 @@
     'exports': null,
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<div class="gallery"><div expr21="expr21"></div></div>', [{
+      return template('<div class="gallery"><div expr19="expr19"></div></div>', [{
         'type': bindingTypes.EACH,
         'getKey': null,
         'condition': null,
 
-        'template': template('<a expr22="expr22"><img expr23="expr23"/></a>', [{
+        'template': template('<a expr20="expr20"><img expr21="expr21"/></a>', [{
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
             'name': 'style',
@@ -3813,8 +3813,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr22',
-          'selector': '[expr22]',
+          'redundantAttribute': 'expr20',
+          'selector': '[expr20]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3825,8 +3825,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr23',
-          'selector': '[expr23]',
+          'redundantAttribute': 'expr21',
+          'selector': '[expr21]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -3838,8 +3838,8 @@
           }]
         }]),
 
-        'redundantAttribute': 'expr21',
-        'selector': '[expr21]',
+        'redundantAttribute': 'expr19',
+        'selector': '[expr19]',
         'itemName': 'player',
         'indexName': null,
 
@@ -3936,8 +3936,13 @@
                       teamsText += "the " + formerTeams[i] + ', ';
                   }
 
-                  teamsText = teamsText.slice(0, -2); // remove comma
-                  teamsText += " and the " + formerTeams[formerTeams.length - 1];
+                  if (formerTeams.length === 2) {
+                      teamsText = teamsText.slice(0, -2); 
+                      teamsText += " ";
+                      // remove comma when there's only two    
+                  }
+              
+                  teamsText += "and the " + formerTeams[formerTeams.length - 1];
               }
 
               formerTeamsText = `Formerly of ${teamsText}.`;
@@ -3983,7 +3988,11 @@
                       text += createLine(creditsArray[i]) + ', ';
               }   
 
-              text = text.slice(0, -2); // remove comma
+              if (creditsArray.length === 2) {
+                  text = text.slice(0, -2); 
+                  text += " ";
+                  // remove comma when there's only two    
+              }
 
               const lastCredit = creditsArray[creditsArray.length - 1];
               text += " and " + createLine(lastCredit);
@@ -3995,7 +4004,7 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<div class="player-info"><close-button expr25="expr25" class="close-button"></close-button><img expr26="expr26"/><div expr27="expr27" class="alt-images"></div><div class="info"><h2 expr30="expr30" class="name"> </h2><h3 expr31="expr31" class="team"></h3><h3 expr33="expr33" class="team"></h3><p expr34="expr34"> </p><p expr35="expr35" class="credits-info"></p></div></div>',
+        '<div class="player-info"><close-button expr26="expr26" class="close-button"></close-button><img expr27="expr27"/><div expr28="expr28" class="alt-images"></div><div class="info"><h2 expr31="expr31" class="name"> </h2><h3 expr32="expr32" class="team"></h3><h3 expr34="expr34" class="team"></h3><p expr35="expr35"> </p><p expr36="expr36" class="credits-info"></p></div></div>',
         [{
           'type': bindingTypes.TAG,
           'getComponent': getComponent,
@@ -4015,11 +4024,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr25',
-          'selector': '[expr25]'
-        }, {
           'redundantAttribute': 'expr26',
-          'selector': '[expr26]',
+          'selector': '[expr26]'
+        }, {
+          'redundantAttribute': 'expr27',
+          'selector': '[expr27]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4043,17 +4052,17 @@
             return scope.props.player.sprites.length > 1;
           },
 
-          'redundantAttribute': 'expr27',
-          'selector': '[expr27]',
+          'redundantAttribute': 'expr28',
+          'selector': '[expr28]',
 
-          'template': template('<div expr28="expr28" class="img-box"></div>', [{
+          'template': template('<div expr29="expr29" class="img-box"></div>', [{
             'type': bindingTypes.EACH,
             'getKey': null,
             'condition': null,
 
-            'template': template('<img expr29="expr29"/>', [{
-              'redundantAttribute': 'expr29',
-              'selector': '[expr29]',
+            'template': template('<img expr30="expr30"/>', [{
+              'redundantAttribute': 'expr30',
+              'selector': '[expr30]',
 
               'expressions': [{
                 'type': expressionTypes.EVENT,
@@ -4072,8 +4081,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr28',
-            'selector': '[expr28]',
+            'redundantAttribute': 'expr29',
+            'selector': '[expr29]',
             'itemName': 'sprite',
             'indexName': null,
 
@@ -4082,8 +4091,8 @@
             }
           }])
         }, {
-          'redundantAttribute': 'expr30',
-          'selector': '[expr30]',
+          'redundantAttribute': 'expr31',
+          'selector': '[expr31]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4100,10 +4109,10 @@
             return !scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr31',
-          'selector': '[expr31]',
+          'redundantAttribute': 'expr32',
+          'selector': '[expr32]',
 
-          'template': template('<div expr32="expr32" class="smol-desc"></div> ', [{
+          'template': template('<div expr33="expr33" class="smol-desc"></div> ', [{
             'expressions': [{
               'type': expressionTypes.TEXT,
               'childNodeIndex': 1,
@@ -4119,8 +4128,8 @@
               return !scope.state.isStars;
             },
 
-            'redundantAttribute': 'expr32',
-            'selector': '[expr32]',
+            'redundantAttribute': 'expr33',
+            'selector': '[expr33]',
 
             'template': template(
               '\r\n                    Currently playing for the\r\n                ',
@@ -4134,12 +4143,12 @@
             return scope.state.isRIV;
           },
 
-          'redundantAttribute': 'expr33',
-          'selector': '[expr33]',
-          'template': template('\r\n                Rest in Violence\r\n            ', [])
-        }, {
           'redundantAttribute': 'expr34',
           'selector': '[expr34]',
+          'template': template('\r\n                Rest in Violence\r\n            ', [])
+        }, {
+          'redundantAttribute': 'expr35',
+          'selector': '[expr35]',
 
           'expressions': [{
             'type': expressionTypes.TEXT,
@@ -4156,10 +4165,10 @@
             return scope.state.credits;
           },
 
-          'redundantAttribute': 'expr35',
-          'selector': '[expr35]',
+          'redundantAttribute': 'expr36',
+          'selector': '[expr36]',
 
-          'template': template('<raw expr36="expr36"></raw>', [{
+          'template': template('<raw expr37="expr37"></raw>', [{
             'type': bindingTypes.TAG,
             'getComponent': getComponent,
 
@@ -4178,8 +4187,8 @@
               }
             }],
 
-            'redundantAttribute': 'expr36',
-            'selector': '[expr36]'
+            'redundantAttribute': 'expr37',
+            'selector': '[expr37]'
           }])
         }]
       );
@@ -4216,7 +4225,7 @@
     },
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
-      return template('<player-info expr12="expr12"></player-info>', [{
+      return template('<player-info expr18="expr18"></player-info>', [{
         'expressions': [{
           'type': expressionTypes.EVENT,
           'name': 'onclick',
@@ -4251,8 +4260,8 @@
           }
         }],
 
-        'redundantAttribute': 'expr12',
-        'selector': '[expr12]'
+        'redundantAttribute': 'expr18',
+        'selector': '[expr18]'
       }]);
     },
 
@@ -4265,10 +4274,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<h2>Sort by</h2><form expr37="expr37" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
+        '<h2>Sort by</h2><form expr25="expr25" class="sort-control"><label><input type="radio" name="sortby" value="original" checked/>\r\n                First drawn\r\n            </label><label><input type="radio" name="sortby" value="alphabetical"/>\r\n                Alphabetical\r\n            </label><label><input type="radio" name="sortby" value="currentteam"/>\r\n                Current team\r\n            </label></form>',
         [{
-          'redundantAttribute': 'expr37',
-          'selector': '[expr37]',
+          'redundantAttribute': 'expr25',
+          'selector': '[expr25]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4358,10 +4367,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<form expr13="expr13" class="gallery-filter"><input expr14="expr14" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr15="expr15"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr16="expr16" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr17="expr17" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr18="expr18"><option value selected>Select a team</option><optgroup expr19="expr19"></optgroup></select></div></form>',
+        '<form expr10="expr10" class="gallery-filter"><input expr11="expr11" type="text" name="playername" placeholder="Search for player..."/><div><sort-control expr12="expr12"></sort-control></div><div><h2>Filter</h2><h3>Show players who are</h3><div class="filter-selector"><div><input expr13="expr13" id="checkismemberof" type="checkbox" value="ismemberof"/><label for="checkismemberof">\r\n                        Currently a member of\r\n                    </label></div><div><input expr14="expr14" id="checkwasmemberof" type="checkbox" value="wasmemberof"/><label for="checkwasmemberof">\r\n                        Was a member of\r\n                    </label></div></div><select expr15="expr15"><option value selected>Select a team</option><optgroup expr16="expr16"></optgroup></select></div></form>',
         [{
-          'redundantAttribute': 'expr13',
-          'selector': '[expr13]',
+          'redundantAttribute': 'expr10',
+          'selector': '[expr10]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4372,8 +4381,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr14',
-          'selector': '[expr14]',
+          'redundantAttribute': 'expr11',
+          'selector': '[expr11]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4408,11 +4417,11 @@
             }
           }],
 
-          'redundantAttribute': 'expr15',
-          'selector': '[expr15]'
+          'redundantAttribute': 'expr12',
+          'selector': '[expr12]'
         }, {
-          'redundantAttribute': 'expr16',
-          'selector': '[expr16]',
+          'redundantAttribute': 'expr13',
+          'selector': '[expr13]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4430,8 +4439,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr17',
-          'selector': '[expr17]',
+          'redundantAttribute': 'expr14',
+          'selector': '[expr14]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4449,8 +4458,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr18',
-          'selector': '[expr18]',
+          'redundantAttribute': 'expr15',
+          'selector': '[expr15]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
@@ -4472,7 +4481,7 @@
           'getKey': null,
           'condition': null,
 
-          'template': template('<option expr20="expr20"></option>', [{
+          'template': template('<option expr17="expr17"></option>', [{
             'expressions': [{
               'type': expressionTypes.ATTRIBUTE,
               'name': 'label',
@@ -4504,8 +4513,8 @@
               }]
             }]),
 
-            'redundantAttribute': 'expr20',
-            'selector': '[expr20]',
+            'redundantAttribute': 'expr17',
+            'selector': '[expr17]',
             'itemName': 'team',
             'indexName': null,
 
@@ -4514,8 +4523,8 @@
             }
           }]),
 
-          'redundantAttribute': 'expr19',
-          'selector': '[expr19]',
+          'redundantAttribute': 'expr16',
+          'selector': '[expr16]',
           'itemName': 'subleague',
           'indexName': null,
 
@@ -4549,10 +4558,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<ul class="sidebar-nav"><li expr10="expr10">\r\n            Sort & Filter\r\n        </li><li expr11="expr11">\r\n            About\r\n        </li></ul>',
+        '<ul class="sidebar-nav"><li expr23="expr23">\r\n            Sort & Filter\r\n        </li><li expr24="expr24">\r\n            About\r\n        </li></ul>',
         [{
-          'redundantAttribute': 'expr10',
-          'selector': '[expr10]',
+          'redundantAttribute': 'expr23',
+          'selector': '[expr23]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4570,8 +4579,8 @@
             }
           }]
         }, {
-          'redundantAttribute': 'expr11',
-          'selector': '[expr11]',
+          'redundantAttribute': 'expr24',
+          'selector': '[expr24]',
 
           'expressions': [{
             'type': expressionTypes.ATTRIBUTE,
@@ -4621,10 +4630,10 @@
 
     'template': function(template, expressionTypes, bindingTypes, getComponent) {
       return template(
-        '<svg expr24="expr24" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
+        '<svg expr22="expr22" stroke="currentColor" fill="currentColor" class="svg-icon" viewBox="0 0 20 20"><path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"/></svg>',
         [{
-          'redundantAttribute': 'expr24',
-          'selector': '[expr24]',
+          'redundantAttribute': 'expr22',
+          'selector': '[expr22]',
 
           'expressions': [{
             'type': expressionTypes.EVENT,
