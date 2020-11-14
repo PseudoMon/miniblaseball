@@ -1,6 +1,9 @@
 <gallery>
-    <div class="gallery">
+    <div class="loading-screen" style="{ state.fullyLoaded ? 'display: none;' : '' }">
+        Loading ({ state.imagesLoaded } / { props.players.length })
+    </div>
 
+    <div class="{ state.fullyLoaded ? 'gallery' : 'gallery loading' }">
         <div each={ player in props.players } style="{ player.id === 'peanutiel-duffy' ? 'overflow: visible' : '' }">
             <a href="#{ player.id }">
                 <img
@@ -17,8 +20,10 @@
         --grid-width: 150px;
 
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(var(--grid-width), 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(var(--grid-width), 1fr));
 
+        opacity: 1;
+        transition: opacity 300ms;
     }
 
     .gallery img {
@@ -41,6 +46,23 @@
         width: 100%;
         height: 100%;
     }
+
+    .gallery.loading {
+        opacity: 0;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+    }
+
+    .loading-screen {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+    }
     </style>
 
     <script>
@@ -53,12 +75,15 @@
         },
 
         onImageLoaded() {
+            if (this.state.fullyLoaded) { return }
+
             const imagesLoaded = this.state.imagesLoaded + 1
 
             console.log('Total image loaded: ' + imagesLoaded)
 
             if (imagesLoaded >= this.props.players.length) {
-                alert("All images loaded!")
+                console.log("All images loaded!")
+                this.update({ fullyLoaded: true})
             } 
 
             this.update({
