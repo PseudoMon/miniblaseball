@@ -64,6 +64,8 @@
         --color-selectbg: #b3b3b3;
 
         background-color: var(--color-bg);
+        min-width: 100vw;
+        min-height: 100vh;
     }
 
     :host.darkmode {
@@ -82,8 +84,6 @@
         max-width: 1000px;
         margin: 0 auto;
 
-        height: 100vh;
-
         display: grid;
         grid-template-columns: 1fr;
 
@@ -92,6 +92,8 @@
 
     @media (min-width: 760px) {
         .main-container {
+            height: 100vh;
+
             overflow-x: hidden;
             grid-template-columns: 290px 1fr;
         }
@@ -330,7 +332,8 @@
         },
 
         scrollToTop() {
-            this.$('.main-container').scrollTo(0,0)
+            console.log('wee')
+            window.scrollTo(0,0)
         },
 
         toggleDarkmode() {
