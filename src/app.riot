@@ -61,6 +61,8 @@
         --color-overlaybg: rgba(0,0,0,0.6);
         --color-modaltext: #fff;
 
+        --color-selectbg: #b3b3b3;
+
         background-color: var(--color-bg);
     }
 
@@ -71,6 +73,8 @@
         --color-link: #848484;
 
         --color-modalbg: #1c1d1b;
+
+        --color-selectbg: var(--color-soft);
     };
 
     .main-container {
@@ -86,7 +90,7 @@
         color: var(--color-text);
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: 760px) {
         .main-container {
             overflow-x: hidden;
             grid-template-columns: 290px 1fr;
@@ -117,7 +121,7 @@
         box-sizing: border-box;
     }
 
-    @media (min-width: 900px) {
+    @media (min-width: 760px) {
         .sidebar {
             padding: 0 0.2em;
             width: 100%;
@@ -166,8 +170,6 @@
         },
 
         onMounted() {
-            // this.root.classList.add('darkmode')
-
             if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
               this.root.classList.toggle('darkmode')
             }

@@ -219,6 +219,10 @@
 
             let text = "Art inspired by "
 
+            if (creditsArray[0]['text'] === '@hetreasky') {
+                text = "Design by "
+            }
+
             const createLine = function(credit) {
                 if (credit['link']) {
                     return `<a href="${ credit['link'] }" target="_blank">${ credit['text'] }</a>`
