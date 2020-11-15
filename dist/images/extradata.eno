@@ -37,6 +37,9 @@ default: 0
 team: stars
 former-teams:
 - tigers
+credit:
+- @Sphr_AM
+- @hetreasky
 default: 0
 
 # caligula-lotus
@@ -99,6 +102,7 @@ default: 0
 team: steaks
 former-teams:
 - fridays
+credit: @hetreasky
 default: 1
 
 # dominic-marijuana
@@ -130,6 +134,9 @@ default: 0
 
 #gunther-o-brian
 team: shoe thieves
+credit:
+- @desmodusrotunds
+- @hetreasky
 default: 0
 
 # fish-summer
@@ -226,6 +233,7 @@ default: 0
 team: riv
 former-teams:
 - magic
+credit: @hetreasky
 default: 0
 
 # margarito-nava
@@ -275,10 +283,14 @@ default: 0
 
 # qais-dogwalker
 team: dale
+credit: 
+- @hetreasky
+- @aflightybroad
 default: 0
 
 # rodriguez-internet
 team: breath mints
+credit: @hetreasky
 default: 0
 
 # cornelius-games
@@ -361,6 +373,9 @@ default: 0
 
 # tamara-crankit
 team: jazz hands
+credit:
+- @tamara_crankit
+- @hetreasky
 default: 0
 
 # kichiro-guerra
@@ -1075,4 +1090,92 @@ default: 0
 #igneus-delacruz
 team: sunbeams
 credit: @Karagna_
+default: 0
+
+#brock-watson
+team: wild wings
+credit: @hetreasky
+default: 0
+
+#lawrence-horne
+team: wild wings
+credit: @thr33h3ad3ddrag
+default: 0
+
+#fran-beans
+team: wild wings
+credit: @thr33h3addrag
+default: 0
+
+#yong-wright
+team: wild wings
+credit: @thr33h3addrag
+default: 0
+
+#ronan-combs
+team: wild wings
+credit: @thr33h3addrag
+default: 0
+
+#burke-gonzales
+team: wild wings
+credit: @fancymancer
+default: 0
+
+#mullen-peterson
+team: wild wings
+former-teams:
+-firefighters
+credit: @sublimemarch
+default: 0
+
+#rafael-davids
+team: wild wings
+credit: @fancymancer
+default: 0
+
+#case-sports
+team: wild wings
+credit: @hetreasky
+default: 0
+
+#adkins-gwiffin
+team: wild wings
+credit: @hetreasky
+default: 0
+
+#jose-haley
+team: firefighters
+former-teams:
+-wild wings
+credit: @thr33h3addrag
+default: 0
+
+#kennedy-rodgers
+team: firefighters
+former-teams:
+-wild wings
+credit: @thr33h3addrag
+default: 0
+
+#henry-marshallow
+team: pies
+former-teams:
+-garages
+credit: @HenryMarshallow
+default: 0
+
+#eugenia-bickle
+team: sunbeams
+credit: @SashaRoseHansen
+default: 0
+
+#caleb-novak
+team: dale
+credit: @hetreasky
+default: 0
+
+#frasier-shmurmgle
+team: tigers
+credit: @juangeedraws
 default: 0

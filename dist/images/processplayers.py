@@ -79,7 +79,10 @@ def decidesize(nameid):
         'dominic-marijuana',
         'sandie-turner',
         'agan-harrison',
-        'freemium-seraph'
+        'freemium-seraph',
+        
+        'frasier-shmurmgle',
+        'brock-watson'
     ]
 
     biggerboys = [
@@ -89,7 +92,7 @@ def decidesize(nameid):
         'zion-aliciakeyes',
     ]
 
-    peanutiel = ['peanutiel-duffy']
+    peanutiel = ['peanutiel-duffy', 'adkins-gwiffin']
 
     if nameid in bigboys:
         return 'large'
