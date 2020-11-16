@@ -1,7 +1,15 @@
 <filter-control>
     <div class="gallery-chooser">
-        <button onclick={ () => props.onSwitchGallery('main') }>Main League</button>
-        <button onclick={ () => props.onSwitchGallery('guest') }>Guests</button>
+        <span
+            class="{ props.selectedGallery === 'main' ? 'active' : '' }" 
+            onclick={ () => switchGallery('main') }>
+            Main League
+        </span>
+        <span
+            class="{ props.selectedGallery === 'guest' ? 'active' : '' }"  
+            onclick={ () => switchGallery('guest') }>
+            Guest Teams
+        </span>
     </div>
 
     <form class="gallery-filter" onsubmit={ (e) => {e.preventDefault()} }>
@@ -70,6 +78,8 @@
         </div>
     </form>
 
+    
+
     <style>
     :host {
         display: block;
@@ -133,6 +143,30 @@
     optgroup {
         background-color: var(--color-soft);
         color: var(--color-text);
+    }
+
+    .gallery-chooser {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .gallery-chooser > span {
+        display: block;
+        cursor: pointer;
+
+        padding: 0.4em 0.8em;
+        margin: 0 5px;
+        border-radius: 0.5em;
+    }
+
+    .gallery-chooser > span:hover {
+        background-color: var(--color-soft);
+    }
+
+    .gallery-chooser > span.active {
+        background-color: var(--color-text);
+        color: var(--color-bg);
     }
 
     </style>
@@ -206,6 +240,20 @@
             })
 
             this.props.onChangeFilter(this.state)
+        },
+
+        switchGallery(switchTo) {
+            this.props.onSwitchGallery(switchTo)
+
+            // Reset Sort Control too
+            // This feels a bit hackish, but I'm not complaining with results
+            this.$('form.sort-control').reset()
+
+            this.update({
+                appliedFilters: [],
+                teamFilter: '',
+                nameBeingSearched: ''
+            })
         }
 
     }
