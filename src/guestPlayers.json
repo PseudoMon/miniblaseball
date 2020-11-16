@@ -1,0 +1,38 @@
+[
+    {
+        "index": 1,
+        "id": "none-binary",
+        "full-name": "None Binary",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G1NoneBinary.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 2,
+        "id": "breeze-regicide",
+        "full-name": "Breeze Regicide",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G2BreezeRegicide.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 3,
+        "id": "bugcatcher-roldan",
+        "full-name": "Bugcatcher Roldan",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G3BugcatcherRoldan.png"
+        ],
+        "default-sprite": 0
+    }
+]

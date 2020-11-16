@@ -7,10 +7,14 @@ with open('extradata.eno', 'r') as file:
 
 EXTRADATA = enolib.parse(extradata_input)
 
-def getname(filename):
+def getname(filename, is_guest=False):
     """Get player name from the filename"""
 
     name = ""
+
+    if is_guest:
+        # Get rid of the G in the beginning
+        filename = filename[1:]
 
     # Slice to remove the file extension
     for char in filename[0:-4]:
@@ -104,30 +108,6 @@ def decidesize(nameid):
         return 'small'
 
 
-def fillinTeams(players):
-    placements = EXTRADATA
-
-    for player in players:
-        try:
-            # Put in current team
-            team = placements.section(player['id']).field('team').required_string_value()
-            player['team'] = TEAMS[team]
-
-        except enolib.error_types.ValidationError:
-            # Data not inputted (properly)
-            pass
-
-        try:
-            # Put in former teams
-            formerteams = placements.section(player['id']).list('former-teams').required_string_values()
-            player['former-teams'] = list(map(lambda team: TEAMS[team], formerteams))
-
-        except enolib.error_types.ValidationError:
-            # Data not inputted (properly)
-            pass
-
-    return players
-
 def set_team(player):
     placements = EXTRADATA
 
@@ -148,6 +128,7 @@ def set_team(player):
     except enolib.error_types.ValidationError:
         # Data not inputted (properly)
         pass
+
 
 def set_credit(player):
     try:
@@ -206,38 +187,6 @@ def rawcred_to_link(raw_credit):
     return { "link": link, "text": text }
 
 
-def fillinCredits(players):
-
-    for player in players:
-        # result in the JSON should be a list either way
-
-        try:
-            raw_credit = EXTRADATA.section(player['id']).field('credit').optional_string_value()
-            # If there are are no elements called "credit", this will give out None
-            # If "credit" is a list instead, ValidationError will occur
-        
-        except enolib.error_types.ValidationError:
-            raw_credit = EXTRADATA.section(player['id']).list('credit').optional_string_values()
-
-
-        if raw_credit == None:
-            continue
-
-        if type(raw_credit) != list:
-            raw_credits = [raw_credit]
-        else:
-            raw_credits = raw_credit 
-
-        credits = []
-
-        for rawcred in raw_credits:
-            credits.append(rawcred_to_link(rawcred))
-
-        player['credits'] = credits
-
-    return players
-
-
 def get_max_id():
     """Get the largest ID / latest miniblaseballer created"""
 
@@ -249,18 +198,20 @@ def get_max_id():
 
     return max_id
 
+def get_guest_max_id():
+    """Same as get_max_id() but for guest players"""
+    max_id_sprite = glob.glob('G[0-9]*.png')[-1]
+    max_id = int(max_id_sprite[1:2])
 
-max_id = get_max_id()
-players = []
+    return max_id
 
-for i in range(1, max_id + 1):
+def process_single_player(playerid, is_guest=False):
+    # playerid should already be a string!
 
-    if i < 10:
-        playerid = "0" + str(i)
+    if is_guest:
+        sprites = glob.glob('G' + playerid + '[A-Za-z]*.png')
     else:
-        playerid = str(i)
-
-    sprites = glob.glob(playerid + '[A-Za-z]*.png')
+        sprites = glob.glob(playerid + '[A-Za-z]*.png')
 
     try:
         first_sprite = sprites[0]
@@ -269,7 +220,7 @@ for i in range(1, max_id + 1):
         first_sprite = "ERROR.png"
 
     # Get full name
-    player_name = getname(first_sprite)
+    player_name = getname(first_sprite, is_guest)
 
     # Get a nice SIBR-compatible id
     name_id = idify(player_name)
@@ -305,16 +256,38 @@ for i in range(1, max_id + 1):
     set_team(player)
     set_credit(player)
 
+    return player
+
+max_id = get_max_id()
+players = []
+
+guest_max_id = get_guest_max_id()
+guest_players = []
+
+for i in range(1, max_id + 1):
+
+    if i < 10:
+        playerid = "0" + str(i)
+    else:
+        playerid = str(i)
+
+    player = process_single_player(playerid)    
+
+    # Add player to the list
     players.append(player)
 
-# print("Processing team placements...")
-# players = fillinTeams(players)
+for i in range(1, guest_max_id + 1):
+    playerid = str(i)
 
-# print("Processing design credits...")
-# players = fillinCredits(players)
+    player = process_single_player(playerid, True)
+    guest_players.append(player)
+
 
 print("Dumping to file...")
 with open('../../src/players.json', 'w') as file:
     json.dump(players, file, indent=4)
+
+with open('../../src/guestPlayers.json', 'w') as file:
+    json.dump(guest_players, file, indent=4)
 
 print("Done!")
