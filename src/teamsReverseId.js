@@ -1,6 +1,9 @@
 import TeamsData from './teams.json'
+import GuestTeamsData from './guestTeams.json'
 
-const teamsList = TeamsData.map(subleague => {
+const allTeams = TeamsData.concat(GuestTeamsData)
+
+const teamsList = allTeams.map(subleague => {
     return subleague.teams
 }).flat()
 

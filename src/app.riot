@@ -15,10 +15,11 @@
 
                 <filter-control
                     style="{ setScreenDisplay('filter') }"
-                    teams={ teamsData }
+                    teams={ state.teamsData }
                     on-filter-player-name={ filterPlayerName }
                     on-change-filter={ applyFilter }
-                    on-change-sort={ changeSort }>      
+                    on-change-sort={ changeSort }
+                    on-switch-gallery={ switchGallery }>      
                 </filter-control>
 
                 <aboutbox
@@ -30,8 +31,12 @@
 
             <div class="main-content">
                 <gallery
-                    players={ state.playersShown }
-                    players-map={ playersIdMap }>
+                    if={ state.galleryScreen === 'main' }
+                    players={ state.playersShown }>
+                </gallery>
+                <gallery
+                    if={ state.galleryScreen === 'guest' }
+                    players={ state.playersShown }>
                 </gallery>
             </div>
 
@@ -150,24 +155,34 @@
 
     import PlayersData from './players.json'
     import TeamsData from './teams.json'
+    import GuestPlayersData from './guestPlayers.json'
+    import GuestTeamsData from './guestTeams.json'
+
     import TeamsList from './teamsReverseId.js'
 
     export default {
         components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton, DarkModeToggle },
 
         playersData: PlayersData,
+        guestPlayersData: GuestPlayersData,
 
         teamsData: TeamsData,
+        guestTeamsData: GuestTeamsData,
 
         teamsList: TeamsList,
         // This list contains teams in {teamname: index} format
         // For sorting by teams
 
         onBeforeMount() {
+
             this.state = {
                 playersShown: this.playersData,
+                unfilteredPlayers: this.playersData,
+                teamsData: this.teamsData,
+
                 currentSortType: '',
-                sidebarScreen: 'filter'
+                sidebarScreen: 'filter', 
+                galleryScreen: 'main', // 'main' or 'guest'
             }
         },
 
@@ -179,11 +194,13 @@
 
 
         getPlayerData(id) {
-            return this.playersData.find(player => player.id === id)
+            const allPlayers = this.playersData.concat(this.guestPlayersData)
+
+            return allPlayers.find(player => player.id === id)
         },
 
         filterPlayerName(nameToSearch) {
-            const playersShown = this.playersData.filter(player => {
+            const playersShown = this.state.unfilteredPlayers.filter(player => {
                     return player['full-name'].toLowerCase().includes( nameToSearch.toLowerCase())
             })
 
@@ -205,7 +222,7 @@
                 // Return to default
 
                 this.update({
-                    playersShown: this.playersData
+                    playersShown: this.state.unfilteredPlayers
                 })
 
                 this.applySort()
@@ -213,7 +230,7 @@
                 return
             }
 
-            const playersShown = this.playersData.filter(player => {
+            const playersShown = this.state.unfilteredPlayers.filter(player => {
                 if (filters.includes("wasmemberof")) {
 
                     if (player['former-teams'].includes(team)) {
@@ -259,8 +276,6 @@
                 // don't sort anything
                 return
             }
-
-            console.log(sortType)
 
             let playersShown = this.state.playersShown
 
@@ -338,8 +353,40 @@
 
         toggleDarkmode() {
             this.root.classList.toggle('darkmode')
-        }
+        },
 
+        switchGallery(newScreen) {
+            if (this.state.galleryScreen === newScreen) {
+                // No changes
+                console.log("NO CHANGES")
+                return
+            }
+
+            if (newScreen === 'main') {
+
+                this.update({
+                    playersShown: this.playersData,
+                    unfilteredPlayers: this.playersData,
+                    teamsData: this.teamsData,
+
+                    galleryScreen: 'main', // 'main' or 'guest'
+                })
+            }
+
+            else if (newScreen === 'guest') {
+                this.update({
+                    playersShown: this.guestPlayersData,
+                    unfilteredPlayers: this.guestPlayersData,
+                    teamsData: this.guestTeamsData,
+
+                    galleryScreen: 'guest', // 'main' or 'guest'
+                })   
+            }
+
+            console.log("GALLERY SCREEN RN:")
+            console.log(this.state.galleryScreen)
+
+        }
     }
     </script>
 </app>

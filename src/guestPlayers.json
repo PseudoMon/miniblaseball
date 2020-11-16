@@ -34,5 +34,17 @@
             "G3BugcatcherRoldan.png"
         ],
         "default-sprite": 0
+    },
+    {
+        "index": 4,
+        "id": "idk-mydude",
+        "full-name": "Idk Mydude",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G4IdkMydude.png"
+        ],
+        "default-sprite": 0
     }
 ]

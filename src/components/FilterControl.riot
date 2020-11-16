@@ -1,4 +1,9 @@
 <filter-control>
+    <div class="gallery-chooser">
+        <button onclick={ () => props.onSwitchGallery('main') }>Main League</button>
+        <button onclick={ () => props.onSwitchGallery('guest') }>Guests</button>
+    </div>
+
     <form class="gallery-filter" onsubmit={ (e) => {e.preventDefault()} }>
         <input 
             type="text" 
