@@ -1,5 +1,5 @@
 # MiniBlaseball Website
-Hullo, this repository is for the code that runs the #MiniBlaseball website. I wrote this readme to my future self so I don't get lost if I want to get back to this, and well, I guess also for anyone who want to help fix bugs or is learning web development!
+Hullo, this repository is for the code that runs the [#MiniBlaseball website](https://miniblaseball.surge.sh). I wrote this readme for my future self so I don't get lost if I want to get back to this, and well, I guess also for anyone who wants to help fix bugs or is learning web development!
 
 This website is built with Riot and Rollup. It's designed to only run only in the frontend from a single file and a single address. I use some Python scripting to grab and collate metadata for each players, which is exported into a JSON and then loaded into the app. 
 
@@ -54,3 +54,5 @@ Run rollup without using watch. It'll result in a minified production-ready file
 ```
 rollup -c
 ```
+
+The current website is hosted on [Surge.sh](https://surge.sh)!

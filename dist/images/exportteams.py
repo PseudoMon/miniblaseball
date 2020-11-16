@@ -10,12 +10,20 @@ teams_doc = enolib.parse(teams_input)
 teams_for_py = {}
 
 # This should later contain an array of the subleages
-# e.g. for each subleague
+# for each subleague e.g.
 # { "name": "Wild High", "teams": ["Hades Tigers", ...]}
-teams_for_json = []
+# Differentiate between guest teams and regular teams
+main_teams_for_json = []
+guest_teams_for_json = []
 
 for subleague_elem in teams_doc.elements():
     subleague_name = subleague_elem.string_key()
+
+    if subleague_name == "Guests":
+        teams_for_json = guest_teams_for_json
+    else:
+        teams_for_json = main_teams_for_json
+
     print("Processing subleague " + subleague_name +  "...")
 
     teams = []
@@ -31,6 +39,9 @@ for subleague_elem in teams_doc.elements():
 
 print("Dumping to file...")
 with open('../../src/teams.json', 'w') as file:
-    json.dump(teams_for_json, file, indent=4)
+    json.dump(main_teams_for_json, file, indent=4)
+
+with open('../../src/guestTeams.json', 'w') as file:
+    json.dump(guest_teams_for_json, file, indent=4)
 
 print("Done processing teams")

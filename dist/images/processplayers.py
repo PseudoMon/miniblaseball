@@ -128,6 +128,52 @@ def fillinTeams(players):
 
     return players
 
+def set_team(player):
+    placements = EXTRADATA
+
+    try:
+        # Put in current team
+        team = placements.section(player['id']).field('team').required_string_value()
+        player['team'] = TEAMS[team]
+
+    except enolib.error_types.ValidationError:
+        # Data not inputted (properly)
+        pass
+
+    try:
+        # Put in former teams
+        formerteams = placements.section(player['id']).list('former-teams').required_string_values()
+        player['former-teams'] = list(map(lambda team: TEAMS[team], formerteams))
+
+    except enolib.error_types.ValidationError:
+        # Data not inputted (properly)
+        pass
+
+def set_credit(player):
+    try:
+        raw_credit = EXTRADATA.section(player['id']).field('credit').optional_string_value()
+        # If there are are no elements called "credit", this will give out None
+        # If "credit" is a list instead, ValidationError will occur
+    
+    except enolib.error_types.ValidationError:
+        raw_credit = EXTRADATA.section(player['id']).list('credit').optional_string_values()
+
+
+    if raw_credit == None:
+        return
+
+    if type(raw_credit) != list:
+        raw_credits = [raw_credit]
+    else:
+        raw_credits = raw_credit 
+
+    credits = []
+
+    for rawcred in raw_credits:
+        credits.append(rawcred_to_link(rawcred))
+
+    player['credits'] = credits
+
 
 def rawcred_to_link(raw_credit):
     if raw_credit[0] == '@':
@@ -231,6 +277,7 @@ for i in range(1, max_id + 1):
     # Set size
     size = decidesize(name_id)
 
+
     print("Processing " + player_name)
     print("Who is deemed " + size.upper())
 
@@ -243,7 +290,7 @@ for i in range(1, max_id + 1):
         default_sprite = int(default_sprite)
         print("With a default sprite of " + str(default_sprite))
 
-    players.append({
+    player = {
         "index": i,
         "id": name_id,
         "full-name": player_name,
@@ -252,13 +299,19 @@ for i in range(1, max_id + 1):
         "former-teams": [],
         "sprites": sprites,
         "default-sprite": default_sprite
-    })
+    }
 
-print("Processing team placements...")
-players = fillinTeams(players)
+    # Set team and credits
+    set_team(player)
+    set_credit(player)
 
-print("Processing design credits...")
-players = fillinCredits(players)
+    players.append(player)
+
+# print("Processing team placements...")
+# players = fillinTeams(players)
+
+# print("Processing design credits...")
+# players = fillinCredits(players)
 
 print("Dumping to file...")
 with open('../../src/players.json', 'w') as file:
