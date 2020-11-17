@@ -10,6 +10,10 @@ EXTRADATA = enolib.parse(extradata_input)
 def getname(filename, is_guest=False):
     """Get player name from the filename"""
 
+    # Special case for our mysterious Artist
+    if filename == "G032Y3hirvHafgy2738riv.png":
+        return "Y3hirv Hafgy2738riv"
+
     name = ""
 
     if is_guest:
@@ -84,9 +88,17 @@ def decidesize(nameid):
         'sandie-turner',
         'agan-harrison',
         'freemium-seraph',
-        
         'frasier-shmurmgle',
-        'brock-watson'
+        'brock-watson',
+
+        # Pandemonium Artists
+        'breeze-regicide',
+        'schism-thrones',
+        'arbutus-bones',
+        'roxetta-compass',
+        'fishcake-can',
+        'phoebe-blasesona',
+        'angel-ivories'
     ]
 
     biggerboys = [
@@ -186,24 +198,16 @@ def rawcred_to_link(raw_credit):
 
     return { "link": link, "text": text }
 
+def is_a_mascot(player):
+    playerdata = EXTRADATA.section(player['id'])
+    
+    is_mascot = playerdata.field('mascot').optional_string_value()
+    
+    if is_mascot:
+        return True
+    else:
+        return False 
 
-def get_max_id():
-    """Get the largest ID / latest miniblaseballer created"""
-
-    # Get all images with 3 digits id 
-    # Since it's sorted alphabetically, the one at the end
-    # Is the one with the largest ID
-    max_id_sprite = glob.glob('[0-9][0-9][0-9]*.png')[-1]
-    max_id = int(max_id_sprite[0:3])
-
-    return max_id
-
-def get_guest_max_id():
-    """Same as get_max_id() but for guest players"""
-    max_id_sprite = glob.glob('G[0-9]*.png')[-1]
-    max_id = int(max_id_sprite[1:2])
-
-    return max_id
 
 def process_single_player(playerid, is_guest=False):
     # playerid should already be a string!
@@ -256,7 +260,29 @@ def process_single_player(playerid, is_guest=False):
     set_team(player)
     set_credit(player)
 
+    # Is it a mascot?
+    if is_a_mascot(player):
+        player['mascot'] = True
+
     return player
+
+def get_max_id():
+    """Get the largest ID / latest miniblaseballer created"""
+
+    # Get all images with 3 digits id 
+    # Since it's sorted alphabetically, the one at the end
+    # Is the one with the largest ID
+    max_id_sprite = glob.glob('[0-9][0-9][0-9]*.png')[-1]
+    max_id = int(max_id_sprite[0:3])
+
+    return max_id
+
+def get_guest_max_id():
+    """Same as get_max_id() but for guest players"""
+    max_id_sprite = glob.glob('G[0-9]*.png')[-1]
+    max_id = int(max_id_sprite[1:4])
+
+    return max_id
 
 max_id = get_max_id()
 players = []
@@ -276,8 +302,16 @@ for i in range(1, max_id + 1):
     # Add player to the list
     players.append(player)
 
+
+print("\nNow processing guest players!")
+
 for i in range(1, guest_max_id + 1):
-    playerid = str(i)
+    if i < 10:
+        playerid = "00" + str(i)
+    elif i < 100:
+        playerid = "0" + str(i)
+    else:
+        playerid = str(i)
 
     player = process_single_player(playerid, True)
     guest_players.append(player)

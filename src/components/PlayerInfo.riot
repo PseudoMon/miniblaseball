@@ -28,7 +28,7 @@
                 class="team">
                 <div if={ !state.isStars }
                     class="smol-desc">
-                    Currently playing for the
+                    { props.player.mascot ? "Mascot of" : "Currently playing for the" }
                 </div>
                 { props.player["team"] }
             </h3>
@@ -128,7 +128,7 @@
     }
 
     .credits-info {
-        font-size: 0.85em;
+        font-size: 0.9em;
     }
 
     .credits-info a {
@@ -221,6 +221,10 @@
 
             if (creditsArray[0]['text'] === '@hetreasky') {
                 text = "Design by "
+            }
+
+            if (this.props.player.team === "Pandemonium Artists") {
+                text = "Blasesona of "
             }
 
             const createLine = function(credit) {
