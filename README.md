@@ -56,3 +56,6 @@ rollup -c
 ```
 
 The current website is hosted on [Surge.sh](https://surge.sh)!
+
+## Known Bugs / Future Improvements
+On most browsers (at least Firefox) you can't tell the browser to stop loading images. This result in you needing to load every players in the Main League even when you've switched to the Guest Teams page. For someone with less-than-decent internet connection, this isn't ideal.
