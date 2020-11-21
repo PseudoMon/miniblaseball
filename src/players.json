@@ -1820,7 +1820,8 @@
         ],
         "sprites": [
             "92HalexandreyWalton.png",
-            "92HalexandreyWaltonALT.png"
+            "92HalexandreyWaltonALT.png",
+            "92HalexandryWaltonALT.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -1965,26 +1966,18 @@
     },
     {
         "index": 100,
-        "id": "yazmin-mason",
-        "full-name": "Yazmin Mason",
+        "id": "yasmin-mason-a-l-t",
+        "full-name": "Yasmin Mason A L T",
         "size": "small",
-        "team": "Hall Stars",
-        "former-teams": [
-            "Hades Tigers",
-            "Philly Pies"
-        ],
+        "team": "Pending Team",
+        "former-teams": [],
         "sprites": [
+            "100YasminMasonALT2.png",
             "100YazminMason.png",
             "100YazminMasonALT.png",
             "100YazminMasonALT2.png"
         ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/juangeedraws",
-                "text": "@juangeedraws"
-            }
-        ]
+        "default-sprite": 0
     },
     {
         "index": 101,
@@ -2975,7 +2968,7 @@
         "index": 150,
         "id": "morrow-doyle",
         "full-name": "Morrow Doyle",
-        "size": "large",
+        "size": "xlarge",
         "team": "Hall Stars",
         "former-teams": [
             "Charleston Shoe Thieves",
@@ -3724,6 +3717,164 @@
             {
                 "link": "https://twitter.com/juangeedraws",
                 "text": "@juangeedraws"
+            }
+        ]
+    },
+    {
+        "index": 189,
+        "id": "natha-kath",
+        "full-name": "Natha Kath",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Unlimited Tacos"
+        ],
+        "sprites": [
+            "189NathaKath.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 190,
+        "id": "moses-mason",
+        "full-name": "Moses Mason",
+        "size": "small",
+        "team": "Boston Flowers",
+        "former-teams": [
+            "Unlimited Tacos"
+        ],
+        "sprites": [
+            "190MosesMason.png",
+            "190MosesMasonALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "flickerfae#1135"
+            }
+        ]
+    },
+    {
+        "index": 191,
+        "id": "wyatt-glover",
+        "full-name": "Wyatt Glover",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [
+            "Unlimited Tacos"
+        ],
+        "sprites": [
+            "191WyattGlover.png",
+            "191WyattGloverALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 192,
+        "id": "basilio-mason",
+        "full-name": "Basilio Mason",
+        "size": "small",
+        "team": "Unlimited Tacos",
+        "former-teams": [],
+        "sprites": [
+            "192BasilioMason.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/snafubravado",
+                "text": "@snafubravado"
+            }
+        ]
+    },
+    {
+        "index": 193,
+        "id": "wyatt-owens",
+        "full-name": "Wyatt Owens",
+        "size": "small",
+        "team": "Miami Dale",
+        "former-teams": [
+            "Unlimited Tacos"
+        ],
+        "sprites": [
+            "193WyattOwens.png",
+            "193WyattOwensALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mito_underscore",
+                "text": "@mito_underscore"
+            }
+        ]
+    },
+    {
+        "index": 194,
+        "id": "baldwin-breadwinner",
+        "full-name": "Baldwin Breadwinner",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [
+            "Unlimited Tacos",
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "194BaldwinBreadwinner.png",
+            "194BaldwinBreadwinnerALT.png",
+            "194BaldwinBreadwinnerALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ConcordForge",
+                "text": "@ConcordForge"
+            }
+        ]
+    },
+    {
+        "index": 195,
+        "id": "durham-spaceman",
+        "full-name": "Durham Spaceman",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "195DurhamSpaceman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "cobaltkicks#4857"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 196,
+        "id": "ayanna-dumpington",
+        "full-name": "Ayanna Dumpington",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "196AyannaDumpington.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
             }
         ]
     }

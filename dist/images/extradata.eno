@@ -1180,6 +1180,58 @@ team: tigers
 credit: @juangeedraws
 default: 0
 
+#natha-kath
+team: riv
+former-teams:
+-tacos
+default: 0
+
+#moses-mason
+team: flowers
+former-teams:
+-tacos
+credit: "flickerfae#1135"
+default: 0
+
+#wyatt-glover
+team: magic
+former-teams:
+-tacos
+credit: @hetreasky
+default: 0
+
+#basilio-mason
+team: tacos
+credit: @snafubravado
+default: 0
+
+#wyatt-owens
+team: dale
+former-teams:
+-tacos
+credit: @mito_underscore
+default: 0
+
+#baldwin-breadwinner
+team: crabs
+former-teams:
+-tacos
+-fridays
+credit: @ConcordForge
+default: 0
+
+#durham-spaceman
+team: garages
+credit:
+-"cobaltkicks#4857"
+-@hetreasky
+default: 0
+
+#ayanna-dumpington
+team: lift
+credit: @fancymancer
+default: 0
+
 >>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>
