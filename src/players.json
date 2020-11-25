@@ -1966,18 +1966,26 @@
     },
     {
         "index": 100,
-        "id": "yasmin-mason-a-l-t",
-        "full-name": "Yasmin Mason A L T",
+        "id": "yazmin-mason",
+        "full-name": "Yazmin Mason",
         "size": "small",
-        "team": "Pending Team",
-        "former-teams": [],
+        "team": "Hall Stars",
+        "former-teams": [
+            "Hades Tigers",
+            "Philly Pies"
+        ],
         "sprites": [
-            "100YasminMasonALT2.png",
             "100YazminMason.png",
             "100YazminMasonALT.png",
             "100YazminMasonALT2.png"
         ],
-        "default-sprite": 0
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
+        ]
     },
     {
         "index": 101,
@@ -3875,6 +3883,93 @@
             {
                 "link": "https://twitter.com/fancymancer",
                 "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 197,
+        "id": "simon-haley",
+        "full-name": "Simon Haley",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "197SimonHaley.png",
+            "197SimonHaleyALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 198,
+        "id": "eugenia-garbage",
+        "full-name": "Eugenia Garbage",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "198EugeniaGarbage.png",
+            "198EugeniaGarbageALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/AlyssaLMPenney",
+                "text": "@AlyssaLMPenney"
+            }
+        ]
+    },
+    {
+        "index": 199,
+        "id": "antonio-wallace",
+        "full-name": "Antonio Wallace",
+        "size": "large",
+        "team": "RIV",
+        "former-teams": [
+            "Charleston Shoe Thieves",
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "199AntonioWallace.png",
+            "199AntonioWallaceALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/kyl_armstrong",
+                "text": "@kyl_armstrong"
+            }
+        ]
+    },
+    {
+        "index": 200,
+        "id": "lachlan-shelton",
+        "full-name": "Lachlan Shelton",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "200LachlanShelton.png",
+            "200LachlanSheltonALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
             }
         ]
     }

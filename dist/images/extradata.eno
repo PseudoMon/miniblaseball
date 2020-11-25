@@ -1232,9 +1232,39 @@ team: lift
 credit: @fancymancer
 default: 0
 
->>>>>>>>>>>>>
+#simon-haley
+team: shoe thieves
+former-teams:
+-moist talkers
+credit: 
+-@avery_helm
+-@hetreasky
+default: 0
+
+#eugenia-garbage
+team: moist talkers
+former-teams:
+-shoe thieves
+credit: @AlyssaLMPenney
+default: 0
+
+#antonio-wallace
+team: riv
+former-teams:
+-shoe thieves
+-moist talkers
+credit: @kyl_armstrong
+default: 0
+
+#lachlan-shelton
+team: moist talkers
+former-teams: shoe thieves
+credit: @avery_helm
+default: 0
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
->>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #none-binary
 teeam: witches

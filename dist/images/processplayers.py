@@ -78,6 +78,7 @@ def decidesize(nameid):
         'conner-haley',
         'moody-cookbook',
         'nagomi-nava',
+        'antonio-wallace',
 
         'basilio-fig',
         'agan-harrison',
