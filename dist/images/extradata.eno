@@ -1258,8 +1258,31 @@ default: 0
 
 #lachlan-shelton
 team: moist talkers
-former-teams: shoe thieves
+former-teams: 
+-shoe thieves
 credit: @avery_helm
+default: 0
+
+#goodwin-morin
+team: garages
+credit:
+-@_Lizstar_
+-@electronicbeth
+default: 0
+
+#greer-gwiffin
+team: garages
+credit: @hetreasky
+default: 0
+
+#tot-clark
+team: garages
+credit: @CallofDuckies
+default: 0
+
+#oliver-mueller
+team: garages
+credit: "dead#0236"
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

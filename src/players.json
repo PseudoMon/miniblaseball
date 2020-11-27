@@ -3960,7 +3960,9 @@
         "full-name": "Lachlan Shelton",
         "size": "small",
         "team": "Canada Moist Talkers",
-        "former-teams": [],
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
         "sprites": [
             "200LachlanShelton.png",
             "200LachlanSheltonALT.png"
@@ -3970,6 +3972,82 @@
             {
                 "link": "https://twitter.com/avery_helm",
                 "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 201,
+        "id": "goodwin-morin",
+        "full-name": "Goodwin Morin",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "201GoodwinMorin.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_Lizstar_",
+                "text": "@_Lizstar_"
+            },
+            {
+                "link": "https://twitter.com/electronicbeth",
+                "text": "@electronicbeth"
+            }
+        ]
+    },
+    {
+        "index": 202,
+        "id": "greer-gwiffin",
+        "full-name": "Greer Gwiffin",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "202GreerGwiffin.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 203,
+        "id": "tot-clark",
+        "full-name": "Tot Clark",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "203TotClark.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CallofDuckies",
+                "text": "@CallofDuckies"
+            }
+        ]
+    },
+    {
+        "index": 204,
+        "id": "oliver-mueller",
+        "full-name": "Oliver Mueller",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "204OliverMueller.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "dead#0236"
             }
         ]
     }
