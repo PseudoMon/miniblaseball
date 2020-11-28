@@ -100,7 +100,6 @@
         .main-container {
             height: 100vh;
 
-            overflow-x: hidden;
             grid-template-columns: 290px 1fr;
         }
 
@@ -117,6 +116,8 @@
 
     .main-content {
         padding-top: 20px;
+        /* Prevents huge players from overflowing the gallery */
+        overflow-x: hidden;
     }
 
     .sidebar {
