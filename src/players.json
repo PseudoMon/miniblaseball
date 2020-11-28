@@ -122,6 +122,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Hades Tigers"
         ],
         "sprites": [
@@ -147,6 +148,7 @@
         "size": "large",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Boston Flowers"
         ],
         "sprites": [
@@ -168,6 +170,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Canada Moist Talkers"
         ],
         "sprites": [
@@ -349,6 +352,7 @@
         "size": "large",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "New York Millennials"
         ],
         "sprites": [
@@ -370,6 +374,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Hellmouth Sunbeams",
             "Breckenridge Jazz Hands"
         ],
@@ -496,7 +501,8 @@
             "Seattle Garages",
             "Charleston Shoe Thieves",
             "Hall Stars",
-            "THE SHELLED ONE'S PODS"
+            "THE SHELLED ONE'S PODS",
+            "RIV"
         ],
         "sprites": [
             "25JaylenHotdogfingers.png",
@@ -1332,6 +1338,7 @@
         "size": "small",
         "team": "Charleston Shoe Thieves",
         "former-teams": [
+            "RIV",
             "Baltimore Crabs"
         ],
         "sprites": [
@@ -1820,8 +1827,7 @@
         ],
         "sprites": [
             "92HalexandreyWalton.png",
-            "92HalexandreyWaltonALT.png",
-            "92HalexandryWaltonALT.png"
+            "92HalexandreyWaltonALT.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -1971,6 +1977,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Hades Tigers",
             "Philly Pies"
         ],
@@ -2347,6 +2354,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Charleston Shoe Thieves",
             "Canada Moist Talkers"
         ],
@@ -2635,6 +2643,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Hellmouth Sunbeams"
         ],
         "sprites": [
@@ -2964,6 +2973,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Chicago Firefighters"
         ],
         "sprites": [
@@ -3002,6 +3012,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "Hawai'i Fridays"
         ],
         "sprites": [
@@ -3023,6 +3034,7 @@
         "size": "small",
         "team": "Hall Stars",
         "former-teams": [
+            "RIV",
             "New York Millennials"
         ],
         "sprites": [

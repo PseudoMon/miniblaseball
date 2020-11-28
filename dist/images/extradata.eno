@@ -36,6 +36,7 @@ default: 0
 # landry-violence
 team: stars
 former-teams:
+- riv
 - tigers
 credit:
 - @Sphr_AM
@@ -45,6 +46,7 @@ default: 0
 # caligula-lotus
 team: stars
 former-teams:
+- riv
 - flowers
 credit: @freyquinn
 default: 0
@@ -52,6 +54,7 @@ default: 0
 # kiki-familia
 team: stars
 former-teams:
+- riv
 - moist talkers
 credit: @avery_helm
 default: 0
@@ -108,6 +111,7 @@ default: 1
 # dominic-marijuana
 team: stars
 former-teams:
+- riv
 - millennials
 credit: @mermeag
 default: 0
@@ -115,6 +119,7 @@ default: 0
 # randall-marijuana
 team: stars
 former-teams: 
+- riv
 - sunbeams
 - jazz hands
 credit: @alienmandy_
@@ -158,6 +163,7 @@ former-teams:
 - shoe thieves
 - stars
 - pods
+- riv
 credit: @MLeeLunsford
 default: 6
 
@@ -421,6 +427,7 @@ default: 0
 # tillman-henderson
 team: shoe thieves
 former-teams:
+- riv
 - crabs
 credit: @corpserevivers
 default: 1
@@ -625,6 +632,7 @@ default: 0
 # yazmin-mason
 team: stars
 former-teams:
+- riv
 - tigers
 - pies
 credit: @juangeedraws
@@ -747,6 +755,7 @@ default: 0
 # workman-gloom
 team: stars
 former-teams:
+-riv
 -shoe thieves
 -moist talkers
 credit: @shenaniglenn
@@ -840,6 +849,7 @@ default: 0
 #emmett-internet
 team: stars
 former-teams:
+-riv
 -sunbeams
 credit: @churgalax
 default: 0
@@ -945,6 +955,7 @@ default: 0
 #tyreek-olive
 team: stars
 former-teams:
+-riv
 -firefighters
 default: 0
 
@@ -959,6 +970,7 @@ default: 0
 #sebastian-sunshine
 team: stars
 former-teams:
+-riv
 -fridays
 credit: @CocacolaGarlic
 default: 0
@@ -966,6 +978,7 @@ default: 0
 #scrap-murphy
 team: stars
 former-teams:
+-riv
 -millennials
 credit: "wormtongue"
 default: 0

@@ -169,7 +169,9 @@
             }
 
             // Set description
-            const formerTeams = this.props.player['former-teams']
+            const formerTeams = this.props.player['former-teams'].filter(team => team !== "RIV")
+            // Rest in Violence shouldn't be in the former team description (but should still be filtered)
+
             let formerTeamsText = ''
 
             if (formerTeams && formerTeams.length > 0) {
