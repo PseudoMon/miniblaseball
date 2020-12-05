@@ -1,2 +1,4 @@
 pycache/*
 *__pycache__*
+startserver.sh
+*.py
