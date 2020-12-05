@@ -4062,5 +4062,71 @@
                 "text": "dead#0236"
             }
         ]
+    },
+    {
+        "index": 205,
+        "id": "glabe-moon",
+        "full-name": "Glabe Moon",
+        "size": "large",
+        "team": "Boston Flowers",
+        "former-teams": [],
+        "sprites": [
+            "205GlabeMoon.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fairy_calico",
+                "text": "@fairy_calico"
+            }
+        ]
+    },
+    {
+        "index": 206,
+        "id": "chambers-simmons",
+        "full-name": "Chambers Simmons",
+        "size": "small",
+        "team": "Boston Flowers",
+        "former-teams": [],
+        "sprites": [
+            "206ChambersSimmons.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 207,
+        "id": "nic-winkler",
+        "full-name": "Nic Winkler",
+        "size": "small",
+        "team": "Boston Flowers",
+        "former-teams": [],
+        "sprites": [
+            "207NicWinkler.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 208,
+        "id": "dunn-keyes",
+        "full-name": "Dunn Keyes",
+        "size": "small",
+        "team": "Boston Flowers",
+        "former-teams": [],
+        "sprites": [
+            "208DunnKeyes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Coblin#8694"
+            }
+        ]
     }
 ]

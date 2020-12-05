@@ -79,6 +79,7 @@ def decidesize(nameid):
         'moody-cookbook',
         'nagomi-nava',
         'antonio-wallace',
+        'glabe-moon',
 
         'basilio-fig',
         'agan-harrison',

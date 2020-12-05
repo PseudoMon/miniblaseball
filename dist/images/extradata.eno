@@ -1298,12 +1298,31 @@ team: garages
 credit: "dead#0236"
 default: 0
 
+#glabe-moon
+team: flowers
+credit: @fairy_calico
+default: 0
+
+#chambers-simmons
+team: flowers
+credit: @hetreasky
+default: 0
+
+#nic-winkler
+team: flowers
+default: 0
+
+#dunn-keyes
+team: flowers
+credit: "Coblin#8694"
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #none-binary
-teeam: witches
+team: witches
 
 #maddong-candy
 team: artists
