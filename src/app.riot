@@ -165,7 +165,7 @@
     export default {
         components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton, DarkModeToggle },
 
-        playersData: PlayersData,
+        playersData: PlayersData.reverse(),
         guestPlayersData: GuestPlayersData,
 
         teamsData: TeamsData,
@@ -286,6 +286,14 @@
                 playersShown = playersShown.slice().sort((playera, playerb) => {
 
                     return playera.index - playerb.index
+
+                })
+            }
+
+            if (sortType === 'latest') {
+                playersShown = playersShown.slice().sort((playera, playerb) => {
+
+                    return playerb.index - playera.index
 
                 })
             }
