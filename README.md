@@ -59,3 +59,9 @@ The current website is hosted on [Surge.sh](https://surge.sh)!
 
 ## Known Bugs
 On most browsers (at least Firefox) you can't tell the browser to stop loading images. This result in the browser needing to load every players in the Main League even when you've switched to the Guest Teams page. For someone with less-than-decent internet connection, this isn't ideal.
+
+Alt sprites (those not shown in the gallery) in a player's page will not load until all the images in the gallery loads. This is a problem e.g. when going straight to a player's page through the URL instead of through the gallery. Also the reason why we need a loading screen. Not ideal.
+
+Maybe priority hints can help? Implementing lazy loading for the gallery images would be better than a loading screen too!
+
+Changing the player page currently seen by typing directly to the URL will not change data that are processed before they're rendered. This is because states of the PlayerInfo component is not re-processed. Find a way to fix this thx.  

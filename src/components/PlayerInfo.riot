@@ -5,7 +5,7 @@
             class="close-button">    
         </close-button>
 
-        <img class="{ props.player.size === 'huge' ? 'sprite peanutiel' : 'sprite'}" src="images/{ state.viewedSprite }">
+        <img class="{ props.player.size === 'huge' ? 'sprite peanutiel' : 'sprite'}" src="images/{ state.viewedSprite }" importance="high">
 
         <div if={ props.player.sprites.length > 1 }
             class="alt-images">
@@ -14,7 +14,7 @@
                 class="img-box">
                 <img
                     onclick={ (e) => viewSprite(sprite) }
-                    src="images/{ sprite }">
+                    src="images/{ sprite }" importance="high">
             </div>
         </div>
 
