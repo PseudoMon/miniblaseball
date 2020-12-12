@@ -3386,6 +3386,10 @@
             {
                 "link": "https://twitter.com/starfauna",
                 "text": "@starfauna"
+            },
+            {
+                "link": "https://twitter.com/MaybeAMako",
+                "text": "@MaybeAMako"
             }
         ]
     },
@@ -3727,8 +3731,10 @@
         "id": "frasier-shmurmgle",
         "full-name": "Frasier Shmurmgle",
         "size": "large",
-        "team": "Hades Tigers",
-        "former-teams": [],
+        "team": "RIV",
+        "former-teams": [
+            "Hades Tigers"
+        ],
         "sprites": [
             "188FrasierShmurmgle.png"
         ],
@@ -4126,6 +4132,84 @@
             {
                 "link": "",
                 "text": "Coblin#8694"
+            }
+        ]
+    },
+    {
+        "index": 209,
+        "id": "sutton-picklestein",
+        "full-name": "Sutton Picklestein",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [],
+        "sprites": [
+            "209SuttonPicklestein.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/justmako",
+                "text": "@justmako"
+            }
+        ]
+    },
+    {
+        "index": 210,
+        "id": "curry-aliciakeyes",
+        "full-name": "Curry Aliciakeyes",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [],
+        "sprites": [
+            "210CurryAliciakeyes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
+        ]
+    },
+    {
+        "index": 212,
+        "id": "sebastian-townsend",
+        "full-name": "Sebastian Townsend",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "212SebastianTownsend.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/starfauna",
+                "text": "@starfauna"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 213,
+        "id": "sebastian-woodman",
+        "full-name": "Sebastian Woodman",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [],
+        "sprites": [
+            "213SebastianWoodman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/starfauna",
+                "text": "@starfauna"
             }
         ]
     }

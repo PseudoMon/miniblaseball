@@ -1086,7 +1086,9 @@ default: 0
 
 #freemium-seraph
 team: lift
-credit: @starfauna
+credit: 
+- @starfauna
+- @MaybeAMako
 default: 0
 
 #vito-kravitz
@@ -1189,7 +1191,9 @@ credit: @hetreasky
 default: 0
 
 #frasier-shmurmgle
-team: tigers
+team: riv
+former-teams:
+-tigers
 credit: @juangeedraws
 default: 0
 
@@ -1315,6 +1319,71 @@ default: 0
 #dunn-keyes
 team: flowers
 credit: "Coblin#8694"
+default: 0
+
+#sutton-picklestein
+team: magic
+credit: @justmako
+default: 0
+
+#curry-aliciakeyes
+team: magic
+credit: @graciedarts
+default: 0
+
+#stijn-strongbody
+team: lift
+credit: @fancymancer
+default: 0
+
+#sebastian-woodman
+team: shoe thieves
+credit: @starfauna
+default: 0
+
+#sebastian-townsend
+team: riv
+former-teams:
+-shoe thieves
+credit:
+-@starfauna
+-@hetreasky 
+default: 0
+
+#matteo-prestige
+team: riv
+former-teams:
+-shoe thieves
+credit: @shenaniglenn
+default: 0
+
+#blankenship-fischer
+team: riv
+former-teams:
+-shoe thieves
+credit: @hetreasky
+default: 0
+
+#snyder-briggs
+team: shoe thieves
+credit: @DomLiotti
+default: 0
+
+#velasquez-alstott
+team: shoe thieves
+credit: @FinelCountDan
+default: 0
+
+#lotus-mango
+team: lift
+credit: @MaybeAMako
+default: 0
+
+#grollis-zephyr
+team: lift
+credit: 
+- @alienmandy_
+- @MaybeAMako
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

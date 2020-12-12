@@ -222,8 +222,8 @@ def process_single_player(playerid, is_guest=False):
     try:
         first_sprite = sprites[0]
     except  IndexError:
-        print("SOMETHING'S WRONG WITH ID " + playerid)
-        first_sprite = "ERROR.png"
+        print(playerid + " MISSING ID" )
+        return
 
     # Get full name
     player_name = getname(first_sprite, is_guest)
@@ -302,7 +302,8 @@ for i in range(1, max_id + 1):
     player = process_single_player(playerid)    
 
     # Add player to the list
-    players.append(player)
+    if player:
+        players.append(player)
 
 
 print("\nNow processing guest players!")
@@ -316,7 +317,9 @@ for i in range(1, guest_max_id + 1):
         playerid = str(i)
 
     player = process_single_player(playerid, True)
-    guest_players.append(player)
+    
+    if player:
+        guest_players.append(player)
 
 
 print("Dumping to file...")
