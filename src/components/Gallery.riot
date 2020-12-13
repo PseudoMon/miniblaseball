@@ -1,14 +1,15 @@
 <gallery>
-    <div class="loading-screen" style="{ state.fullyLoaded ? 'display: none;' : '' }">
-        Loading ({ state.imagesLoaded } / { props.players.length })
-    </div>
 
-    <div class="{ state.fullyLoaded ? 'gallery' : 'gallery loading' }">
-        <div each={ player in props.players } style="{ player['size'] === 'huge' ? 'overflow: visible' : '' }">
+    <div class="gallery">
+        <div 
+            each={ player in props.players } 
+            
+            style="{ player['size'] === 'huge' ? 'overflow: visible' : '' }"
+
+            data-imagesrc={ `images/${player.sprites[ player['default-sprite'] ]}` }>
+            
             <a href="#{ player.id }">
-                <img
-                    onload={ onImageLoaded }
-                    src={ `images/${player.sprites[ player['default-sprite'] ]}` }>
+                <img src=''>
             </a>
         </div>
         
@@ -35,6 +36,7 @@
 
     .gallery > div {
         overflow: hidden;
+        transition: background-color 1s;
     }
 
     .gallery a:hover {
@@ -66,28 +68,47 @@
 
     <script>
     export default {
-        onBeforeMount() {
-            this.state = {
-                imagesLoaded: 0,
-                fullyLoaded: false
-            }
+        onMounted() {
+            this.createLazyLoading()
         },
 
-        onImageLoaded() {
-            if (this.state.fullyLoaded) { return }
-
-            const imagesLoaded = this.state.imagesLoaded + 1
-
-            console.log('Total image loaded: ' + imagesLoaded)
-
-            if (imagesLoaded >= this.props.players.length) {
-                console.log("All images loaded!")
-                this.update({ fullyLoaded: true})
-            } 
-
-            this.update({
-                imagesLoaded
+        createLazyLoading() {
+            // Without setting minHeight
+            // playerbox's height will be tiny
+            // not representative of what images will be visible
+            this.$$('.gallery > div').forEach(playerbox => {
+                playerbox.style.minHeight = playerbox.offsetWidth.toString() + "px"
             })
+
+            this.observer = new IntersectionObserver(
+                this.onImageInView, 
+                { root: null, threshold: 0.25}
+            )
+
+            this.$$('.gallery > div').forEach(playerbox => {
+                this.observer.observe(playerbox)
+            })
+        },
+
+        onUpdated(props, state) {
+
+            // Reset lazy-loading
+            // Because updates (e.g. thanks to filter/sorting) will change the visible images
+            this.observer.disconnect()
+
+            this.$$('.gallery > div').forEach(playerbox => {
+                this.observer.observe(playerbox)
+            })
+        },
+
+        onImageInView(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelector('img').src = entry.target.dataset.imagesrc
+                    this.observer.unobserve(entry.target)
+                }
+            })
+
         }
     }
     </script>
