@@ -32,11 +32,6 @@
 
             <div class="main-content">
                 <gallery
-                    if={ state.galleryScreen === 'main' }
-                    players={ state.playersShown }>
-                </gallery>
-                <gallery
-                    if={ state.galleryScreen === 'guest' }
                     players={ state.playersShown }>
                 </gallery>
             </div>
@@ -166,7 +161,7 @@
         components: { Gallery, Overlay, Router, Route, FilterControl, Aboutbox, SidebarNav, SiteHeader, TotopButton, DarkModeToggle },
 
         playersData: PlayersData.reverse(),
-        guestPlayersData: GuestPlayersData,
+        guestPlayersData: GuestPlayersData.reverse(),
 
         teamsData: TeamsData,
         guestTeamsData: GuestTeamsData,
@@ -376,7 +371,6 @@
         switchGallery(newScreen) {
             if (this.state.galleryScreen === newScreen) {
                 // No changes
-                console.log("NO CHANGES")
                 return
             }
 
@@ -400,10 +394,7 @@
                     galleryScreen: 'guest', // 'main' or 'guest'
                 })   
             }
-
-            console.log("GALLERY SCREEN RN:")
-            console.log(this.state.galleryScreen)
-
+            
         }
     }
     </script>
