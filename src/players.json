@@ -4212,5 +4212,81 @@
                 "text": "@starfauna"
             }
         ]
+    },
+    {
+        "index": 214,
+        "id": "matteo-prestige",
+        "full-name": "Matteo Prestige",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "214MatteoPrestige.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
+        ]
+    },
+    {
+        "index": 215,
+        "id": "blankenship-fischer",
+        "full-name": "Blankenship Fischer",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "215BlankenshipFischer.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 216,
+        "id": "snyder-briggs",
+        "full-name": "Snyder Briggs",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [],
+        "sprites": [
+            "216SnyderBriggs.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/DomLiotti",
+                "text": "@DomLiotti"
+            }
+        ]
+    },
+    {
+        "index": 217,
+        "id": "velasquez-alstott",
+        "full-name": "Velasquez Alstott",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [],
+        "sprites": [
+            "217VelasquezAlstott.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/FinelCountDan",
+                "text": "@FinelCountDan"
+            }
+        ]
     }
 ]
