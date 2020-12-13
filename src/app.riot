@@ -189,9 +189,10 @@
         },
 
         onMounted() {
-            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-              this.root.classList.toggle('darkmode')
+            if (window.localStorage.getItem('darkmode')) {
+                this.root.classList.add('darkmode')
             }
+
         },
 
 
@@ -363,6 +364,13 @@
 
         toggleDarkmode() {
             this.root.classList.toggle('darkmode')
+
+            if (this.root.classList.contains('darkmode'))
+                window.localStorage.setItem('darkmode', 'true')
+
+            else {
+                window.localStorage.removeItem('darkmode')
+            }
         },
 
         switchGallery(newScreen) {

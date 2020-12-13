@@ -71,6 +71,12 @@
 
     <script>
     export default {
+        onMounted() {
+            if (window.localStorage.getItem('darkmode')) {
+                this.$('#theme-toggle').checked = true
+            }
+        },
+
         onToggle(e) {
             this.$('#theme-toggle').checked = !this.$('#theme-toggle').checked
 
