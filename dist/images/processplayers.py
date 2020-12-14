@@ -43,6 +43,9 @@ def getname(filename, is_guest=False):
     if "Mc " in name:
         name = name.replace("Mc ", "Mc")
 
+    if "Polka Dot" in name:
+        name = name.replace("Polka Dot", "PolkaDot")
+
     # special cases
     if name == "Na N":
         name = "NaN"

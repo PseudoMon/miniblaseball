@@ -4288,5 +4288,79 @@
                 "text": "@FinelCountDan"
             }
         ]
+    },
+    {
+        "index": 220,
+        "id": "polkadot-patterson",
+        "full-name": "PolkaDot Patterson",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [
+            "Kansas City Breath Mints",
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "220PolkaDotPatterson.png",
+            "220PolkaDotPattersonALT.png",
+            "220PolkaDotPattersonALT1.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 221,
+        "id": "donia-bailey",
+        "full-name": "Donia Bailey",
+        "size": "small",
+        "team": "Houston Spies",
+        "former-teams": [],
+        "sprites": [
+            "221DoniaBailey.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
+        ]
+    },
+    {
+        "index": 222,
+        "id": "beasley-day",
+        "full-name": "Beasley Day",
+        "size": "small",
+        "team": "Philly Pies",
+        "former-teams": [],
+        "sprites": [
+            "222BeasleyDay.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Sunny"
+            }
+        ]
+    },
+    {
+        "index": 223,
+        "id": "collins-melon",
+        "full-name": "Collins Melon",
+        "size": "small",
+        "team": "Breckenridge Jazz Hands",
+        "former-teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "223CollinsMelon.png",
+            "223CollinsMelonALT.png"
+        ],
+        "default-sprite": 0
     }
 ]
