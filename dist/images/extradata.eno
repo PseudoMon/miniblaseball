@@ -1410,6 +1410,25 @@ former-teams:
 -spies
 default: 0
 
+#zack-sanders
+team: sunbeams
+credit:
+- @karagna_
+- @voidteatime
+default: 0
+
+#miguel-james
+team: sunbeams
+credit: @Krasi_Savov
+default: 0
+
+#hendricks-richardson
+team: sunbeams
+former-teams:
+-jazz hands
+credit: @Krasi_Savov
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

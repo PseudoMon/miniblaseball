@@ -3379,7 +3379,8 @@
         "team": "Tokyo Lift",
         "former-teams": [],
         "sprites": [
-            "169FreemiumSeraph.png"
+            "169FreemiumSeraph.png",
+            "169FreemiumSeraph2.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -4172,6 +4173,24 @@
         ]
     },
     {
+        "index": 211,
+        "id": "stijn-strongbody",
+        "full-name": "Stijn Strongbody",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "211StijnStrongbody.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
         "index": 212,
         "id": "sebastian-townsend",
         "full-name": "Sebastian Townsend",
@@ -4290,6 +4309,46 @@
         ]
     },
     {
+        "index": 218,
+        "id": "lotus-mango",
+        "full-name": "Lotus Mango",
+        "size": "huge",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "218LotusMango.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MaybeAMako",
+                "text": "@MaybeAMako"
+            }
+        ]
+    },
+    {
+        "index": 219,
+        "id": "grollis-zephyr",
+        "full-name": "Grollis Zephyr",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "219GrollisZephyr.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alienmandy_",
+                "text": "@alienmandy_"
+            },
+            {
+                "link": "https://twitter.com/MaybeAMako",
+                "text": "@MaybeAMako"
+            }
+        ]
+    },
+    {
         "index": 220,
         "id": "polkadot-patterson",
         "full-name": "PolkaDot Patterson",
@@ -4362,5 +4421,67 @@
             "223CollinsMelonALT.png"
         ],
         "default-sprite": 0
+    },
+    {
+        "index": 224,
+        "id": "zack-sanders",
+        "full-name": "Zack Sanders",
+        "size": "huge",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [],
+        "sprites": [
+            "224ZackSanders.png",
+            "224ZackSanders2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/karagna_",
+                "text": "@karagna_"
+            },
+            {
+                "link": "https://twitter.com/voidteatime",
+                "text": "@voidteatime"
+            }
+        ]
+    },
+    {
+        "index": 225,
+        "id": "miguel-james",
+        "full-name": "Miguel James",
+        "size": "small",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [],
+        "sprites": [
+            "225MiguelJames.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Krasi_Savov",
+                "text": "@Krasi_Savov"
+            }
+        ]
+    },
+    {
+        "index": 226,
+        "id": "hendricks-richardson",
+        "full-name": "Hendricks Richardson",
+        "size": "small",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "226HendricksRichardson.png",
+            "226HendricksRichardsonALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Krasi_Savov",
+                "text": "@Krasi_Savov"
+            }
+        ]
     }
 ]

@@ -113,7 +113,7 @@ def decidesize(nameid):
         'morrow-doyle'
     ]
 
-    peanutiel = ['peanutiel-duffy', 'adkins-gwiffin']
+    peanutiel = ['peanutiel-duffy', 'adkins-gwiffin', 'lotus-mango', 'zack-sanders']
 
     if nameid in bigboys:
         return 'large'
