@@ -1422,11 +1422,65 @@ team: sunbeams
 credit: @Krasi_Savov
 default: 0
 
-#hendricks-richardson
+#hendricks-Richardson
 team: sunbeams
 former-teams:
 -jazz hands
 credit: @Krasi_Savov
+default: 0
+
+#schneider-bendie
+team: millennials
+credit: @mermeag
+default: 0
+
+#ren-hunter
+team: millennials
+former-teams:
+-shoe thieves
+credit: @lizzybutt
+default: 0
+
+#andrew-solis
+team: millennials
+former-teams:
+-spies
+credit: @mermeag
+default: 0
+
+#wesley-dudley
+team: riv
+former-teams:
+-millennials
+default: 0
+
+#theodore-cervantes
+team: millennials
+credit: @Fancymancer
+default: 0
+
+#richardson-games
+team: shoe thieves
+former-teams:
+-millennials
+credit: @hetreasky
+default: 0
+
+#charlatan-seabright
+team: millennials
+credit:
+- @BeedropsArt
+- @scandIeous
+default: 0
+
+#mclaughlin-scorpler
+team: riv
+former-teams:
+-millennials
+-tigers
+credit:
+- @rabbit_traps
+- @snafubravado
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

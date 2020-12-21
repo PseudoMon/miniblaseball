@@ -4468,19 +4468,172 @@
         "id": "hendricks-richardson",
         "full-name": "Hendricks Richardson",
         "size": "small",
-        "team": "Hellmouth Sunbeams",
-        "former-teams": [
-            "Breckenridge Jazz Hands"
-        ],
+        "team": "Pending Team",
+        "former-teams": [],
         "sprites": [
             "226HendricksRichardson.png",
             "226HendricksRichardsonALT.png"
         ],
+        "default-sprite": 0
+    },
+    {
+        "index": 227,
+        "id": "schneider-bendie",
+        "full-name": "Schneider Bendie",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [],
+        "sprites": [
+            "227SchneiderBendie.png"
+        ],
         "default-sprite": 0,
         "credits": [
             {
-                "link": "https://twitter.com/Krasi_Savov",
-                "text": "@Krasi_Savov"
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
+        ]
+    },
+    {
+        "index": 228,
+        "id": "ren-hunter",
+        "full-name": "Ren Hunter",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "228RenHunter.png",
+            "228RenHunterALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/lizzybutt",
+                "text": "@lizzybutt"
+            }
+        ]
+    },
+    {
+        "index": 229,
+        "id": "andrew-solis",
+        "full-name": "Andrew Solis",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "229AndrewSolis.png",
+            "229AndrewSolisALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
+        ]
+    },
+    {
+        "index": 230,
+        "id": "wesley-dudley",
+        "full-name": "Wesley Dudley",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "230WesleyDudley.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 231,
+        "id": "theodore-cervantes",
+        "full-name": "Theodore Cervantes",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [],
+        "sprites": [
+            "231TheodoreCervantes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Fancymancer",
+                "text": "@Fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 232,
+        "id": "richardson-games",
+        "full-name": "Richardson Games",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "232RichardsonGames.png",
+            "232RichardsonGamesALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 233,
+        "id": "charlatan-seabright",
+        "full-name": "Charlatan Seabright",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [],
+        "sprites": [
+            "233CharlatanSeabright.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BeedropsArt",
+                "text": "@BeedropsArt"
+            },
+            {
+                "link": "https://twitter.com/scandIeous",
+                "text": "@scandIeous"
+            }
+        ]
+    },
+    {
+        "index": 234,
+        "id": "mclaughlin-scorpler",
+        "full-name": "McLaughlin Scorpler",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "New York Millennials",
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "234McLaughlinScorpler.png",
+            "234McLaughlinScorplerALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/rabbit_traps",
+                "text": "@rabbit_traps"
+            },
+            {
+                "link": "https://twitter.com/snafubravado",
+                "text": "@snafubravado"
             }
         ]
     }
