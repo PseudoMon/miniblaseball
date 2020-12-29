@@ -148,8 +148,10 @@ default: 0
 team: moist talkers
 former-teams:
 -  tigers
-credit: instagram.com/lote_lake
-default: 0
+credit: 
+- instagram.com/lote_lake
+- @AlyssaLMPenney
+default: 1
 
 # zion-aliciakeyes
 team: tigers
@@ -495,7 +497,9 @@ default: 0
 
 # carmelo-plums
 team: tigers
-credit: @Sovenas_Ark
+credit: 
+-@Sovenas_Ark
+-@untunasandwich
 default: 0
 
 # sexton-wheerer
@@ -1422,7 +1426,7 @@ team: sunbeams
 credit: @Krasi_Savov
 default: 0
 
-#hendricks-Richardson
+#hendricks-richardson
 team: sunbeams
 former-teams:
 -jazz hands
@@ -1481,6 +1485,72 @@ former-teams:
 credit:
 - @rabbit_traps
 - @snafubravado
+default: 0
+
+#bevan-underbuck
+team: crabs
+former-teams:
+-jazz hands
+-fridays
+credit: @ChezForShire
+default: 0
+
+#zi-delacruz
+team: riv
+former-teams:
+-steaks
+credit: @hetreasky
+default: 0
+
+#montgomery-bullock
+team: fridays
+former-teams:
+-crabs
+credit: @hetreasky
+default: 0
+
+#declan-suzanne
+team: firefighters
+credit: @_waalkr
+default: 0
+
+#alx-pineapple
+team: "Danger Zone"
+credit: @hetreasky
+default: 0
+
+#paula-mason
+team: tigers
+former-teams:
+-firefighters
+-steaks
+-garages
+credit: @thatsushichick
+default: 0
+
+#randy-castillo
+team: tigers
+credit: @CurseOfScots
+default: 0
+
+#famous-owens
+team: tigers
+credit: @glassgoblin
+default: 0
+
+#mooney-doctor
+team: moist talkers
+credit: @avery_helm
+default: 0
+
+#commissioner-vapor
+team: moist talkers
+credit: @MackinItHappen
+default: 0
+
+#greer-lott
+team: moist talkers
+credit: @Spiral_Joe
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1622,4 +1692,3 @@ mascot: yes
 #y3hirv-hafgy2738riv
 team: artists
 credit: "Shen"
-

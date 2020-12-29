@@ -463,13 +463,19 @@
         ],
         "sprites": [
             "23FishSummer.png",
+            "23FishSummer2.png",
+            "23FishSummer2ALT.png",
             "23FishSummerALT.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://instagram.com/lote_lake",
                 "text": "lote_lake"
+            },
+            {
+                "link": "https://twitter.com/AlyssaLMPenney",
+                "text": "@AlyssaLMPenney"
             }
         ]
     },
@@ -1547,13 +1553,18 @@
         "team": "Hades Tigers",
         "former-teams": [],
         "sprites": [
-            "77CarmeloPlums.png"
+            "77CarmeloPlums.png",
+            "77CarmeloPlums2.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/Sovenas_Ark",
                 "text": "@Sovenas_Ark"
+            },
+            {
+                "link": "https://twitter.com/untunasandwich",
+                "text": "@untunasandwich"
             }
         ]
     },
@@ -4426,7 +4437,7 @@
         "index": 224,
         "id": "zack-sanders",
         "full-name": "Zack Sanders",
-        "size": "huge",
+        "size": "xlarge",
         "team": "Hellmouth Sunbeams",
         "former-teams": [],
         "sprites": [
@@ -4468,13 +4479,21 @@
         "id": "hendricks-richardson",
         "full-name": "Hendricks Richardson",
         "size": "small",
-        "team": "Pending Team",
-        "former-teams": [],
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [
+            "Breckenridge Jazz Hands"
+        ],
         "sprites": [
             "226HendricksRichardson.png",
             "226HendricksRichardsonALT.png"
         ],
-        "default-sprite": 0
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Krasi_Savov",
+                "text": "@Krasi_Savov"
+            }
+        ]
     },
     {
         "index": 227,
@@ -4634,6 +4653,221 @@
             {
                 "link": "https://twitter.com/snafubravado",
                 "text": "@snafubravado"
+            }
+        ]
+    },
+    {
+        "index": 235,
+        "id": "bevan-underbuck",
+        "full-name": "Bevan Underbuck",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [
+            "Breckenridge Jazz Hands",
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "235BevanUnderbuck.png",
+            "235BevanUnderbuckALT.png",
+            "235BevanUnderbuckALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ChezForShire",
+                "text": "@ChezForShire"
+            }
+        ]
+    },
+    {
+        "index": 236,
+        "id": "zi-delacruz",
+        "full-name": "Zi Delacruz",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "236ZiDelacruz.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 237,
+        "id": "montgomery-bullock",
+        "full-name": "Montgomery Bullock",
+        "size": "xlarge",
+        "team": "Hawai'i Fridays",
+        "former-teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "237MontgomeryBullock.png",
+            "237MontgomeryBullockALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 238,
+        "id": "declan-suzanne",
+        "full-name": "Declan Suzanne",
+        "size": "small",
+        "team": "Chicago Firefighters",
+        "former-teams": [],
+        "sprites": [
+            "238DeclanSuzanne.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 239,
+        "id": "alx-pineapple",
+        "full-name": "Alx Pineapple",
+        "size": "small",
+        "team": "Danger Zone",
+        "former-teams": [],
+        "sprites": [
+            "239AlxPineapple.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 240,
+        "id": "paula-mason",
+        "full-name": "Paula Mason",
+        "size": "small",
+        "team": "Hades Tigers",
+        "former-teams": [
+            "Chicago Firefighters",
+            "Dallas Steaks",
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "240PaulaMason.png",
+            "240PaulaMasonALT.png",
+            "240PaulaMasonALT2.png",
+            "240PaulaMasonALT3.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thatsushichick",
+                "text": "@thatsushichick"
+            }
+        ]
+    },
+    {
+        "index": 241,
+        "id": "randy-castillo",
+        "full-name": "Randy Castillo",
+        "size": "small",
+        "team": "Hades Tigers",
+        "former-teams": [],
+        "sprites": [
+            "241RandyCastillo.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CurseOfScots",
+                "text": "@CurseOfScots"
+            }
+        ]
+    },
+    {
+        "index": 242,
+        "id": "famous-owens",
+        "full-name": "Famous Owens",
+        "size": "small",
+        "team": "Hades Tigers",
+        "former-teams": [],
+        "sprites": [
+            "242FamousOwens.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 243,
+        "id": "mooney-doctor",
+        "full-name": "Mooney Doctor",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "243MooneyDoctor.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 244,
+        "id": "commissioner-vapor",
+        "full-name": "Commissioner Vapor",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "244CommissionerVapor.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
+            }
+        ]
+    },
+    {
+        "index": 245,
+        "id": "greer-lott",
+        "full-name": "Greer Lott",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "245GreerLott.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Spiral_Joe",
+                "text": "@Spiral_Joe"
             }
         ]
     }

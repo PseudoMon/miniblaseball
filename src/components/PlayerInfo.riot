@@ -14,7 +14,7 @@
                 class="img-box">
                 <img
                     onclick={ (e) => viewSprite(sprite) }
-                    src="images/{ sprite }" importance="high">
+                    src="images/{ sprite }">
             </div>
         </div>
 
@@ -164,7 +164,7 @@
                 this.root.style.setProperty("--player-altscaling", "scale(2, 2)")
             }
 
-            if (playerSize === "large" || playerSize === "xlarge") {
+            if (playerSize === "large") {
                 this.root.style.setProperty("--player-altscaling", "scale(1.5, 1.5)")
             }
 

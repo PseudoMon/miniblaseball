@@ -110,10 +110,16 @@ def decidesize(nameid):
         'washer-barajas',
         'axel-trololol',
         'zion-aliciakeyes',
-        'morrow-doyle'
+        'morrow-doyle',
+        'zack-sanders', 
+        'montgomery-bullock'
     ]
 
-    peanutiel = ['peanutiel-duffy', 'adkins-gwiffin', 'lotus-mango', 'zack-sanders']
+    peanutiel = [
+        'peanutiel-duffy', 
+        'adkins-gwiffin', 
+        'lotus-mango', 
+    ]
 
     if nameid in bigboys:
         return 'large'
@@ -131,7 +137,13 @@ def set_team(player):
     try:
         # Put in current team
         team = placements.section(player['id']).field('team').required_string_value()
-        player['team'] = TEAMS[team]
+        
+        # Quotation marks mean it's not in the team list
+        # e.g. "Danger Zone"
+        if "\"" in team:
+            player['team'] = team.replace("\"", "")
+        else:
+            player['team'] = TEAMS[team]
 
     except enolib.error_types.ValidationError:
         # Data not inputted (properly)
