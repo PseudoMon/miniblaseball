@@ -123,7 +123,7 @@ former-teams:
 - sunbeams
 - jazz hands
 credit: @alienmandy_
-default: 0
+default: 1
 
 # don-elliott
 team: dale
@@ -1370,7 +1370,9 @@ default: 0
 
 #snyder-briggs
 team: shoe thieves
-credit: @DomLiotti
+credit:
+- @DomLiotti
+- @hetreasky
 default: 0
 
 #velasquez-alstott
@@ -1552,6 +1554,64 @@ default: 0
 team: moist talkers
 credit: @Spiral_Joe
 default: 0
+
+#gallup-crueller
+team: steaks
+credit: @BearOverdrive
+default: 0
+
+#kit-adamses
+team: steaks
+credit: @MLeeLunsford
+default: 0
+
+#sam-scandal
+team: steaks
+credit: @MLeeLunsford
+default: 0
+
+#ronan-jaylee
+team: steaks
+credit: @MLeeLunsford
+default: 0
+
+#beans-mcblase
+team: moist talkers
+credit: @Spiral_Joe
+default: 0
+
+#jesús-koch
+team: moist talkers
+credit: @avery_helm
+default: 0
+
+#jenkins-good
+team: moist talkers
+credit: @spiral_joe
+default: 0
+
+#hobbs-cain
+team: riv
+former-teams:
+-moist talkers
+-pies
+credit: @avery_helm
+default: 0
+
+#fitzgerald-wanderlust
+team: shoe thieves
+former-teams:
+-tacos
+credit: @annapullara
+default: 0
+
+#kevin-dudley
+team: tacos
+former-teams:
+-pies
+-shoe thieves
+credit: @kyl_armstrong
+default: 2
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

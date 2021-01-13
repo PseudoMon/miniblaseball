@@ -2,7 +2,7 @@ import glob, json, enolib
 from exportteams import teams_for_py as TEAMS
 # importing from exportteams should also create teams.json file
 
-with open('extradata.eno', 'r') as file:
+with open('extradata.eno', 'r', encoding="utf-8") as file:
     extradata_input = file.read()
 
 EXTRADATA = enolib.parse(extradata_input)
@@ -94,6 +94,7 @@ def decidesize(nameid):
         'freemium-seraph',
         'frasier-shmurmgle',
         'brock-watson',
+        'gallup-crueller',
 
         # Pandemonium Artists
         'breeze-regicide',
@@ -338,10 +339,10 @@ for i in range(1, guest_max_id + 1):
 
 
 print("Dumping to file...")
-with open('../../src/players.json', 'w') as file:
-    json.dump(players, file, indent=4)
+with open('../../src/players.json', 'w', encoding='utf-8') as file:
+    json.dump(players, file, indent=4, ensure_ascii=False)
 
-with open('../../src/guestPlayers.json', 'w') as file:
-    json.dump(guest_players, file, indent=4)
+with open('../../src/guestPlayers.json', 'w', encoding='utf-8') as file:
+    json.dump(guest_players, file, indent=4, ensure_ascii=False)
 
 print("Done!")

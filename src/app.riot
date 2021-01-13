@@ -192,6 +192,8 @@
 
 
         getPlayerData(id) {
+            id = decodeURI(id)
+
             const allPlayers = this.playersData.concat(this.guestPlayersData)
 
             return allPlayers.find(player => player.id === id)
@@ -353,7 +355,6 @@
         },
 
         scrollToTop() {
-            console.log('wee')
             window.scrollTo(0,0)
         },
 

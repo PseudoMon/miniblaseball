@@ -383,7 +383,7 @@
             "19RandallMarijuanaALT.png",
             "19RandallMarijuanaALT2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/alienmandy_",
@@ -438,7 +438,8 @@
         "team": "Charleston Shoe Thieves",
         "former-teams": [],
         "sprites": [
-            "22GuntherOBrian.png"
+            "22GuntherOBrian.png",
+            "22GuntherOBrian2.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -4291,13 +4292,18 @@
         "team": "Charleston Shoe Thieves",
         "former-teams": [],
         "sprites": [
-            "216SnyderBriggs.png"
+            "216SnyderBriggs.png",
+            "216SnyderBriggs2.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/DomLiotti",
                 "text": "@DomLiotti"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
             }
         ]
     },
@@ -4868,6 +4874,198 @@
             {
                 "link": "https://twitter.com/Spiral_Joe",
                 "text": "@Spiral_Joe"
+            }
+        ]
+    },
+    {
+        "index": 246,
+        "id": "gallup-crueller",
+        "full-name": "Gallup Crueller",
+        "size": "large",
+        "team": "Dallas Steaks",
+        "former-teams": [],
+        "sprites": [
+            "246GallupCrueller.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BearOverdrive",
+                "text": "@BearOverdrive"
+            }
+        ]
+    },
+    {
+        "index": 247,
+        "id": "kit-adamses",
+        "full-name": "Kit Adamses",
+        "size": "small",
+        "team": "Dallas Steaks",
+        "former-teams": [],
+        "sprites": [
+            "247KitAdamses.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
+        ]
+    },
+    {
+        "index": 248,
+        "id": "sam-scandal",
+        "full-name": "Sam Scandal",
+        "size": "small",
+        "team": "Dallas Steaks",
+        "former-teams": [],
+        "sprites": [
+            "248SamScandal.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
+        ]
+    },
+    {
+        "index": 249,
+        "id": "ronan-jaylee",
+        "full-name": "Ronan Jaylee",
+        "size": "small",
+        "team": "Dallas Steaks",
+        "former-teams": [],
+        "sprites": [
+            "249RonanJaylee.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
+        ]
+    },
+    {
+        "index": 250,
+        "id": "beans-mcblase",
+        "full-name": "Beans McBlase",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "250BeansMcBlase.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Spiral_Joe",
+                "text": "@Spiral_Joe"
+            }
+        ]
+    },
+    {
+        "index": 251,
+        "id": "jesús-koch",
+        "full-name": "Jesús Koch",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "251JesúsKoch.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 252,
+        "id": "jenkins-good",
+        "full-name": "Jenkins Good",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [],
+        "sprites": [
+            "252JenkinsGood.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/spiral_joe",
+                "text": "@spiral_joe"
+            }
+        ]
+    },
+    {
+        "index": 253,
+        "id": "hobbs-cain",
+        "full-name": "Hobbs Cain",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Canada Moist Talkers",
+            "Philly Pies"
+        ],
+        "sprites": [
+            "253HobbsCain.png",
+            "253HobbsCainALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 254,
+        "id": "fitzgerald-wanderlust",
+        "full-name": "Fitzgerald Wanderlust",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [
+            "Unlimited Tacos"
+        ],
+        "sprites": [
+            "254FitzgeraldWanderlust.png",
+            "254FitzgeraldWanderlustALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/annapullara",
+                "text": "@annapullara"
+            }
+        ]
+    },
+    {
+        "index": 255,
+        "id": "kevin-dudley",
+        "full-name": "Kevin Dudley",
+        "size": "small",
+        "team": "Unlimited Tacos",
+        "former-teams": [
+            "Philly Pies",
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "255KevinDudley.png",
+            "255KevinDudleyALT.png",
+            "255KevinDudleyALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/kyl_armstrong",
+                "text": "@kyl_armstrong"
             }
         ]
     }
