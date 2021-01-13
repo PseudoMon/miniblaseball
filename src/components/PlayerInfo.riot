@@ -150,72 +150,39 @@
         components: { CloseButton, Raw },
 
         onBeforeMount(props, state) {
-            const player = props.player
-
-            this.state = {
-                viewedSprite: player.sprites[ player['default-sprite'] ],
-                credits: this.createCreditsText(player['credits'])
-            }
+            console.log(props.player)
+            console.log(this.setUpdatedState(props))
+            this.state = this.setUpdatedState(props)
         },
 
-        onMounted() {
-            console.log(this.props.player)
+        onBeforeUpdate(props, state) {
+            Object.assign(state, this.setUpdatedState(props))
+        },
+
+        setUpdatedState(props) {
+            // Set sprite being viewed
+            const viewedSprite = props.player.sprites[ props.player['default-sprite'] ]
+
+            // Set credit
+            const credits = this.createCreditsText()
 
             // Set wiki link
-            let name = this.props.player['full-name'].replace(" ", "_")
-            const wikilink = "https://www.blaseball.wiki/w/" + name
+            const wikilink = this.createWikiLink()
 
             // Set sizing
-            const playerSize = this.props.player.size
-
-            this.root.style.setProperty("--player-size", `var(--size-${playerSize}`)
-
-            if (playerSize === "small") {
-                this.root.style.setProperty("--player-altscaling", "scale(2, 2)")
-            }
-
-            if (playerSize === "large") {
-                this.root.style.setProperty("--player-altscaling", "scale(1.5, 1.5)")
-            }
+            this.setPlayerSize()
 
             // Set description
-            const formerTeams = this.props.player['former-teams'].filter(team => team !== "RIV")
-            // Rest in Violence shouldn't be in the former team description (but should still be filtered)
+            const formerTeamsText = this.createFormerTeamsText()
 
-            let formerTeamsText = ''
-
-            if (formerTeams && formerTeams.length > 0) {
-                let teamsText = ''
-
-                if (formerTeams.length === 1) {
-                    // Only in one team formerly? Just add it.
-                    teamsText = "the " + formerTeams[0]
-                }
-
-                else {
-
-                    for(let i = 0; i < formerTeams.length - 1; i++) {
-                        teamsText += "the " + formerTeams[i] + ', '
-                    }
-
-                    if (formerTeams.length === 2) {
-                        teamsText = teamsText.slice(0, -2) 
-                        teamsText += " "
-                        // remove comma when there's only two    
-                    }
-                
-                    teamsText += "and the " + formerTeams[formerTeams.length - 1]
-                }
-
-                formerTeamsText = `Formerly of ${teamsText}.`
-            }
-
-            this.update({
+            return {
+                viewedSprite,
+                credits,
                 wikilink,
-                isRIV: this.props.player.team === "RIV" ? true : false,
-                isStars: this.props.player.team === "Hall Stars" ? true : false,
+                isRIV: props.player.team === "RIV" ? true : false,
+                isStars: props.player.team === "Hall Stars" ? true : false,
                 formerTeamsText
-            }) 
+            }
         },
 
         viewSprite(sprite) {
@@ -224,7 +191,9 @@
             })
         },
 
-        createCreditsText(creditsArray) {
+        createCreditsText() {
+            const creditsArray = this.props.player['credits']
+
             if (!creditsArray) {
                 // No credit is listed
                 return
@@ -270,6 +239,60 @@
             }
 
             return text
+        },
+
+        createWikiLink() {
+            let name = this.props.player['full-name'].replace(" ", "_")
+            return `https://www.blaseball.wiki/w/${name}`
+        },
+
+        setPlayerSize() {
+            const playerSize = this.props.player.size
+            
+            this.root.style.setProperty("--player-size", `var(--size-${playerSize}`)
+
+            if (playerSize === "small") {
+                this.root.style.setProperty("--player-altscaling", "scale(2, 2)")
+            }
+
+            if (playerSize === "large") {
+                this.root.style.setProperty("--player-altscaling", "scale(1.5, 1.5)")
+            }
+        },
+
+        createFormerTeamsText() {
+            const formerTeams = this.props.player['former-teams'].filter(team => team !== "RIV")
+            // Rest in Violence shouldn't be in the former team description (but should still be filtered)
+
+            let formerTeamsText = ''
+
+            if (formerTeams && formerTeams.length > 0) {
+                let teamsText = ''
+
+                if (formerTeams.length === 1) {
+                    // Only in one team formerly? Just add it.
+                    teamsText = "the " + formerTeams[0]
+                }
+
+                else {
+
+                    for(let i = 0; i < formerTeams.length - 1; i++) {
+                        teamsText += "the " + formerTeams[i] + ', '
+                    }
+
+                    if (formerTeams.length === 2) {
+                        teamsText = teamsText.slice(0, -2) 
+                        teamsText += " "
+                        // remove comma when there's only two    
+                    }
+                
+                    teamsText += "and the " + formerTeams[formerTeams.length - 1]
+                }
+
+                formerTeamsText = `Formerly of ${teamsText}.`
+            }
+
+            return formerTeamsText
         }
 
     }
