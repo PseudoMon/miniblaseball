@@ -150,18 +150,25 @@
         components: { CloseButton, Raw },
 
         onBeforeMount(props, state) {
-            console.log(props.player)
-            console.log(this.setUpdatedState(props))
-            this.state = this.setUpdatedState(props)
+            this.state = this.setUpdatedState(props, state)
         },
 
         onBeforeUpdate(props, state) {
-            Object.assign(state, this.setUpdatedState(props))
+            Object.assign(state, this.setUpdatedState(props, state))
         },
 
-        setUpdatedState(props) {
+        setUpdatedState(props, state) {
             // Set sprite being viewed
-            const viewedSprite = props.player.sprites[ props.player['default-sprite'] ]
+            // Change to default when a new player is in view
+            // But use the already set viewedSprite if it's an alt
+            let viewedSprite
+
+            if (props.player.id !== state.id) { 
+                viewedSprite = props.player.sprites[ props.player['default-sprite'] ]
+            }
+            else {
+                viewedSprite = state.viewedSprite
+            }
 
             // Set credit
             const credits = this.createCreditsText()
@@ -181,7 +188,8 @@
                 wikilink,
                 isRIV: props.player.team === "RIV" ? true : false,
                 isStars: props.player.team === "Hall Stars" ? true : false,
-                formerTeamsText
+                formerTeamsText,
+                id: props.player.id
             }
         },
 
