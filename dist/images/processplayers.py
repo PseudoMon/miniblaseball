@@ -49,15 +49,19 @@ def getname(filename, is_guest=False):
     # special cases
     if name == "Na N":
         name = "NaN"
+    elif name == "Gunther O Brian":
+        name = "Gunther O'Brian"
     elif name == "Evelton McBlase I I":
         name = "Evelton McBlase II"
+    elif name == "Nagomi McDaniel":
+        name = "Nagomi Mcdaniel"
 
     return name
 
 
 def idify(fullname):
     """Transforms e.g. Wyatt Quitter to wyatt-quitter"""
-    return fullname.lower().replace(" ", "-")
+    return fullname.lower().replace(" ", "-").replace("'","-")
 
 
 def decidesize(nameid):

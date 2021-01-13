@@ -19,7 +19,7 @@ You can find the generated players data in `src/players.json` and `src/guestPlay
 
 Those files are created by running  `python processplayers.py` inside `dist/images`. Players's names and sprites are determined from the images and their filename. Size determination is (for now) manually coded into the script. Other metadata is in `dist/images/extradata.eno`
 
-Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script already adjusts for players with "Mc" in their name (e.g. McDowell Mason), NaN, PolkaDot, Evelton McBlase II, and Y3hirv.
+Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script has manual adjustments for some players, like NaN or Y3hirv and those with "Mc" in their name (e.g. McDowell Mason). We use UTF-8 encoding, so non-English letters should work as well (thanks Jesús Koch). 
 
 A player's "size" decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
 
