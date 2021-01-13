@@ -44,6 +44,12 @@
             <p if={ state.credits } class="credits-info">
                 <raw html={ state.credits }></raw>
             </p>
+
+            <p class="wiki-link">
+                Wiki page: <a href="{ state.wikilink }" target="_blank">
+                    { props.player["full-name"] }
+                </a>
+            </p>
         </div>
     </div>
 
@@ -127,11 +133,11 @@
         font-size: 0.7em;
     }
 
-    .credits-info {
+    .credits-info, .wiki-link {
         font-size: 0.9em;
     }
 
-    .credits-info a {
+    a {
         color: inherit;
     }
     </style>
@@ -154,6 +160,10 @@
 
         onMounted() {
             console.log(this.props.player)
+
+            // Set wiki link
+            let name = this.props.player['full-name'].replace(" ", "_")
+            const wikilink = "https://www.blaseball.wiki/w/" + name
 
             // Set sizing
             const playerSize = this.props.player.size
@@ -201,6 +211,7 @@
             }
 
             this.update({
+                wikilink,
                 isRIV: this.props.player.team === "RIV" ? true : false,
                 isStars: this.props.player.team === "Hall Stars" ? true : false,
                 formerTeamsText
