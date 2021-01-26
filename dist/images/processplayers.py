@@ -99,6 +99,8 @@ def decidesize(nameid):
         'frasier-shmurmgle',
         'brock-watson',
         'gallup-crueller',
+        'bonk-jokes',
+        'jessi-wise',
 
         # Pandemonium Artists
         'breeze-regicide',

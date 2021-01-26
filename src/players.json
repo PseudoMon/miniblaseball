@@ -5068,5 +5068,169 @@
                 "text": "@kyl_armstrong"
             }
         ]
+    },
+    {
+        "index": 256,
+        "id": "bonk-jokes",
+        "full-name": "Bonk Jokes",
+        "size": "large",
+        "team": "Yellowstone Magic",
+        "former-teams": [],
+        "sprites": [
+            "256BonkJokes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hatfights_art",
+                "text": "@hatfights_art"
+            }
+        ]
+    },
+    {
+        "index": 257,
+        "id": "eizabeth-elliott",
+        "full-name": "Eizabeth Elliott",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [],
+        "sprites": [
+            "257EizabethElliott.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/awhekate",
+                "text": "@awhekate"
+            },
+            {
+                "link": "https://twitter.com/hatfights_art",
+                "text": "@hatfights_art"
+            }
+        ]
+    },
+    {
+        "index": 258,
+        "id": "jenna-maldonado",
+        "full-name": "Jenna Maldonado",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Miami Dale"
+        ],
+        "sprites": [
+            "258JennaMaldonado.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/tywyso",
+                "text": "@tywyso"
+            }
+        ]
+    },
+    {
+        "index": 259,
+        "id": "fitzgerald-massey",
+        "full-name": "Fitzgerald Massey",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "259FitzgeraldMassey.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 260,
+        "id": "sam-solis",
+        "full-name": "Sam Solis",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "260SamSolis.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/qwoyle",
+                "text": "@qwoyle"
+            }
+        ]
+    },
+    {
+        "index": 261,
+        "id": "terrell-bradley",
+        "full-name": "Terrell Bradley",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [
+            "Hawai'i Fridays",
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "261TerrellBradley.png",
+            "261TerrellBradleyALT.png",
+            "261TerrellBradleyALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/qwoyle",
+                "text": "@qwoyle"
+            }
+        ]
+    },
+    {
+        "index": 262,
+        "id": "karato-bean",
+        "full-name": "Karato Bean",
+        "size": "small",
+        "team": "Houston Spies",
+        "former-teams": [
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "262KaratoBean.png",
+            "262KaratoBeanALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/qwoyle",
+                "text": "@qwoyle"
+            }
+        ]
+    },
+    {
+        "index": 263,
+        "id": "jessi-wise",
+        "full-name": "Jessi Wise",
+        "size": "large",
+        "team": "RIV",
+        "former-teams": [
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "263JessiWise.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
     }
 ]

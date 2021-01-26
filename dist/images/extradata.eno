@@ -1613,6 +1613,61 @@ former-teams:
 credit: @kyl_armstrong
 default: 2
 
+#bonk-jokes
+team: magic
+credit: @hatfights_art
+default: 0
+
+#eizabeth-elliott
+team: magic
+credit:
+- @awhekate
+- @hatfights_art
+default: 0
+
+#jenna-maldonado
+team: riv
+former-teams:
+-dale
+credit: @tywyso
+default: 0
+
+#fitzgerald-massey
+team: riv
+former-teams:
+-fridays
+credit: @hetreasky
+default: 0
+
+#sam-solis
+team: riv
+former-teams:
+-fridays
+credit: @qwoyle
+default: 0
+
+#terrell-bradley
+team: garages
+former-teams:
+-fridays
+-magic
+credit: @qwoyle
+default: 0
+
+#karato-bean
+team: spies
+former-teams:
+-fridays
+credit: @qwoyle
+default: 0
+
+#jessi-wise
+team: riv
+former-teams:
+-fridays
+credit: @hetreasky
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
