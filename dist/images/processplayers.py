@@ -57,6 +57,8 @@ def getname(filename, is_guest=False):
         name = "Nagomi Mcdaniel"
     elif name == "Parker Mac Millan I I I I":
         name = "Parker MacMillan IIII"
+    elif name == "Mooney Doctor I I":
+        name = "Mooney Doctor II"
 
     return name
 

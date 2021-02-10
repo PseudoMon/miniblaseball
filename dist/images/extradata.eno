@@ -191,7 +191,7 @@ former-teams:
 - spies
 - wild wings
 credit: @Fancymancer
-default: 3
+default: 4
 
 # rivers-rosa
 team: firefighters
@@ -1666,6 +1666,11 @@ team: riv
 former-teams:
 -fridays
 credit: @hetreasky
+default: 0
+
+#mooney-doctor-ii
+team: breath mints
+credit: @awhekate
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

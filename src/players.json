@@ -586,11 +586,12 @@
         ],
         "sprites": [
             "28NaN.png",
+            "28NaN2.png",
             "28NaNALT.png",
             "28NaNALT2.png",
             "28NaNALT3.png"
         ],
-        "default-sprite": 3,
+        "default-sprite": 4,
         "credits": [
             {
                 "link": "https://twitter.com/Fancymancer",
@@ -5230,6 +5231,24 @@
             {
                 "link": "https://twitter.com/hetreasky",
                 "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 264,
+        "id": "mooney-doctor-ii",
+        "full-name": "Mooney Doctor II",
+        "size": "small",
+        "team": "Kansas City Breath Mints",
+        "former-teams": [],
+        "sprites": [
+            "264MooneyDoctorII.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/awhekate",
+                "text": "@awhekate"
             }
         ]
     }
