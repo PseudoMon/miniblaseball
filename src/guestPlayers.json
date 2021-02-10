@@ -593,5 +593,77 @@
             }
         ],
         "mascot": true
+    },
+    {
+        "index": 34,
+        "id": "ball-clark",
+        "full-name": "Ball Clark",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G034BallClark.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 35,
+        "id": "stephen-shelled",
+        "full-name": "Stephen Shelled",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G035StephenShelled.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 36,
+        "id": "slam-rosenthal",
+        "full-name": "Slam Rosenthal",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G036SlamRosenthal.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 37,
+        "id": "parker-macmillan-iiii",
+        "full-name": "Parker MacMillan IIII",
+        "size": "huge",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G037ParkerMacMillanIIII.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
     }
 ]

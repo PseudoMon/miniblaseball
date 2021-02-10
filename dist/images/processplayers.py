@@ -55,6 +55,8 @@ def getname(filename, is_guest=False):
         name = "Evelton McBlase II"
     elif name == "Nagomi McDaniel":
         name = "Nagomi Mcdaniel"
+    elif name == "Parker Mac Millan I I I I":
+        name = "Parker MacMillan IIII"
 
     return name
 
@@ -126,6 +128,7 @@ def decidesize(nameid):
         'peanutiel-duffy', 
         'adkins-gwiffin', 
         'lotus-mango', 
+        'parker-macmillan-iiii'
     ]
 
     if nameid in bigboys:
