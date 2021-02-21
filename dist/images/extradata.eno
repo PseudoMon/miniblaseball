@@ -455,7 +455,7 @@ default: 0
 # leach-ingram
 team: breath mints
 credit: "RealHaman"
-default: 0
+default: 1
 
 # francisco-preston
 team: magic
@@ -1671,6 +1671,42 @@ default: 0
 #mooney-doctor-ii
 team: breath mints
 credit: @awhekate
+default: 0
+
+#lenny-marijuana
+team: garages
+credit: @mermeag
+default: 0
+
+#brock-forbes
+team: crabs
+credit: @glassgoblin
+default: 0
+
+#finn-james
+team: crabs
+credit: @ratgills
+default: 0
+
+#parker-parra
+team: crabs
+credit:
+- @Slagstorm
+- @ratgills
+default: 0
+
+#pedro-davids
+team: crabs
+credit:
+- @glassgoblin
+- @hetreasky
+default: 0
+
+#nora-perez
+team: riv
+former-teams:
+-crabs
+credit: @glassgoblin
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -1428,9 +1428,10 @@
         "team": "Kansas City Breath Mints",
         "former-teams": [],
         "sprites": [
-            "70LeachIngram.png"
+            "70LeachIngram.png",
+            "70LeachIngram2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "",
@@ -5249,6 +5250,124 @@
             {
                 "link": "https://twitter.com/awhekate",
                 "text": "@awhekate"
+            }
+        ]
+    },
+    {
+        "index": 265,
+        "id": "lenny-marijuana",
+        "full-name": "Lenny Marijuana",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "265LennyMarijuana.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mermeag",
+                "text": "@mermeag"
+            }
+        ]
+    },
+    {
+        "index": 266,
+        "id": "brock-forbes",
+        "full-name": "Brock Forbes",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "266BrockForbes.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 267,
+        "id": "finn-james",
+        "full-name": "Finn James",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "267FinnJames.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ratgills",
+                "text": "@ratgills"
+            }
+        ]
+    },
+    {
+        "index": 268,
+        "id": "parker-parra",
+        "full-name": "Parker Parra",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "268ParkerParra.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Slagstorm",
+                "text": "@Slagstorm"
+            },
+            {
+                "link": "https://twitter.com/ratgills",
+                "text": "@ratgills"
+            }
+        ]
+    },
+    {
+        "index": 269,
+        "id": "pedro-davids",
+        "full-name": "Pedro Davids",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "269PedroDavids.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 270,
+        "id": "nora-perez",
+        "full-name": "Nora Perez",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "270NoraPerez.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
             }
         ]
     }
