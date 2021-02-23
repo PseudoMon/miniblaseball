@@ -5370,5 +5370,70 @@
                 "text": "@glassgoblin"
             }
         ]
+    },
+    {
+        "index": 271,
+        "id": "velasquez-meadows",
+        "full-name": "Velasquez Meadows",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "271VelasquezMeadows.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            },
+            {
+                "link": "https://twitter.com/_iznj",
+                "text": "@_iznj"
+            }
+        ]
+    },
+    {
+        "index": 272,
+        "id": "rhys-trombone",
+        "full-name": "Rhys Trombone",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "272RhysTrombone.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Ephesos"
+            }
+        ]
+    },
+    {
+        "index": 273,
+        "id": "malik-romayne",
+        "full-name": "Malik Romayne",
+        "size": "small",
+        "team": "Houston Spies",
+        "former-teams": [
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "273MalikRomayne.png",
+            "273MalikRomayneALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/SashaRoseHansen",
+                "text": "@SashaRoseHansen"
+            }
+        ]
     }
 ]

@@ -1709,6 +1709,30 @@ former-teams:
 credit: @glassgoblin
 default: 0
 
+#velasquez-meadows
+team: riv
+former-teams: 
+-sunbeams
+credit:
+- @glassgoblin
+- @_iznj
+default: 0
+
+#rhys-trombone
+team: riv
+former-teams:
+-sunbeams
+credit:
+- "Ephesos"
+default: 0
+
+#malik-romayne
+team: spies
+former-teams:
+-sunbeams
+credit: @SashaRoseHansen
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
