@@ -6,7 +6,8 @@
             "Chicago Firefighters",
             "Breckenridge Jazz Hands",
             "Mexico City Wild Wings",
-            "Tokyo Lift"
+            "Tokyo Lift",
+            "Atlantis Georgias"
         ]
     },
     {
@@ -16,7 +17,8 @@
             "Unlimited Tacos",
             "Houston Spies",
             "Miami Dale",
-            "Boston Flowers"
+            "Boston Flowers",
+            "Ohio Worms"
         ]
     },
     {
@@ -26,7 +28,8 @@
             "Dallas Steaks",
             "San Francisco Lovers",
             "New York Millennials",
-            "Philly Pies"
+            "Philly Pies",
+            "Core Mechanics"
         ]
     },
     {
@@ -36,12 +39,7 @@
             "Canada Moist Talkers",
             "Hawai'i Fridays",
             "Kansas City Breath Mints",
-            "Yellowstone Magic"
-        ]
-    },
-    {
-        "name": "Ascended",
-        "teams": [
+            "Yellowstone Magic",
             "Baltimore Crabs"
         ]
     },
