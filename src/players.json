@@ -81,16 +81,22 @@
     },
     {
         "index": 5,
-        "id": "cory-a-l-t",
-        "full-name": "Cory A L T",
+        "id": "cory-twelve",
+        "full-name": "Cory Twelve",
         "size": "small",
-        "team": "Pending Team",
+        "team": "Boston Flowers",
         "former-teams": [],
         "sprites": [
-            "05Cory12ALT.png",
-            "05CoryTwelve.png"
+            "05CoryTwelve.png",
+            "05CoryTwelveALT.png"
         ],
-        "default-sprite": 0
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
+        ]
     },
     {
         "index": 6,

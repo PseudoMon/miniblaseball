@@ -668,20 +668,14 @@
     },
     {
         "index": 38,
-        "id": "mason-m-mcmason",
-        "full-name": "Mason M McMason",
+        "id": "mason-m.-mcmason",
+        "full-name": "Mason M. McMason",
         "size": "small",
-        "team": "Society Data Witches",
+        "team": "Pending Team",
         "former-teams": [],
         "sprites": [
             "G038MasonMMcMason.png"
         ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/tywyso",
-                "text": "@tywyso"
-            }
-        ]
+        "default-sprite": 0
     }
 ]
