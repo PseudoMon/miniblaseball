@@ -45,7 +45,7 @@
         "size": "small",
         "team": "Tokyo Lift",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
         ],
         "sprites": [
@@ -81,21 +81,16 @@
     },
     {
         "index": 5,
-        "id": "cory-twelve",
-        "full-name": "Cory Twelve",
+        "id": "cory-a-l-t",
+        "full-name": "Cory A L T",
         "size": "small",
-        "team": "Yellowstone Magic",
+        "team": "Pending Team",
         "former-teams": [],
         "sprites": [
+            "05Cory12ALT.png",
             "05CoryTwelve.png"
         ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/graciedarts",
-                "text": "@graciedarts"
-            }
-        ]
+        "default-sprite": 0
     },
     {
         "index": 6,
@@ -230,21 +225,23 @@
         "id": "jessica-telephone",
         "full-name": "Jessica Telephone",
         "size": "small",
-        "team": "Kansas City Breath Mints",
+        "team": "Mexico City Wild Wings",
         "former-teams": [
             "Dallas Steaks",
             "Philly Pies",
             "Hades Tigers",
-            "THE SHELLED ONE'S PODS"
+            "THE SHELLED ONE'S PODS",
+            "Kansas City Breath Mints"
         ],
         "sprites": [
             "12JessicaTelephone.png",
             "12JessicaTelephoneALT.png",
             "12JessicaTelephoneALT2.png",
             "12JessicaTelephoneALT3.png",
-            "12JessicaTelephoneALT4.png"
+            "12JessicaTelephoneALT4.png",
+            "12JessicaTelephoneALT5.png"
         ],
-        "default-sprite": 4,
+        "default-sprite": 5,
         "credits": [
             {
                 "link": "https://twitter.com/telekeys",
@@ -503,13 +500,15 @@
         "id": "jaylen-hotdogfingers",
         "full-name": "Jaylen Hotdogfingers",
         "size": "small",
-        "team": "San Francisco Lovers",
+        "team": "Hawai'i Fridays",
         "former-teams": [
             "Seattle Garages",
             "Charleston Shoe Thieves",
             "Hall Stars",
             "THE SHELLED ONE'S PODS",
-            "RIV"
+            "RIV",
+            "San Francisco Lovers",
+            "Yellowstone Magic"
         ],
         "sprites": [
             "25JaylenHotdogfingers.png",
@@ -518,9 +517,11 @@
             "25JaylenHotdogfingersALT3.png",
             "25JaylenHotdogfingersALT4.png",
             "25JaylenHotdogfingersALT5.png",
-            "25JaylenHotdogfingersALT6.png"
+            "25JaylenHotdogfingersALT6.png",
+            "25JaylenHotdogfingersALT7.png",
+            "25JaylenHotdogfingersALT8.png"
         ],
-        "default-sprite": 6,
+        "default-sprite": 8,
         "credits": [
             {
                 "link": "https://twitter.com/MLeeLunsford",
@@ -578,20 +579,24 @@
         "id": "nan",
         "full-name": "NaN",
         "size": "small",
-        "team": "San Francisco Lovers",
+        "team": "New York Millennials",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "Houston Spies",
-            "Mexico City Wild Wings"
+            "Mexico City Wild Wings",
+            "San Francisco Lovers",
+            "Hawai'i Fridays"
         ],
         "sprites": [
             "28NaN.png",
             "28NaN2.png",
             "28NaNALT.png",
             "28NaNALT2.png",
-            "28NaNALT3.png"
+            "28NaNALT3.png",
+            "28NaNALT4.png",
+            "28NaNALT5.png"
         ],
-        "default-sprite": 4,
+        "default-sprite": 6,
         "credits": [
             {
                 "link": "https://twitter.com/Fancymancer",
@@ -634,19 +639,23 @@
         "id": "nagomi-mcdaniel",
         "full-name": "Nagomi Mcdaniel",
         "size": "small",
-        "team": "Hawai'i Fridays",
+        "team": "Boston Flowers",
         "former-teams": [
             "Hades Tigers",
             "Baltimore Crabs",
-            "Breckenridge Jazz Hands"
+            "Breckenridge Jazz Hands",
+            "Hawai'i Fridays",
+            "Seattle Garages"
         ],
         "sprites": [
             "31NagomiMcDaniel.png",
             "31NagomiMcDanielALT.png",
             "31NagomiMcDanielALT2.png",
-            "31NagomiMcDanielALT3.png"
+            "31NagomiMcDanielALT3.png",
+            "31NagomiMcDanielALT4.png",
+            "31NagomiMcDanielALT5.png"
         ],
-        "default-sprite": 2,
+        "default-sprite": 5,
         "credits": [
             {
                 "link": "https://twitter.com/kayleerowena",
@@ -978,17 +987,19 @@
         "id": "pitching-machine",
         "full-name": "Pitching Machine",
         "size": "small",
-        "team": "Seattle Garages",
+        "team": "Ohio Worms",
         "former-teams": [
-            "Unlimited Tacos",
-            "THE SHELLED ONE'S PODS"
+            "LA Unlimited Tacos",
+            "THE SHELLED ONE'S PODS",
+            "Seattle Garages"
         ],
         "sprites": [
             "48PitchingMachine.png",
             "48PitchingMachineALT.png",
-            "48PitchingMachineALT2.png"
+            "48PitchingMachineALT2.png",
+            "48PitchingMachineALT3.png"
         ],
-        "default-sprite": 2,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -1086,12 +1097,13 @@
         "id": "knight-triumphant",
         "full-name": "Knight Triumphant",
         "size": "small",
-        "team": "San Francisco Lovers",
+        "team": "Houston Spies",
         "former-teams": [],
         "sprites": [
-            "53KnightTriumphant.png"
+            "53KnightTriumphant.png",
+            "53KnightTriumphantALT.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -1248,7 +1260,7 @@
         "size": "small",
         "team": "Breckenridge Jazz Hands",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
         ],
         "sprites": [
@@ -1576,7 +1588,7 @@
         "id": "sexton-wheerer",
         "full-name": "Sexton Wheerer",
         "size": "large",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [],
         "sprites": [
             "78SextonWheerer.png"
@@ -1716,17 +1728,19 @@
         "id": "farrell-seagull",
         "full-name": "Farrell Seagull",
         "size": "small",
-        "team": "Philly Pies",
+        "team": "Ohio Worms",
         "former-teams": [
             "Miami Dale",
-            "Seattle Garages"
+            "Seattle Garages",
+            "Philly Pies"
         ],
         "sprites": [
             "86FarrellSeagull.png",
             "86FarrellSeagullALT.png",
-            "86FarrellSeagullALT2.png"
+            "86FarrellSeagullALT2.png",
+            "86FarrellSeagullALT3.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://twitter.com/MLeeLunsford",
@@ -1739,12 +1753,15 @@
         "id": "fletcher-yamamoto",
         "full-name": "Fletcher Yamamoto",
         "size": "small",
-        "team": "Hawai'i Fridays",
-        "former-teams": [],
-        "sprites": [
-            "87FletcherYamamoto.png"
+        "team": "San Francisco Lovers",
+        "former-teams": [
+            "Hawai'i Fridays"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "87FletcherYamamoto.png",
+            "87FletcherYamamotoALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/phrenicquake",
@@ -1757,15 +1774,17 @@
         "id": "alaynabella-hollywood",
         "full-name": "Alaynabella Hollywood",
         "size": "small",
-        "team": "Boston Flowers",
+        "team": "Seattle Garages",
         "former-teams": [
-            "Hellmouth Sunbeams"
+            "Hellmouth Sunbeams",
+            "Boston Flowers"
         ],
         "sprites": [
             "88AlaynabellaHollywood.png",
-            "88AlaynabellaHollywoodALT.png"
+            "88AlaynabellaHollywoodALT.png",
+            "88AlaynabellaHollywoodALT2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -1778,8 +1797,10 @@
         "id": "joshua-butt",
         "full-name": "Joshua Butt",
         "size": "small",
-        "team": "Chicago Firefighters",
-        "former-teams": [],
+        "team": "RIV",
+        "former-teams": [
+            "Chicago Firefighters"
+        ],
         "sprites": [
             "89JoshuaButt.png"
         ],
@@ -1835,7 +1856,7 @@
         "id": "halexandrey-walton",
         "full-name": "Halexandrey Walton",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Yellowstone Magic"
         ],
@@ -1906,12 +1927,15 @@
         "id": "agan-harrison",
         "full-name": "Agan Harrison",
         "size": "large",
-        "team": "Breckenridge Jazz Hands",
-        "former-teams": [],
-        "sprites": [
-            "96AganHarrison.png"
+        "team": "Chicago Firefighters",
+        "former-teams": [
+            "Breckenridge Jazz Hands"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "96AganHarrison.png",
+            "96AganHarrisonALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -1948,17 +1972,19 @@
         "id": "joshua-watson",
         "full-name": "Joshua Watson",
         "size": "small",
-        "team": "Mexico City Wild Wings",
+        "team": "Kansas City Breath Mints",
         "former-teams": [
             "Baltimore Crabs",
-            "Chicago Firefighters"
+            "Chicago Firefighters",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "98JoshuaWatson.png",
             "98JoshuaWatsonALT.png",
-            "98JoshuaWatsonALT2.png"
+            "98JoshuaWatsonALT2.png",
+            "98JoshuaWatsonALT3.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -2092,12 +2118,15 @@
         "id": "pudge-nakamoto",
         "full-name": "Pudge Nakamoto",
         "size": "small",
-        "team": "Kansas City Breath Mints",
-        "former-teams": [],
-        "sprites": [
-            "105PudgeNakamoto.png"
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [
+            "Kansas City Breath Mints"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "105PudgeNakamoto.png",
+            "105PudgeNakatamoALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -2133,7 +2162,7 @@
         "size": "small",
         "team": "New York Millennials",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
         ],
         "sprites": [
@@ -2297,7 +2326,7 @@
         "id": "peanut-bong",
         "full-name": "Peanut Bong",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Miami Dale",
             "THE SHELLED ONE'S PODS"
@@ -2429,7 +2458,7 @@
         "id": "wyatt-dovenpart",
         "full-name": "Wyatt Dovenpart",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [],
         "sprites": [
             "121WyattDovenpart.png"
@@ -2447,7 +2476,7 @@
         "id": "basilio-fig",
         "full-name": "Basilio Fig",
         "size": "large",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Hawai'i Fridays"
         ],
@@ -2677,7 +2706,7 @@
         "id": "valentine-games",
         "full-name": "Valentine Games",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Baltimore Crabs",
             "Breckenridge Jazz Hands",
@@ -3068,17 +3097,19 @@
         "id": "aldon-cashmoney",
         "full-name": "Aldon Cashmoney",
         "size": "small",
-        "team": "Hades Tigers",
+        "team": "Hellmouth Sunbeams",
         "former-teams": [
             "Breckenridge Jazz Hands",
-            "Hawai'i Fridays"
+            "Hawai'i Fridays",
+            "Hades Tigers"
         ],
         "sprites": [
             "153AldonCashmoney.png",
             "153AldonCashmoneyALT.png",
-            "153AldonCashmoneyALT2.png"
+            "153AldonCashmoneyALT2.png",
+            "153AldonCashmoneyALT3.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://twitter.com/skelebells",
@@ -3091,7 +3122,7 @@
         "id": "mcdowell-mason",
         "full-name": "McDowell Mason",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [],
         "sprites": [
             "154McDowellMason.png"
@@ -3111,7 +3142,7 @@
         "size": "small",
         "team": "Miami Dale",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
         ],
         "sprites": [
@@ -3134,7 +3165,7 @@
         "size": "small",
         "team": "Dallas Steaks",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
         ],
         "sprites": [
@@ -3296,12 +3327,15 @@
         "id": "nerd-pacheco",
         "full-name": "Nerd Pacheco",
         "size": "small",
-        "team": "Hellmouth Sunbeams",
-        "former-teams": [],
-        "sprites": [
-            "164NerdPacheco.png"
+        "team": "Hades Tigers",
+        "former-teams": [
+            "Hellmouth Sunbeams"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "164NerdPacheco.png",
+            "164NerdPachecoALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/Karagna_",
@@ -3413,7 +3447,7 @@
         "id": "vito-kravitz",
         "full-name": "Vito Kravitz",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Boston Flowers"
         ],
@@ -3434,7 +3468,7 @@
         "id": "rat-mason",
         "full-name": "Rat Mason",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [],
         "sprites": [
             "171RatMason.png"
@@ -3611,8 +3645,10 @@
         "id": "case-sports",
         "full-name": "Case Sports",
         "size": "small",
-        "team": "Mexico City Wild Wings",
-        "former-teams": [],
+        "team": "RIV",
+        "former-teams": [
+            "Mexico City Wild Wings"
+        ],
         "sprites": [
             "181CaseSports.png"
         ],
@@ -3768,7 +3804,7 @@
         "size": "small",
         "team": "RIV",
         "former-teams": [
-            "Unlimited Tacos"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "189NathaKath.png"
@@ -3782,7 +3818,7 @@
         "size": "small",
         "team": "Boston Flowers",
         "former-teams": [
-            "Unlimited Tacos"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "190MosesMason.png",
@@ -3803,7 +3839,7 @@
         "size": "small",
         "team": "Yellowstone Magic",
         "former-teams": [
-            "Unlimited Tacos"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "191WyattGlover.png",
@@ -3822,7 +3858,7 @@
         "id": "basilio-mason",
         "full-name": "Basilio Mason",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [],
         "sprites": [
             "192BasilioMason.png"
@@ -3842,7 +3878,7 @@
         "size": "small",
         "team": "Miami Dale",
         "former-teams": [
-            "Unlimited Tacos"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "193WyattOwens.png",
@@ -3863,7 +3899,7 @@
         "size": "small",
         "team": "Baltimore Crabs",
         "former-teams": [
-            "Unlimited Tacos",
+            "LA Unlimited Tacos",
             "Hawai'i Fridays"
         ],
         "sprites": [
@@ -4035,12 +4071,15 @@
         "id": "greer-gwiffin",
         "full-name": "Greer Gwiffin",
         "size": "small",
-        "team": "Seattle Garages",
-        "former-teams": [],
-        "sprites": [
-            "202GreerGwiffin.png"
+        "team": "Hawai'i Fridays",
+        "former-teams": [
+            "Seattle Garages"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "202GreerGwiffin.png",
+            "202GreerGwiffinALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -4372,17 +4411,19 @@
         "id": "polkadot-patterson",
         "full-name": "PolkaDot Patterson",
         "size": "small",
-        "team": "Canada Moist Talkers",
+        "team": "Core Mechanics",
         "former-teams": [
             "Kansas City Breath Mints",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Canada Moist Talkers"
         ],
         "sprites": [
             "220PolkaDotPatterson.png",
             "220PolkaDotPattersonALT.png",
-            "220PolkaDotPattersonALT1.png"
+            "220PolkaDotPattersonALT1.png",
+            "220PolkaDotPattersonALT3.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -5034,7 +5075,7 @@
         "size": "small",
         "team": "Charleston Shoe Thieves",
         "former-teams": [
-            "Unlimited Tacos"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "254FitzgeraldWanderlust.png",
@@ -5053,7 +5094,7 @@
         "id": "kevin-dudley",
         "full-name": "Kevin Dudley",
         "size": "small",
-        "team": "Unlimited Tacos",
+        "team": "LA Unlimited Tacos",
         "former-teams": [
             "Philly Pies",
             "Charleston Shoe Thieves"
@@ -5433,6 +5474,99 @@
             {
                 "link": "https://twitter.com/SashaRoseHansen",
                 "text": "@SashaRoseHansen"
+            }
+        ]
+    },
+    {
+        "index": 274,
+        "id": "theodore-holloway",
+        "full-name": "Theodore Holloway",
+        "size": "small",
+        "team": "Houston Spies",
+        "former-teams": [],
+        "sprites": [
+            "274TheodoreHolloway.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 275,
+        "id": "alyssa-harrell",
+        "full-name": "Alyssa Harrell",
+        "size": "small",
+        "team": "Hawai'i Fridays",
+        "former-teams": [
+            "Hades Tigers",
+            "New York Millennials",
+            "Yellowstone Magic",
+            "Philly Pies"
+        ],
+        "sprites": [
+            "275AlyssaHarrell.png",
+            "275AlyssaHarrellALT.png",
+            "275AlyssaHarrellALT2.png",
+            "275AlyssaHarrellALT3.png",
+            "275AlyssaHarrellALT4.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 276,
+        "id": "matteo-triumphant",
+        "full-name": "Matteo Triumphant",
+        "size": "small",
+        "team": "Hades Tigers",
+        "former-teams": [],
+        "sprites": [
+            "276MatteoTriumphant.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/engulfingdream",
+                "text": "@engulfingdream"
+            }
+        ]
+    },
+    {
+        "index": 277,
+        "id": "dominic-woman",
+        "full-name": "Dominic Woman",
+        "size": "small",
+        "team": "Hades Tigers",
+        "former-teams": [],
+        "sprites": [
+            "277DominicWoman.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 278,
+        "id": "val-hitherto",
+        "full-name": "Val Hitherto",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "278ValHitherto.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "livs#7310"
             }
         ]
     }

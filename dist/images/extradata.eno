@@ -24,9 +24,11 @@ credit: @hetreasky
 default: 0
 
 # cory-twelve
-team: magic
+team: flowers
+former-team:
+-magic
 credit: @graciedarts
-default: 0
+default: 1
 
 # stephanie-winters
 team: wild wings
@@ -72,14 +74,15 @@ credit: @okaybutwhy9
 default: 0
 
 # jessica-telephone
-team: breath mints
+team: wild wings
 former-teams:
 - steaks
 - pies
 - tigers
 - pods
+- breath mints
 credit: @telekeys
-default: 4
+default: 5
 
 # don-mitchell
 team: lovers
@@ -159,15 +162,17 @@ credit: @juangeedraws
 default: 0
 
 # jaylen-hotdogfingers
-team: lovers
+team: fridays
 former-teams:
 - garages
 - shoe thieves
 - stars
 - pods
 - riv
+- lovers
+- magic
 credit: @MLeeLunsford
-default: 6
+default: 8
 
 # parker-meng
 team: lovers
@@ -185,13 +190,15 @@ credit:
 default: 2
 
 # nan
-team: lovers
+team: millennials
 former-teams:
 - tacos
 - spies
 - wild wings
+- lovers
+- fridays
 credit: @Fancymancer
-default: 4
+default: 6
 
 # rivers-rosa
 team: firefighters
@@ -203,15 +210,17 @@ team: spies
 default: 0
 
 # nagomi-mcdaniel
-team: fridays
+team: flowers
 former-teams:
 - tigers
 - crabs
 - jazz hands
+- fridays
+- garages
 credit:
 - @kayleerowena
 - @fancymancer
-default: 2
+default: 5
 
 # kline-greenlemon
 team: steaks
@@ -312,12 +321,13 @@ credit: @mermeag
 default: 0
 
 # pitching-machine
-team: garages
+team: worms
 former-teams:
 - tacos
 - pods
+- garages
 credit: @hetreasky
-default: 2
+default: 3
 
 # isaac-rubberman
 team: riv
@@ -348,9 +358,11 @@ credit: @Spiral_Joe
 default: 0
 
 # knight-triumphant
-team: lovers
+team: spies
+former-team:
+- lovers
 credit: @hetreasky
-default: 0
+default: 1
 
 # allison-abbott
 team: steaks
@@ -547,27 +559,33 @@ credit: @MLeeLunsford
 default: 0
 
 # farrell-seagull
-team: pies
+team: worms
 former-teams:
 - dale
 - garages
+- pies
 credit: @MLeeLunsford
-default: 0
+default: 3
 
 # fletcher-yamamoto
-team: fridays
+team: lovers
+former-teams:
+- fridays
 credit: @phrenicquake
-default: 0
+default: 1
 
 # alaynabella-hollywood
-team: flowers
+team: garages
 former-teams:
 - sunbeams
+- flowers
 credit: @hetreasky
-default: 0
+default: 2
 
 # joshua-butt
-team: firefighters
+team: riv
+former-teams:
+- firefighters
 credit: @_waalkr
 default: 0
 
@@ -607,9 +625,11 @@ team: breath mints
 default: 0
 
 # agan-harrison
-team: jazz hands
+team: firefighters
+former-teams:
+- jazz hands
 credit: @hetreasky
-default: 0
+default: 1
 
 # tyler-violet
 team: riv
@@ -621,12 +641,13 @@ credit:
 default: 0
 
 # joshua-watson
-team: wild wings
+team: breath mints
 former-teams:
 - crabs
 - firefighters
+- wild wings
 credit: @hetreasky
-default: 0
+default: 3
 
 # leach-herman
 team: steaks
@@ -667,9 +688,11 @@ credit:
 default: 0
 
 # pudge-nakamoto
-team: breath mints
+team: shoe thieves
+former-teams:
+- breath mints
 credit: @hetreasky
-default: 0
+default: 1
 
 # elijah-valenzuela
 team: jazz hands
@@ -988,12 +1011,13 @@ credit: "wormtongue"
 default: 0
 
 #aldon-cashmoney
-team: tigers
+team: sunbeams
 former-teams:
 -jazz hands
 -fridays
+-tigers
 credit: @skelebells
-default: 0
+default: 3
 
 #mcdowell-mason
 team: tacos
@@ -1060,9 +1084,11 @@ credit: @churgalax
 default: 0
 
 #nerd-pacheco
-team: sunbeams
+team: tigers
+former-teams:
+- sunbeams
 credit: @Karagna_
-default: 0
+default: 1
 
 #scores-baserunner
 team: flowers
@@ -1154,7 +1180,9 @@ credit: @fancymancer
 default: 0
 
 #case-sports
-team: wild wings
+team: riv
+former-teams:
+- wild wings
 credit: @hetreasky
 default: 0
 
@@ -1292,9 +1320,11 @@ credit:
 default: 0
 
 #greer-gwiffin
-team: garages
+team: fridays
+former-teams:
+- garages
 credit: @hetreasky
-default: 0
+default: 1
 
 #tot-clark
 team: garages
@@ -1393,12 +1423,13 @@ credit:
 default: 0
 
 #polkadot-patterson
-team: moist talkers
+team: mechanics
 former-teams:
 -breath mints
 -crabs
+-moist talkers
 credit: @hetreasky
-default: 0
+default: 3
 
 #donia-bailey
 team: spies
@@ -1733,6 +1764,35 @@ former-teams:
 credit: @SashaRoseHansen
 default: 0
 
+#theodore-holloway
+team: spies
+credit: @toxiclockwork
+default: 0
+
+#alyssa-harrell
+team: fridays
+former-teams:
+-tigers
+-millennials
+-magic
+-pies
+credit: @hetreasky
+default: 0
+
+#matteo-triumphant
+team: tigers
+credit: @engulfingdream
+default: 0
+
+#dominic-woman
+team: tigers
+default: 0
+
+#val-hitherto
+team: lift
+credit: "livs#7310"
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1888,3 +1948,7 @@ credit: @chrisbratt
 #parker-macmillan-iiii
 team: real game band
 credit: @hetreasky
+
+#mason-m-mcmason
+team: data witches
+credit: @tywyso
