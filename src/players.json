@@ -85,7 +85,9 @@
         "full-name": "Cory Twelve",
         "size": "small",
         "team": "Boston Flowers",
-        "former-teams": [],
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
         "sprites": [
             "05CoryTwelve.png",
             "05CoryTwelveALT.png"
