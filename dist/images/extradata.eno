@@ -1793,6 +1793,30 @@ team: lift
 credit: "livs#7310"
 default: 0
 
+#jolene-willowtree
+team: mechanics
+credit: @patcat127
+default: 0
+
+#atlas-guerra
+team: breath mints
+former-teams:
+-firefighters
+credit: @necromngo
+default: 0
+
+#squid-galvanic
+team: crabs
+credit: @glassgoblin
+default: 0
+
+#percival-wheeler
+team: lovers
+credit:
+- @cari_guevara
+- @Fancymancer
+default: 0
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1841,7 +1865,7 @@ team: artists
 credit: @koloquials
 
 #pompom-pomodoro
-team: artists
+eam: artists
 credit: @MimimiCee
 
 #jay-grayscale

@@ -5577,5 +5577,84 @@
                 "text": "livs#7310"
             }
         ]
+    },
+    {
+        "index": 279,
+        "id": "jolene-willowtree",
+        "full-name": "Jolene Willowtree",
+        "size": "small",
+        "team": "Core Mechanics",
+        "former-teams": [],
+        "sprites": [
+            "279JoleneWillowtree.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/patcat127",
+                "text": "@patcat127"
+            }
+        ]
+    },
+    {
+        "index": 280,
+        "id": "atlas-guerra",
+        "full-name": "Atlas Guerra",
+        "size": "small",
+        "team": "Kansas City Breath Mints",
+        "former-teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "280AtlasGuerra.png",
+            "280AtlasGuerraALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 281,
+        "id": "squid-galvanic",
+        "full-name": "Squid Galvanic",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "281SquidGalvanic.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 282,
+        "id": "percival-wheeler",
+        "full-name": "Percival Wheeler",
+        "size": "small",
+        "team": "San Francisco Lovers",
+        "former-teams": [],
+        "sprites": [
+            "282PercivalWheeler.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cari_guevara",
+                "text": "@cari_guevara"
+            },
+            {
+                "link": "https://twitter.com/Fancymancer",
+                "text": "@Fancymancer"
+            }
+        ]
     }
 ]
