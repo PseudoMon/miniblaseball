@@ -668,14 +668,92 @@
     },
     {
         "index": 38,
-        "id": "mason-m.-mcmason",
+        "id": "mason-m-mcmason",
         "full-name": "Mason M. McMason",
         "size": "small",
-        "team": "Pending Team",
+        "team": "Society Data Witches",
         "former-teams": [],
         "sprites": [
             "G038MasonMMcMason.png"
         ],
-        "default-sprite": 0
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/tywyso",
+                "text": "@tywyso"
+            }
+        ]
+    },
+    {
+        "index": 39,
+        "id": "batista-oatmilk",
+        "full-name": "Batista Oatmilk",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G039BatistaOatmilk.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 40,
+        "id": "boxplot-jones",
+        "full-name": "Boxplot Jones",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G040BoxplotJones.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BeedropsArt",
+                "text": "@BeedropsArt"
+            }
+        ]
+    },
+    {
+        "index": 41,
+        "id": "espresso-machine",
+        "full-name": "Espresso Machine",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G041EspressoMachine.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 42,
+        "id": "polkadot-matrix",
+        "full-name": "Polkadot Matrix",
+        "size": "small",
+        "team": "Society Data Witches",
+        "former-teams": [],
+        "sprites": [
+            "G042PolkadotMatrix.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/maddycha",
+                "text": "@maddycha"
+            }
+        ]
     }
 ]

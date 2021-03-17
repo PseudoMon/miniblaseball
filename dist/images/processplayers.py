@@ -67,6 +67,10 @@ def getname(filename, is_guest=False):
 
 def idify(fullname):
     """Transforms e.g. Wyatt Quitter to wyatt-quitter"""
+    
+    if fullname == "Mason M. McMason":
+        return "mason-m-mcmason"
+        
     return fullname.lower().replace(" ", "-").replace("'","-")
 
 
