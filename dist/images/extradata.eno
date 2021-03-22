@@ -75,15 +75,16 @@ credit: @okaybutwhy9
 default: 0
 
 # jessica-telephone
-team: breath mints
+team: pies
 former-teams:
 - steaks
 - pies
 - tigers
 - pods
 - wild wings
+- breath mints
 credit: @telekeys
-default: 4
+default: 0
 
 # don-mitchell
 team: lovers
@@ -187,13 +188,15 @@ team: moist talkers
 former-teams:
 - fridays
 - pods
+- moist talkers
+- riv
 credit: 
 - @fairchart
 - @skelebells
-default: 2
+default: 3
 
 # nan
-team: worms
+team: lovers
 former-teams:
 - tacos
 - spies
@@ -202,30 +205,35 @@ former-teams:
 - fridays
 - millennials
 - firefighters
+- worms
+- tigers
 credit: @Fancymancer
-default: 8
+default: 4
 
 # rivers-rosa
-team: firefighters
+team: worms
+former-teams:
+- firefighters
 credit: @crikadelic
-default: 0
+default: 1
 
 # math-velazquez
 team: spies
 default: 0
 
 # nagomi-mcdaniel
-team: flowers
+team: crabs
 former-teams:
 - tigers
 - crabs
 - jazz hands
 - fridays
 - garages
+- flowers
 credit:
 - @kayleerowena
 - @fancymancer
-default: 5
+default: 0
 
 # kline-greenlemon
 team: steaks
@@ -363,11 +371,12 @@ credit: @Spiral_Joe
 default: 0
 
 # knight-triumphant
-team: lovers
+team: georgias
 former-team:
+- lovers
 - spies
 credit: @hetreasky
-default: 0
+default: 2
 
 # allison-abbott
 team: steaks
@@ -432,11 +441,11 @@ credit: @this_is_onjit
 default: 0
 
 # fitzgerald-blackburn
-team: lovers
+team: spies
 former-teams:
-- spies
+- lovers
 credit: @tsawac
-default: 1
+default: 0
 
 # tot-fox
 team: crabs
@@ -489,11 +498,12 @@ credit: @wrendorphin
 default: 0
 
 # beck-whitney
-team: dale
+team: fridays
 former-teams:
 - flowers
+- dale
 credit: @pewterbee
-default: 0
+default: 2
 
 # lou-roseheart
 team: firefighters
@@ -508,11 +518,12 @@ credits: @hetreasky
 default: 0
 
 # chorby-soul
-team: riv
+team: garages
 former-teams:
 - millennials
+- riv
 credit: @apolante_art
-default: 0
+default: 1
 
 # carmelo-plums
 team: garages
@@ -529,7 +540,9 @@ credit: @fancymancer
 default: 0
 
 # son-scotch
-team: spies
+team: riv
+former-teams:
+- spies
 credit: @hetreasky
 default: 0
 
@@ -650,13 +663,13 @@ credit:
 default: 0
 
 # joshua-watson
-team: breath mints
+team: wild wings
 former-teams:
 - crabs
 - firefighters
-- wild wings
+- breath mints
 credit: @hetreasky
-default: 3
+default: 0
 
 # leach-herman
 team: steaks
@@ -720,11 +733,12 @@ credit: @ElevenQuietSeas
 default: 3
 
 # luis-acevedo
-team: crabs
+team: worms
 former-teams: 
 - garages
+- crabs
 credit: @corpserevivers
-default: 0
+default: 2
 
 # fynn-doyle
 team: millennials
@@ -745,11 +759,11 @@ credit: @graciedarts
 default: 0
 
 # logan-horseman
-team: crabs
+team: dale
 former-teams:
-- dale
+- crabs
 credit: @CHURGALAX
-default: 1
+default: 0
 
 # peanutiel-duffy
 team: firefighters
@@ -898,14 +912,15 @@ credit: @churgalax
 default: 0
 
 #valentine-games
-team: tacos
+team: fridays
 former-teams:
 -crabs
 -jazz hands
 -millennials
 -spies
+-tacos
 credit: @deerstained
-default: 0
+default: 5
 
 #betsy-trombone
 team: garages
@@ -992,6 +1007,8 @@ default: 0
 
 #dunlap-figueroa
 team: tigers
+former-teams: 
+- firefighters
 credit: @Gatrdile
 default: 0
 
@@ -1189,11 +1206,12 @@ credit: @fancymancer
 default: 0
 
 #mullen-peterson
-team: wild wings
+team: millennials
 former-teams:
 -firefighters
+-wild wings
 credit: @sublimemarch
-default: 0
+default: 2
 
 #rafael-davids
 team: wild wings
@@ -1283,13 +1301,14 @@ credit: @mito_underscore
 default: 0
 
 #baldwin-breadwinner
-team: dale
+team: fridays
 former-teams:
 -tacos
 -fridays
 -crabs
+-dale
 credit: @ConcordForge
-default: 3
+default: 1
 
 #durham-spaceman
 team: garages
@@ -1344,11 +1363,12 @@ credit:
 default: 1
 
 #greer-gwiffin
-team: fridays
+team: tacos
 former-teams:
 - garages
+- fridays
 credit: @hetreasky
-default: 1
+default: 2
 
 #tot-clark
 team: garages
@@ -1361,9 +1381,11 @@ credit: "dead#0236"
 default: 0
 
 #glabe-moon
-team: flowers
+team: millennials
+former-teams:
+- flowers
 credit: @fairy_calico
-default: 0
+default: 1
 
 #chambers-simmons
 team: flowers
@@ -1399,7 +1421,9 @@ credit: @fancymancer
 default: 0
 
 #sebastian-woodman
-team: shoe thieves
+team: riv
+former-teams:
+- shoe thieves
 credit: @starfauna
 default: 0
 
@@ -1496,9 +1520,11 @@ credit: @Krasi_Savov
 default: 0
 
 #schneider-bendie
-team: millennials
+team: flowers
+former-teams:
+- millennials
 credit: @mermeag
-default: 0
+default: 1
 
 #ren-hunter
 team: millennials
@@ -1715,11 +1741,12 @@ credit: @qwoyle
 default: 0
 
 #karato-bean
-team: spies
+team: lovers
 former-teams:
 -fridays
+-spies
 credit: @qwoyle
-default: 0
+default: 2
 
 #jessi-wise
 team: riv
@@ -1749,11 +1776,13 @@ credit: @ratgills
 default: 0
 
 #parker-parra
-team: crabs
+team: flowers
+former-teams:
+- crabs
 credit:
 - @Slagstorm
 - @ratgills
-default: 0
+default: 1
 
 #pedro-davids
 team: crabs
@@ -1801,14 +1830,15 @@ credit: @toxiclockwork
 default: 0
 
 #alyssa-harrell
-team: fridays
+team: crabs
 former-teams:
 -tigers
 -millennials
 -magic
+-fridays
 -pies
 credit: @hetreasky
-default: 0
+default: 5
 
 #matteo-triumphant
 team: tigers
