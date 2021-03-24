@@ -5109,13 +5109,18 @@
         "team": "Canada Moist Talkers",
         "former-teams": [],
         "sprites": [
-            "251JesúsKoch.png"
+            "251JesúsKoch.png",
+            "251JesúsKochALT.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/avery_helm",
                 "text": "@avery_helm"
+            },
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
             }
         ]
     },
@@ -5746,6 +5751,142 @@
             {
                 "link": "https://twitter.com/Fancymancer",
                 "text": "@Fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 283,
+        "id": "bright-zimmerman",
+        "full-name": "Bright Zimmerman",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [
+            "Philly Pies",
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "283BrightZimmerman.png",
+            "283BrightZimmermanALT.png",
+            "283BrightZimmermanALT2.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Spuntamatite"
+            }
+        ]
+    },
+    {
+        "index": 284,
+        "id": "elijah-bates",
+        "full-name": "Elijah Bates",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "284ElijahBates.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Spiral_Joe",
+                "text": "@Spiral_Joe"
+            }
+        ]
+    },
+    {
+        "index": 285,
+        "id": "ortiz-morse",
+        "full-name": "Ortiz Morse",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "285OrtizMorse.png",
+            "285OrtizMorseALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 286,
+        "id": "alston-cerveza",
+        "full-name": "Alston Cerveza",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "286AlstonCerveza.png",
+            "286AlstonCervezaALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/raevpet",
+                "text": "@raevpet"
+            }
+        ]
+    },
+    {
+        "index": 287,
+        "id": "cedric-spliff",
+        "full-name": "Cedric Spliff",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "287CedricSpliff.png",
+            "287CedricSpliffALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
+    },
+    {
+        "index": 288,
+        "id": "simba-davis",
+        "full-name": "Simba Davis",
+        "size": "small",
+        "team": "Charleston Shoe Thieves",
+        "former-teams": [],
+        "sprites": [
+            "288SimbaDavis.png"
+        ],
+        "default-sprite": 0
+    },
+    {
+        "index": 289,
+        "id": "yurts-buttercup",
+        "full-name": "Yurts Buttercup",
+        "size": "large",
+        "team": "Atlantis Georgias",
+        "former-teams": [],
+        "sprites": [
+            "289YurtsButtercup.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/moliwogs",
+                "text": "@moliwogs"
             }
         ]
     }

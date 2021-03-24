@@ -112,6 +112,7 @@ def decidesize(nameid):
         'bonk-jokes',
         'jessi-wise',
         'richmond-harrison',
+        'yurts-buttercup',
 
         # Pandemonium Artists
         'breeze-regicide',

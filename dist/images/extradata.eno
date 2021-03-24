@@ -1668,7 +1668,9 @@ default: 0
 
 #jesús-koch
 team: moist talkers
-credit: @avery_helm
+credit: 
+- @avery_helm
+- @MackinItHappen
 default: 0
 
 #jenkins-good
@@ -1876,6 +1878,51 @@ team: lovers
 credit:
 - @cari_guevara
 - @Fancymancer
+default: 0
+
+#bright-zimmerman
+team: shoe thieves
+former-teams:
+- pies
+- moist talkers
+credit: "Spuntamatite"
+default: 0
+
+#elijah-bates
+team: riv
+former-teams:
+- moist talkers
+credit: @Spiral_Joe
+default: 0
+
+#ortiz-morse
+team: garages
+former-teams:
+- moist talkers
+credit: @avery_helm
+default: 0
+
+#alston-cerveza
+team: moist talkers
+former-teams:
+- pies
+credit: @raevpet
+default: 1
+
+#cedric-spliff
+team: moist talkers
+former-teams:
+- garages
+credit: @avery_helm
+default: 0
+
+#simba-davis
+team: shoe thieves
+default: 0
+
+#yurts-buttercup
+team: georgias
+credit: @moliwogs
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
