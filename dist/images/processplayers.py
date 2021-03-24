@@ -111,6 +111,7 @@ def decidesize(nameid):
         'gallup-crueller',
         'bonk-jokes',
         'jessi-wise',
+        'richmond-harrison',
 
         # Pandemonium Artists
         'breeze-regicide',

@@ -1,17 +1,26 @@
 [
     {
         "index": 1,
-        "id": "richmond-a-l-t",
-        "full-name": "Richmond A L T",
-        "size": "small",
-        "team": "Pending Team",
-        "former-teams": [],
-        "sprites": [
-            "01RichmondALT2.png",
-            "01RichmondHarrison.png",
-            "01RichmondHarrisonALT.png"
+        "id": "richmond-harrison",
+        "full-name": "Richmond Harrison",
+        "size": "large",
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [
+            "Canada Moist Talkers",
+            "Hades Tigers"
         ],
-        "default-sprite": 0
+        "sprites": [
+            "01RichmondHarrison.png",
+            "01RichmondHarrisonALT.png",
+            "01RichmondHarrisonALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
+        ]
     },
     {
         "index": 2,
