@@ -1618,7 +1618,9 @@ default: 0
 
 #randy-castillo
 team: tigers
-credit: @CurseOfScots
+credit: 
+- @CurseOfScots
+- @mnsoleart
 default: 0
 
 #famous-owens
@@ -1923,6 +1925,21 @@ default: 0
 #yurts-buttercup
 team: georgias
 credit: @moliwogs
+default: 0
+
+#gabriel-griffith
+team: firefighters
+former-teams:
+- steaks
+- fridays
+- lovers
+- tigers
+credit: @_waalkr
+default: 4
+
+#uncle-plasma
+team: millennials
+credit: @andreastreeter
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -4929,13 +4929,18 @@
         "team": "Hades Tigers",
         "former-teams": [],
         "sprites": [
-            "241RandyCastillo.png"
+            "241RandyCastillo.png",
+            "241RandyCastillo2.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/CurseOfScots",
                 "text": "@CurseOfScots"
+            },
+            {
+                "link": "https://twitter.com/mnsoleart",
+                "text": "@mnsoleart"
             }
         ]
     },
@@ -5887,6 +5892,51 @@
             {
                 "link": "https://twitter.com/moliwogs",
                 "text": "@moliwogs"
+            }
+        ]
+    },
+    {
+        "index": 290,
+        "id": "gabriel-griffith",
+        "full-name": "Gabriel Griffith",
+        "size": "small",
+        "team": "Chicago Firefighters",
+        "former-teams": [
+            "Dallas Steaks",
+            "Hawai'i Fridays",
+            "San Francisco Lovers",
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "290GabrielGriffith.png",
+            "290GabrielGriffithALT.png",
+            "290GabrielGriffithALT2.png",
+            "290GabrielGriffithALT3.png",
+            "290GabrielGriffithALT4.png"
+        ],
+        "default-sprite": 4,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 291,
+        "id": "uncle-plasma",
+        "full-name": "Uncle Plasma",
+        "size": "small",
+        "team": "New York Millennials",
+        "former-teams": [],
+        "sprites": [
+            "291UnclePlasma.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/andreastreeter",
+                "text": "@andreastreeter"
             }
         ]
     }
