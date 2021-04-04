@@ -1,139 +1,13 @@
 [
     {
-        "index": 1,
-        "id": "breeze-regicide",
-        "full-name": "Breeze Regicide",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G001BreezeRegicide.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/hetreasky",
-                "text": "@hetreasky"
-            }
-        ]
-    },
-    {
-        "index": 2,
-        "id": "pompom-pomodoro",
-        "full-name": "Pompom Pomodoro",
+        "index": 42,
+        "id": "polkadot-matrix",
+        "full-name": "Polkadot Matrix",
         "size": "small",
-        "team": "Pending Team",
+        "team": "Society Data Witches",
         "former-teams": [],
         "sprites": [
-            "G002PompomPomodoro.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/MimimiCee",
-                "text": "@MimimiCee"
-            }
-        ]
-    },
-    {
-        "index": 3,
-        "id": "friend-void",
-        "full-name": "Friend Void",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G003FriendVoid.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/cryptmilk",
-                "text": "@cryptmilk"
-            }
-        ]
-    },
-    {
-        "index": 4,
-        "id": "schism-thrones",
-        "full-name": "Schism Thrones",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G004SchismThrones.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/occultclassic",
-                "text": "@occultclassic"
-            }
-        ]
-    },
-    {
-        "index": 5,
-        "id": "backwoods-broker",
-        "full-name": "Backwoods Broker",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G005BackwoodsBroker.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/horseizontal",
-                "text": "@horseizontal"
-            }
-        ]
-    },
-    {
-        "index": 6,
-        "id": "chromatic-jump",
-        "full-name": "Chromatic Jump",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G006ChromaticJump.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/fairchart",
-                "text": "@fairchart"
-            }
-        ]
-    },
-    {
-        "index": 7,
-        "id": "handsome-scarf",
-        "full-name": "Handsome Scarf",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G007HandsomeScarf.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/ndlbxbrd",
-                "text": "@ndlbxbrd"
-            }
-        ]
-    },
-    {
-        "index": 8,
-        "id": "maddong-candy",
-        "full-name": "Maddong Candy",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G008MaddongCandy.png"
+            "G042PolkadotMatrix.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -144,555 +18,14 @@
         ]
     },
     {
-        "index": 9,
-        "id": "arbutus-bones",
-        "full-name": "Arbutus Bones",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G009ArbutusBones.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/skelebells",
-                "text": "@skelebells"
-            }
-        ]
-    },
-    {
-        "index": 10,
-        "id": "jenny-quicksilver",
-        "full-name": "Jenny Quicksilver",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G010JennyQuicksilver.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/jololion",
-                "text": "@jololion"
-            }
-        ]
-    },
-    {
-        "index": 11,
-        "id": "manda-moth",
-        "full-name": "Manda Moth",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G011MandaMoth.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/cocacolapanda1",
-                "text": "@cocacolapanda1"
-            }
-        ]
-    },
-    {
-        "index": 12,
-        "id": "aura-irving",
-        "full-name": "Aura Irving",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G012AuraIrving.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/redbirdrabbit",
-                "text": "@redbirdrabbit"
-            }
-        ]
-    },
-    {
-        "index": 13,
-        "id": "road-kill",
-        "full-name": "Road Kill",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G013RoadKill.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/glassgoblin",
-                "text": "@glassgoblin"
-            }
-        ]
-    },
-    {
-        "index": 14,
-        "id": "entropy-handcramp",
-        "full-name": "Entropy Handcramp",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G014EntropyHandcramp.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/koloquials",
-                "text": "@koloquials"
-            }
-        ]
-    },
-    {
-        "index": 15,
-        "id": "jay-grayscale",
-        "full-name": "Jay Grayscale",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G015JayGrayscale.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/juangeedraws",
-                "text": "@juangeedraws"
-            }
-        ]
-    },
-    {
-        "index": 16,
-        "id": "watson-ward",
-        "full-name": "Watson Ward",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G016WatsonWard.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/fancymancer",
-                "text": "@fancymancer"
-            }
-        ]
-    },
-    {
-        "index": 17,
-        "id": "roxetta-compass",
-        "full-name": "Roxetta Compass",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G017RoxettaCompass.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/chezforshire",
-                "text": "@chezforshire"
-            }
-        ]
-    },
-    {
-        "index": 18,
-        "id": "cinna-toast",
-        "full-name": "Cinna Toast",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G018CinnaToast.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/alyssalmpenney",
-                "text": "@alyssalmpenney"
-            }
-        ]
-    },
-    {
-        "index": 19,
-        "id": "happy-yoinky",
-        "full-name": "Happy Yoinky",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G019HappyYoinky.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/peony_vibes",
-                "text": "@peony_vibes"
-            }
-        ]
-    },
-    {
-        "index": 20,
-        "id": "swords-magpie",
-        "full-name": "Swords Magpie",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G020SwordsMagpie.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/alienmandy_",
-                "text": "@alienmandy_"
-            }
-        ]
-    },
-    {
-        "index": 21,
-        "id": "teeth-bandana",
-        "full-name": "Teeth Bandana",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G021TeethBandana.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/greetomatic",
-                "text": "@greetomatic"
-            }
-        ]
-    },
-    {
-        "index": 22,
-        "id": "quebrada-stone",
-        "full-name": "Quebrada Stone",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G022QuebradaStone.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/mnsoleart",
-                "text": "@mnsoleart"
-            }
-        ]
-    },
-    {
-        "index": 23,
-        "id": "buck-rattler",
-        "full-name": "Buck Rattler",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G023BuckRattler.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/crikadelic",
-                "text": "@crikadelic"
-            }
-        ]
-    },
-    {
-        "index": 24,
-        "id": "cousin-spike",
-        "full-name": "Cousin Spike",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G024CousinSpike.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/_waalkr",
-                "text": "@_waalkr"
-            }
-        ]
-    },
-    {
-        "index": 25,
-        "id": "ikea-jellofin",
-        "full-name": "Ikea Jellofin",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G025IkeaJellofin.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/starfauna",
-                "text": "@starfauna"
-            }
-        ]
-    },
-    {
-        "index": 26,
-        "id": "fishcake-can",
-        "full-name": "Fishcake Can",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G026FishcakeCan.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/Karagna_",
-                "text": "@Karagna_"
-            }
-        ]
-    },
-    {
-        "index": 27,
-        "id": "jonah-mosaic",
-        "full-name": "Jonah Mosaic",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G027JonahMosaic.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/shenaniglenn",
-                "text": "@shenaniglenn"
-            }
-        ]
-    },
-    {
-        "index": 28,
-        "id": "dunbar-mcloud",
-        "full-name": "Dunbar McLoud",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G028DunbarMcLoud.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/justmako",
-                "text": "@justmako"
-            }
-        ]
-    },
-    {
-        "index": 29,
-        "id": "angel-ivories",
-        "full-name": "Angel Ivories",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G029AngelIvories.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/luins_",
-                "text": "@luins_"
-            }
-        ]
-    },
-    {
-        "index": 30,
-        "id": "haunt-wednesday",
-        "full-name": "Haunt Wednesday",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G030HauntWednesday.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/kayleerowena",
-                "text": "@kayleerowena"
-            }
-        ]
-    },
-    {
-        "index": 31,
-        "id": "phoebe-blasesona",
-        "full-name": "Phoebe Blasesona",
-        "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G031PhoebeBlasesona.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/ArachnidArt",
-                "text": "@ArachnidArt"
-            }
-        ]
-    },
-    {
-        "index": 32,
-        "id": "y3hirv-hafgy2738riv",
-        "full-name": "Y3hirv Hafgy2738riv",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G032Y3hirvHafgy2738riv.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "",
-                "text": "Shen"
-            }
-        ]
-    },
-    {
-        "index": 33,
-        "id": "bing-flatters",
-        "full-name": "Bing Flatters",
-        "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
-        "sprites": [
-            "G033BingFlatters.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/longhairQ",
-                "text": "@longhairQ"
-            }
-        ],
-        "mascot": true
-    },
-    {
-        "index": 34,
-        "id": "ball-clark",
-        "full-name": "Ball Clark",
-        "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
-        "sprites": [
-            "G034BallClark.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/chrisbratt",
-                "text": "@chrisbratt"
-            }
-        ]
-    },
-    {
-        "index": 35,
-        "id": "stephen-shelled",
-        "full-name": "Stephen Shelled",
-        "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
-        "sprites": [
-            "G035StephenShelled.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/chrisbratt",
-                "text": "@chrisbratt"
-            }
-        ]
-    },
-    {
-        "index": 36,
-        "id": "slam-rosenthal",
-        "full-name": "Slam Rosenthal",
-        "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
-        "sprites": [
-            "G036SlamRosenthal.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/chrisbratt",
-                "text": "@chrisbratt"
-            }
-        ]
-    },
-    {
-        "index": 37,
-        "id": "parker-macmillan-iiii",
-        "full-name": "Parker MacMillan IIII",
-        "size": "huge",
-        "team": "Real Game Band",
-        "former-teams": [],
-        "sprites": [
-            "G037ParkerMacMillanIIII.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/hetreasky",
-                "text": "@hetreasky"
-            }
-        ]
-    },
-    {
-        "index": 38,
-        "id": "mason-m-mcmason",
-        "full-name": "Mason M. McMason",
+        "index": 41,
+        "id": "espresso-machine",
+        "full-name": "Espresso Machine",
         "size": "small",
         "team": "Society Data Witches",
         "former-teams": [],
         "sprites": [
-            "G038MasonMMcMason.png"
-        ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "https://twitter.com/tywyso",
-                "text": "@tywyso"
-            }
-        ]
-    },
-    {
-        "index": 39,
-        "id": "batista-oatmilk",
-        "full-name": "Batista Oatmilk",
-        "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
-        "sprites": [
-            "G039BatistaOatmilk.png"
+            "G041EspressoMachine.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -721,14 +54,14 @@
         ]
     },
     {
-        "index": 41,
-        "id": "espresso-machine",
-        "full-name": "Espresso Machine",
+        "index": 39,
+        "id": "batista-oatmilk",
+        "full-name": "Batista Oatmilk",
         "size": "small",
         "team": "Society Data Witches",
         "former-teams": [],
         "sprites": [
-            "G041EspressoMachine.png"
+            "G039BatistaOatmilk.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -739,20 +72,687 @@
         ]
     },
     {
-        "index": 42,
-        "id": "polkadot-matrix",
-        "full-name": "Polkadot Matrix",
+        "index": 38,
+        "id": "mason-m-mcmason",
+        "full-name": "Mason M. McMason",
         "size": "small",
         "team": "Society Data Witches",
         "former-teams": [],
         "sprites": [
-            "G042PolkadotMatrix.png"
+            "G038MasonMMcMason.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/tywyso",
+                "text": "@tywyso"
+            }
+        ]
+    },
+    {
+        "index": 37,
+        "id": "parker-macmillan-iiii",
+        "full-name": "Parker MacMillan IIII",
+        "size": "huge",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G037ParkerMacMillanIIII.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 36,
+        "id": "slam-rosenthal",
+        "full-name": "Slam Rosenthal",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G036SlamRosenthal.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 35,
+        "id": "stephen-shelled",
+        "full-name": "Stephen Shelled",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G035StephenShelled.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 34,
+        "id": "ball-clark",
+        "full-name": "Ball Clark",
+        "size": "small",
+        "team": "Real Game Band",
+        "former-teams": [],
+        "sprites": [
+            "G034BallClark.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chrisbratt",
+                "text": "@chrisbratt"
+            }
+        ]
+    },
+    {
+        "index": 33,
+        "id": "bing-flatters",
+        "full-name": "Bing Flatters",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G033BingFlatters.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/longhairQ",
+                "text": "@longhairQ"
+            }
+        ],
+        "mascot": true
+    },
+    {
+        "index": 32,
+        "id": "y3hirv-hafgy2738riv",
+        "full-name": "Y3hirv Hafgy2738riv",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G032Y3hirvHafgy2738riv.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Shen"
+            }
+        ]
+    },
+    {
+        "index": 31,
+        "id": "phoebe-blasesona",
+        "full-name": "Phoebe Blasesona",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G031PhoebeBlasesona.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ArachnidArt",
+                "text": "@ArachnidArt"
+            }
+        ]
+    },
+    {
+        "index": 30,
+        "id": "haunt-wednesday",
+        "full-name": "Haunt Wednesday",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G030HauntWednesday.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/kayleerowena",
+                "text": "@kayleerowena"
+            }
+        ]
+    },
+    {
+        "index": 29,
+        "id": "angel-ivories",
+        "full-name": "Angel Ivories",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G029AngelIvories.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/luins_",
+                "text": "@luins_"
+            }
+        ]
+    },
+    {
+        "index": 28,
+        "id": "dunbar-mcloud",
+        "full-name": "Dunbar McLoud",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G028DunbarMcLoud.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/justmako",
+                "text": "@justmako"
+            }
+        ]
+    },
+    {
+        "index": 27,
+        "id": "jonah-mosaic",
+        "full-name": "Jonah Mosaic",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G027JonahMosaic.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/shenaniglenn",
+                "text": "@shenaniglenn"
+            }
+        ]
+    },
+    {
+        "index": 26,
+        "id": "fishcake-can",
+        "full-name": "Fishcake Can",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G026FishcakeCan.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Karagna_",
+                "text": "@Karagna_"
+            }
+        ]
+    },
+    {
+        "index": 25,
+        "id": "ikea-jellofin",
+        "full-name": "Ikea Jellofin",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G025IkeaJellofin.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/starfauna",
+                "text": "@starfauna"
+            }
+        ]
+    },
+    {
+        "index": 24,
+        "id": "cousin-spike",
+        "full-name": "Cousin Spike",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G024CousinSpike.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 23,
+        "id": "buck-rattler",
+        "full-name": "Buck Rattler",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G023BuckRattler.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
+        ]
+    },
+    {
+        "index": 22,
+        "id": "quebrada-stone",
+        "full-name": "Quebrada Stone",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G022QuebradaStone.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/mnsoleart",
+                "text": "@mnsoleart"
+            }
+        ]
+    },
+    {
+        "index": 21,
+        "id": "teeth-bandana",
+        "full-name": "Teeth Bandana",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G021TeethBandana.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/greetomatic",
+                "text": "@greetomatic"
+            }
+        ]
+    },
+    {
+        "index": 20,
+        "id": "swords-magpie",
+        "full-name": "Swords Magpie",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G020SwordsMagpie.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alienmandy_",
+                "text": "@alienmandy_"
+            }
+        ]
+    },
+    {
+        "index": 19,
+        "id": "happy-yoinky",
+        "full-name": "Happy Yoinky",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G019HappyYoinky.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/peony_vibes",
+                "text": "@peony_vibes"
+            }
+        ]
+    },
+    {
+        "index": 18,
+        "id": "cinna-toast",
+        "full-name": "Cinna Toast",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G018CinnaToast.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alyssalmpenney",
+                "text": "@alyssalmpenney"
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "id": "roxetta-compass",
+        "full-name": "Roxetta Compass",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G017RoxettaCompass.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/chezforshire",
+                "text": "@chezforshire"
+            }
+        ]
+    },
+    {
+        "index": 16,
+        "id": "watson-ward",
+        "full-name": "Watson Ward",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G016WatsonWard.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 15,
+        "id": "jay-grayscale",
+        "full-name": "Jay Grayscale",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G015JayGrayscale.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            }
+        ]
+    },
+    {
+        "index": 14,
+        "id": "entropy-handcramp",
+        "full-name": "Entropy Handcramp",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G014EntropyHandcramp.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/koloquials",
+                "text": "@koloquials"
+            }
+        ]
+    },
+    {
+        "index": 13,
+        "id": "road-kill",
+        "full-name": "Road Kill",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G013RoadKill.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "id": "aura-irving",
+        "full-name": "Aura Irving",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G012AuraIrving.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/redbirdrabbit",
+                "text": "@redbirdrabbit"
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "id": "manda-moth",
+        "full-name": "Manda Moth",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G011MandaMoth.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cocacolapanda1",
+                "text": "@cocacolapanda1"
+            }
+        ]
+    },
+    {
+        "index": 10,
+        "id": "jenny-quicksilver",
+        "full-name": "Jenny Quicksilver",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G010JennyQuicksilver.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/jololion",
+                "text": "@jololion"
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "id": "arbutus-bones",
+        "full-name": "Arbutus Bones",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G009ArbutusBones.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/skelebells",
+                "text": "@skelebells"
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "id": "maddong-candy",
+        "full-name": "Maddong Candy",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G008MaddongCandy.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/maddycha",
                 "text": "@maddycha"
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "id": "handsome-scarf",
+        "full-name": "Handsome Scarf",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G007HandsomeScarf.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/ndlbxbrd",
+                "text": "@ndlbxbrd"
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "id": "chromatic-jump",
+        "full-name": "Chromatic Jump",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G006ChromaticJump.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fairchart",
+                "text": "@fairchart"
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "id": "backwoods-broker",
+        "full-name": "Backwoods Broker",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G005BackwoodsBroker.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/horseizontal",
+                "text": "@horseizontal"
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "id": "schism-thrones",
+        "full-name": "Schism Thrones",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G004SchismThrones.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/occultclassic",
+                "text": "@occultclassic"
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "id": "friend-void",
+        "full-name": "Friend Void",
+        "size": "small",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G003FriendVoid.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/cryptmilk",
+                "text": "@cryptmilk"
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "id": "pompom-pomodoro",
+        "full-name": "Pompom Pomodoro",
+        "size": "small",
+        "team": "Pending Team",
+        "former-teams": [],
+        "sprites": [
+            "G002PompomPomodoro.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MimimiCee",
+                "text": "@MimimiCee"
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "id": "breeze-regicide",
+        "full-name": "Breeze Regicide",
+        "size": "large",
+        "team": "Pandemonium Artists",
+        "former-teams": [],
+        "sprites": [
+            "G001BreezeRegicide.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
             }
         ]
     }

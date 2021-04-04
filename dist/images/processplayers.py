@@ -356,6 +356,9 @@ for i in range(1, guest_max_id + 1):
     if player:
         guest_players.append(player)
 
+# Reverse data (so latest at the top)
+players.reverse()
+guest_players.reverse()
 
 print("Dumping to file...")
 with open('../../src/players.json', 'w', encoding='utf-8') as file:
