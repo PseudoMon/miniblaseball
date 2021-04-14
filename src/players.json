@@ -4,12 +4,15 @@
         "id": "uncle-plasma",
         "full-name": "Uncle Plasma",
         "size": "small",
-        "team": "New York Millennials",
-        "former-teams": [],
-        "sprites": [
-            "291UnclePlasma.png"
+        "team": "Kansas City Breath Mints",
+        "former-teams": [
+            "New York Millennials"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "291UnclePlasma.png",
+            "291UnclePlasmaALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/andreastreeter",
@@ -468,15 +471,15 @@
         "id": "parker-parra",
         "full-name": "Parker Parra",
         "size": "small",
-        "team": "Boston Flowers",
+        "team": "Baltimore Crabs",
         "former-teams": [
-            "Baltimore Crabs"
+            "Boston Flowers"
         ],
         "sprites": [
             "268ParkerParra.png",
             "268ParkerParraALT.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/Slagstorm",
@@ -511,12 +514,15 @@
         "id": "brock-forbes",
         "full-name": "Brock Forbes",
         "size": "small",
-        "team": "Baltimore Crabs",
-        "former-teams": [],
-        "sprites": [
-            "266BrockForbes.png"
+        "team": "Boston Flowers",
+        "former-teams": [
+            "Baltimore Crabs"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "266BrockForbes.png",
+            "266BrockForbesALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/glassgoblin",
@@ -1351,13 +1357,14 @@
         "id": "zack-sanders",
         "full-name": "Zack Sanders",
         "size": "xlarge",
-        "team": "Hellmouth Sunbeams",
+        "team": "Philly Pies",
         "former-teams": [],
         "sprites": [
             "224ZackSanders.png",
-            "224ZackSanders2.png"
+            "224ZackSanders2.png",
+            "224ZackSandersALT.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/karagna_",
@@ -1425,19 +1432,21 @@
         "id": "polkadot-patterson",
         "full-name": "PolkaDot Patterson",
         "size": "small",
-        "team": "Canada Moist Talkers",
+        "team": "Dallas Steaks",
         "former-teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs",
-            "Core Mechanics"
+            "Core Mechanics",
+            "Canada Moist Talkers"
         ],
         "sprites": [
             "220PolkaDotPatterson.png",
             "220PolkaDotPattersonALT.png",
             "220PolkaDotPattersonALT1.png",
-            "220PolkaDotPattersonALT3.png"
+            "220PolkaDotPattersonALT3.png",
+            "220PolkaDotPattersonALT4.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 4,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -2620,12 +2629,15 @@
         "id": "usurper-violet",
         "full-name": "Usurper Violet",
         "size": "large",
-        "team": "Hades Tigers",
-        "former-teams": [],
-        "sprites": [
-            "160UsurperViolet.png"
+        "team": "Philly Pies",
+        "former-teams": [
+            "Hades Tigers"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "160UsurperViolet.png",
+            "160UsurperVioletALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -3699,17 +3711,18 @@
         "id": "luis-acevedo",
         "full-name": "Luis Acevedo",
         "size": "small",
-        "team": "Ohio Worms",
+        "team": "Baltimore Crabs",
         "former-teams": [
             "Seattle Garages",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Ohio Worms"
         ],
         "sprites": [
             "108LuisAcevedo.png",
             "108LuisAcevedoALT.png",
             "108LuisAcevedoALT2.png"
         ],
-        "default-sprite": 2,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/corpserevivers",
@@ -4030,15 +4043,17 @@
         "id": "halexandrey-walton",
         "full-name": "Halexandrey Walton",
         "size": "small",
-        "team": "LA Unlimited Tacos",
+        "team": "Charleston Shoe Thieves",
         "former-teams": [
-            "Yellowstone Magic"
+            "Yellowstone Magic",
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "92HalexandreyWalton.png",
-            "92HalexandreyWaltonALT.png"
+            "92HalexandreyWaltonALT.png",
+            "92HalexandryWaltonALT2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/fancymancer",
@@ -4051,12 +4066,15 @@
         "id": "ortiz-lopez",
         "full-name": "Ortiz Lopez",
         "size": "small",
-        "team": "San Francisco Lovers",
-        "former-teams": [],
-        "sprites": [
-            "91OrtizLopez.png"
+        "team": "Atlantis Georgias",
+        "former-teams": [
+            "San Francisco Lovers"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "91OrtizLopez.png",
+            "91OrtizLopezALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/cari_guevara",
@@ -4069,15 +4087,17 @@
         "id": "penelope-mathews",
         "full-name": "Penelope Mathews",
         "size": "small",
-        "team": "New York Millennials",
+        "team": "Seattle Garages",
         "former-teams": [
-            "Yellowstone Magic"
+            "Yellowstone Magic",
+            "New York Millennials"
         ],
         "sprites": [
             "90PenelopeMathews.png",
-            "90PenelopeMathewsALT.png"
+            "90PenelopeMathewsALT.png",
+            "90PenelopeMathewsALT2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/freddeye",
@@ -4348,16 +4368,17 @@
         "id": "chorby-soul",
         "full-name": "Chorby Soul",
         "size": "small",
-        "team": "Seattle Garages",
+        "team": "New York Millennials",
         "former-teams": [
             "New York Millennials",
-            "RIV"
+            "RIV",
+            "Seattle Garages"
         ],
         "sprites": [
             "76ChorbySoul.png",
             "76ChorbySoulALT.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/apolante_art",
@@ -4603,12 +4624,15 @@
         "id": "elvis-figueroa",
         "full-name": "Elvis Figueroa",
         "size": "small",
-        "team": "Philly Pies",
-        "former-teams": [],
-        "sprites": [
-            "63ElvisFigueroa.png"
+        "team": "Hellmouth Sunbeams",
+        "former-teams": [
+            "Philly Pies"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "63ElvisFigueroa.png",
+            "63ElvisFigueroaALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/this_is_onjit",
@@ -4621,12 +4645,15 @@
         "id": "cannonball-sports",
         "full-name": "Cannonball Sports",
         "size": "small",
-        "team": "Miami Dale",
-        "former-teams": [],
-        "sprites": [
-            "62CannonballSports.png"
+        "team": "San Francisco Lovers",
+        "former-teams": [
+            "Miami Dale"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "62CannonballSports.png",
+            "62CannonballSportsALT.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/CHURGALAX",
@@ -4805,7 +4832,10 @@
         "full-name": "Knight Triumphant",
         "size": "small",
         "team": "Atlantis Georgias",
-        "former-teams": [],
+        "former-teams": [
+            "San Francisco Lovers",
+            "Houston Spies"
+        ],
         "sprites": [
             "53KnightTriumphant.png",
             "53KnightTriumphantALT.png",
@@ -5353,12 +5383,13 @@
         "id": "york-silk",
         "full-name": "York Silk",
         "size": "small",
-        "team": "Baltimore Crabs",
+        "team": "Canada Moist Talkers",
         "former-teams": [
             "Hawai'i Fridays",
             "THE SHELLED ONE'S PODS",
             "Canada Moist Talkers",
-            "RIV"
+            "RIV",
+            "Baltimore Crabs"
         ],
         "sprites": [
             "27YorkSilk.png",
@@ -5366,7 +5397,7 @@
             "27YorkSilkALT2.png",
             "27YorkSilkALT3.png"
         ],
-        "default-sprite": 3,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/fairchart",
@@ -5383,12 +5414,17 @@
         "id": "parker-meng",
         "full-name": "Parker Meng",
         "size": "small",
-        "team": "San Francisco Lovers",
-        "former-teams": [],
-        "sprites": [
-            "26ParkerMeng.png"
+        "team": "Baltimore Crabs",
+        "former-teams": [
+            "San Francisco Lovers",
+            "Miami Dale"
         ],
-        "default-sprite": 0,
+        "sprites": [
+            "26ParkerMeng.png",
+            "26ParkerMengALT.png",
+            "26ParkerMengALT2.png"
+        ],
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/cari_guevara",
@@ -5456,17 +5492,19 @@
         "id": "fish-summer",
         "full-name": "Fish Summer",
         "size": "large",
-        "team": "Canada Moist Talkers",
+        "team": "Baltimore Crabs",
         "former-teams": [
-            "Hades Tigers"
+            "Hades Tigers",
+            "Canada Moist Talkers"
         ],
         "sprites": [
             "23FishSummer.png",
             "23FishSummer2.png",
             "23FishSummer2ALT.png",
+            "23FishSummer2ALT2.png",
             "23FishSummerALT.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 3,
         "credits": [
             {
                 "link": "https://instagram.com/lote_lake",
@@ -5591,15 +5629,17 @@
         "id": "sixpack-dogwalker",
         "full-name": "Sixpack Dogwalker",
         "size": "large",
-        "team": "Dallas Steaks",
+        "team": "Canada Moist Talkers",
         "former-teams": [
-            "Hawai'i Fridays"
+            "Hawai'i Fridays",
+            "Dallas Steaks"
         ],
         "sprites": [
             "17SixpackDogwalker.png",
-            "17SixpackDogwalkerALT.png"
+            "17SixpackDogwalkerALT.png",
+            "17SixpackDogwalkerALT2.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -5684,7 +5724,7 @@
         "id": "jessica-telephone",
         "full-name": "Jessica Telephone",
         "size": "small",
-        "team": "Philly Pies",
+        "team": "Hades Tigers",
         "former-teams": [
             "Dallas Steaks",
             "Philly Pies",
@@ -5701,7 +5741,7 @@
             "12JessicaTelephoneALT4.png",
             "12JessicaTelephoneALT5.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 2,
         "credits": [
             {
                 "link": "https://twitter.com/telekeys",
