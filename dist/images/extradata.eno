@@ -1689,12 +1689,12 @@ team: moist talkers
 credit: @Spiral_Joe
 default: 0
 
-#jesús-koch
+#jesÃºs-koch
 team: moist talkers
 credit: 
 - @avery_helm
 - @MackinItHappen
-default: 0
+default: 1
 
 #jenkins-good
 team: moist talkers
@@ -1965,6 +1965,36 @@ team: breath mints
 former-teams:
 - millennials
 credit: @andreastreeter
+default: 1
+
+#denzel-scott
+team: spies
+credit:
+- "Insufferable Oracle"
+- @hetreasky
+default: 0
+
+#reese-clark
+team: spies
+credit:
+- "Insufferable Oracle"
+- "Diff"
+default: 0
+
+#morrow-wilson
+team: spies
+former-teams:
+- pies
+- spies
+- lovers
+credit: "Maluminse"
+default: 1
+
+#jomgy-rolsenthal
+team: dale
+former-teams:
+- spies
+credit: @DedSec_Pony
 default: 1
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
