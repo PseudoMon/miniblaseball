@@ -138,7 +138,8 @@ def decidesize(nameid):
         'peanutiel-duffy', 
         'adkins-gwiffin', 
         'lotus-mango', 
-        'parker-macmillan-iiii'
+        'parker-macmillan-iiii',
+        'chorby-soul'
     ]
 
     if nameid in bigboys:

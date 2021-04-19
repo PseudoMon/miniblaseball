@@ -1888,7 +1888,8 @@
         "sprites": [
             "202GreerGwiffin.png",
             "202GreerGwiffinALT.png",
-            "202GreerGwiffinALT2.png"
+            "202GreerGwiffinALT2.png",
+            "202GreerGwiffinALT3.png"
         ],
         "default-sprite": 3,
         "credits": [
@@ -4483,7 +4484,7 @@
         "index": 76,
         "id": "chorby-soul",
         "full-name": "Chorby Soul",
-        "size": "small",
+        "size": "huge",
         "team": "New York Millennials",
         "former-teams": [
             "New York Millennials",
