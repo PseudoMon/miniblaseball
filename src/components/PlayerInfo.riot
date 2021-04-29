@@ -26,10 +26,17 @@
             <h3 
                 if={ !state.isRIV }
                 class="team">
-                <div if={ !state.isStars }
+
+                <div if={ state.isUnknown }
                     class="smol-desc">
-                    { props.player.mascot ? "Mascot of" : "Currently playing for the" }
+                    Status currently
                 </div>
+
+                <div if={ !state.isStars && !state.isUnknown}
+                    class="smol-desc">
+                    { props.player.mascot ? "Mascot of" : "Currently a member of the" }
+                </div>
+                
                 { props.player["team"] }
             </h3>
 
@@ -186,8 +193,9 @@
                 viewedSprite,
                 credits,
                 wikilink,
-                isRIV: props.player.team === "RIV" ? true : false,
-                isStars: props.player.team === "Hall Stars" ? true : false,
+                isRIV: props.player.team === "RIV",
+                isStars: props.player.team === "Hall Stars",
+                isUnknown: props.player.team === "Unknown",
                 formerTeamsText,
                 id: props.player.id
             }
