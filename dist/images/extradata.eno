@@ -471,10 +471,11 @@ credit: instagram.com/snortcrab
 default: 0
 
 # tillman-henderson
-team: shoe thieves
+team: crabs
 former-teams:
 - riv
 - crabs
+- shoe thieves
 credit: @corpserevivers
 default: 1
 
@@ -1506,7 +1507,8 @@ default: 0
 
 #lotus-mango
 team: garages
-former-teams: lift
+former-teams: 
+-lift
 credit: @MaybeAMako
 default: 1
 
@@ -1938,7 +1940,6 @@ team: shoe thieves
 former-teams:
 - pies
 - moist talkers
-credit: "Spuntamatite"
 default: 0
 
 #elijah-bates
