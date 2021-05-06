@@ -13,7 +13,7 @@ credit: averybee.tumblr.com
 default: 0
 
 # wyatt-quitter
-team: lift
+team: unknown
 former-teams: 
 - tacos
 - pods
@@ -192,13 +192,14 @@ credit: @cari_guevara
 default: 1
 
 # york-silk
-team: garages
+team: unknown
 former-teams:
 - fridays
 - pods
 - moist talkers
 - riv
 - crabs
+- garages
 credit: 
 - @fairchart
 - @skelebells
@@ -231,7 +232,7 @@ team: spies
 default: 0
 
 # nagomi-mcdaniel
-team: dale
+team: unknown
 former-teams:
 - tigers
 - crabs
@@ -239,6 +240,7 @@ former-teams:
 - fridays
 - garages
 - flowers
+- dale
 credit:
 - @kayleerowena
 - @fancymancer
@@ -471,9 +473,8 @@ credit: instagram.com/snortcrab
 default: 0
 
 # tillman-henderson
-team: crabs
+team: riv
 former-teams:
-- riv
 - crabs
 - shoe thieves
 credit: @corpserevivers
@@ -1717,7 +1718,7 @@ team: moist talkers
 credit: @Spiral_Joe
 default: 0
 
-#jesÃºs-koch
+#jesús-koch
 team: moist talkers
 credit: 
 - @avery_helm
@@ -2027,6 +2028,51 @@ former-teams:
 - spies
 credit: @DedSec_Pony
 default: 1
+
+#silvaire-semiquaver
+team: lift
+credit: @awhekate
+default: 0
+
+#trinity-smaht
+team: crabs
+credit: @hetreasky
+default: 0
+
+#bevan-wise
+team: tacos
+former-teams:
+- magic
+credit: @graciedarts
+default: 1
+
+#avila-guzman
+team: spies
+former-teams:
+- garages
+- dale
+credit: 
+- @MLeeLunsford
+- @juangeedraws
+- @_pysics
+default: 2
+
+#ron-monstera
+team: riv
+former-teams:
+- garages
+credit: @beeeating
+default: 0
+
+#sparks-beans
+team: garages
+credit: @SharpibeesComms
+default: 0
+
+#theodore-duende
+team: garages
+credit: @MLeeLunsford
+default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

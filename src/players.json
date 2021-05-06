@@ -1,5 +1,149 @@
 [
     {
+        "index": 302,
+        "id": "theodore-duende",
+        "full-name": "Theodore Duende",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "302TheodoreDuende.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
+        ]
+    },
+    {
+        "index": 301,
+        "id": "sparks-beans",
+        "full-name": "Sparks Beans",
+        "size": "small",
+        "team": "Seattle Garages",
+        "former-teams": [],
+        "sprites": [
+            "301SparksBeans.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/SharpibeesComms",
+                "text": "@SharpibeesComms"
+            }
+        ]
+    },
+    {
+        "index": 300,
+        "id": "ron-monstera",
+        "full-name": "Ron Monstera",
+        "size": "large",
+        "team": "RIV",
+        "former-teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "300RonMonstera.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/beeeating",
+                "text": "@beeeating"
+            }
+        ]
+    },
+    {
+        "index": 299,
+        "id": "avila-guzman",
+        "full-name": "Avila Guzman",
+        "size": "small",
+        "team": "Houston Spies",
+        "former-teams": [
+            "Seattle Garages",
+            "Miami Dale"
+        ],
+        "sprites": [
+            "299AvilaGuzman.png",
+            "299AvilaGuzmanALT.png",
+            "299AvilaGuzmanALT2.png"
+        ],
+        "default-sprite": 2,
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            },
+            {
+                "link": "https://twitter.com/juangeedraws",
+                "text": "@juangeedraws"
+            },
+            {
+                "link": "https://twitter.com/_pysics",
+                "text": "@_pysics"
+            }
+        ]
+    },
+    {
+        "index": 298,
+        "id": "bevan-wise",
+        "full-name": "Bevan Wise",
+        "size": "large",
+        "team": "LA Unlimited Tacos",
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "298BevanWise.png",
+            "298BevanWiseALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
+        ]
+    },
+    {
+        "index": 297,
+        "id": "trinity-smaht",
+        "full-name": "Trinity Smaht",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "297TrinitySmaht.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 296,
+        "id": "silvaire-semiquaver",
+        "full-name": "Silvaire Semiquaver",
+        "size": "small",
+        "team": "Tokyo Lift",
+        "former-teams": [],
+        "sprites": [
+            "296SilvaireSemiquaver.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/awhekate",
+                "text": "@awhekate"
+            }
+        ]
+    },
+    {
         "index": 295,
         "id": "jomgy-rolsenthal",
         "full-name": "Jomgy Rolsenthal",
@@ -268,13 +412,7 @@
             "283BrightZimmermanALT.png",
             "283BrightZimmermanALT2.png"
         ],
-        "default-sprite": 0,
-        "credits": [
-            {
-                "link": "",
-                "text": "Spuntamatite"
-            }
-        ]
+        "default-sprite": 0
     },
     {
         "index": 282,
@@ -917,13 +1055,23 @@
         "id": "jesús-koch",
         "full-name": "Jesús Koch",
         "size": "small",
-        "team": "Pending Team",
+        "team": "Canada Moist Talkers",
         "former-teams": [],
         "sprites": [
             "251JesúsKoch.png",
             "251JesúsKochALT.png"
         ],
-        "default-sprite": 0
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            },
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
+            }
+        ]
     },
     {
         "index": 250,
@@ -1571,7 +1719,9 @@
         "full-name": "Lotus Mango",
         "size": "huge",
         "team": "Seattle Garages",
-        "former-teams": [],
+        "former-teams": [
+            "Tokyo Lift"
+        ],
         "sprites": [
             "218LotusMango.png",
             "218LotusMangoALT.png"
@@ -4681,10 +4831,10 @@
         "id": "tillman-henderson",
         "full-name": "Tillman Henderson",
         "size": "small",
-        "team": "Charleston Shoe Thieves",
+        "team": "RIV",
         "former-teams": [
-            "RIV",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Charleston Shoe Thieves"
         ],
         "sprites": [
             "66TillmanHenderson.png",
@@ -5406,14 +5556,15 @@
         "id": "nagomi-mcdaniel",
         "full-name": "Nagomi Mcdaniel",
         "size": "small",
-        "team": "Miami Dale",
+        "team": "Unknown",
         "former-teams": [
             "Hades Tigers",
             "Baltimore Crabs",
             "Breckenridge Jazz Hands",
             "Hawai'i Fridays",
             "Seattle Garages",
-            "Boston Flowers"
+            "Boston Flowers",
+            "Miami Dale"
         ],
         "sprites": [
             "31NagomiMcDaniel.png",
@@ -5511,13 +5662,14 @@
         "id": "york-silk",
         "full-name": "York Silk",
         "size": "small",
-        "team": "Seattle Garages",
+        "team": "Unknown",
         "former-teams": [
             "Hawai'i Fridays",
             "THE SHELLED ONE'S PODS",
             "Canada Moist Talkers",
             "RIV",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Seattle Garages"
         ],
         "sprites": [
             "27YorkSilk.png",
@@ -6054,7 +6206,7 @@
         "id": "wyatt-quitter",
         "full-name": "Wyatt Quitter",
         "size": "small",
-        "team": "Tokyo Lift",
+        "team": "Unknown",
         "former-teams": [
             "LA Unlimited Tacos",
             "THE SHELLED ONE'S PODS"
