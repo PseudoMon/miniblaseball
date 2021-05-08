@@ -3,4 +3,4 @@ dist/images/*.png
 src/placeholders*
 dist/pycache/*
 *__pycache__*
-dist/app.js
+dist/build/*
