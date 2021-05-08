@@ -1,7 +1,7 @@
 # MiniBlaseball Website
-Hullo, this repository is for the code that runs the [#MiniBlaseball website](https://miniblaseball.surge.sh). I wrote this readme for my future self so I don't get lost if I want to get back to this, and well, I guess also for anyone who wants to help fix bugs or to develop it further!
+Hullo! This repository contains the code that runs the [#MiniBlaseball website](https://miniblaseball.surge.sh). If you see any functional bugs or if you want to suggest new features, feel free to open an issue! Feel free to also contact me on [Twitter](https://twitter.com/PseudoMonious). 
 
-The website is built with Riot and Rollup. It's designed to only run only in the frontend from a single file and a single address. Data for the players is handwritten in the filename and the metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
+The website is built with [Svelte](https://svelte.dev), utilizing single-page routing with [Svelte Navigator](https://github.com/mefechoel/svelte-navigator). Data for the players is handwritten in a metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
 
 I've no plans to further automate data processing or to add more data into the site e.g. star rating or forbidden information, but I'm open if you want to help develop it.  
 
@@ -12,14 +12,12 @@ If you want to run the scripts that generate players data, you'll need Python 3 
 
 For the website, you'll need a recent version of Node and a Node package manager. I use PNPM, but it should work the same way if you use NPM or other package manager that uses the same package.json format.
 
-You'll need something to run a server from the `dist` directory. I use Python's builtin simple server, but anything else will work. 
-
 ## Generating player data
 You can find the generated players data in `src/players.json` and `src/guestPlayers.json`. 
 
-Those files are created by running  `python processplayers.py` inside `dist/images`. Players's names and sprites are determined from the images and their filename. Size determination is (for now) manually coded into the script. Other metadata is in `dist/images/extradata.eno`
+Those files are created by running  `python processplayers.py` inside `dist/images`. Players's names and sprites are determined from the images and their filename. Size determination is (for now) manually coded into `processplayers.py`. Other metadata is written in `dist/images/extradata.eno`
 
-Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script has manual adjustments for some players, like NaN or Y3hirv and those with "Mc" in their name (e.g. McDowell Mason). We use UTF-8 encoding, so non-English letters should work as well (thanks Jesús Koch). 
+Image filename should be in the format e.g. `98JoshuaWatson.png`, with alt color schemes being e.g. `98JoshuaWatsonALT.png` and `98JoshuaWatsonALT2.png`. The script also contains manual adjustments for some players, like NaN or Y3hirv and those with "Mc" in their name (e.g. McDowell Mason). We use UTF-8 encoding, so non-English letters should work as well (thanks Jesús Koch). 
 
 A player's "size" decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
 
@@ -32,30 +30,38 @@ Install the requirements with this (or however your package manager install pack
 pnpm install
 ``` 
 
-And then run rollup from the configuration file
+And then simply run this
 
 ```
-rollup -c -w
+pnpm run dev
 ```
 
-That will pack all the JavaScript source code into a single `app.js` file in the `dist` folder, which is then read by `index.html` when you open the website. The website functions rely on being run from a server based on that `dist` folder, so you'll have to run a server based on that directory. I use Python, so I can just `cd dist` and then run this :
+Replace pnpm with npm or whatever package manager you have. If you don't use PNPM, in `rollup.config.js`, find and replace the word `pnpm` with the package manager you use (e.g. `npm`).
 
-```
-python -m http.server
-```
+That script will run a server running in `localhost:5000`. The page will reload automatically whenever any of the code changes.
 
-Alternatively, you can run the script `startserver.sh` from the `dist` folder and it will both rebuild the players' JSON data and run a a server.
+Note that players data (e.g. `players.json`) will still have to be rebuilt through the Python script whenever there are new players or changes to `extradata.eno`. 
+
 
 ## The website's source code
-Source code that pertains to the site are all inside the `src` folder. Most of the processing happens in the main `app.riot` file, with some components having their own component files. `players.json` contains players data and should be generated by the Python script. `teams.json` contains the teams divided by subleagues, to be displayed in the filter menu. Both these files should be created through the Python script.
+Source code that pertains to the site are all inside the `src` folder. Most of the processing happens in the main `app.svelte` Machine-readable players data is contained within `players.json`, which should be generated by the Python script. `teams.json` contains the teams divided by subleagues, to be displayed in the filter menu. Both these files should be created through the Python script.
 
-`teamsReverseId.js` contain codes that flatten that teams JSON into a single array, and then transform that array into an object in which team names become keys and their values is their index within that array. It's for sorting by teams, so we can just compare their team index.
+`teamsReverseId.js` contain codes that flatten that teams JSON into a single array, and then transform that array into an object in which team names become keys and their values is their index within that array. It's for sorting by teams, so we can compare their team index.
 
 ## Readying for production
-Run rollup without using watch. It'll result in a minified production-ready file.
+Run this script:
+
+```
+pnpm run build
+```
+
+Or just straight up run rollup
+
 ```
 rollup -c
 ```
+
+Either of the above will result in minified production-ready file.
 
 The current website is hosted on [Surge.sh](https://surge.sh)! If you have upload rights, you can upload using 
 ```
@@ -64,5 +70,4 @@ surge --domain miniblaseball.surge.sh
 
 We also occasionally use the domain `zion-aliciakeyes.surge.sh` for testing new features.
 
-## Known Bugs
-Changing the player page currently seen by typing directly to the URL will not change data that are processed before they're rendered (including former teams and alt sprites). This is because states of the PlayerInfo component is not re-processed. Find a way to fix this maybe.  
+Note the existence of `200.html` file which is identical to `index.html`. When using Surge.sh, [this will enable client-side routing](https://surge.sh/help/adding-a-200-page-for-client-side-routing). 
