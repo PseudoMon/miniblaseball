@@ -17,6 +17,7 @@ team: unknown
 former-teams: 
 - tacos
 - pods
+- lift
 credit: @fancymancer
 default: 2
 
@@ -2072,6 +2073,26 @@ default: 0
 #theodore-duende
 team: garages
 credit: @MLeeLunsford
+default: 0
+
+#gia-holbrook
+team: mechanics
+credit: @wiresandlight
+default: 0
+
+#torus-mcghee
+team: mechanics
+credit: @Trihunter2
+default: 0
+
+#foxy-pebble
+team: mechanics
+credit: "NF211"
+default: 0
+
+#kelvin-drumsolo
+team: mechanics
+credit: "EpicToast"
 default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

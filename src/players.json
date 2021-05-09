@@ -1,5 +1,77 @@
 [
     {
+        "index": 306,
+        "id": "kelvin-drumsolo",
+        "full-name": "Kelvin Drumsolo",
+        "size": "small",
+        "team": "Core Mechanics",
+        "former-teams": [],
+        "sprites": [
+            "306KelvinDrumsolo.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "EpicToast"
+            }
+        ]
+    },
+    {
+        "index": 305,
+        "id": "foxy-pebble",
+        "full-name": "Foxy Pebble",
+        "size": "small",
+        "team": "Core Mechanics",
+        "former-teams": [],
+        "sprites": [
+            "305FoxyPebble.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "NF211"
+            }
+        ]
+    },
+    {
+        "index": 304,
+        "id": "torus-mcghee",
+        "full-name": "Torus McGhee",
+        "size": "small",
+        "team": "Core Mechanics",
+        "former-teams": [],
+        "sprites": [
+            "304TorusMcGhee.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Trihunter2",
+                "text": "@Trihunter2"
+            }
+        ]
+    },
+    {
+        "index": 303,
+        "id": "gia-holbrook",
+        "full-name": "Gia Holbrook",
+        "size": "small",
+        "team": "Core Mechanics",
+        "former-teams": [],
+        "sprites": [
+            "303GiaHolbrook.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/wiresandlight",
+                "text": "@wiresandlight"
+            }
+        ]
+    },
+    {
         "index": 302,
         "id": "theodore-duende",
         "full-name": "Theodore Duende",
@@ -6209,7 +6281,8 @@
         "team": "Unknown",
         "former-teams": [
             "LA Unlimited Tacos",
-            "THE SHELLED ONE'S PODS"
+            "THE SHELLED ONE'S PODS",
+            "Tokyo Lift"
         ],
         "sprites": [
             "03WyattQuitter.png",
