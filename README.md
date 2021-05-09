@@ -1,7 +1,10 @@
+# WARNING: This is an old build made using Riot
+The current version of the website is built using Svelte, whose code can be seen in the main branch. This made-with-riot branch is only here for posterity's sake. As of this writing, the two versions have the exact same functionality, but any future update to the Svelte version will not be applied to this Riot version.   
+
 # MiniBlaseball Website
 Hullo, this repository is for the code that runs the [#MiniBlaseball website](https://miniblaseball.surge.sh). I wrote this readme for my future self so I don't get lost if I want to get back to this, and well, I guess also for anyone who wants to help fix bugs or to develop it further!
 
-The website is built with Riot and Rollup. It's designed to only run only in the frontend from a single file and a single address. Data for the players is handwritten in the filename and the metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
+The website is built with [Riot](https://riot.js.org) and Rollup. It's designed to only run only in the frontend from a single file and a single address. Data for the players is handwritten in the filename and the metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
 
 I've no plans to further automate data processing or to add more data into the site e.g. star rating or forbidden information, but I'm open if you want to help develop it.  
 
