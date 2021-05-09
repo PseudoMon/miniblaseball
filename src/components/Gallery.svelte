@@ -86,20 +86,4 @@
         width: 100%;
         height: 100%;
     }
-
-    .gallery.loading {
-        opacity: 0;
-        width: 10px;
-        height: 10px;
-    }
-
-    .loading-screen {
-        width: 100%;
-        height: 100%;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-        font-style: italic;
-    }
 </style>
