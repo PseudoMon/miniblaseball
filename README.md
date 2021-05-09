@@ -49,21 +49,15 @@ Source code that pertains to the site are all inside the `src` folder. Most of t
 `teamsReverseId.js` contain codes that flatten that teams JSON into a single array, and then transform that array into an object in which team names become keys and their values is their index within that array. It's for sorting by teams, so we can compare their team index.
 
 ## Readying for production
-Run this script:
+Run this script (or the equivalent with your package manager):
 
 ```
 pnpm run build
 ```
 
-Or just straight up run rollup
+This will result in minified production-ready files in the `dist` folder.
 
-```
-rollup -c
-```
-
-Either of the above will result in minified production-ready file.
-
-The current website is hosted on [Surge.sh](https://surge.sh)! If you have upload rights, you can upload using 
+The current website is hosted on [Surge.sh](https://surge.sh)! If you have upload rights, you can go to the `dist` folder and upload using 
 ```
 surge --domain miniblaseball.surge.sh
 ```
