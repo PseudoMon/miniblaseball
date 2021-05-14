@@ -1,5 +1,148 @@
 [
     {
+        "index": 313,
+        "id": "locran-smaht",
+        "full-name": "Locran Smaht",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [],
+        "sprites": [
+            "313LocranSmaht.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/alabamalambjam",
+                "text": "@alabamalambjam"
+            }
+        ]
+    },
+    {
+        "index": 312,
+        "id": "enid-marlow",
+        "full-name": "Enid Marlow",
+        "size": "small",
+        "team": "Baltimore Crabs",
+        "former-teams": [
+            "Ohio Worms"
+        ],
+        "sprites": [
+            "312EnidMarlow.png",
+            "312EnidMarlowALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/Alabamalambjam",
+                "text": "@Alabamalambjam"
+            },
+            {
+                "link": "https://twitter.com/retrobumblebee",
+                "text": "@retrobumblebee"
+            }
+        ]
+    },
+    {
+        "index": 311,
+        "id": "jacoby-podcast",
+        "full-name": "Jacoby Podcast",
+        "size": "small",
+        "team": "Ohio Worms",
+        "former-teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "311JacobyPodcast.png",
+            "311JacobyPodcastALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/hecleretical",
+                "text": "@hecleretical"
+            }
+        ]
+    },
+    {
+        "index": 310,
+        "id": "famous-oconnor",
+        "full-name": "Famous Oconnor",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "310FamousOconnor.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 309,
+        "id": "richardson-turquoise",
+        "full-name": "Richardson Turquoise",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "309RichardsonTurquoise.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 308,
+        "id": "logan-rodriguez",
+        "full-name": "Logan Rodriguez",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [],
+        "sprites": [
+            "308LoganRodriguez.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/graciedarts",
+                "text": "@graciedarts"
+            }
+        ]
+    },
+    {
+        "index": 307,
+        "id": "tiana-wheeler",
+        "full-name": "Tiana Wheeler",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "307TianaWheeler.png",
+            "307TianaWheelerALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/dipppitydoop",
+                "text": "@dipppitydoop"
+            }
+        ]
+    },
+    {
         "index": 306,
         "id": "kelvin-drumsolo",
         "full-name": "Kelvin Drumsolo",
@@ -187,9 +330,10 @@
         "team": "Baltimore Crabs",
         "former-teams": [],
         "sprites": [
-            "297TrinitySmaht.png"
+            "297TrinitySmaht.png",
+            "297TrinitySmaht2.png"
         ],
-        "default-sprite": 0,
+        "default-sprite": 1,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",

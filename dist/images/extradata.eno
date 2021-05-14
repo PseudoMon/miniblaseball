@@ -2038,7 +2038,7 @@ default: 0
 #trinity-smaht
 team: crabs
 credit: @hetreasky
-default: 0
+default: 1
 
 #bevan-wise
 team: tacos
@@ -2095,6 +2095,52 @@ team: mechanics
 credit: "EpicToast"
 default: 0
 
+#tiana-wheeler
+team: magic
+former-teams:
+- breath mints
+credit: @dipppitydoop
+default: 0
+
+#logan-rodriguez
+team: magic
+credit: @graciedarts
+default: 0
+
+#richardson-turquoise
+team: riv
+former-teams:
+- magic
+credit: @hetreasky
+default: 0
+
+#famous-oconnor
+team: riv
+former-teams:
+- magic
+credit: @hetreasky
+default: 0
+
+#jacoby-podcast
+team: worms
+former-teams:
+- crabs
+credit: @hecleretical
+default: 1
+
+#enid-marlow
+team: crabs
+former-teams:
+- worms
+credit:
+- @Alabamalambjam
+- @retrobumblebee
+default: 1
+
+#locran-smaht
+team: crabs
+credit: @alabamalambjam
+default: 0
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -2143,7 +2189,7 @@ team: artists
 credit: @koloquials
 
 #pompom-pomodoro
-eam: artists
+team: artists
 credit: @MimimiCee
 
 #jay-grayscale
