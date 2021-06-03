@@ -783,11 +783,14 @@ credit: @_waalkr
 default: 1
 
 # chorby-short
-team: millennials
+team: flowers
 former-teams:
 - magic
-credit: @graciedarts
-default: 1
+- millennials
+credit: 
+- @graciedarts
+- @balderdashsama
+default: 3
 
 # logan-horseman
 team: dale
@@ -1457,7 +1460,9 @@ default: 0
 
 #curry-aliciakeyes
 team: magic
-credit: @graciedarts
+credit:
+- @graciedarts
+- @asunshineshrimp
 default: 0
 
 #stijn-strongbody
@@ -2041,11 +2046,11 @@ credit: @hetreasky
 default: 1
 
 #bevan-wise
-team: tacos
+team: magic
 former-teams:
-- magic
+- tacos
 credit: @graciedarts
-default: 1
+default: 0
 
 #avila-guzman
 team: spies
@@ -2141,6 +2146,76 @@ default: 1
 team: crabs
 credit: @alabamalambjam
 default: 0
+
+#kurt-crueller
+team: lovers
+former-teams:
+- magic
+credit: @dipppitydoop
+default: 1
+
+#stevenson-heat
+team: fridays
+credit: @skelebells
+default: 0
+
+#jacob-winner
+team: fridays
+credit: @egg_egg_455
+default: 0
+
+#lady-matsuyama
+team: fridays
+former-teams:
+- mechanics
+credit: instagram.com/tangyorange_art
+default: 1
+
+#yosh-carpenter
+team: fridays
+former-teams:
+- lovers
+credit: @starfauna
+default: 1
+
+#cudi-di-batterino
+team: moist talkers
+former-teams:
+- lift
+credit: @510five_
+default: 1
+
+#cravel-gesundheit
+team: magic
+former-teams:
+- mechanics
+credit: @hatfights_art
+default: 1
+
+#felix-garbage
+team: tacos
+former-teams:
+- millennials
+credit: @dbrunellbrutman
+default: 1
+
+#zoey-kirchner
+team: steaks
+former-teams:
+- mechanics
+credit: 
+- @baydews
+- @hetreasky
+default: 1
+
+#ruffian-applesauce
+team: riv
+former-teams:
+- mechanics
+credit: @illfocusedgamer
+default: 0
+
+
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
