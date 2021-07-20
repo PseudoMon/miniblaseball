@@ -1,5 +1,212 @@
 [
     {
+        "index": 323,
+        "id": "ruffian-applesauce",
+        "full-name": "Ruffian Applesauce",
+        "size": "small",
+        "team": "RIV",
+        "former-teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "323RuffianApplesauce.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/illfocusedgamer",
+                "text": "@illfocusedgamer"
+            }
+        ]
+    },
+    {
+        "index": 322,
+        "id": "zoey-kirchner",
+        "full-name": "Zoey Kirchner",
+        "size": "small",
+        "team": "Dallas Steaks",
+        "former-teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "322ZoeyKirchner.png",
+            "322ZoeyKirchnerALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/baydews",
+                "text": "@baydews"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 321,
+        "id": "felix-garbage",
+        "full-name": "Felix Garbage",
+        "size": "small",
+        "team": "LA Unlimited Tacos",
+        "former-teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "321FelixGarbage.png",
+            "321FelixGarbageALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/dbrunellbrutman",
+                "text": "@dbrunellbrutman"
+            }
+        ]
+    },
+    {
+        "index": 320,
+        "id": "cravel-gesundheit",
+        "full-name": "Cravel Gesundheit",
+        "size": "small",
+        "team": "Yellowstone Magic",
+        "former-teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "320CravelGesundheit.png",
+            "320CravelGesundheitALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/hatfights_art",
+                "text": "@hatfights_art"
+            }
+        ]
+    },
+    {
+        "index": 319,
+        "id": "cudi-di-batterino",
+        "full-name": "Cudi Di Batterino",
+        "size": "small",
+        "team": "Canada Moist Talkers",
+        "former-teams": [
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "319CudiDiBatterino.png",
+            "319CudiDiBatterinoALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/510five_",
+                "text": "@510five_"
+            }
+        ]
+    },
+    {
+        "index": 318,
+        "id": "yosh-carpenter",
+        "full-name": "Yosh Carpenter",
+        "size": "small",
+        "team": "Hawai'i Fridays",
+        "former-teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "318YoshCarpenter.png",
+            "318YoshCarpenterALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/starfauna",
+                "text": "@starfauna"
+            }
+        ]
+    },
+    {
+        "index": 317,
+        "id": "lady-matsuyama",
+        "full-name": "Lady Matsuyama",
+        "size": "small",
+        "team": "Hawai'i Fridays",
+        "former-teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "317LadyMatsuyama.png",
+            "317LadyMatsuyamaALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://instagram.com/tangyorange_art",
+                "text": "tangyorange_art"
+            }
+        ]
+    },
+    {
+        "index": 316,
+        "id": "jacob-winner",
+        "full-name": "Jacob Winner",
+        "size": "small",
+        "team": "Hawai'i Fridays",
+        "former-teams": [],
+        "sprites": [
+            "316JacobWinner.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/egg_egg_455",
+                "text": "@egg_egg_455"
+            }
+        ]
+    },
+    {
+        "index": 315,
+        "id": "stevenson-heat",
+        "full-name": "Stevenson Heat",
+        "size": "small",
+        "team": "Hawai'i Fridays",
+        "former-teams": [],
+        "sprites": [
+            "315StevensonHeat.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/skelebells",
+                "text": "@skelebells"
+            }
+        ]
+    },
+    {
+        "index": 314,
+        "id": "kurt-crueller",
+        "full-name": "Kurt Crueller",
+        "size": "small",
+        "team": "San Francisco Lovers",
+        "former-teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "314KurtCrueller.png",
+            "314KurtCruellerALT.png"
+        ],
+        "default-sprite": 1,
+        "credits": [
+            {
+                "link": "https://twitter.com/dipppitydoop",
+                "text": "@dipppitydoop"
+            }
+        ]
+    },
+    {
         "index": 313,
         "id": "locran-smaht",
         "full-name": "Locran Smaht",
@@ -306,15 +513,15 @@
         "id": "bevan-wise",
         "full-name": "Bevan Wise",
         "size": "large",
-        "team": "LA Unlimited Tacos",
+        "team": "Yellowstone Magic",
         "former-teams": [
-            "Yellowstone Magic"
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "298BevanWise.png",
             "298BevanWiseALT.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/graciedarts",
@@ -2101,13 +2308,18 @@
         "team": "Yellowstone Magic",
         "former-teams": [],
         "sprites": [
-            "210CurryAliciakeyes.png"
+            "210CurryAliciakeyes.png",
+            "210CurryAliciakeyes2.png"
         ],
         "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/graciedarts",
                 "text": "@graciedarts"
+            },
+            {
+                "link": "https://twitter.com/asunshineshrimp",
+                "text": "@asunshineshrimp"
             }
         ]
     },
@@ -4128,19 +4340,28 @@
         "id": "chorby-short",
         "full-name": "Chorby Short",
         "size": "small",
-        "team": "New York Millennials",
+        "team": "Boston Flowers",
         "former-teams": [
-            "Yellowstone Magic"
+            "Yellowstone Magic",
+            "New York Millennials"
         ],
         "sprites": [
             "111ChorbyShort.png",
-            "111ChorbyShortALT.png"
+            "111ChorbyShort2.png",
+            "111ChorbyShort2ALT.png",
+            "111ChorbyShort2ALT2.png",
+            "111ChorbyShortALT.png",
+            "111ChorbyShortALT2.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 5,
         "credits": [
             {
                 "link": "https://twitter.com/graciedarts",
                 "text": "@graciedarts"
+            },
+            {
+                "link": "https://twitter.com/balderdashsama",
+                "text": "@balderdashsama"
             }
         ]
     },
