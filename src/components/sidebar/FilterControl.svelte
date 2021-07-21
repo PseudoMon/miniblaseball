@@ -126,11 +126,13 @@
                         label="{ subleague.name }">
                         
                         {#each subleague.teams as team }
+                        {#if team !== "RIV" && team !== "Unknown"}
                         <option 
                             selected={ team === teamFilter }
                             value={ team }>
                             { team }
                         </option>
+                        {/if}
                         {/each}
 
                     </optgroup>

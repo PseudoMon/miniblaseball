@@ -13,8 +13,7 @@ credit: averybee.tumblr.com
 default: 0
 
 # wyatt-quitter
-team: unknown
-former-teams: 
+teams: 
 - tacos
 - pods
 - lift
@@ -192,7 +191,6 @@ credit: @cari_guevara
 default: 1
 
 # york-silk
-team: unknown
 former-teams:
 - fridays
 - pods
@@ -232,7 +230,6 @@ team: spies
 default: 0
 
 # nagomi-mcdaniel
-team: unknown
 former-teams:
 - tigers
 - crabs
