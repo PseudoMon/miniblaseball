@@ -157,29 +157,38 @@ def decidesize(nameid):
 def set_team(player):
     placements = EXTRADATA
 
+    teams = placements.section(player['id']).list('teams').required_string_values()
+    teams = list(map(lambda team: TEAMS[team], teams))
+    player['teams'] = teams
+
+    # If there isn't a teams list, the above will just result 
+    # in an empty list
+
+    # The below code handles the old-style "team" (current team) 
+    # and "former-teams" data
+
     try:
         # Put in current team
-        team = placements.section(player['id']).field('team').required_string_value()
+        current_team = placements.section(player['id']).field('team').required_string_value()
         
         # Quotation marks mean it's not in the team list
         # e.g. "Danger Zone"
-        if "\"" in team:
-            player['team'] = team.replace("\"", "")
+        if "\"" in current_team:
+            current_team = current_team.replace("\"", "")
         else:
-            player['team'] = TEAMS[team]
+            # Switch short name into the team's proper name
+            current_team = TEAMS[current_team]
+
+        current_team = [current_team]
 
     except enolib.error_types.ValidationError:
-        # Data not inputted (properly)
-        pass
+        # There is no current team data
+        current_team = []
 
-    try:
-        # Put in former teams
-        formerteams = placements.section(player['id']).list('former-teams').required_string_values()
-        player['former-teams'] = list(map(lambda team: TEAMS[team], formerteams))
+    former_teams = placements.section(player['id']).list('former-teams').required_string_values()
+    former_teams = list(map(lambda team: TEAMS[team], former_teams))
 
-    except enolib.error_types.ValidationError:
-        # Data not inputted (properly)
-        pass
+    player['teams'] = player['teams'] + current_team + former_teams
 
 
 def set_credit(player):
@@ -290,8 +299,7 @@ def process_single_player(playerid, is_guest=False):
         "id": name_id,
         "full-name": player_name,
         "size": size,
-        "team": "Pending Team",
-        "former-teams": [],
+        "teams": [],
         "sprites": sprites,
         "default-sprite": default_sprite
     }

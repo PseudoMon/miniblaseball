@@ -10,9 +10,9 @@
     $: isRIV = player.team === "RIV"
     $: isStars = player.team === "Hall Stars"
     $: isUnknown = player.team === "Unknown"
-    $: formerTeamsText = createFormerTeamsText(player)
     $: wikiLink = createWikiLink(player['full-name'])
     $: creditsText = createCreditsText(player['credits'], player['team'])
+    $: teamsText = createAllTeamsText(player)
 
     let viewedSprite = player.sprites[ player['default-sprite'] ]
 
@@ -31,40 +31,18 @@
         }
     }
 
-    function createFormerTeamsText(player) {
-        const formerTeams = player['former-teams'].filter(team => team !== "RIV")
-        // Rest in Violence shouldn't be in the former team description (but should still filterable in the gallery)
+    function createAllTeamsText(player) {
+        let teamsText = ""
 
-        let formerTeamsText = ''
+        player['teams'].filter(team => team !== "RIV").forEach(team => {
+            teamsText += team
+            teamsText += ", "
+        })
 
-        if (formerTeams && formerTeams.length > 0) {
-            let teamsText = ''
-
-            if (formerTeams.length === 1) {
-                // Only in one team formerly? Just add it.
-                teamsText = "the " + formerTeams[0]
-            }
-
-            else {
-
-                for(let i = 0; i < formerTeams.length - 1; i++) {
-                    teamsText += "the " + formerTeams[i] + ', '
-                }
-
-                if (formerTeams.length === 2) {
-                    teamsText = teamsText.slice(0, -2) 
-                    teamsText += " "
-                    // remove comma when there's only two    
-                }
-            
-                teamsText += "and the " + formerTeams[formerTeams.length - 1]
-            }
-
-            formerTeamsText = `Formerly of ${teamsText}.`
-        }
-
-        return formerTeamsText
+        return teamsText.slice(0, -2)
     }
+
+    
 
     function createCreditsText(creditsArray, team) {
         if (!creditsArray) {
@@ -124,6 +102,7 @@
     }
 
     const navigate = useNavigate()
+    
     function closeOverlay(e) {
         navigate('/')
     }
@@ -162,27 +141,8 @@
         </h2>
 
         <h3>
-            {#if !isRIV && !isStars && !isUnknown }
-                <div class="smol-desc">
-                    { player.mascot ? 
-                        "Mascot of the" : 
-                        "Currently a member of the" }
-                </div>
-
-            {:else if isUnknown}
-                <div class="smol-desc">
-                    Status currently
-                </div>
-            {/if}
-
-            {#if isRIV }
-                Rest in Violence
-            {:else}
-                { player["team"] }
-            {/if}
+            { @html teamsText }
         </h3>
-
-        <p>{ formerTeamsText }</p> 
 
         {#if creditsText}
         <p class="credits-info">
@@ -282,5 +242,9 @@
 
 a {
     color: inherit;
+}
+
+h3 {
+    line-height:  1.5em;
 }
 </style>

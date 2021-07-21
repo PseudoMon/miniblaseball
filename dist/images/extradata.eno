@@ -170,7 +170,6 @@ credit: @juangeedraws
 default: 0
 
 # jaylen-hotdogfingers
-team: garages
 former-teams:
 - garages
 - shoe thieves
@@ -972,7 +971,7 @@ default: 0
 
 #oscar-dollie
 team: magic
-@graciedarts
+credit: @graciedarts
 default: 0
 
 #socks-maybe
@@ -1556,7 +1555,7 @@ default: 0
 #zack-sanders
 team: sunbeams
 former-teams:
-pies
+- pies
 credit:
 - @karagna_
 - @voidteatime
@@ -2186,8 +2185,8 @@ credit: @510five_
 default: 1
 
 #cravel-gesundheit
-team: magic
-former-teams:
+teams:
+- magic
 - mechanics
 credit: @hatfights_art
 default: 1

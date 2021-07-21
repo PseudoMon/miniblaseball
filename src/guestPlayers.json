@@ -4,8 +4,9 @@
         "id": "polkadot-matrix",
         "full-name": "Polkadot Matrix",
         "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
+        "teams": [
+            "Society Data Witches"
+        ],
         "sprites": [
             "G042PolkadotMatrix.png"
         ],
@@ -22,8 +23,9 @@
         "id": "espresso-machine",
         "full-name": "Espresso Machine",
         "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
+        "teams": [
+            "Society Data Witches"
+        ],
         "sprites": [
             "G041EspressoMachine.png"
         ],
@@ -40,8 +42,9 @@
         "id": "boxplot-jones",
         "full-name": "Boxplot Jones",
         "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
+        "teams": [
+            "Society Data Witches"
+        ],
         "sprites": [
             "G040BoxplotJones.png"
         ],
@@ -58,8 +61,9 @@
         "id": "batista-oatmilk",
         "full-name": "Batista Oatmilk",
         "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
+        "teams": [
+            "Society Data Witches"
+        ],
         "sprites": [
             "G039BatistaOatmilk.png"
         ],
@@ -76,8 +80,9 @@
         "id": "mason-m-mcmason",
         "full-name": "Mason M. McMason",
         "size": "small",
-        "team": "Society Data Witches",
-        "former-teams": [],
+        "teams": [
+            "Society Data Witches"
+        ],
         "sprites": [
             "G038MasonMMcMason.png"
         ],
@@ -94,8 +99,9 @@
         "id": "parker-macmillan-iiii",
         "full-name": "Parker MacMillan IIII",
         "size": "huge",
-        "team": "Real Game Band",
-        "former-teams": [],
+        "teams": [
+            "Real Game Band"
+        ],
         "sprites": [
             "G037ParkerMacMillanIIII.png"
         ],
@@ -112,8 +118,9 @@
         "id": "slam-rosenthal",
         "full-name": "Slam Rosenthal",
         "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
+        "teams": [
+            "Real Game Band"
+        ],
         "sprites": [
             "G036SlamRosenthal.png"
         ],
@@ -130,8 +137,9 @@
         "id": "stephen-shelled",
         "full-name": "Stephen Shelled",
         "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
+        "teams": [
+            "Real Game Band"
+        ],
         "sprites": [
             "G035StephenShelled.png"
         ],
@@ -148,8 +156,9 @@
         "id": "ball-clark",
         "full-name": "Ball Clark",
         "size": "small",
-        "team": "Real Game Band",
-        "former-teams": [],
+        "teams": [
+            "Real Game Band"
+        ],
         "sprites": [
             "G034BallClark.png"
         ],
@@ -166,8 +175,9 @@
         "id": "bing-flatters",
         "full-name": "Bing Flatters",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G033BingFlatters.png"
         ],
@@ -185,8 +195,9 @@
         "id": "y3hirv-hafgy2738riv",
         "full-name": "Y3hirv Hafgy2738riv",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G032Y3hirvHafgy2738riv.png"
         ],
@@ -203,8 +214,9 @@
         "id": "phoebe-blasesona",
         "full-name": "Phoebe Blasesona",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G031PhoebeBlasesona.png"
         ],
@@ -221,8 +233,9 @@
         "id": "haunt-wednesday",
         "full-name": "Haunt Wednesday",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G030HauntWednesday.png"
         ],
@@ -239,8 +252,9 @@
         "id": "angel-ivories",
         "full-name": "Angel Ivories",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G029AngelIvories.png"
         ],
@@ -257,8 +271,9 @@
         "id": "dunbar-mcloud",
         "full-name": "Dunbar McLoud",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G028DunbarMcLoud.png"
         ],
@@ -275,8 +290,9 @@
         "id": "jonah-mosaic",
         "full-name": "Jonah Mosaic",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G027JonahMosaic.png"
         ],
@@ -293,8 +309,9 @@
         "id": "fishcake-can",
         "full-name": "Fishcake Can",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G026FishcakeCan.png"
         ],
@@ -311,8 +328,9 @@
         "id": "ikea-jellofin",
         "full-name": "Ikea Jellofin",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G025IkeaJellofin.png"
         ],
@@ -329,8 +347,9 @@
         "id": "cousin-spike",
         "full-name": "Cousin Spike",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G024CousinSpike.png"
         ],
@@ -347,8 +366,9 @@
         "id": "buck-rattler",
         "full-name": "Buck Rattler",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G023BuckRattler.png"
         ],
@@ -365,8 +385,9 @@
         "id": "quebrada-stone",
         "full-name": "Quebrada Stone",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G022QuebradaStone.png"
         ],
@@ -383,8 +404,9 @@
         "id": "teeth-bandana",
         "full-name": "Teeth Bandana",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G021TeethBandana.png"
         ],
@@ -401,8 +423,9 @@
         "id": "swords-magpie",
         "full-name": "Swords Magpie",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G020SwordsMagpie.png"
         ],
@@ -419,8 +442,9 @@
         "id": "happy-yoinky",
         "full-name": "Happy Yoinky",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G019HappyYoinky.png"
         ],
@@ -437,8 +461,9 @@
         "id": "cinna-toast",
         "full-name": "Cinna Toast",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G018CinnaToast.png"
         ],
@@ -455,8 +480,9 @@
         "id": "roxetta-compass",
         "full-name": "Roxetta Compass",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G017RoxettaCompass.png"
         ],
@@ -473,8 +499,9 @@
         "id": "watson-ward",
         "full-name": "Watson Ward",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G016WatsonWard.png"
         ],
@@ -491,8 +518,9 @@
         "id": "jay-grayscale",
         "full-name": "Jay Grayscale",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G015JayGrayscale.png"
         ],
@@ -509,8 +537,9 @@
         "id": "entropy-handcramp",
         "full-name": "Entropy Handcramp",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G014EntropyHandcramp.png"
         ],
@@ -527,8 +556,9 @@
         "id": "road-kill",
         "full-name": "Road Kill",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G013RoadKill.png"
         ],
@@ -545,8 +575,9 @@
         "id": "aura-irving",
         "full-name": "Aura Irving",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G012AuraIrving.png"
         ],
@@ -563,8 +594,9 @@
         "id": "manda-moth",
         "full-name": "Manda Moth",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G011MandaMoth.png"
         ],
@@ -581,8 +613,9 @@
         "id": "jenny-quicksilver",
         "full-name": "Jenny Quicksilver",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G010JennyQuicksilver.png"
         ],
@@ -599,8 +632,9 @@
         "id": "arbutus-bones",
         "full-name": "Arbutus Bones",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G009ArbutusBones.png"
         ],
@@ -617,8 +651,9 @@
         "id": "maddong-candy",
         "full-name": "Maddong Candy",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G008MaddongCandy.png"
         ],
@@ -635,8 +670,9 @@
         "id": "handsome-scarf",
         "full-name": "Handsome Scarf",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G007HandsomeScarf.png"
         ],
@@ -653,8 +689,9 @@
         "id": "chromatic-jump",
         "full-name": "Chromatic Jump",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G006ChromaticJump.png"
         ],
@@ -671,8 +708,9 @@
         "id": "backwoods-broker",
         "full-name": "Backwoods Broker",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G005BackwoodsBroker.png"
         ],
@@ -689,8 +727,9 @@
         "id": "schism-thrones",
         "full-name": "Schism Thrones",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G004SchismThrones.png"
         ],
@@ -707,8 +746,9 @@
         "id": "friend-void",
         "full-name": "Friend Void",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G003FriendVoid.png"
         ],
@@ -725,8 +765,9 @@
         "id": "pompom-pomodoro",
         "full-name": "Pompom Pomodoro",
         "size": "small",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G002PompomPomodoro.png"
         ],
@@ -743,8 +784,9 @@
         "id": "breeze-regicide",
         "full-name": "Breeze Regicide",
         "size": "large",
-        "team": "Pandemonium Artists",
-        "former-teams": [],
+        "teams": [
+            "Pandemonium Artists"
+        ],
         "sprites": [
             "G001BreezeRegicide.png"
         ],
