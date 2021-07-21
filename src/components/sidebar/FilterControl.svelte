@@ -113,39 +113,12 @@
 
         <div>
             <h2>Filter</h2>
-            <h3>Show players who are</h3>
-
-            <div class="filter-selector">   
-                <div>
-                    <input 
-                        id="checkismemberof"
-                        type="checkbox" 
-                        on:change={ onChangeFilter }
-                        value="ismemberof">
-                    <label
-                        for="checkismemberof">
-                        Currently a member of
-                    </label>
-                </div>
-
-                <div>
-                    <input 
-                        id="checkwasmemberof"
-                        type="checkbox" 
-                        on:change={ onChangeFilter }
-                        value="wasmemberof">
-                    <label
-                        for="checkwasmemberof">
-                        Was a member of
-                    </label>
-                </div>
-            </div>
+            <h3 style="margin-bottom: 0">Show players depicted as member of</h3>
 
              <select
-                on:change={ onSelectTeam }
-                disabled={ !appliedFilters.length }>
+                on:change={ onSelectTeam }>
                 
-                <option value="" selected>Select a team</option>
+                <option value="" selected>Any team</option>
                 
                 {#each teams as subleague}
 

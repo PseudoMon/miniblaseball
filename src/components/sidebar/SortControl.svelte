@@ -26,10 +26,6 @@
         Alphabetical
     </label>
 
-    <label>
-        <input type="radio" name="sortby" value="currentteam">
-        Current team
-    </label>
 </form>
 
 <style>

@@ -76,9 +76,8 @@
         const filters = e.detail.appliedFilters
         const team = e.detail.teamFilter
 
-        if (!filters.length || !team) {
-            // This means no filter checkbox is checked
-            // or no team to filter to is chosen
+        if (!team) {
+            // This means no team to filter to is chosen
             // In which case, return to unfiltered
 
             playersShown = unfilteredPlayers
@@ -89,26 +88,31 @@
             return
         }
 
-        // Only show players who fit the filter criteria(s)
         playersShown = unfilteredPlayers.filter(player => {
-            if (filters.includes("wasmemberof")) {
+            // if (filters.includes("wasmemberof")) {
 
-                if (player['former-teams'].includes(team)) {
-                    return true
-                }
+            //     if (player['former-teams'].includes(team)) {
+            //         return true
+            //     }
 
-            }
+            // }
 
-            if (filters.includes("ismemberof")) {
+            // if (filters.includes("ismemberof")) {
 
-                if (player['team'] === team) {
-                    return true
-                }
+            //     if (player['team'] === team) {
+            //         return true
+            //     }
         
+            // }
+
+            if (player['teams'].includes(team)) {
+                return true
             }
 
             return false
         })
+
+        applySort()
     }
 
     function applySort() {
