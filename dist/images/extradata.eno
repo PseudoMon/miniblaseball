@@ -1530,7 +1530,9 @@ former-teams:
 -mechanics
 -moist talkers
 -steaks
-credit: @hetreasky
+credit: 
+- @hetreasky
+- @wiresandlight
 default: 3
 
 #donia-bailey
@@ -1720,7 +1722,7 @@ team: moist talkers
 credit: @Spiral_Joe
 default: 0
 
-#jesús-koch
+#jesÃºs-koch
 team: moist talkers
 credit: 
 - @avery_helm
@@ -2021,7 +2023,7 @@ former-teams:
 - pies
 - spies
 - lovers
-credit: “Maluminse”
+credit: â€œMaluminseâ€
 default: 1
 
 #jomgy-rolsenthal
@@ -2211,6 +2213,40 @@ former-teams:
 credit: @illfocusedgamer
 default: 0
 
+#cote-loveless-iii
+team: mechanics
+credit: @wiresandlight
+default: 0
+
+#mira-lemma
+team: mechanics
+credit: @Captora_
+default: 0
+
+#kelvin-andante
+team: mechanics
+credit: @geometea
+default: 0 
+
+#ruslan-greatness
+team: pies
+credit: @raevpet
+default: 0
+
+#tiana-takahashi
+team: pies
+credit: @VHS_DREAMER
+default: 0
+
+#eduardo-woodman
+team: pies
+credit: @VHS_DREAMER
+default: 0
+
+#huber-frumple
+team: pies
+credit: @VHS_DREAMER
+default: 0
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

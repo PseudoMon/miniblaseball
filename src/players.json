@@ -1,5 +1,138 @@
 [
     {
+        "index": 330,
+        "id": "huber-frumple",
+        "full-name": "Huber Frumple",
+        "size": "small",
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "330HuberFrumple.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/VHS_DREAMER",
+                "text": "@VHS_DREAMER"
+            }
+        ]
+    },
+    {
+        "index": 329,
+        "id": "eduardo-woodman",
+        "full-name": "Eduardo Woodman",
+        "size": "small",
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "329EduardoWoodman.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/VHS_DREAMER",
+                "text": "@VHS_DREAMER"
+            }
+        ]
+    },
+    {
+        "index": 328,
+        "id": "tiana-takahashi",
+        "full-name": "Tiana Takahashi",
+        "size": "small",
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "328TianaTakahashi.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/VHS_DREAMER",
+                "text": "@VHS_DREAMER"
+            }
+        ]
+    },
+    {
+        "index": 327,
+        "id": "ruslan-greatness",
+        "full-name": "Ruslan Greatness",
+        "size": "small",
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "327RuslanGreatness.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/raevpet",
+                "text": "@raevpet"
+            }
+        ]
+    },
+    {
+        "index": 326,
+        "id": "kelvin-andante",
+        "full-name": "Kelvin Andante",
+        "size": "small",
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "326KelvinAndante.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/geometea",
+                "text": "@geometea"
+            }
+        ]
+    },
+    {
+        "index": 325,
+        "id": "mira-lemma",
+        "full-name": "Mira Lemma",
+        "size": "small",
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "325MiraLemma.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Captora_",
+                "text": "@Captora_"
+            }
+        ]
+    },
+    {
+        "index": 324,
+        "id": "cote-loveless-iii",
+        "full-name": "Cote Loveless III",
+        "size": "small",
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "324CoteLovelessIII.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/wiresandlight",
+                "text": "@wiresandlight"
+            }
+        ]
+    },
+    {
         "index": 323,
         "id": "ruffian-applesauce",
         "full-name": "Ruffian Applesauce",
@@ -618,8 +751,8 @@
         "default-sprite": 1,
         "credits": [
             {
-                "link": "https://“Maluminse”",
-                "text": "“Maluminse”"
+                "link": "https://â€œMaluminseâ€",
+                "text": "â€œMaluminseâ€"
             }
         ]
     },
@@ -1506,24 +1639,12 @@
         "id": "jesús-koch",
         "full-name": "Jesús Koch",
         "size": "small",
-        "teams": [
-            "Canada Moist Talkers"
-        ],
+        "teams": [],
         "sprites": [
             "251JesúsKoch.png",
             "251JesúsKochALT.png"
         ],
-        "default-sprite": 1,
-        "credits": [
-            {
-                "link": "https://twitter.com/avery_helm",
-                "text": "@avery_helm"
-            },
-            {
-                "link": "https://twitter.com/MackinItHappen",
-                "text": "@MackinItHappen"
-            }
-        ]
+        "default-sprite": 0
     },
     {
         "index": 250,
@@ -2159,6 +2280,10 @@
             {
                 "link": "https://twitter.com/hetreasky",
                 "text": "@hetreasky"
+            },
+            {
+                "link": "https://twitter.com/wiresandlight",
+                "text": "@wiresandlight"
             }
         ]
     },
