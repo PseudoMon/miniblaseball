@@ -16,6 +16,15 @@
 
     let viewedSprite = player.sprites[ player['default-sprite'] ]
 
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    function randomizeDefaultSprite() {
+        let maxSpriteId = player.sprites.length - 1
+        viewedSprite = player.sprites[getRandomInt(maxSpriteId)]
+    }
+
     function setPlayerSize() {
         // Change the size variable according to assigned size
         const playerSize = player.size
@@ -109,6 +118,7 @@
 
     onMount(() => {
         setPlayerSize()
+        randomizeDefaultSprite()
     })
 </script>
 

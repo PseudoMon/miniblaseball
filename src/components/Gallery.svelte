@@ -6,12 +6,33 @@
     function onImageInView(entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+
+                fillInRandomImage(entry.target)
+
                 entry.target.querySelector('img').src = entry.target.dataset.imagesrc
                 observer.unobserve(entry.target)
             }
         })
 
     }
+
+    function fillInRandomImage(div) {
+        // Replace the "default" sprite with a random sprite
+        // as shown in this gallery
+
+        let playerindex = div.dataset.playerindex 
+        const player = players[playerindex]
+        
+        const chosenImgIndex = getRandomInt(player['sprites'].length - 1)
+
+        div.dataset.imagesrc = `images/${player.sprites[chosenImgIndex]}`
+
+    }
+
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+
 
     const observer = new IntersectionObserver(
         onImageInView, 
@@ -35,11 +56,13 @@
 </script>
 
 <div class="gallery">
-    {#each players as player}
+    {#each players as player, i}
     <div
         style="{ player['size'] === 'huge' ? 'overflow: visible' : '' }"
 
+        data-playerindex={ i }
         data-imagesrc={ `images/${player.sprites[ player['default-sprite'] ]}` }
+        data-maximage={ player.sprites.length - 1 }
 
         use:observeBox={player}>
 
