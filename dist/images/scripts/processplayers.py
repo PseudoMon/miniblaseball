@@ -2,7 +2,7 @@ import glob, json, enolib
 from exportteams import teams_for_py as TEAMS
 # importing from exportteams should also create teams.json file
 
-with open('extradata.eno', 'r', encoding="utf-8") as file:
+with open('scripts/extradata.eno', 'r', encoding="utf-8") as file:
     extradata_input = file.read()
 
 EXTRADATA = enolib.parse(extradata_input)
@@ -47,8 +47,11 @@ def getname(filename, is_guest=False):
         name = name.replace("Polka Dot", "PolkaDot")
 
     # turn e.g. McBlase I I to McBlase II 
-    if "I I" in name:
+    while "I I" in name:
         name = name.replace("I I", "II")
+
+    if "Mac Millan" in name:
+        name = name.replace("Mac Millan", "MacMillan")
 
     # special cases
     if name == "Na N":
@@ -59,14 +62,10 @@ def getname(filename, is_guest=False):
         name = "Evelton McBlase II"
     elif name == "Nagomi McDaniel":
         name = "Nagomi Mcdaniel"
-    elif name == "Parker Mac Millan I I I I":
-        name = "Parker MacMillan IIII"
     elif name == "Mooney Doctor I I":
         name = "Mooney Doctor II"
     elif name == "Mason M McMason":
         name = "Mason M. McMason"
-    elif name == "Cote Loveless I I I":
-        name = "Cote Loveless III"
 
     return name
 
@@ -263,6 +262,48 @@ def is_a_mascot(player):
     else:
         return False 
 
+def rearrange_alts(player):
+    # Alt designs have numbers after the original name
+    # e.g. 111ChorbyShort2.png
+    # This is different from alt colors, usually with ALT
+    # in the file name e.g. 111ChorbyShortALT2.png
+
+    sprites = player['sprites']
+    alt_sprites = []
+
+    # Get the original name (i.e. alphabetically first file)
+    # Slice to remove the file extension
+    ogfilename = sprites[0][0:-4]
+
+    for sprite in sprites:
+        # Remove the original name
+        s = sprite.replace(ogfilename, "")
+        
+        try:
+            int(s[0])
+
+        except IndexError:
+            # This is the original file
+            continue
+
+        except ValueError:
+            # This is not an alt design
+            # just an alt color
+            continue   
+
+        # Pop the sprite and append it to the end of the list
+        #sprites.append(sprites.pop(sprites.index(sprite)))
+        print(player['full-name'])
+        print("FOUND ALT")
+        print(s)
+        
+        alt_sprites.append(sprite)
+
+
+    for alt_sprite in alt_sprites:
+        sprites.append(alt_sprite)
+        sprites.remove(alt_sprite)
+
 
 def process_single_player(playerid, is_guest=False):
     # playerid should already be a string!
@@ -317,6 +358,9 @@ def process_single_player(playerid, is_guest=False):
     # Is it a mascot?
     if is_a_mascot(player):
         player['mascot'] = True
+
+    # Rearrange so alternate design is placed later
+    rearrange_alts(player)
 
     return player
 

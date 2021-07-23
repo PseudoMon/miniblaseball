@@ -2187,8 +2187,8 @@
         ],
         "sprites": [
             "224ZackSanders.png",
-            "224ZackSanders2.png",
-            "224ZackSandersALT.png"
+            "224ZackSandersALT.png",
+            "224ZackSanders2.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -4568,11 +4568,11 @@
         ],
         "sprites": [
             "111ChorbyShort.png",
+            "111ChorbyShortALT.png",
+            "111ChorbyShortALT2.png",
             "111ChorbyShort2.png",
             "111ChorbyShort2ALT.png",
-            "111ChorbyShort2ALT2.png",
-            "111ChorbyShortALT.png",
-            "111ChorbyShortALT2.png"
+            "111ChorbyShort2ALT2.png"
         ],
         "default-sprite": 5,
         "credits": [
@@ -4708,7 +4708,7 @@
         ],
         "sprites": [
             "105PudgeNakamoto.png",
-            "105PudgeNakatamoALT.png"
+            "105PudgeNakamotoALT.png"
         ],
         "default-sprite": 1,
         "credits": [
@@ -4979,8 +4979,8 @@
         "sprites": [
             "92HalexandreyWalton.png",
             "92HalexandreyWaltonALT.png",
-            "92HalexandryWaltonALT2.png",
-            "92HalexandryWaltonALT3.png"
+            "92HalexandreyWaltonALT2.png",
+            "92HalexandreyWaltonALT3.png"
         ],
         "default-sprite": 3,
         "credits": [
@@ -5281,11 +5281,11 @@
         ],
         "sprites": [
             "77CarmeloPlums.png",
+            "77CarmeloPlumsALT.png",
+            "77CarmeloPlumsALT2.png",
             "77CarmeloPlums2.png",
             "77CarmeloPlums2ALT.png",
-            "77CarmeloPlums2ALT2.png",
-            "77CarmeloPlumsALT.png",
-            "77CarmeloPlumsALT2.png"
+            "77CarmeloPlums2ALT2.png"
         ],
         "default-sprite": 5,
         "credits": [
@@ -6328,7 +6328,6 @@
         ],
         "sprites": [
             "28NaN.png",
-            "28NaN2.png",
             "28NaNALT.png",
             "28NaNALT2.png",
             "28NaNALT3.png",
@@ -6336,7 +6335,8 @@
             "28NaNALT5.png",
             "28NaNALT6.png",
             "28NaNALT7.png",
-            "28NaNALT8.png"
+            "28NaNALT8.png",
+            "28NaN2.png"
         ],
         "default-sprite": 4,
         "credits": [
@@ -6468,10 +6468,10 @@
         ],
         "sprites": [
             "23FishSummer.png",
+            "23FishSummerALT.png",
             "23FishSummer2.png",
             "23FishSummer2ALT.png",
-            "23FishSummer2ALT2.png",
-            "23FishSummerALT.png"
+            "23FishSummer2ALT2.png"
         ],
         "default-sprite": 3,
         "credits": [
