@@ -62,7 +62,7 @@
 
         data-playerindex={ i }
         data-imagesrc={ `images/${player.sprites[ player['default-sprite'] ]}` }
-        data-maximage={ player.sprites.length - 1 }
+        data-spriteindex={ player['default-sprite'] }
 
         use:observeBox={player}>
 

@@ -1,5 +1,180 @@
 [
     {
+        "index": 339,
+        "id": "silvia-winner",
+        "full-name": "Silvia Winner",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "339SilviaWinner.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thecoolereros",
+                "text": "@thecoolereros"
+            }
+        ]
+    },
+    {
+        "index": 338,
+        "id": "sandford-garner",
+        "full-name": "Sandford Garner",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "338SandfordGarner.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            }
+        ]
+    },
+    {
+        "index": 337,
+        "id": "liquid-friend",
+        "full-name": "Liquid Friend",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "337LiquidFriend.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 336,
+        "id": "bontgomery-mullock",
+        "full-name": "Bontgomery Mullock",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "336BontgomeryMullock.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Lucacrafts",
+                "text": "@Lucacrafts"
+            }
+        ]
+    },
+    {
+        "index": 335,
+        "id": "milo-brown",
+        "full-name": "Milo Brown",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "335MiloBrown.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Lucacrafts",
+                "text": "@Lucacrafts"
+            }
+        ]
+    },
+    {
+        "index": 334,
+        "id": "helga-burton",
+        "full-name": "Helga Burton",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "334HelgaBurton.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/electricgaunt",
+                "text": "@electricgaunt"
+            }
+        ]
+    },
+    {
+        "index": 333,
+        "id": "helga-moreno",
+        "full-name": "Helga Moreno",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "333HelgaMoreno.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/electricgaunt",
+                "text": "@electricgaunt"
+            }
+        ]
+    },
+    {
+        "index": 332,
+        "id": "king-roland",
+        "full-name": "King Roland",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "332KingRoland.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/Lucacrafts",
+                "text": "@Lucacrafts"
+            }
+        ]
+    },
+    {
+        "index": 331,
+        "id": "theo-king",
+        "full-name": "Theo King",
+        "size": "small",
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "331TheoKing.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/CassiniKepler",
+                "text": "@CassiniKepler"
+            },
+            {
+                "link": "https://twitter.com/Validtine",
+                "text": "@Validtine"
+            }
+        ]
+    },
+    {
         "index": 330,
         "id": "huber-frumple",
         "full-name": "Huber Frumple",
