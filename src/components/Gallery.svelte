@@ -23,7 +23,7 @@
         let playerindex = div.dataset.playerindex 
         const player = players[playerindex]
         
-        const chosenImgIndex = getRandomInt(player['sprites'].length - 1)
+        const chosenImgIndex = getRandomInt(player['sprites'].length)
 
         div.dataset.imagesrc = `images/${player.sprites[chosenImgIndex]}`
 

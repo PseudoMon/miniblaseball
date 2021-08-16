@@ -21,7 +21,7 @@
     }
 
     function randomizeDefaultSprite() {
-        let maxSpriteId = player.sprites.length - 1
+        let maxSpriteId = player.sprites.length
         viewedSprite = player.sprites[getRandomInt(maxSpriteId)]
     }
 
