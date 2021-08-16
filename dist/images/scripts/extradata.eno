@@ -147,11 +147,12 @@ credit: @dancynrew
 default: 0
 
 #gunther-o-brian
-team: shoe thieves
+teams: 
+- shoe thieves
+- wild wings
 credit:
 - @desmodusrotunds
 - @hetreasky
-default: 0
 
 # fish-summer
 team: crabs
@@ -230,7 +231,7 @@ team: spies
 default: 0
 
 # nagomi-mcdaniel
-former-teams:
+teams:
 - tigers
 - crabs
 - jazz hands
@@ -238,10 +239,11 @@ former-teams:
 - garages
 - flowers
 - dale
+- wild wings
 credit:
 - @kayleerowena
 - @fancymancer
-default: 6
+- @glassgoblin
 
 # kline-greenlemon
 team: steaks
@@ -894,13 +896,13 @@ credit: @shenaniglenn
 default: 0
 
 #evelton-mcblase-ii
-team: mechanics
-former-teams:
--spies
--fridays
--crabs
+teams:
+- spies
+- fridays
+- crabs
+- mechanics
+- wild wings
 credit: @shenaniglenn
-default: 3
 
 #lenny-spruce
 team: flowers
@@ -1718,7 +1720,9 @@ credit: @MLeeLunsford
 default: 0
 
 #beans-mcblase
-team: moist talkers
+teams: 
+- moist talkers
+- wild wings
 credit: @Spiral_Joe
 default: 0
 
@@ -1997,11 +2001,11 @@ credit: @_waalkr
 default: 4
 
 #uncle-plasma
-team: breath mints
-former-teams:
+teams:
 - millennials
+- breath mints
+- wild wings
 credit: @andreastreeter
-default: 1
 
 #denzel-scott
 team: spies
@@ -2039,9 +2043,10 @@ credit: @awhekate
 default: 0
 
 #trinity-smaht
-team: crabs
+teams: 
+- crabs
+- wild wings
 credit: @hetreasky
-default: 1
 
 #bevan-wise
 team: magic
@@ -2244,7 +2249,9 @@ credit: @VHS_DREAMER
 default: 0
 
 #huber-frumple
-team: pies
+teams: 
+- pies
+- wild wings
 credit: @VHS_DREAMER
 default: 0
 
@@ -2281,7 +2288,9 @@ credit: @Lucacrafts
 default: 0
 
 #liquid-friend
-team: lovers
+teams: 
+- lovers
+- wild wings
 credit: @fancymancer
 default: 0
 
@@ -2294,6 +2303,65 @@ default: 0
 team: lovers
 credit: @thecoolereros
 default: 0
+
+#parker-macmillan
+teams:
+- fridays
+credit: @hetreasky
+
+#bennett-bluesky
+team: spies
+credit: @bugsbenedict
+
+#chet-takahashi
+team: spies
+credit: @DedSec_Pony
+
+#plums-blather
+team: spies
+credit: 
+- @DedSec_Pony
+- "night" 
+
+#aoife-mahle
+team: spies
+credit: @toxiclockwork
+
+#tai-beanbag
+team: wild wings
+credit:
+- @necromngo
+- @hetreasky
+
+#aurora-blortles
+team: wild wings
+credit: @hetreasky
+
+#matteo-cash
+team: wild wings
+credit: @thr33h3ad3ddrag
+
+#scarlet-caster
+team: wild wings
+credit: "Wilder"
+
+#eizabeth-guerra
+team: wild wings
+credit: 
+- @routezeros
+- @goatedtoasts
+
+#nandy-slumps
+teams: 
+- lift
+- wild wings
+credit: @fancymancer
+
+#roscoe-sundae
+team: wild wings
+credit: 
+- "Wilder"
+- "clowdersiege#3070"
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

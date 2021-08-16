@@ -1,5 +1,165 @@
 [
     {
+        "index": 348,
+        "id": "scarlet-caster",
+        "full-name": "Scarlet Caster",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "348ScarletCaster.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Wilder"
+            }
+        ]
+    },
+    {
+        "index": 347,
+        "id": "matteo-cash",
+        "full-name": "Matteo Cash",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "347MatteoCash.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
+        ]
+    },
+    {
+        "index": 346,
+        "id": "aurora-blortles",
+        "full-name": "Aurora Blortles",
+        "size": "huge",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "346AuroraBlortles.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 345,
+        "id": "tai-beanbag",
+        "full-name": "Tai Beanbag",
+        "size": "large",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "345TaiBeanbag.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 344,
+        "id": "aoife-mahle",
+        "full-name": "Aoife Mahle",
+        "size": "small",
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "344AoifeMahle.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 343,
+        "id": "plums-blather",
+        "full-name": "Plums Blather",
+        "size": "small",
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "343PlumsBlather.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/DedSec_Pony",
+                "text": "@DedSec_Pony"
+            },
+            {
+                "link": "",
+                "text": "night"
+            }
+        ]
+    },
+    {
+        "index": 342,
+        "id": "chet-takahashi",
+        "full-name": "Chet Takahashi",
+        "size": "small",
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "342ChetTakahashi.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/DedSec_Pony",
+                "text": "@DedSec_Pony"
+            }
+        ]
+    },
+    {
+        "index": 341,
+        "id": "bennett-bluesky",
+        "full-name": "Bennett Bluesky",
+        "size": "small",
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "341BennettBluesky.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/bugsbenedict",
+                "text": "@bugsbenedict"
+            }
+        ]
+    },
+    {
         "index": 339,
         "id": "silvia-winner",
         "full-name": "Silvia Winner",
@@ -43,10 +203,12 @@
         "full-name": "Liquid Friend",
         "size": "small",
         "teams": [
-            "San Francisco Lovers"
+            "San Francisco Lovers",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
-            "337LiquidFriend.png"
+            "337LiquidFriend.png",
+            "337LiquidFriendALT.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -180,10 +342,12 @@
         "full-name": "Huber Frumple",
         "size": "small",
         "teams": [
-            "Philly Pies"
+            "Philly Pies",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
-            "330HuberFrumple.png"
+            "330HuberFrumple.png",
+            "330HuberFrumpleALT.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -853,13 +1017,15 @@
         "full-name": "Trinity Smaht",
         "size": "small",
         "teams": [
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "297TrinitySmaht.png",
-            "297TrinitySmaht2.png"
+            "297TrinitySmaht2.png",
+            "297TrinitySmaht2ALT.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -983,14 +1149,16 @@
         "full-name": "Uncle Plasma",
         "size": "small",
         "teams": [
+            "New York Millennials",
             "Kansas City Breath Mints",
-            "New York Millennials"
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "291UnclePlasma.png",
-            "291UnclePlasmaALT.png"
+            "291UnclePlasmaALT.png",
+            "291UnclePlasmaALT2.png"
         ],
-        "default-sprite": 1,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/andreastreeter",
@@ -1827,10 +1995,12 @@
         "full-name": "Beans McBlase",
         "size": "small",
         "teams": [
-            "Canada Moist Talkers"
+            "Canada Moist Talkers",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
-            "250BeansMcBlase.png"
+            "250BeansMcBlase.png",
+            "250BeansMcBlaseALT.png"
         ],
         "default-sprite": 0,
         "credits": [
@@ -4400,18 +4570,20 @@
         "full-name": "Evelton McBlase II",
         "size": "small",
         "teams": [
-            "Core Mechanics",
             "Houston Spies",
             "Hawai'i Fridays",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Core Mechanics",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "126EveltonMcBlaseII.png",
             "126EveltonMcBlaseIIALT.png",
             "126EveltonMcBlaseIIALT2.png",
-            "126EveltonMcBlaseIIALT3.png"
+            "126EveltonMcBlaseIIALT3.png",
+            "126EveltonMcBlaseIIALT4.png"
         ],
-        "default-sprite": 3,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/shenaniglenn",
@@ -6427,7 +6599,8 @@
             "Hawai'i Fridays",
             "Seattle Garages",
             "Boston Flowers",
-            "Miami Dale"
+            "Miami Dale",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "31NagomiMcDaniel.png",
@@ -6436,9 +6609,10 @@
             "31NagomiMcDanielALT3.png",
             "31NagomiMcDanielALT4.png",
             "31NagomiMcDanielALT5.png",
-            "31NagomiMcDanielALT6.png"
+            "31NagomiMcDanielALT6.png",
+            "31NagomiMcDanielALT7.png"
         ],
-        "default-sprite": 6,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/kayleerowena",
@@ -6447,6 +6621,10 @@
             {
                 "link": "https://twitter.com/fancymancer",
                 "text": "@fancymancer"
+            },
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
             }
         ]
     },
@@ -6666,10 +6844,12 @@
         "full-name": "Gunther O'Brian",
         "size": "small",
         "teams": [
-            "Charleston Shoe Thieves"
+            "Charleston Shoe Thieves",
+            "Mexico City Wild Wings"
         ],
         "sprites": [
             "22GuntherOBrian.png",
+            "22GuntherOBrianALT.png",
             "22GuntherOBrian2.png"
         ],
         "default-sprite": 0,

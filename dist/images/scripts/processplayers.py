@@ -120,6 +120,7 @@ def decidesize(nameid):
         'yurts-buttercup',
         'ron-monstera',
         'bevan-wise',
+        'tai-beanbag',
 
         # Pandemonium Artists
         'breeze-regicide',
@@ -146,7 +147,8 @@ def decidesize(nameid):
         'adkins-gwiffin', 
         'lotus-mango', 
         'parker-macmillan-iiii',
-        'chorby-soul'
+        'chorby-soul',
+        'aurora-blortles'
     ]
 
     if nameid in bigboys:
