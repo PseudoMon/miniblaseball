@@ -72,9 +72,9 @@
     }
 
     function applyFilter(e) {
-        console.log('lmao')
         const filters = e.detail.appliedFilters
         const team = e.detail.teamFilter
+        const sizeFilter = e.detail.sizeFilter
 
         if (!team) {
             // This means no team to filter to is chosen
@@ -83,27 +83,13 @@
             playersShown = unfilteredPlayers
 
             // Re-apply sorting
+            applySizeFilter(sizeFilter)
             applySort()
 
             return
         }
 
         playersShown = unfilteredPlayers.filter(player => {
-            // if (filters.includes("wasmemberof")) {
-
-            //     if (player['former-teams'].includes(team)) {
-            //         return true
-            //     }
-
-            // }
-
-            // if (filters.includes("ismemberof")) {
-
-            //     if (player['team'] === team) {
-            //         return true
-            //     }
-        
-            // }
 
             if (player['teams'].includes(team)) {
                 return true
@@ -112,7 +98,24 @@
             return false
         })
 
+        applySizeFilter(sizeFilter)
         applySort()
+    }
+
+    function applySizeFilter(sizeFilter) {
+        playersShown = playersShown.filter(player => {
+            if (sizeFilter.normal && player.size === 'small') {
+                return true
+            }
+            
+            if (sizeFilter.larger && (player.size === 'large' || player.size === 'xlarge')) {
+                return true
+            }
+
+            if (sizeFilter.huge && player.size === 'huge') {
+                return true
+            }
+        })
     }
 
     function applySort() {

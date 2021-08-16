@@ -1,5 +1,5 @@
 <script>
-    import { createEventDispatcher } from 'svelte'
+    import { createEventDispatcher, tick } from 'svelte'
     import SortControl from './SortControl.svelte'
     
     export let selectedGallery
@@ -10,7 +10,7 @@
     let appliedFilters = []
     let teamFilter = ''
     let nameBeingSearched = ''
-
+    let sizeFilter = { normal: true, larger: true, huge: true }
 
     function switchGallery(gallery) {
 
@@ -34,6 +34,7 @@
         // Reset other filters
         appliedFilters = []
         teamFilter = ''
+        sizeFilter = { normal: true, larger: true, huge: true }
 
         dispatch('filterPlayerName', {
             name: nameBeingSearched
@@ -41,42 +42,22 @@
 
     }
 
-    function onChangeFilter(e) {
-        // Add value to filter list if box is checked
-        const filter = e.target.value
-
-        if (e.target.checked) {
-            appliedFilters = appliedFilters.concat([filter])
-        }
-
-        else {
-            // Remove it if the box is unchekced
-            appliedFilters = appliedFilters.filter(elem => elem != filter)
-        }
-
-        nameBeingSearched = '' // Reset searchbar
-
-        // Reset team if all filters are turned off
-        // if (!appliedFilters) {
-        //     teamFilter = ''
-        // }
-        // Wait the above might not actually work
-
-        dispatch('changeFilter', {
-            appliedFilters,
-            teamFilter
-        })
-    }
-
-
     function onSelectTeam(e) {
-
         teamFilter = e.target.value
         nameBeingSearched = '' // Reset searchbar
+    }
 
+    function applyFilter() {
+        nameBeingSearched = '' // Reset searchbar
+    }
+
+    // Filter will be reset to default when searching
+    // Don't dispatch the change when this is happening
+    $: if (nameBeingSearched == '') {
         dispatch('changeFilter', {
             appliedFilters,
-            teamFilter
+            teamFilter,
+            sizeFilter
         })
     }
 
@@ -138,6 +119,25 @@
                     </optgroup>
                 {/each}
             </select>
+
+            <h3>Size</h3>
+            <div class="size-filter">
+                <label><input type="checkbox"
+                    on:change={ applyFilter }
+                    bind:checked={ sizeFilter.normal }>
+                    Normal
+                </label>
+                <label><input type="checkbox"
+                    on:change={ applyFilter }
+                    bind:checked={ sizeFilter.larger }>
+                    Larger
+                </label>
+                <label><input type="checkbox" 
+                    on:change={ applyFilter }
+                    bind:checked={ sizeFilter.huge }>
+                    Huge
+                </label>
+            </div>
         </div>
     </form> 
 </div>
@@ -161,9 +161,6 @@
         color: var(--color-text);
         border-radius: .25rem;
         padding: .75rem 1rem;
-    }
-
-    .filter-selector {
     }
 
     .filter-selector > div {
@@ -229,5 +226,19 @@
     .gallery-chooser > span.active {
         background-color: var(--color-text);
         color: var(--color-bg);
+    }
+
+    h3 {
+        margin-bottom:  0;
+    }
+
+    .size-filter {
+        display:  flex;
+        justify-content: space-around;
+    }
+
+    .size-filter input {
+        margin-top:  0.5em;
+        margin-right: 0.2em;
     }
 </style>
