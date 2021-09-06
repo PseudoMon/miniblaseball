@@ -1,11 +1,10 @@
 # richmond-harrison
-team: moist talkers
-former-teams:
+teams: 
 - moist talkers
 - tigers
 - sunbeams
+- dale
 credit: @avery_helm
-default: 3
 
 # mike-townsend
 team: garages
@@ -86,8 +85,8 @@ former-teams:
 - pods
 - wild wings
 - breath mints
+- crabs
 credit: @telekeys
-default: 6
 
 # don-mitchell
 team: lovers
@@ -1720,9 +1719,7 @@ credit: @MLeeLunsford
 default: 0
 
 #beans-mcblase
-teams: 
-- moist talkers
-- wild wings
+team: moist talkers
 credit: @Spiral_Joe
 default: 0
 
@@ -2362,6 +2359,42 @@ team: wild wings
 credit: 
 - "Wilder"
 - "clowdersiege#3070"
+
+#cat-mcsriff
+team: wild wings
+credit: @toxiclockwork
+
+#wichita-toaster
+team: wild wings
+credit:
+- @hellsaiko
+- @thr33h3ad3ddrag
+
+#hercules-alighieri
+team: georgias
+credit: @zarkanen
+
+#mordecai-kingbird
+team: georgias
+credit: @calentines_day
+
+#zephyr-mccloud
+team: steaks
+credit:
+- @BearOverdrive
+- "doppo#6992"
+
+#rai-spliff
+team: steaks
+credit: @awhekate
+
+#orville-manco
+team: steaks
+credit: @BearOverdrive
+
+#barry-burkhard
+team: steaks
+credit: @NickNackNyx
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

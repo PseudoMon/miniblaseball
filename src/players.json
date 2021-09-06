@@ -1,5 +1,233 @@
 [
     {
+        "index": 359,
+        "id": "barry-burkhard",
+        "full-name": "Barry Burkhard",
+        "size": "small",
+        "teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "359BarryBurkhard.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/NickNackNyx",
+                "text": "@NickNackNyx"
+            }
+        ]
+    },
+    {
+        "index": 358,
+        "id": "orville-manco",
+        "full-name": "Orville Manco",
+        "size": "small",
+        "teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "358OrvilleManco.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BearOverdrive",
+                "text": "@BearOverdrive"
+            }
+        ]
+    },
+    {
+        "index": 357,
+        "id": "rai-spliff",
+        "full-name": "Rai Spliff",
+        "size": "small",
+        "teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "357RaiSpliff.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/awhekate",
+                "text": "@awhekate"
+            }
+        ]
+    },
+    {
+        "index": 356,
+        "id": "zephyr-mccloud",
+        "full-name": "Zephyr McCloud",
+        "size": "small",
+        "teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "356ZephyrMcCloud.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/BearOverdrive",
+                "text": "@BearOverdrive"
+            },
+            {
+                "link": "",
+                "text": "doppo#6992"
+            }
+        ]
+    },
+    {
+        "index": 355,
+        "id": "mordecai-kingbird",
+        "full-name": "Mordecai Kingbird",
+        "size": "small",
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "355MordecaiKingbird.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 354,
+        "id": "hercules-alighieri",
+        "full-name": "Hercules Alighieri",
+        "size": "small",
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "354HerculesAlighieri.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/zarkanen",
+                "text": "@zarkanen"
+            }
+        ]
+    },
+    {
+        "index": 353,
+        "id": "wichita-toaster",
+        "full-name": "Wichita Toaster",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "353WichitaToaster.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/hellsaiko",
+                "text": "@hellsaiko"
+            },
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
+        ]
+    },
+    {
+        "index": 352,
+        "id": "cat-mcsriff",
+        "full-name": "Cat Mcsriff",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "352CatMcsriff.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 351,
+        "id": "roscoe-sundae",
+        "full-name": "Roscoe Sundae",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "351RoscoeSundae.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "",
+                "text": "Wilder"
+            },
+            {
+                "link": "",
+                "text": "clowdersiege#3070"
+            }
+        ]
+    },
+    {
+        "index": 350,
+        "id": "nandy-slumps",
+        "full-name": "Nandy Slumps",
+        "size": "small",
+        "teams": [
+            "Tokyo Lift",
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "350NandySlumps.png",
+            "350NandySlumpsALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 349,
+        "id": "eizabeth-guerra",
+        "full-name": "Eizabeth Guerra",
+        "size": "small",
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "349EizabethGuerra.png",
+            "349EizabethGuerraALT.png"
+        ],
+        "default-sprite": 0,
+        "credits": [
+            {
+                "link": "https://twitter.com/routezeros",
+                "text": "@routezeros"
+            },
+            {
+                "link": "https://twitter.com/goatedtoasts",
+                "text": "@goatedtoasts"
+            }
+        ]
+    },
+    {
         "index": 348,
         "id": "scarlet-caster",
         "full-name": "Scarlet Caster",
@@ -1995,8 +2223,7 @@
         "full-name": "Beans McBlase",
         "size": "small",
         "teams": [
-            "Canada Moist Talkers",
-            "Mexico City Wild Wings"
+            "Canada Moist Talkers"
         ],
         "sprites": [
             "250BeansMcBlase.png",
@@ -7061,7 +7288,8 @@
             "Hades Tigers",
             "THE SHELLED ONE'S PODS",
             "Mexico City Wild Wings",
-            "Kansas City Breath Mints"
+            "Kansas City Breath Mints",
+            "Baltimore Crabs"
         ],
         "sprites": [
             "12JessicaTelephone.png",
@@ -7070,9 +7298,10 @@
             "12JessicaTelephoneALT3.png",
             "12JessicaTelephoneALT4.png",
             "12JessicaTelephoneALT5.png",
-            "12JessicaTelephoneALT6.png"
+            "12JessicaTelephoneALT6.png",
+            "12JessicaTelephoneALT7.png"
         ],
-        "default-sprite": 6,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/telekeys",
@@ -7302,17 +7531,18 @@
         "size": "large",
         "teams": [
             "Canada Moist Talkers",
-            "Canada Moist Talkers",
             "Hades Tigers",
-            "Hellmouth Sunbeams"
+            "Hellmouth Sunbeams",
+            "Miami Dale"
         ],
         "sprites": [
             "01RichmondHarrison.png",
             "01RichmondHarrisonALT.png",
             "01RichmondHarrisonALT2.png",
-            "01RichmondHarrisonALT3.png"
+            "01RichmondHarrisonALT3.png",
+            "01RichmondHarrisonALT4.png"
         ],
-        "default-sprite": 3,
+        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/avery_helm",
