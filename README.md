@@ -1,35 +1,39 @@
 # MiniBlaseball Website
 Hullo! This repository contains the code that runs the [#MiniBlaseball website](https://miniblaseball.surge.sh). If you see any functional bugs or if you want to suggest new features, feel free to open an issue! Feel free to also contact me on [Twitter](https://twitter.com/PseudoMonious). 
 
-The website is built with [Svelte](https://svelte.dev), utilizing single-page routing with [Svelte Navigator](https://github.com/mefechoel/svelte-navigator). Data for the players is handwritten in a metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
+The website is built with [Svelte](https://svelte.dev), utilizing single-page routing with [Svelte Navigator](https://github.com/mefechoel/svelte-navigator). Data for the players is handwritten in the filename and in a metadata file which is written using the [Eno notation language](https://eno-lang.org/). These data is then collated with some Python scripting and exported into a JSON which is then loaded into the app.
 
-I've no plans to further automate data processing or to add more data into the site e.g. star rating or forbidden information, but I'm open if you want to help develop it.  
+I've no plans to further automate data processing or to add more data into the site e.g. star rating, but I'm open if you want to develop it.  
 
 Note that this repository does not contain the images!
 
 ## Requirements
-If you want to run the scripts that generate players data, you'll need Python 3 and the Python enolib package.
+If you want to run the scripts that generate players data, you'll need Python 3 with the Python enolib package and the Pillow package installed.
 
-For the website, you'll need a recent version of Node and a Node package manager. I use PNPM, but it should work the same way if you use NPM or other package manager that uses the same package.json format.
+For the website itself, you just need a not-too-old version of Node and a Node package manager. I use PNPM, but it should work the same way if you use NPM or other package manager that uses the same package.json format.
 
 ## Generating player data
 You can find the generated players data in `src/players.json` and `src/guestPlayers.json`. Team data can be found in `src/teams.json` and `src/guestTeams.json`. 
 
-To generate this data, go to `dist/images` and run
+To generate this data, run
 
 ```
-python scripts/processplayers.py
+python dist/scripts/processplayers.py
 ```
 
-Players's names and sprites are determined from the images and their filename. Size determination is (for now) manually coded into `processplayers.py`. Other metadata is written in `dist/images/scripts/extradata.eno`
+Players's names, sprites, and team are determined from the images and their filename. Size determination is done programmatically, except for, specifically, Morrow Doyle and Adkins Gwiffin, which are hardcoded inside `processplayers.py`. Credits metadata is written in `dist/scripts/extradata.eno`
 
-Image filename should be in the format e.g. `111ChorbyShort.png`, with alt color schemes being e.g. `111ChorbyShortALT.png` and `111ChorbyShortALT2.png`.  Alternate designs should have a number after the full name, before the ALT e.g. `111ChorbyShort2.png`, `111ChorbyShort2ALT.png`. 
+Note that `extradata.eno` may also contains some teams data that are no longer used or updated. Vestiges from a previous version of the site.
 
-The script also contains manual adjustments for some players, like NaN or Y3hirv. We use UTF-8 encoding, so non-English letters should work as well (thanks for reminding me, Jesús Koch). 
+Image filename should be in the format e.g. `0111ChorbyShort_Magic.png`, with alt designs being e.g. `0111ChorbyShort2_Magic.png`. Mind the number of digits. Team name for the sprite MUST be included. 
+
+Guest teams still uses the old formula e.g. G`001BreezeRegicide.png`
+
+We use UTF-8 encoding, so non-English letters should work as well (thanks for reminding me, Jesús Koch). 
 
 A player's "size" decides where the cut-off will be when viewing the player's page. Most players are probably `small`, some are `large`, and for a couple few, they need to be slightly larger than large: `xlarge`. The maximum is Peanutiel Duffy's `huge`.
 
-Team's name data are contained inside `teams.eno`.
+Teams' full name data are contained inside `teams.eno`.
 
 ## Running the website on your machine
 Install the requirements with this (or however your package manager install packages).
@@ -52,7 +56,7 @@ Note that players data (e.g. `players.json`) will still have to be rebuilt throu
 
 
 ## The website's source code
-Source code that pertains to the site are all inside the `src` folder. Most of the processing happens in the main `app.svelte`. 
+Source code that pertains to the site (as opposed to the data) are all inside the `src` folder. Most of the processing happens in the main `app.svelte`. 
 
 Machine-readable players data is contained within `players.json`, which should be generated by the Python script. `teams.json` contains the teams divided by subleagues, to be displayed in the filter menu. Both these files should be created through the Python script.
 
@@ -75,3 +79,6 @@ surge --domain miniblaseball.surge.sh
 We also occasionally use the domain `zion-aliciakeyes.surge.sh` for testing new features.
 
 Note the existence of `200.html` file which is identical to `index.html`. When using Surge.sh, [this will enable client-side routing](https://surge.sh/help/adding-a-200-page-for-client-side-routing). 
+
+## This repo is not always updated when I add new players
+The miniblaseball site should always have the latest version though. As a bonus, you can access the latest extradata directly at http://miniblaseball.surge.sh/scripts/extradata.eno. 
