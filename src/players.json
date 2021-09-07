@@ -7081,14 +7081,20 @@
     },
     {
         "index": 14,
-        "id": "baby-urlacher",
-        "full-name": "Baby Urlacher",
+        "id": "baby-triumphant",
+        "full-name": "Baby Triumphant",
         "size": "small",
         "teams": [
             "Chicago Firefighters"
         ],
         "sprites": [
-            "0014BabyUrlacher_Firefighters.png"
+            "0014BabyTriumphant_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
         ]
     },
     {

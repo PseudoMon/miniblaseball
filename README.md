@@ -82,3 +82,8 @@ Note the existence of `200.html` file which is identical to `index.html`. When u
 
 ## This repo is not always updated when I add new players
 The miniblaseball site should always have the latest version though. As a bonus, you can access the latest extradata directly at http://miniblaseball.surge.sh/scripts/extradata.eno. 
+
+## TODO
+1. Make groupshot's interface nicer
+2. Sort by size
+3. Make search for player compatible with filter

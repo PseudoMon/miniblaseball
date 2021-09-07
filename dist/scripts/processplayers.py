@@ -372,6 +372,8 @@ players = []
 guest_max_id = get_max_id(is_guest = True)
 guest_players = []
 
+print("\nProcessing {} main league players.".format(max_id))
+
 for i in range(1, max_id + 1):
     playerid = str(i)
 
@@ -385,7 +387,7 @@ for i in range(1, max_id + 1):
         players.append(player)
 
 print("Main league players done")
-print("\nNow processing guest players!")
+print("Now processing guest players")
 
 for i in range(1, guest_max_id + 1):
     if i < 10:
