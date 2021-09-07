@@ -1,6 +1,6 @@
 import enolib, json
 
-with open('scripts/teams.eno', 'r') as file:
+with open('dist/scripts/teams.eno', 'r') as file:
     teams_input = file.read()
 
 teams_doc = enolib.parse(teams_input)
@@ -38,10 +38,10 @@ for subleague_elem in teams_doc.elements():
     teams_for_json.append({"name": subleague_name, "teams": teams})
 
 print("Dumping to file...")
-with open('../../src/teams.json', 'w') as file:
+with open('src/teams.json', 'w') as file:
     json.dump(main_teams_for_json, file, indent=4)
 
-with open('../../src/guestTeams.json', 'w') as file:
+with open('src/guestTeams.json', 'w') as file:
     json.dump(guest_teams_for_json, file, indent=4)
 
 print("Done processing teams")

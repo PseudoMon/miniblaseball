@@ -10,7 +10,6 @@
         "sprites": [
             "G042PolkadotMatrix.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/maddycha",
@@ -29,7 +28,6 @@
         "sprites": [
             "G041EspressoMachine.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/fancymancer",
@@ -48,7 +46,6 @@
         "sprites": [
             "G040BoxplotJones.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/BeedropsArt",
@@ -67,7 +64,6 @@
         "sprites": [
             "G039BatistaOatmilk.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/fancymancer",
@@ -86,7 +82,6 @@
         "sprites": [
             "G038MasonMMcMason.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/tywyso",
@@ -98,14 +93,13 @@
         "index": 37,
         "id": "parker-macmillan-iiii",
         "full-name": "Parker MacMillan IIII",
-        "size": "huge",
+        "size": "xlarge",
         "teams": [
             "Real Game Band"
         ],
         "sprites": [
             "G037ParkerMacMillanIIII.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
@@ -124,7 +118,6 @@
         "sprites": [
             "G036SlamRosenthal.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/chrisbratt",
@@ -143,7 +136,6 @@
         "sprites": [
             "G035StephenShelled.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/chrisbratt",
@@ -162,7 +154,6 @@
         "sprites": [
             "G034BallClark.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/chrisbratt",
@@ -181,7 +172,6 @@
         "sprites": [
             "G033BingFlatters.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/longhairQ",
@@ -201,7 +191,6 @@
         "sprites": [
             "G032Y3hirvHafgy2738riv.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "",
@@ -220,7 +209,6 @@
         "sprites": [
             "G031PhoebeBlasesona.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/ArachnidArt",
@@ -239,7 +227,6 @@
         "sprites": [
             "G030HauntWednesday.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/kayleerowena",
@@ -258,7 +245,6 @@
         "sprites": [
             "G029AngelIvories.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/luins_",
@@ -277,7 +263,6 @@
         "sprites": [
             "G028DunbarMcLoud.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/justmako",
@@ -296,7 +281,6 @@
         "sprites": [
             "G027JonahMosaic.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/shenaniglenn",
@@ -315,7 +299,6 @@
         "sprites": [
             "G026FishcakeCan.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/Karagna_",
@@ -327,14 +310,13 @@
         "index": 25,
         "id": "ikea-jellofin",
         "full-name": "Ikea Jellofin",
-        "size": "small",
+        "size": "large",
         "teams": [
             "Pandemonium Artists"
         ],
         "sprites": [
             "G025IkeaJellofin.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/starfauna",
@@ -353,7 +335,6 @@
         "sprites": [
             "G024CousinSpike.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/_waalkr",
@@ -372,7 +353,6 @@
         "sprites": [
             "G023BuckRattler.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/crikadelic",
@@ -391,7 +371,6 @@
         "sprites": [
             "G022QuebradaStone.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/mnsoleart",
@@ -410,7 +389,6 @@
         "sprites": [
             "G021TeethBandana.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/greetomatic",
@@ -429,7 +407,6 @@
         "sprites": [
             "G020SwordsMagpie.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/alienmandy_",
@@ -448,7 +425,6 @@
         "sprites": [
             "G019HappyYoinky.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/peony_vibes",
@@ -467,7 +443,6 @@
         "sprites": [
             "G018CinnaToast.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/alyssalmpenney",
@@ -486,7 +461,6 @@
         "sprites": [
             "G017RoxettaCompass.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/chezforshire",
@@ -505,7 +479,6 @@
         "sprites": [
             "G016WatsonWard.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/fancymancer",
@@ -524,7 +497,6 @@
         "sprites": [
             "G015JayGrayscale.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/juangeedraws",
@@ -543,7 +515,6 @@
         "sprites": [
             "G014EntropyHandcramp.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/koloquials",
@@ -562,7 +533,6 @@
         "sprites": [
             "G013RoadKill.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/glassgoblin",
@@ -581,7 +551,6 @@
         "sprites": [
             "G012AuraIrving.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/redbirdrabbit",
@@ -600,7 +569,6 @@
         "sprites": [
             "G011MandaMoth.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/cocacolapanda1",
@@ -619,7 +587,6 @@
         "sprites": [
             "G010JennyQuicksilver.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/jololion",
@@ -638,7 +605,6 @@
         "sprites": [
             "G009ArbutusBones.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/skelebells",
@@ -657,7 +623,6 @@
         "sprites": [
             "G008MaddongCandy.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/maddycha",
@@ -676,7 +641,6 @@
         "sprites": [
             "G007HandsomeScarf.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/ndlbxbrd",
@@ -695,7 +659,6 @@
         "sprites": [
             "G006ChromaticJump.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/fairchart",
@@ -714,7 +677,6 @@
         "sprites": [
             "G005BackwoodsBroker.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/horseizontal",
@@ -733,7 +695,6 @@
         "sprites": [
             "G004SchismThrones.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/occultclassic",
@@ -752,7 +713,6 @@
         "sprites": [
             "G003FriendVoid.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/cryptmilk",
@@ -771,7 +731,6 @@
         "sprites": [
             "G002PompomPomodoro.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/MimimiCee",
@@ -790,7 +749,6 @@
         "sprites": [
             "G001BreezeRegicide.png"
         ],
-        "default-sprite": 0,
         "credits": [
             {
                 "link": "https://twitter.com/hetreasky",
