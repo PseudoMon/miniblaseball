@@ -8,7 +8,7 @@
     "dev": "rollup -c -w",
     "start": "sirv dist -s",
     "upload": "surge dist --domain miniblaseball.surge.sh",
-    "processplayers": "python dist/scripts/processplayers.py"
+    "processplayers": "python dist/scripts/processplayers.py" 
   },
   "author": "PseudoMon",
   "license": "ISC",

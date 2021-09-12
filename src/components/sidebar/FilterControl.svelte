@@ -7,7 +7,6 @@
 
     const dispatch = createEventDispatcher()
 
-    let appliedFilters = []
     let teamFilter = ''
     let nameBeingSearched = ''
     let sizeFilter = { normal: true, larger: true, huge: true }
@@ -24,40 +23,17 @@
             gallery
         })
 
-        //TODO
-        // After this you'll have to clear all the sorts/filters
-    }
-
-    function onInputName(e) {
-        nameBeingSearched = e.target.value
-
-        // Reset other filters
-        appliedFilters = []
+        // Reset all filters
         teamFilter = ''
+        nameBeingSearched = ''
         sizeFilter = { normal: true, larger: true, huge: true }
-
-        dispatch('filterPlayerName', {
-            name: nameBeingSearched
-        })
-
     }
 
-    function onSelectTeam(e) {
-        teamFilter = e.target.value
-        nameBeingSearched = '' // Reset searchbar
-    }
-
-    function applyFilter() {
-        nameBeingSearched = '' // Reset searchbar
-    }
-
-    // Filter will be reset to default when searching
-    // Don't dispatch the change when this is happening
-    $: if (nameBeingSearched == '') {
+    $: {
         dispatch('changeFilter', {
-            appliedFilters,
             teamFilter,
-            sizeFilter
+            sizeFilter,
+            nameBeingSearched
         })
     }
 
@@ -84,8 +60,7 @@
             type="text" 
             name="playername" 
             placeholder="Search for player..." 
-            on:input={ onInputName }
-            value={ nameBeingSearched }>
+            bind:value={ nameBeingSearched }>
 
 
         <SortControl 
@@ -97,9 +72,9 @@
             <h3 style="margin-bottom: 0">Show players depicted as member of</h3>
 
              <select
-                on:change={ onSelectTeam }>
+                bind:value={ teamFilter }>
                 
-                <option value="" selected>Any team</option>
+                <option value="">Any team</option>
                 
                 {#each teams as subleague}
 
@@ -109,7 +84,6 @@
                         {#each subleague.teams as team }
                         {#if team !== "RIV" && team !== "Unknown"}
                         <option 
-                            selected={ team === teamFilter }
                             value={ team }>
                             { team }
                         </option>
@@ -123,17 +97,14 @@
             <h3>Size</h3>
             <div class="size-filter">
                 <label><input type="checkbox"
-                    on:change={ applyFilter }
                     bind:checked={ sizeFilter.normal }>
                     Normal
                 </label>
                 <label><input type="checkbox"
-                    on:change={ applyFilter }
                     bind:checked={ sizeFilter.larger }>
                     Larger
                 </label>
                 <label><input type="checkbox" 
-                    on:change={ applyFilter }
                     bind:checked={ sizeFilter.huge }>
                     Huge
                 </label>

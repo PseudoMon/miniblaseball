@@ -60,36 +60,36 @@
         playersShown = unfilteredPlayers
     }
 
-    function filterPlayerName(e) {
-        const nameToSearch = e.detail.name
-
-        playersShown = unfilteredPlayers.filter(player => {
+    function filterPlayerName(nameToSearch, players) {
+        return players.filter(player => {
             return player['full-name'].toLowerCase().includes( nameToSearch.toLowerCase())
         })
-
-        // Re-apply sorting
-        applySort()
     }
 
     function applyFilter(e) {
-        const filters = e.detail.appliedFilters
-        const team = e.detail.teamFilter
+        const teamFilter = e.detail.teamFilter
         const sizeFilter = e.detail.sizeFilter
+        const nameFilter = e.detail.nameBeingSearched
+
+        let players = unfilteredPlayers
+        players = applyTeamFilter(teamFilter, players)
+        players = applySizeFilter(sizeFilter, players)
+        players = filterPlayerName(nameFilter, players)
+
+        playersShown = players
+        applySort()
+    }
+
+    function applyTeamFilter(team, players) {
 
         if (!team) {
             // This means no team to filter to is chosen
             // In which case, return to unfiltered
 
-            playersShown = unfilteredPlayers
-
-            // Re-apply sorting
-            applySizeFilter(sizeFilter)
-            applySort()
-
-            return
+            return players
         }
 
-        playersShown = unfilteredPlayers.filter(player => {
+        return players.filter(player => {
 
             if (player['teams'].includes(team)) {
                 return true
@@ -97,13 +97,10 @@
 
             return false
         })
-
-        applySizeFilter(sizeFilter)
-        applySort()
     }
 
-    function applySizeFilter(sizeFilter) {
-        playersShown = playersShown.filter(player => {
+    function applySizeFilter(sizeFilter, players) {
+        return players.filter(player => {
             if (sizeFilter.normal && player.size === 'small') {
                 return true
             }
@@ -221,7 +218,6 @@
                     selectedGallery={ galleryScreen }
                     teams={ shownTeamsData }
                     on:selectGallery={ switchGallery }
-                    on:filterPlayerName={ filterPlayerName }
                     on:changeFilter={ applyFilter }
                     on:changeSort={ changeSort }/>
             {/if}

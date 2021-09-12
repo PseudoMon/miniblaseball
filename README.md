@@ -86,4 +86,4 @@ The miniblaseball site should always have the latest version though. As a bonus,
 ## TODO
 1. Make groupshot's interface nicer
 2. Sort by size
-3. Make search for player compatible with filter
+3. Show only team color when filtered by that team
