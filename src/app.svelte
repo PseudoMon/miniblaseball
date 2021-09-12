@@ -23,13 +23,13 @@
 
     let unfilteredPlayers = PlayersData
     let playersShown = unfilteredPlayers
-
     let shownTeamsData = TeamsData
 
     let sidebarScreen = 'filter'
     let galleryScreen = 'main'
 
     let currentSortType = ''
+    let currentTeamFilter = ''
 
     function switchSidebarScreen(e) {
         sidebarScreen = e.detail.screen
@@ -77,6 +77,8 @@
         players = filterPlayerName(nameFilter, players)
 
         playersShown = players
+        currentTeamFilter = teamFilter
+
         applySort()
     }
 
@@ -229,7 +231,9 @@
         </div>
 
         <div class="main-content">
-            <Gallery players={ playersShown }/>
+            <Gallery 
+                players={ playersShown }
+                team={ currentTeamFilter } />
         </div>
 
     </div>

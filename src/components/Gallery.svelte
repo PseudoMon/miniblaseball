@@ -1,19 +1,36 @@
 <script>
     import { beforeUpdate } from 'svelte'
     import { link } from 'svelte-navigator'
-    export let players
+    export let players, team
 
     function onImageInView(entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
 
-                fillInRandomImage(entry.target)
+                fillInSprite(entry.target)
 
                 entry.target.querySelector('img').src = entry.target.dataset.imagesrc
                 observer.unobserve(entry.target)
             }
         })
 
+    }
+
+    function fillInSprite(div) {
+        if (!team) {
+            // No team is chosen in filter
+            // Pick random sprite
+            fillInRandomImage(div)
+        }
+
+        else {
+            let playerindex = div.dataset.playerindex 
+            const player = players[playerindex]
+
+            const teamIndex = player['teams'].indexOf(team)
+            
+            div.dataset.imagesrc = `images/${player.sprites[teamIndex]}`
+        }
     }
 
     function fillInRandomImage(div) {
