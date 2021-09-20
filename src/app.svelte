@@ -29,6 +29,7 @@
     let galleryScreen = 'main'
 
     let currentSortType = ''
+    let currentSortOrder = 'ascending'
     let currentTeamFilter = ''
 
     function switchSidebarScreen(e) {
@@ -118,6 +119,7 @@
     }
 
     function applySort() {
+        const order = currentSortOrder
         const sortType = currentSortType
 
         if (!sortType) {
@@ -160,27 +162,34 @@
             })
         }
 
-        else if (sortType === 'currentteam') {
-
+        else if (sortType === 'size') {
             playersShown = playersShown.slice().sort((playera, playerb) => {
 
-                if (TeamsList[playera['team']] < TeamsList[playerb['team']]) {
+                if (playera['sizepixels'] < playerb['sizepixels']) {
                     return -1
                 }
 
-                if (TeamsList[playera['team']] > TeamsList[playerb['team']]) {
+
+                if (playera['sizepixels'] > playerb['sizepixels']) {
                     return 1
                 }
 
                 return 0
-
             })
+        }
+
+        if (order === "descending") {
+            playersShown = playersShown.slice().reverse()
         }
     }
 
     function changeSort(e) {
         currentSortType = e.detail.sortType
+        currentSortOrder = e.detail.order
+        console.log(e.detail.order)
 
+        // Sort is often reapplied after filtering,
+        // so we move it to its own function
         applySort()
     }
 

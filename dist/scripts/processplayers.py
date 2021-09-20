@@ -29,10 +29,6 @@ def getname(filename, is_guest=False):
     # Filename format:
     # e.g. 0007LandryViolence_Tigers.png
 
-    # Special case for our mysterious Artist
-    # if filename == "G032Y3hirvHafgy2738riv.png":
-    #     return "Y3hirv Hafgy2738riv"
-
     # Remove file extension and take out the ID
     # Regular players have 4-digit id
     # Guest players have 3-digit id prefaced by G
@@ -104,15 +100,6 @@ def decidesize(sprites):
         --size-xlarge: 320px;
         --size-huge: 500px;"""
 
-    # Special considerations 
-    if sprites[0][0:4] == "0150":
-        # Morrow Doyle
-        return 'xlarge'
-
-    if sprites[0][0:4] == "0182":
-        # Adkins Gwiffin
-        return 'huge'
-
     # Coordinates starts at top left, according to PIL
     # 4-way tuples are always (left, top, right, bottom)
 
@@ -135,9 +122,6 @@ def decidesize(sprites):
         with Image.open(spritepath) as sprite_image:
             (left, top, right, bottom) = sprite_image.getbbox()
 
-        height = bottom - top
-        width = right - left
-
         if left < minleft:
             minleft = left
         if top < mintop:
@@ -147,16 +131,28 @@ def decidesize(sprites):
         if bottom > maxbottom:
             maxbottom = bottom
 
+    height = maxbottom - mintop
+    width = maxright - minleft
+
     sprite_box = (minleft, mintop, maxright, maxbottom)
 
+   # Special considerations 
+    if sprites[0][0:4] == "0150":
+        # Morrow Doyle
+        return ('xlarge', height*width)
+
+    if sprites[0][0:4] == "0182":
+        # Adkins Gwiffin
+        return ('huge', height*width)
+
     if thing_is_within_box(sprite_box, small):
-        return 'small'
+        return ('small', height*width)
     elif thing_is_within_box(sprite_box, large):
-        return 'large'
+        return ('large', height*width)
     elif thing_is_within_box(sprite_box, xlarge):
-        return 'xlarge'
+        return ('xlarge', height*width)
     else:
-        return 'huge'
+        return ('huge', height*width)
 
 def set_extradata_teams(player):
     # For players who gets team from the extradata file
@@ -313,7 +309,7 @@ def process_single_player(playerid, is_guest=False):
 
     # Set size
     # size = decidesize(name_id)
-    size = decidesize(sprites)
+    size, sizepixels = decidesize(sprites)
 
     # Set teams
     teams = get_teams(sprites, is_guest)
@@ -323,6 +319,7 @@ def process_single_player(playerid, is_guest=False):
         "id": name_id,
         "full-name": player_name,
         "size": size,
+        "sizepixels": sizepixels,
         "teams": teams,
         "sprites": sprites
         # "default-sprite": default_sprite

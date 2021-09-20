@@ -4,6 +4,7 @@
         "id": "neerie-mccloud",
         "full-name": "Neerie McCloud",
         "size": "small",
+        "sizepixels": 7791,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -22,6 +23,7 @@
         "id": "siobhan-chark",
         "full-name": "Siobhan Chark",
         "size": "large",
+        "sizepixels": 25806,
         "teams": [
             "Atlantis Georgias",
             "Breckenridge Jazz Hands",
@@ -46,6 +48,7 @@
         "id": "mint-shupe",
         "full-name": "Mint Shupe",
         "size": "large",
+        "sizepixels": 17680,
         "teams": [
             "Atlantis Georgias",
             "San Francisco Lovers"
@@ -66,6 +69,7 @@
         "id": "geraldine-frost",
         "full-name": "Geraldine Frost",
         "size": "small",
+        "sizepixels": 13148,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -88,6 +92,7 @@
         "id": "rigby-friedrich",
         "full-name": "Rigby Friedrich",
         "size": "large",
+        "sizepixels": 19200,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -106,6 +111,7 @@
         "id": "jan-canberra",
         "full-name": "Jan Canberra",
         "size": "small",
+        "sizepixels": 16154,
         "teams": [
             "Atlantis Georgias",
             "Tokyo Lift"
@@ -126,6 +132,7 @@
         "id": "niq-nyong-o",
         "full-name": "Niq Nyong'o",
         "size": "small",
+        "sizepixels": 6956,
         "teams": [
             "Atlantis Georgias",
             "Philly Pies"
@@ -140,6 +147,7 @@
         "id": "flattery-mckinley",
         "full-name": "Flattery McKinley",
         "size": "small",
+        "sizepixels": 15974,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -158,6 +166,7 @@
         "id": "emmett-tabby",
         "full-name": "Emmett Tabby",
         "size": "small",
+        "sizepixels": 6390,
         "teams": [
             "Houston Spies"
         ],
@@ -176,6 +185,7 @@
         "id": "nickname-yamashita",
         "full-name": "Nickname Yamashita",
         "size": "small",
+        "sizepixels": 10472,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -194,6 +204,7 @@
         "id": "ronan-vargas",
         "full-name": "Ronan Vargas",
         "size": "large",
+        "sizepixels": 17876,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -212,6 +223,7 @@
         "id": "mags-banananana",
         "full-name": "Mags Banananana",
         "size": "small",
+        "sizepixels": 7638,
         "teams": [
             "Chicago Firefighters",
             "Mexico City Wild Wings"
@@ -232,6 +244,7 @@
         "id": "foxy-kane",
         "full-name": "Foxy Kane",
         "size": "small",
+        "sizepixels": 16660,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -250,6 +263,7 @@
         "id": "doginic-burgertoes",
         "full-name": "Doginic Burgertoes",
         "size": "small",
+        "sizepixels": 12838,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -268,6 +282,7 @@
         "id": "jasper-blather",
         "full-name": "Jasper Blather",
         "size": "small",
+        "sizepixels": 2279,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -286,6 +301,7 @@
         "id": "barry-burkhard",
         "full-name": "Barry Burkhard",
         "size": "small",
+        "sizepixels": 7384,
         "teams": [
             "Dallas Steaks"
         ],
@@ -304,6 +320,7 @@
         "id": "orville-manco",
         "full-name": "Orville Manco",
         "size": "small",
+        "sizepixels": 12640,
         "teams": [
             "Dallas Steaks"
         ],
@@ -322,6 +339,7 @@
         "id": "rai-spliff",
         "full-name": "Rai Spliff",
         "size": "small",
+        "sizepixels": 12056,
         "teams": [
             "Dallas Steaks"
         ],
@@ -340,6 +358,7 @@
         "id": "zephyr-mccloud",
         "full-name": "Zephyr McCloud",
         "size": "small",
+        "sizepixels": 17472,
         "teams": [
             "Dallas Steaks"
         ],
@@ -362,6 +381,7 @@
         "id": "mordecai-kingbird",
         "full-name": "Mordecai Kingbird",
         "size": "small",
+        "sizepixels": 9177,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -380,6 +400,7 @@
         "id": "hercules-alighieri",
         "full-name": "Hercules Alighieri",
         "size": "small",
+        "sizepixels": 10368,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -398,6 +419,7 @@
         "id": "wichita-toaster",
         "full-name": "Wichita Toaster",
         "size": "large",
+        "sizepixels": 15554,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -420,6 +442,7 @@
         "id": "cat-mcsriff",
         "full-name": "Cat Mcsriff",
         "size": "small",
+        "sizepixels": 6732,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -438,6 +461,7 @@
         "id": "roscoe-sundae",
         "full-name": "Roscoe Sundae",
         "size": "small",
+        "sizepixels": 11495,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -460,6 +484,7 @@
         "id": "nandy-slumps",
         "full-name": "Nandy Slumps",
         "size": "small",
+        "sizepixels": 7747,
         "teams": [
             "Tokyo Lift",
             "Mexico City Wild Wings"
@@ -480,6 +505,7 @@
         "id": "eizabeth-guerra",
         "full-name": "Eizabeth Guerra",
         "size": "small",
+        "sizepixels": 10281,
         "teams": [
             "Kansas City Breath Mints",
             "Mexico City Wild Wings"
@@ -504,6 +530,7 @@
         "id": "scarlet-caster",
         "full-name": "Scarlet Caster",
         "size": "small",
+        "sizepixels": 11340,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -522,6 +549,7 @@
         "id": "matteo-cash",
         "full-name": "Matteo Cash",
         "size": "small",
+        "sizepixels": 14400,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -540,6 +568,7 @@
         "id": "aurora-blortles",
         "full-name": "Aurora Blortles",
         "size": "huge",
+        "sizepixels": 81955,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -558,6 +587,7 @@
         "id": "tai-beanbag",
         "full-name": "Tai Beanbag",
         "size": "large",
+        "sizepixels": 26840,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -580,6 +610,7 @@
         "id": "aoife-mahle",
         "full-name": "Aoife Mahle",
         "size": "small",
+        "sizepixels": 15385,
         "teams": [
             "Houston Spies"
         ],
@@ -598,6 +629,7 @@
         "id": "plums-blather",
         "full-name": "Plums Blather",
         "size": "small",
+        "sizepixels": 5166,
         "teams": [
             "Houston Spies"
         ],
@@ -620,6 +652,7 @@
         "id": "chet-takahashi",
         "full-name": "Chet Takahashi",
         "size": "small",
+        "sizepixels": 5880,
         "teams": [
             "Houston Spies"
         ],
@@ -638,6 +671,7 @@
         "id": "bennett-bluesky",
         "full-name": "Bennett Bluesky",
         "size": "large",
+        "sizepixels": 16695,
         "teams": [
             "Houston Spies"
         ],
@@ -656,6 +690,7 @@
         "id": "silvia-winner",
         "full-name": "Silvia Winner",
         "size": "large",
+        "sizepixels": 21670,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -674,6 +709,7 @@
         "id": "sandford-garner",
         "full-name": "Sandford Garner",
         "size": "small",
+        "sizepixels": 11180,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -692,6 +728,7 @@
         "id": "liquid-friend",
         "full-name": "Liquid Friend",
         "size": "small",
+        "sizepixels": 8000,
         "teams": [
             "San Francisco Lovers",
             "Mexico City Wild Wings"
@@ -712,6 +749,7 @@
         "id": "bontgomery-mullock",
         "full-name": "Bontgomery Mullock",
         "size": "small",
+        "sizepixels": 16110,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -730,6 +768,7 @@
         "id": "milo-brown",
         "full-name": "Milo Brown",
         "size": "small",
+        "sizepixels": 4386,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -748,6 +787,7 @@
         "id": "helga-burton",
         "full-name": "Helga Burton",
         "size": "small",
+        "sizepixels": 6192,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -766,6 +806,7 @@
         "id": "helga-moreno",
         "full-name": "Helga Moreno",
         "size": "small",
+        "sizepixels": 6258,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -784,6 +825,7 @@
         "id": "king-roland",
         "full-name": "King Roland",
         "size": "small",
+        "sizepixels": 6016,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -802,6 +844,7 @@
         "id": "theo-king",
         "full-name": "Theo King",
         "size": "small",
+        "sizepixels": 15908,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -824,6 +867,7 @@
         "id": "huber-frumple",
         "full-name": "Huber Frumple",
         "size": "large",
+        "sizepixels": 17889,
         "teams": [
             "Philly Pies",
             "Mexico City Wild Wings"
@@ -844,6 +888,7 @@
         "id": "eduardo-woodman",
         "full-name": "Eduardo Woodman",
         "size": "large",
+        "sizepixels": 17877,
         "teams": [
             "Philly Pies"
         ],
@@ -862,6 +907,7 @@
         "id": "tiana-takahashi",
         "full-name": "Tiana Takahashi",
         "size": "small",
+        "sizepixels": 7500,
         "teams": [
             "Philly Pies"
         ],
@@ -880,6 +926,7 @@
         "id": "ruslan-greatness",
         "full-name": "Ruslan Greatness",
         "size": "large",
+        "sizepixels": 18792,
         "teams": [
             "Philly Pies"
         ],
@@ -898,6 +945,7 @@
         "id": "kelvin-andante",
         "full-name": "Kelvin Andante",
         "size": "small",
+        "sizepixels": 10500,
         "teams": [
             "Core Mechanics"
         ],
@@ -916,6 +964,7 @@
         "id": "mira-lemma",
         "full-name": "Mira Lemma",
         "size": "small",
+        "sizepixels": 11218,
         "teams": [
             "Core Mechanics"
         ],
@@ -934,6 +983,7 @@
         "id": "cote-loveless-iii",
         "full-name": "Cote Loveless III",
         "size": "small",
+        "sizepixels": 9804,
         "teams": [
             "Core Mechanics"
         ],
@@ -952,6 +1002,7 @@
         "id": "ruffian-applesauce",
         "full-name": "Ruffian Applesauce",
         "size": "small",
+        "sizepixels": 6900,
         "teams": [
             "Core Mechanics"
         ],
@@ -970,6 +1021,7 @@
         "id": "zoey-kirchner",
         "full-name": "Zoey Kirchner",
         "size": "small",
+        "sizepixels": 7203,
         "teams": [
             "Core Mechanics",
             "Dallas Steaks"
@@ -994,6 +1046,7 @@
         "id": "felix-garbage",
         "full-name": "Felix Garbage",
         "size": "small",
+        "sizepixels": 7222,
         "teams": [
             "New York Millennials",
             "LA Unlimited Tacos"
@@ -1014,13 +1067,14 @@
         "id": "cravel-gesundheit",
         "full-name": "Cravel Gesundheit",
         "size": "small",
+        "sizepixels": 9591,
         "teams": [
-            "Core Mechanics",
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic",
+            "Core Mechanics"
         ],
         "sprites": [
-            "0320CravelGesundheit_Mechanics.png",
-            "0320CravelGesundheit_Sunbeams.png"
+            "0320CravelGesundheit_Magic.png",
+            "0320CravelGesundheit_Mechanics.png"
         ],
         "credits": [
             {
@@ -1034,6 +1088,7 @@
         "id": "cudi-di-batterino",
         "full-name": "Cudi Di Batterino",
         "size": "small",
+        "sizepixels": 6336,
         "teams": [
             "Tokyo Lift",
             "Canada Moist Talkers"
@@ -1054,6 +1109,7 @@
         "id": "yosh-carpenter",
         "full-name": "Yosh Carpenter",
         "size": "small",
+        "sizepixels": 11715,
         "teams": [
             "Hawai'i Fridays",
             "San Francisco Lovers"
@@ -1074,6 +1130,7 @@
         "id": "lady-matsuyama",
         "full-name": "Lady Matsuyama",
         "size": "small",
+        "sizepixels": 13797,
         "teams": [
             "Hawai'i Fridays",
             "Core Mechanics"
@@ -1094,6 +1151,7 @@
         "id": "jacob-winner",
         "full-name": "Jacob Winner",
         "size": "small",
+        "sizepixels": 15168,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -1112,6 +1170,7 @@
         "id": "stevenson-heat",
         "full-name": "Stevenson Heat",
         "size": "large",
+        "sizepixels": 12096,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -1130,6 +1189,7 @@
         "id": "kurt-crueller",
         "full-name": "Kurt Crueller",
         "size": "small",
+        "sizepixels": 14220,
         "teams": [
             "San Francisco Lovers",
             "Yellowstone Magic"
@@ -1150,6 +1210,7 @@
         "id": "locran-smaht",
         "full-name": "Locran Smaht",
         "size": "small",
+        "sizepixels": 12558,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -1168,6 +1229,7 @@
         "id": "enid-marlow",
         "full-name": "Enid Marlow",
         "size": "small",
+        "sizepixels": 13612,
         "teams": [
             "Baltimore Crabs",
             "Ohio Worms"
@@ -1192,6 +1254,7 @@
         "id": "jacoby-podcast",
         "full-name": "Jacoby Podcast",
         "size": "small",
+        "sizepixels": 15840,
         "teams": [
             "Baltimore Crabs",
             "Ohio Worms"
@@ -1212,6 +1275,7 @@
         "id": "famous-oconnor",
         "full-name": "Famous Oconnor",
         "size": "small",
+        "sizepixels": 8768,
         "teams": [
             "Yellowstone Magic"
         ],
@@ -1230,11 +1294,12 @@
         "id": "richardson-turquoise",
         "full-name": "Richardson Turquoise",
         "size": "small",
+        "sizepixels": 12087,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0309RichardsonTurquoise_Sunbeams.png"
+            "0309RichardsonTurquoise_Magic.png"
         ],
         "credits": [
             {
@@ -1248,11 +1313,12 @@
         "id": "logan-rodriguez",
         "full-name": "Logan Rodriguez",
         "size": "small",
+        "sizepixels": 16268,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0308LoganRodriguez_Sunbeams.png"
+            "0308LoganRodriguez_Magic.png"
         ],
         "credits": [
             {
@@ -1266,6 +1332,7 @@
         "id": "tiana-wheeler",
         "full-name": "Tiana Wheeler",
         "size": "small",
+        "sizepixels": 11480,
         "teams": [
             "Kansas City Breath Mints",
             "Yellowstone Magic"
@@ -1286,6 +1353,7 @@
         "id": "kelvin-drumsolo",
         "full-name": "Kelvin Drumsolo",
         "size": "large",
+        "sizepixels": 21122,
         "teams": [
             "Core Mechanics"
         ],
@@ -1304,6 +1372,7 @@
         "id": "foxy-pebble",
         "full-name": "Foxy Pebble",
         "size": "small",
+        "sizepixels": 13944,
         "teams": [
             "Core Mechanics"
         ],
@@ -1322,6 +1391,7 @@
         "id": "torus-mcghee",
         "full-name": "Torus McGhee",
         "size": "small",
+        "sizepixels": 15939,
         "teams": [
             "Core Mechanics"
         ],
@@ -1340,6 +1410,7 @@
         "id": "gia-holbrook",
         "full-name": "Gia Holbrook",
         "size": "small",
+        "sizepixels": 9728,
         "teams": [
             "Core Mechanics"
         ],
@@ -1358,6 +1429,7 @@
         "id": "theodore-duende",
         "full-name": "Theodore Duende",
         "size": "small",
+        "sizepixels": 11136,
         "teams": [
             "Seattle Garages"
         ],
@@ -1376,6 +1448,7 @@
         "id": "sparks-beans",
         "full-name": "Sparks Beans",
         "size": "small",
+        "sizepixels": 7150,
         "teams": [
             "Seattle Garages"
         ],
@@ -1394,6 +1467,7 @@
         "id": "ron-monstera",
         "full-name": "Ron Monstera",
         "size": "large",
+        "sizepixels": 20592,
         "teams": [
             "Seattle Garages"
         ],
@@ -1412,6 +1486,7 @@
         "id": "avila-guzman",
         "full-name": "Avila Guzman",
         "size": "small",
+        "sizepixels": 7896,
         "teams": [
             "Miami Dale",
             "Seattle Garages",
@@ -1442,12 +1517,13 @@
         "id": "bevan-wise",
         "full-name": "Bevan Wise",
         "size": "large",
+        "sizepixels": 26201,
         "teams": [
-            "Hellmouth Sunbeams",
+            "Yellowstone Magic",
             "LA Unlimited Tacos"
         ],
         "sprites": [
-            "0298BevanWise_Sunbeams.png",
+            "0298BevanWise_Magic.png",
             "0298BevanWise_Tacos.png"
         ],
         "credits": [
@@ -1462,6 +1538,7 @@
         "id": "trinity-smaht",
         "full-name": "Trinity Smaht",
         "size": "small",
+        "sizepixels": 8360,
         "teams": [
             "Baltimore Crabs",
             "Mexico City Wild Wings"
@@ -1483,6 +1560,7 @@
         "id": "silvaire-semiquaver",
         "full-name": "Silvaire Semiquaver",
         "size": "small",
+        "sizepixels": 14105,
         "teams": [
             "Tokyo Lift"
         ],
@@ -1501,6 +1579,7 @@
         "id": "jomgy-rolsenthal",
         "full-name": "Jomgy Rolsenthal",
         "size": "small",
+        "sizepixels": 6930,
         "teams": [
             "Miami Dale",
             "Houston Spies"
@@ -1521,6 +1600,7 @@
         "id": "morrow-wilson",
         "full-name": "Morrow Wilson",
         "size": "small",
+        "sizepixels": 5330,
         "teams": [
             "San Francisco Lovers",
             "Philly Pies",
@@ -1543,6 +1623,7 @@
         "id": "reese-clark",
         "full-name": "Reese Clark",
         "size": "small",
+        "sizepixels": 7301,
         "teams": [
             "Houston Spies"
         ],
@@ -1565,6 +1646,7 @@
         "id": "denzel-scott",
         "full-name": "Denzel Scott",
         "size": "small",
+        "sizepixels": 5658,
         "teams": [
             "Houston Spies"
         ],
@@ -1587,6 +1669,7 @@
         "id": "uncle-plasma",
         "full-name": "Uncle Plasma",
         "size": "small",
+        "sizepixels": 6923,
         "teams": [
             "Kansas City Breath Mints",
             "New York Millennials",
@@ -1609,6 +1692,7 @@
         "id": "gabriel-griffith",
         "full-name": "Gabriel Griffith",
         "size": "small",
+        "sizepixels": 8532,
         "teams": [
             "Chicago Firefighters",
             "Hawai'i Fridays",
@@ -1635,6 +1719,7 @@
         "id": "yurts-buttercup",
         "full-name": "Yurts Buttercup",
         "size": "large",
+        "sizepixels": 22624,
         "teams": [
             "Atlantis Georgias"
         ],
@@ -1653,6 +1738,7 @@
         "id": "simba-davis",
         "full-name": "Simba Davis",
         "size": "small",
+        "sizepixels": 9261,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -1665,6 +1751,7 @@
         "id": "cedric-spliff",
         "full-name": "Cedric Spliff",
         "size": "small",
+        "sizepixels": 7700,
         "teams": [
             "Seattle Garages",
             "Canada Moist Talkers"
@@ -1685,6 +1772,7 @@
         "id": "alston-cerveza",
         "full-name": "Alston Cerveza",
         "size": "small",
+        "sizepixels": 6230,
         "teams": [
             "Baltimore Crabs",
             "Canada Moist Talkers",
@@ -1709,6 +1797,7 @@
         "id": "ortiz-morse",
         "full-name": "Ortiz Morse",
         "size": "small",
+        "sizepixels": 7332,
         "teams": [
             "Seattle Garages",
             "Canada Moist Talkers"
@@ -1729,6 +1818,7 @@
         "id": "elijah-bates",
         "full-name": "Elijah Bates",
         "size": "small",
+        "sizepixels": 9996,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -1747,6 +1837,7 @@
         "id": "bright-zimmerman",
         "full-name": "Bright Zimmerman",
         "size": "small",
+        "sizepixels": 12877,
         "teams": [
             "Canada Moist Talkers",
             "Philly Pies",
@@ -1763,6 +1854,7 @@
         "id": "percival-wheeler",
         "full-name": "Percival Wheeler",
         "size": "small",
+        "sizepixels": 14276,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -1785,6 +1877,7 @@
         "id": "squid-galvanic",
         "full-name": "Squid Galvanic",
         "size": "small",
+        "sizepixels": 13452,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -1803,6 +1896,7 @@
         "id": "atlas-guerra",
         "full-name": "Atlas Guerra",
         "size": "small",
+        "sizepixels": 4050,
         "teams": [
             "Kansas City Breath Mints",
             "Chicago Firefighters"
@@ -1823,6 +1917,7 @@
         "id": "jolene-willowtree",
         "full-name": "Jolene Willowtree",
         "size": "small",
+        "sizepixels": 8436,
         "teams": [
             "Core Mechanics"
         ],
@@ -1841,6 +1936,7 @@
         "id": "val-hitherto",
         "full-name": "Val Hitherto",
         "size": "small",
+        "sizepixels": 9891,
         "teams": [
             "Tokyo Lift"
         ],
@@ -1859,6 +1955,7 @@
         "id": "dominic-woman",
         "full-name": "Dominic Woman",
         "size": "large",
+        "sizepixels": 22000,
         "teams": [
             "Hades Tigers"
         ],
@@ -1871,6 +1968,7 @@
         "id": "matteo-triumphant",
         "full-name": "Matteo Triumphant",
         "size": "small",
+        "sizepixels": 14842,
         "teams": [
             "Hades Tigers"
         ],
@@ -1889,20 +1987,21 @@
         "id": "alyssa-harrell",
         "full-name": "Alyssa Harrell",
         "size": "large",
+        "sizepixels": 17696,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
+            "Yellowstone Magic",
             "New York Millennials",
             "Philly Pies",
-            "Hellmouth Sunbeams",
             "Hades Tigers"
         ],
         "sprites": [
             "0275AlyssaHarrell_Crabs.png",
             "0275AlyssaHarrell_Fridays.png",
+            "0275AlyssaHarrell_Magic.png",
             "0275AlyssaHarrell_Millennials.png",
             "0275AlyssaHarrell_Pies.png",
-            "0275AlyssaHarrell_Sunbeams.png",
             "0275AlyssaHarrell_Tigers.png"
         ],
         "credits": [
@@ -1917,6 +2016,7 @@
         "id": "theodore-holloway",
         "full-name": "Theodore Holloway",
         "size": "small",
+        "sizepixels": 5265,
         "teams": [
             "Houston Spies"
         ],
@@ -1935,6 +2035,7 @@
         "id": "malik-romayne",
         "full-name": "Malik Romayne",
         "size": "small",
+        "sizepixels": 9954,
         "teams": [
             "Houston Spies",
             "Hellmouth Sunbeams"
@@ -1955,6 +2056,7 @@
         "id": "rhys-trombone",
         "full-name": "Rhys Trombone",
         "size": "small",
+        "sizepixels": 12218,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -1973,6 +2075,7 @@
         "id": "velasquez-meadows",
         "full-name": "Velasquez Meadows",
         "size": "large",
+        "sizepixels": 21896,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -1995,6 +2098,7 @@
         "id": "nora-perez",
         "full-name": "Nora Perez",
         "size": "large",
+        "sizepixels": 23562,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -2013,6 +2117,7 @@
         "id": "pedro-davids",
         "full-name": "Pedro Davids",
         "size": "small",
+        "sizepixels": 14960,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -2035,6 +2140,7 @@
         "id": "parker-parra",
         "full-name": "Parker Parra",
         "size": "small",
+        "sizepixels": 4826,
         "teams": [
             "Baltimore Crabs",
             "Boston Flowers"
@@ -2059,6 +2165,7 @@
         "id": "finn-james",
         "full-name": "Finn James",
         "size": "small",
+        "sizepixels": 8280,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -2077,6 +2184,7 @@
         "id": "brock-forbes",
         "full-name": "Brock Forbes",
         "size": "small",
+        "sizepixels": 7905,
         "teams": [
             "Baltimore Crabs",
             "Boston Flowers"
@@ -2097,6 +2205,7 @@
         "id": "lenny-marijuana",
         "full-name": "Lenny Marijuana",
         "size": "large",
+        "sizepixels": 17380,
         "teams": [
             "Seattle Garages",
             "Hades Tigers"
@@ -2117,6 +2226,7 @@
         "id": "mooney-doctor-ii",
         "full-name": "Mooney Doctor II",
         "size": "small",
+        "sizepixels": 9912,
         "teams": [
             "Kansas City Breath Mints"
         ],
@@ -2135,6 +2245,7 @@
         "id": "jessi-wise",
         "full-name": "Jessi Wise",
         "size": "large",
+        "sizepixels": 44160,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -2153,6 +2264,7 @@
         "id": "karato-bean",
         "full-name": "Karato Bean",
         "size": "large",
+        "sizepixels": 21105,
         "teams": [
             "Hawai'i Fridays",
             "San Francisco Lovers",
@@ -2175,15 +2287,16 @@
         "id": "terrell-bradley",
         "full-name": "Terrell Bradley",
         "size": "small",
+        "sizepixels": 12876,
         "teams": [
             "Hawai'i Fridays",
             "Seattle Garages",
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
             "0261TerrellBradley_Fridays.png",
             "0261TerrellBradley_Garages.png",
-            "0261TerrellBradley_Sunbeams.png"
+            "0261TerrellBradley_Magic.png"
         ],
         "credits": [
             {
@@ -2197,6 +2310,7 @@
         "id": "sam-solis",
         "full-name": "Sam Solis",
         "size": "small",
+        "sizepixels": 10332,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -2215,6 +2329,7 @@
         "id": "fitzgerald-massey",
         "full-name": "Fitzgerald Massey",
         "size": "small",
+        "sizepixels": 12877,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -2233,6 +2348,7 @@
         "id": "jenna-maldonado",
         "full-name": "Jenna Maldonado",
         "size": "small",
+        "sizepixels": 7605,
         "teams": [
             "Miami Dale"
         ],
@@ -2251,6 +2367,7 @@
         "id": "eizabeth-elliott",
         "full-name": "Eizabeth Elliott",
         "size": "small",
+        "sizepixels": 6084,
         "teams": [
             "Yellowstone Magic"
         ],
@@ -2273,11 +2390,12 @@
         "id": "bonk-jokes",
         "full-name": "Bonk Jokes",
         "size": "large",
+        "sizepixels": 20254,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0256BonkJokes_Sunbeams.png"
+            "0256BonkJokes_Magic.png"
         ],
         "credits": [
             {
@@ -2291,6 +2409,7 @@
         "id": "kevin-dudley",
         "full-name": "Kevin Dudley",
         "size": "small",
+        "sizepixels": 9768,
         "teams": [
             "Philly Pies",
             "Charleston Shoe Thieves",
@@ -2313,6 +2432,7 @@
         "id": "fitzgerald-wanderlust",
         "full-name": "Fitzgerald Wanderlust",
         "size": "small",
+        "sizepixels": 7203,
         "teams": [
             "Charleston Shoe Thieves",
             "LA Unlimited Tacos"
@@ -2333,6 +2453,7 @@
         "id": "hobbs-cain",
         "full-name": "Hobbs Cain",
         "size": "small",
+        "sizepixels": 4836,
         "teams": [
             "Canada Moist Talkers",
             "Philly Pies"
@@ -2353,6 +2474,7 @@
         "id": "jenkins-good",
         "full-name": "Jenkins Good",
         "size": "small",
+        "sizepixels": 6336,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -2371,6 +2493,7 @@
         "id": "jesús-koch",
         "full-name": "Jesús Koch",
         "size": "small",
+        "sizepixels": 5106,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -2384,6 +2507,7 @@
         "id": "beans-mcblase",
         "full-name": "Beans McBlase",
         "size": "small",
+        "sizepixels": 8664,
         "teams": [
             "Canada Moist Talkers",
             "Mexico City Wild Wings"
@@ -2404,6 +2528,7 @@
         "id": "ronan-jaylee",
         "full-name": "Ronan Jaylee",
         "size": "small",
+        "sizepixels": 7089,
         "teams": [
             "Dallas Steaks"
         ],
@@ -2422,6 +2547,7 @@
         "id": "sam-scandal",
         "full-name": "Sam Scandal",
         "size": "small",
+        "sizepixels": 5049,
         "teams": [
             "Dallas Steaks"
         ],
@@ -2440,6 +2566,7 @@
         "id": "kit-adamses",
         "full-name": "Kit Adamses",
         "size": "small",
+        "sizepixels": 7406,
         "teams": [
             "Dallas Steaks"
         ],
@@ -2458,6 +2585,7 @@
         "id": "gallup-crueller",
         "full-name": "Gallup Crueller",
         "size": "xlarge",
+        "sizepixels": 33043,
         "teams": [
             "Dallas Steaks"
         ],
@@ -2476,6 +2604,7 @@
         "id": "greer-lott",
         "full-name": "Greer Lott",
         "size": "small",
+        "sizepixels": 4452,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -2494,6 +2623,7 @@
         "id": "commissioner-vapor",
         "full-name": "Commissioner Vapor",
         "size": "small",
+        "sizepixels": 5520,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -2512,6 +2642,7 @@
         "id": "mooney-doctor",
         "full-name": "Mooney Doctor",
         "size": "small",
+        "sizepixels": 8526,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -2530,6 +2661,7 @@
         "id": "famous-owens",
         "full-name": "Famous Owens",
         "size": "small",
+        "sizepixels": 16275,
         "teams": [
             "Hades Tigers"
         ],
@@ -2548,6 +2680,7 @@
         "id": "randy-castillo",
         "full-name": "Randy Castillo",
         "size": "large",
+        "sizepixels": 13532,
         "teams": [
             "Hades Tigers"
         ],
@@ -2571,6 +2704,7 @@
         "id": "paula-mason",
         "full-name": "Paula Mason",
         "size": "small",
+        "sizepixels": 10147,
         "teams": [
             "Chicago Firefighters",
             "Seattle Garages",
@@ -2595,6 +2729,7 @@
         "id": "alx-pineapple",
         "full-name": "Alx Pineapple",
         "size": "small",
+        "sizepixels": 8442,
         "teams": [
             "danger zone"
         ],
@@ -2613,6 +2748,7 @@
         "id": "declan-suzanne",
         "full-name": "Declan Suzanne",
         "size": "small",
+        "sizepixels": 4350,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -2631,6 +2767,7 @@
         "id": "montgomery-bullock",
         "full-name": "Montgomery Bullock",
         "size": "xlarge",
+        "sizepixels": 52850,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
@@ -2653,6 +2790,7 @@
         "id": "zi-delacruz",
         "full-name": "Zi Delacruz",
         "size": "small",
+        "sizepixels": 14940,
         "teams": [
             "Dallas Steaks"
         ],
@@ -2671,6 +2809,7 @@
         "id": "bevan-underbuck",
         "full-name": "Bevan Underbuck",
         "size": "small",
+        "sizepixels": 9487,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
@@ -2693,6 +2832,7 @@
         "id": "mclaughlin-scorpler",
         "full-name": "McLaughlin Scorpler",
         "size": "small",
+        "sizepixels": 8965,
         "teams": [
             "New York Millennials",
             "Hades Tigers"
@@ -2717,6 +2857,7 @@
         "id": "charlatan-seabright",
         "full-name": "Charlatan Seabright",
         "size": "small",
+        "sizepixels": 16608,
         "teams": [
             "New York Millennials"
         ],
@@ -2739,6 +2880,7 @@
         "id": "richardson-games",
         "full-name": "Richardson Games",
         "size": "large",
+        "sizepixels": 16416,
         "teams": [
             "New York Millennials",
             "Charleston Shoe Thieves"
@@ -2759,6 +2901,7 @@
         "id": "theodore-cervantes",
         "full-name": "Theodore Cervantes",
         "size": "small",
+        "sizepixels": 9016,
         "teams": [
             "New York Millennials"
         ],
@@ -2777,6 +2920,7 @@
         "id": "wesley-dudley",
         "full-name": "Wesley Dudley",
         "size": "small",
+        "sizepixels": 7426,
         "teams": [
             "New York Millennials"
         ],
@@ -2789,6 +2933,7 @@
         "id": "andrew-solis",
         "full-name": "Andrew Solis",
         "size": "small",
+        "sizepixels": 7084,
         "teams": [
             "New York Millennials",
             "Houston Spies"
@@ -2809,6 +2954,7 @@
         "id": "ren-hunter",
         "full-name": "Ren Hunter",
         "size": "large",
+        "sizepixels": 19364,
         "teams": [
             "New York Millennials",
             "Charleston Shoe Thieves"
@@ -2829,6 +2975,7 @@
         "id": "schneider-bendie",
         "full-name": "Schneider Bendie",
         "size": "small",
+        "sizepixels": 4060,
         "teams": [
             "Boston Flowers",
             "New York Millennials"
@@ -2849,6 +2996,7 @@
         "id": "hendricks-richardson",
         "full-name": "Hendricks Richardson",
         "size": "small",
+        "sizepixels": 13845,
         "teams": [
             "Breckenridge Jazz Hands",
             "Hellmouth Sunbeams"
@@ -2869,6 +3017,7 @@
         "id": "miguel-james",
         "full-name": "Miguel James",
         "size": "small",
+        "sizepixels": 7093,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -2887,6 +3036,7 @@
         "id": "zack-sanders",
         "full-name": "Zack Sanders",
         "size": "xlarge",
+        "sizepixels": 49680,
         "teams": [
             "Philly Pies",
             "Hellmouth Sunbeams"
@@ -2912,6 +3062,7 @@
         "id": "collins-melon",
         "full-name": "Collins Melon",
         "size": "small",
+        "sizepixels": 1924,
         "teams": [
             "Breckenridge Jazz Hands",
             "Houston Spies"
@@ -2926,6 +3077,7 @@
         "id": "beasley-day",
         "full-name": "Beasley Day",
         "size": "small",
+        "sizepixels": 3822,
         "teams": [
             "Philly Pies"
         ],
@@ -2944,6 +3096,7 @@
         "id": "donia-bailey",
         "full-name": "Donia Bailey",
         "size": "small",
+        "sizepixels": 6678,
         "teams": [
             "Houston Spies"
         ],
@@ -2962,6 +3115,7 @@
         "id": "polkadot-patterson",
         "full-name": "PolkaDot Patterson",
         "size": "large",
+        "sizepixels": 19080,
         "teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs",
@@ -2992,6 +3146,7 @@
         "id": "grollis-zephyr",
         "full-name": "Grollis Zephyr",
         "size": "small",
+        "sizepixels": 8904,
         "teams": [
             "Tokyo Lift"
         ],
@@ -3014,6 +3169,7 @@
         "id": "lotus-mango",
         "full-name": "Lotus Mango",
         "size": "huge",
+        "sizepixels": 49617,
         "teams": [
             "Seattle Garages",
             "Tokyo Lift"
@@ -3034,6 +3190,7 @@
         "id": "velasquez-alstott",
         "full-name": "Velasquez Alstott",
         "size": "small",
+        "sizepixels": 5460,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3052,6 +3209,7 @@
         "id": "snyder-briggs",
         "full-name": "Snyder Briggs",
         "size": "small",
+        "sizepixels": 10857,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3075,6 +3233,7 @@
         "id": "blankenship-fischer",
         "full-name": "Blankenship Fischer",
         "size": "small",
+        "sizepixels": 8064,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3093,6 +3252,7 @@
         "id": "matteo-prestige",
         "full-name": "Matteo Prestige",
         "size": "small",
+        "sizepixels": 7124,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3111,6 +3271,7 @@
         "id": "sebastian-townsend",
         "full-name": "Sebastian Townsend",
         "size": "small",
+        "sizepixels": 5966,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3133,6 +3294,7 @@
         "id": "sebastian-woodman",
         "full-name": "Sebastian Woodman",
         "size": "small",
+        "sizepixels": 7636,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -3151,6 +3313,7 @@
         "id": "stijn-strongbody",
         "full-name": "Stijn Strongbody",
         "size": "small",
+        "sizepixels": 15399,
         "teams": [
             "Tokyo Lift"
         ],
@@ -3169,13 +3332,13 @@
         "id": "curry-aliciakeyes",
         "full-name": "Curry Aliciakeyes",
         "size": "large",
+        "sizepixels": 15141,
         "teams": [
-            "Yellowstone Magic",
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
             "0210CurryAliciakeyes_Magic.png",
-            "0210CurryAliciakeyes2_Sunbeams.png"
+            "0210CurryAliciakeyes2_Magic.png"
         ],
         "credits": [
             {
@@ -3193,6 +3356,7 @@
         "id": "sutton-picklestein",
         "full-name": "Sutton Picklestein",
         "size": "small",
+        "sizepixels": 11475,
         "teams": [
             "Kansas City Breath Mints",
             "Boston Flowers",
@@ -3215,6 +3379,7 @@
         "id": "dunn-keyes",
         "full-name": "Dunn Keyes",
         "size": "small",
+        "sizepixels": 16926,
         "teams": [
             "Boston Flowers"
         ],
@@ -3233,6 +3398,7 @@
         "id": "nic-winkler",
         "full-name": "Nic Winkler",
         "size": "small",
+        "sizepixels": 7852,
         "teams": [
             "Boston Flowers"
         ],
@@ -3245,6 +3411,7 @@
         "id": "chambers-simmons",
         "full-name": "Chambers Simmons",
         "size": "small",
+        "sizepixels": 6272,
         "teams": [
             "Boston Flowers"
         ],
@@ -3263,6 +3430,7 @@
         "id": "glabe-moon",
         "full-name": "Glabe Moon",
         "size": "large",
+        "sizepixels": 30523,
         "teams": [
             "Boston Flowers",
             "New York Millennials"
@@ -3283,6 +3451,7 @@
         "id": "oliver-mueller",
         "full-name": "Oliver Mueller",
         "size": "small",
+        "sizepixels": 12062,
         "teams": [
             "Seattle Garages"
         ],
@@ -3301,6 +3470,7 @@
         "id": "tot-clark",
         "full-name": "Tot Clark",
         "size": "small",
+        "sizepixels": 12584,
         "teams": [
             "Seattle Garages"
         ],
@@ -3319,6 +3489,7 @@
         "id": "greer-gwiffin",
         "full-name": "Greer Gwiffin",
         "size": "small",
+        "sizepixels": 10080,
         "teams": [
             "Hawai'i Fridays",
             "Seattle Garages",
@@ -3343,6 +3514,7 @@
         "id": "goodwin-morin",
         "full-name": "Goodwin Morin",
         "size": "large",
+        "sizepixels": 23600,
         "teams": [
             "Seattle Garages",
             "Tokyo Lift",
@@ -3369,6 +3541,7 @@
         "id": "lachlan-shelton",
         "full-name": "Lachlan Shelton",
         "size": "small",
+        "sizepixels": 7379,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves"
@@ -3389,6 +3562,7 @@
         "id": "antonio-wallace",
         "full-name": "Antonio Wallace",
         "size": "large",
+        "sizepixels": 20710,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves"
@@ -3409,6 +3583,7 @@
         "id": "eugenia-garbage",
         "full-name": "Eugenia Garbage",
         "size": "small",
+        "sizepixels": 7747,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves"
@@ -3429,6 +3604,7 @@
         "id": "simon-haley",
         "full-name": "Simon Haley",
         "size": "small",
+        "sizepixels": 7860,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves"
@@ -3453,6 +3629,7 @@
         "id": "ayanna-dumpington",
         "full-name": "Ayanna Dumpington",
         "size": "large",
+        "sizepixels": 7181,
         "teams": [
             "Tokyo Lift",
             "Hades Tigers"
@@ -3473,6 +3650,7 @@
         "id": "durham-spaceman",
         "full-name": "Durham Spaceman",
         "size": "small",
+        "sizepixels": 10985,
         "teams": [
             "Seattle Garages"
         ],
@@ -3495,6 +3673,7 @@
         "id": "baldwin-breadwinner",
         "full-name": "Baldwin Breadwinner",
         "size": "small",
+        "sizepixels": 6278,
         "teams": [
             "Baltimore Crabs",
             "Miami Dale",
@@ -3519,6 +3698,7 @@
         "id": "wyatt-owens",
         "full-name": "Wyatt Owens",
         "size": "small",
+        "sizepixels": 14400,
         "teams": [
             "Miami Dale",
             "LA Unlimited Tacos"
@@ -3539,6 +3719,7 @@
         "id": "basilio-mason",
         "full-name": "Basilio Mason",
         "size": "small",
+        "sizepixels": 5436,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -3557,6 +3738,7 @@
         "id": "wyatt-glover",
         "full-name": "Wyatt Glover",
         "size": "small",
+        "sizepixels": 4725,
         "teams": [
             "Hellmouth Sunbeams",
             "LA Unlimited Tacos",
@@ -3579,6 +3761,7 @@
         "id": "moses-mason",
         "full-name": "Moses Mason",
         "size": "large",
+        "sizepixels": 17200,
         "teams": [
             "Boston Flowers",
             "LA Unlimited Tacos"
@@ -3599,6 +3782,7 @@
         "id": "natha-kath",
         "full-name": "Natha Kath",
         "size": "small",
+        "sizepixels": 2035,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -3611,6 +3795,7 @@
         "id": "frasier-shmurmgle",
         "full-name": "Frasier Shmurmgle",
         "size": "large",
+        "sizepixels": 25392,
         "teams": [
             "Hades Tigers"
         ],
@@ -3629,6 +3814,7 @@
         "id": "caleb-novak",
         "full-name": "Caleb Novak",
         "size": "small",
+        "sizepixels": 12218,
         "teams": [
             "Miami Dale"
         ],
@@ -3647,6 +3833,7 @@
         "id": "eugenia-bickle",
         "full-name": "Eugenia Bickle",
         "size": "small",
+        "sizepixels": 9342,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -3665,6 +3852,7 @@
         "id": "henry-marshallow",
         "full-name": "Henry Marshallow",
         "size": "small",
+        "sizepixels": 1058,
         "teams": [
             "Seattle Garages",
             "Philly Pies"
@@ -3685,6 +3873,7 @@
         "id": "kennedy-rodgers",
         "full-name": "Kennedy Rodgers",
         "size": "small",
+        "sizepixels": 8909,
         "teams": [
             "Chicago Firefighters",
             "Mexico City Wild Wings"
@@ -3705,6 +3894,7 @@
         "id": "jose-haley",
         "full-name": "Jose Haley",
         "size": "small",
+        "sizepixels": 17005,
         "teams": [
             "Chicago Firefighters",
             "Mexico City Wild Wings"
@@ -3725,6 +3915,7 @@
         "id": "adkins-gwiffin",
         "full-name": "Adkins Gwiffin",
         "size": "huge",
+        "sizepixels": 57456,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3743,6 +3934,7 @@
         "id": "case-sports",
         "full-name": "Case Sports",
         "size": "small",
+        "sizepixels": 7238,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3761,6 +3953,7 @@
         "id": "rafael-davids",
         "full-name": "Rafael Davids",
         "size": "large",
+        "sizepixels": 17978,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3779,6 +3972,7 @@
         "id": "mullen-peterson",
         "full-name": "Mullen Peterson",
         "size": "small",
+        "sizepixels": 6615,
         "teams": [
             "Chicago Firefighters",
             "New York Millennials",
@@ -3801,6 +3995,7 @@
         "id": "burke-gonzales",
         "full-name": "Burke Gonzales",
         "size": "small",
+        "sizepixels": 8456,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3819,6 +4014,7 @@
         "id": "ronan-combs",
         "full-name": "Ronan Combs",
         "size": "small",
+        "sizepixels": 6448,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3837,6 +4033,7 @@
         "id": "yong-wright",
         "full-name": "Yong Wright",
         "size": "small",
+        "sizepixels": 10721,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3855,6 +4052,7 @@
         "id": "fran-beans",
         "full-name": "Fran Beans",
         "size": "small",
+        "sizepixels": 8134,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3873,6 +4071,7 @@
         "id": "lawrence-horne",
         "full-name": "Lawrence Horne",
         "size": "small",
+        "sizepixels": 9042,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3891,6 +4090,7 @@
         "id": "brock-watson",
         "full-name": "Brock Watson",
         "size": "large",
+        "sizepixels": 23598,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -3909,6 +4109,7 @@
         "id": "igneus-delacruz",
         "full-name": "Igneus Delacruz",
         "size": "small",
+        "sizepixels": 18330,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -3927,6 +4128,7 @@
         "id": "rat-mason",
         "full-name": "Rat Mason",
         "size": "small",
+        "sizepixels": 5940,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -3939,6 +4141,7 @@
         "id": "vito-kravitz",
         "full-name": "Vito Kravitz",
         "size": "small",
+        "sizepixels": 6532,
         "teams": [
             "Boston Flowers",
             "LA Unlimited Tacos"
@@ -3959,6 +4162,7 @@
         "id": "freemium-seraph",
         "full-name": "Freemium Seraph",
         "size": "large",
+        "sizepixels": 29160,
         "teams": [
             "Tokyo Lift"
         ],
@@ -3982,6 +4186,7 @@
         "id": "cedric-gonzalez",
         "full-name": "Cedric Gonzalez",
         "size": "small",
+        "sizepixels": 12236,
         "teams": [
             "Philly Pies"
         ],
@@ -4000,6 +4205,7 @@
         "id": "summers-preston",
         "full-name": "Summers Preston",
         "size": "small",
+        "sizepixels": 8763,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -4018,11 +4224,12 @@
         "id": "sosa-elftower",
         "full-name": "Sosa Elftower",
         "size": "large",
+        "sizepixels": 10143,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0166SosaElftower_Sunbeams.png"
+            "0166SosaElftower_Magic.png"
         ],
         "credits": [
             {
@@ -4036,6 +4243,7 @@
         "id": "scores-baserunner",
         "full-name": "Scores Baserunner",
         "size": "small",
+        "sizepixels": 10412,
         "teams": [
             "Boston Flowers"
         ],
@@ -4054,6 +4262,7 @@
         "id": "nerd-pacheco",
         "full-name": "Nerd Pacheco",
         "size": "small",
+        "sizepixels": 13662,
         "teams": [
             "Philly Pies",
             "Hellmouth Sunbeams",
@@ -4076,6 +4285,7 @@
         "id": "sutton-bishop",
         "full-name": "Sutton Bishop",
         "size": "small",
+        "sizepixels": 10664,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -4094,6 +4304,7 @@
         "id": "sandoval-crossing",
         "full-name": "Sandoval Crossing",
         "size": "small",
+        "sizepixels": 5617,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -4112,6 +4323,7 @@
         "id": "dudley-mueller",
         "full-name": "Dudley Mueller",
         "size": "small",
+        "sizepixels": 9815,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -4134,6 +4346,7 @@
         "id": "usurper-violet",
         "full-name": "Usurper Violet",
         "size": "large",
+        "sizepixels": 21930,
         "teams": [
             "Philly Pies",
             "Hades Tigers"
@@ -4158,6 +4371,7 @@
         "id": "ren-morin",
         "full-name": "Ren Morin",
         "size": "large",
+        "sizepixels": 19758,
         "teams": [
             "Hades Tigers"
         ],
@@ -4176,6 +4390,7 @@
         "id": "paula-turnip",
         "full-name": "Paula Turnip",
         "size": "small",
+        "sizepixels": 13376,
         "teams": [
             "Seattle Garages",
             "Hades Tigers"
@@ -4200,6 +4415,7 @@
         "id": "mummy-melcon",
         "full-name": "Mummy Melcon",
         "size": "small",
+        "sizepixels": 6435,
         "teams": [
             "Hades Tigers"
         ],
@@ -4218,6 +4434,7 @@
         "id": "patel-beyonce",
         "full-name": "Patel Beyonce",
         "size": "small",
+        "sizepixels": 10570,
         "teams": [
             "THE SHELLED ONE'S PODS",
             "Dallas Steaks",
@@ -4240,6 +4457,7 @@
         "id": "francisca-sasquatch",
         "full-name": "Francisca Sasquatch",
         "size": "small",
+        "sizepixels": 17072,
         "teams": [
             "Miami Dale",
             "THE SHELLED ONE'S PODS",
@@ -4262,6 +4480,7 @@
         "id": "mcdowell-mason",
         "full-name": "McDowell Mason",
         "size": "small",
+        "sizepixels": 17856,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -4280,6 +4499,7 @@
         "id": "aldon-cashmoney",
         "full-name": "Aldon Cashmoney",
         "size": "small",
+        "sizepixels": 7852,
         "teams": [
             "Hawai'i Fridays",
             "Breckenridge Jazz Hands",
@@ -4304,6 +4524,7 @@
         "id": "scrap-murphy",
         "full-name": "Scrap Murphy",
         "size": "small",
+        "sizepixels": 14181,
         "teams": [
             "Hall Stars",
             "New York Millennials"
@@ -4324,6 +4545,7 @@
         "id": "sebastian-sunshine",
         "full-name": "Sebastian Sunshine",
         "size": "small",
+        "sizepixels": 7203,
         "teams": [
             "Hawai'i Fridays",
             "Hall Stars"
@@ -4344,6 +4566,7 @@
         "id": "morrow-doyle",
         "full-name": "Morrow Doyle",
         "size": "xlarge",
+        "sizepixels": 24168,
         "teams": [
             "Boston Flowers",
             "Hall Stars",
@@ -4366,6 +4589,7 @@
         "id": "tyreek-olive",
         "full-name": "Tyreek Olive",
         "size": "small",
+        "sizepixels": 7252,
         "teams": [
             "Chicago Firefighters",
             "Hall Stars"
@@ -4380,6 +4604,7 @@
         "id": "dunlap-figueroa",
         "full-name": "Dunlap Figueroa",
         "size": "small",
+        "sizepixels": 10362,
         "teams": [
             "Chicago Firefighters",
             "Hades Tigers"
@@ -4400,6 +4625,7 @@
         "id": "hiroto-wilcox",
         "full-name": "Hiroto Wilcox",
         "size": "small",
+        "sizepixels": 9396,
         "teams": [
             "Seattle Garages",
             "Hades Tigers"
@@ -4420,6 +4646,7 @@
         "id": "nagomi-meng",
         "full-name": "Nagomi Meng",
         "size": "small",
+        "sizepixels": 12474,
         "teams": [
             "Hades Tigers"
         ],
@@ -4438,6 +4665,7 @@
         "id": "moody-cookbook",
         "full-name": "Moody Cookbook",
         "size": "large",
+        "sizepixels": 13860,
         "teams": [
             "Hades Tigers"
         ],
@@ -4456,6 +4684,7 @@
         "id": "combs-duende",
         "full-name": "Combs Duende",
         "size": "small",
+        "sizepixels": 12561,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -4474,6 +4703,7 @@
         "id": "silvaire-roadhouse",
         "full-name": "Silvaire Roadhouse",
         "size": "small",
+        "sizepixels": 7360,
         "teams": [
             "Baltimore Crabs",
             "Boston Flowers"
@@ -4494,6 +4724,7 @@
         "id": "kennedy-loser",
         "full-name": "Kennedy Loser",
         "size": "small",
+        "sizepixels": 13580,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -4512,6 +4743,7 @@
         "id": "sutton-dreamy",
         "full-name": "Sutton Dreamy",
         "size": "small",
+        "sizepixels": 12540,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays"
@@ -4532,6 +4764,7 @@
         "id": "gray-alvarado",
         "full-name": "Gray Alvarado",
         "size": "small",
+        "sizepixels": 9729,
         "teams": [
             "Kansas City Breath Mints"
         ],
@@ -4544,6 +4777,7 @@
         "id": "forrest-bookbaby",
         "full-name": "Forrest Bookbaby",
         "size": "small",
+        "sizepixels": 6636,
         "teams": [
             "Philly Pies",
             "Charleston Shoe Thieves"
@@ -4564,6 +4798,7 @@
         "id": "kennedy-meh",
         "full-name": "Kennedy Meh",
         "size": "small",
+        "sizepixels": 7125,
         "teams": [
             "San Francisco Lovers",
             "Mexico City Wild Wings"
@@ -4584,6 +4819,7 @@
         "id": "socks-maybe",
         "full-name": "Socks Maybe",
         "size": "small",
+        "sizepixels": 5208,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -4602,11 +4838,12 @@
         "id": "oscar-dollie",
         "full-name": "Oscar Dollie",
         "size": "large",
+        "sizepixels": 23154,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0136OscarDollie_Sunbeams.png"
+            "0136OscarDollie_Magic.png"
         ],
         "credits": [
             {
@@ -4620,6 +4857,7 @@
         "id": "nandy-fantastic",
         "full-name": "Nandy Fantastic",
         "size": "small",
+        "sizepixels": 8680,
         "teams": [
             "New York Millennials"
         ],
@@ -4638,6 +4876,7 @@
         "id": "betsy-trombone",
         "full-name": "Betsy Trombone",
         "size": "small",
+        "sizepixels": 9514,
         "teams": [
             "Seattle Garages",
             "Philly Pies"
@@ -4658,6 +4897,7 @@
         "id": "valentine-games",
         "full-name": "Valentine Games",
         "size": "large",
+        "sizepixels": 16261,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
@@ -4686,6 +4926,7 @@
         "id": "emmett-internet",
         "full-name": "Emmett Internet",
         "size": "small",
+        "sizepixels": 12549,
         "teams": [
             "Hall Stars",
             "Hellmouth Sunbeams"
@@ -4706,6 +4947,7 @@
         "id": "walton-sports",
         "full-name": "Walton Sports",
         "size": "small",
+        "sizepixels": 11766,
         "teams": [
             "Breckenridge Jazz Hands"
         ],
@@ -4724,6 +4966,7 @@
         "id": "paul-barnes",
         "full-name": "Paul Barnes",
         "size": "small",
+        "sizepixels": 9381,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -4742,6 +4985,7 @@
         "id": "miguel-javier",
         "full-name": "Miguel Javier",
         "size": "large",
+        "sizepixels": 19154,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -4760,6 +5004,7 @@
         "id": "hiroto-cerna",
         "full-name": "Hiroto Cerna",
         "size": "large",
+        "sizepixels": 16830,
         "teams": [
             "Boston Flowers"
         ],
@@ -4782,6 +5027,7 @@
         "id": "lenny-spruce",
         "full-name": "Lenny Spruce",
         "size": "large",
+        "sizepixels": 22672,
         "teams": [
             "Kansas City Breath Mints",
             "Boston Flowers"
@@ -4802,6 +5048,7 @@
         "id": "evelton-mcblase-ii",
         "full-name": "Evelton McBlase II",
         "size": "small",
+        "sizepixels": 7398,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
@@ -4828,6 +5075,7 @@
         "id": "evelton-mcblase",
         "full-name": "Evelton McBlase",
         "size": "small",
+        "sizepixels": 7236,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -4846,6 +5094,7 @@
         "id": "summers-pony",
         "full-name": "Summers Pony",
         "size": "small",
+        "sizepixels": 18816,
         "teams": [
             "Seattle Garages",
             "Philly Pies",
@@ -4872,6 +5121,7 @@
         "id": "quack-enjoyable",
         "full-name": "Quack Enjoyable",
         "size": "small",
+        "sizepixels": 7276,
         "teams": [
             "Seattle Garages",
             "Canada Moist Talkers"
@@ -4892,6 +5142,7 @@
         "id": "basilio-fig",
         "full-name": "Basilio Fig",
         "size": "large",
+        "sizepixels": 23544,
         "teams": [
             "Hawai'i Fridays",
             "LA Unlimited Tacos"
@@ -4912,6 +5163,7 @@
         "id": "wyatt-dovenpart",
         "full-name": "Wyatt Dovenpart",
         "size": "small",
+        "sizepixels": 6519,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -4930,6 +5182,7 @@
         "id": "esme-ramsey",
         "full-name": "Esme Ramsey",
         "size": "small",
+        "sizepixels": 9610,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -4948,6 +5201,7 @@
         "id": "beasley-gloom",
         "full-name": "Beasley Gloom",
         "size": "small",
+        "sizepixels": 2812,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves"
@@ -4968,6 +5222,7 @@
         "id": "workman-gloom",
         "full-name": "Workman Gloom",
         "size": "small",
+        "sizepixels": 11440,
         "teams": [
             "Hall Stars",
             "Canada Moist Talkers",
@@ -4990,6 +5245,7 @@
         "id": "howell-franklin",
         "full-name": "Howell Franklin",
         "size": "large",
+        "sizepixels": 19928,
         "teams": [
             "Seattle Garages",
             "Charleston Shoe Thieves",
@@ -5012,6 +5268,7 @@
         "id": "hotbox-sato",
         "full-name": "Hotbox Sato",
         "size": "small",
+        "sizepixels": 11160,
         "teams": [
             "Boston Flowers",
             "Charleston Shoe Thieves"
@@ -5036,6 +5293,7 @@
         "id": "peanut-bong",
         "full-name": "Peanut Bong",
         "size": "small",
+        "sizepixels": 9849,
         "teams": [
             "Miami Dale",
             "THE SHELLED ONE'S PODS",
@@ -5058,6 +5316,7 @@
         "id": "peanut-holloway",
         "full-name": "Peanut Holloway",
         "size": "small",
+        "sizepixels": 5313,
         "teams": [
             "Chicago Firefighters",
             "New York Millennials",
@@ -5082,6 +5341,7 @@
         "id": "peanutiel-duffy",
         "full-name": "Peanutiel Duffy",
         "size": "huge",
+        "sizepixels": 108621,
         "teams": [
             "Chicago Firefighters",
             "THE SHELLED ONE'S PODS",
@@ -5104,6 +5364,7 @@
         "id": "logan-horseman",
         "full-name": "Logan Horseman",
         "size": "small",
+        "sizepixels": 9855,
         "teams": [
             "Baltimore Crabs",
             "Miami Dale"
@@ -5124,6 +5385,7 @@
         "id": "chorby-short",
         "full-name": "Chorby Short",
         "size": "small",
+        "sizepixels": 7865,
         "teams": [
             "Boston Flowers",
             "Yellowstone Magic",
@@ -5153,6 +5415,7 @@
         "id": "thomas-kirby",
         "full-name": "Thomas Kirby",
         "size": "small",
+        "sizepixels": 6435,
         "teams": [
             "Chicago Firefighters",
             "Dallas Steaks"
@@ -5173,6 +5436,7 @@
         "id": "fynn-doyle",
         "full-name": "Fynn Doyle",
         "size": "small",
+        "sizepixels": 6768,
         "teams": [
             "New York Millennials"
         ],
@@ -5191,6 +5455,7 @@
         "id": "luis-acevedo",
         "full-name": "Luis Acevedo",
         "size": "small",
+        "sizepixels": 6987,
         "teams": [
             "Baltimore Crabs",
             "Seattle Garages",
@@ -5213,6 +5478,7 @@
         "id": "alejandro-leaf",
         "full-name": "Alejandro Leaf",
         "size": "small",
+        "sizepixels": 15486,
         "teams": [
             "Tokyo Lift",
             "New York Millennials",
@@ -5237,6 +5503,7 @@
         "id": "elijah-valenzuela",
         "full-name": "Elijah Valenzuela",
         "size": "small",
+        "sizepixels": 10240,
         "teams": [
             "Hawai'i Fridays",
             "Breckenridge Jazz Hands"
@@ -5257,6 +5524,7 @@
         "id": "pudge-nakatamo",
         "full-name": "Pudge Nakatamo",
         "size": "small",
+        "sizepixels": 8174,
         "teams": [
             "Kansas City Breath Mints",
             "Charleston Shoe Thieves"
@@ -5271,6 +5539,7 @@
         "id": "alexander-horne",
         "full-name": "Alexander Horne",
         "size": "large",
+        "sizepixels": 16353,
         "teams": [
             "San Francisco Lovers",
             "Hellmouth Sunbeams"
@@ -5295,6 +5564,7 @@
         "id": "inez-owens",
         "full-name": "Inez Owens",
         "size": "small",
+        "sizepixels": 9387,
         "teams": [
             "Boston Flowers"
         ],
@@ -5313,6 +5583,7 @@
         "id": "jasmine-washington",
         "full-name": "Jasmine Washington",
         "size": "small",
+        "sizepixels": 7791,
         "teams": [
             "Miami Dale"
         ],
@@ -5331,6 +5602,7 @@
         "id": "juice-collins",
         "full-name": "Juice Collins",
         "size": "small",
+        "sizepixels": 6732,
         "teams": [
             "Hawai'i Fridays"
         ],
@@ -5349,6 +5621,7 @@
         "id": "yasmin-mason",
         "full-name": "Yasmin Mason",
         "size": "small",
+        "sizepixels": 7399,
         "teams": [
             "Hall Stars",
             "Philly Pies",
@@ -5365,6 +5638,7 @@
         "id": "leach-herman",
         "full-name": "Leach Herman",
         "size": "large",
+        "sizepixels": 21186,
         "teams": [
             "Dallas Steaks"
         ],
@@ -5383,6 +5657,7 @@
         "id": "joshua-watson",
         "full-name": "Joshua Watson",
         "size": "small",
+        "sizepixels": 4585,
         "teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs",
@@ -5407,6 +5682,7 @@
         "id": "tyler-violet",
         "full-name": "Tyler Violet",
         "size": "small",
+        "sizepixels": 6665,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -5429,6 +5705,7 @@
         "id": "agan-harrison",
         "full-name": "Agan Harrison",
         "size": "large",
+        "sizepixels": 14008,
         "teams": [
             "Chicago Firefighters",
             "Breckenridge Jazz Hands"
@@ -5449,6 +5726,7 @@
         "id": "marquez-clark",
         "full-name": "Marquez Clark",
         "size": "small",
+        "sizepixels": 7056,
         "teams": [
             "Kansas City Breath Mints"
         ],
@@ -5461,6 +5739,7 @@
         "id": "stu-trololol",
         "full-name": "Stu Trololol",
         "size": "small",
+        "sizepixels": 6500,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -5479,6 +5758,7 @@
         "id": "miki-santana",
         "full-name": "Miki Santana",
         "size": "small",
+        "sizepixels": 9727,
         "teams": [
             "Houston Spies"
         ],
@@ -5497,16 +5777,17 @@
         "id": "halexandry-walton",
         "full-name": "Halexandry Walton",
         "size": "small",
+        "sizepixels": 7192,
         "teams": [
             "Tokyo Lift",
+            "Yellowstone Magic",
             "Charleston Shoe Thieves",
-            "Hellmouth Sunbeams",
             "LA Unlimited Tacos"
         ],
         "sprites": [
             "0092HalexandryWalton_Lift.png",
+            "0092HalexandryWalton_Magic.png",
             "0092HalexandryWalton_ShoeThieves.png",
-            "0092HalexandryWalton_Sunbeams.png",
             "0092HalexandryWalton_Tacos.png"
         ]
     },
@@ -5515,6 +5796,7 @@
         "id": "ortiz-lopez",
         "full-name": "Ortiz Lopez",
         "size": "small",
+        "sizepixels": 12104,
         "teams": [
             "Atlantis Georgias",
             "San Francisco Lovers"
@@ -5535,6 +5817,7 @@
         "id": "penelope-mathews",
         "full-name": "Penelope Mathews",
         "size": "small",
+        "sizepixels": 17738,
         "teams": [
             "Seattle Garages",
             "Yellowstone Magic",
@@ -5557,6 +5840,7 @@
         "id": "joshua-butt",
         "full-name": "Joshua Butt",
         "size": "small",
+        "sizepixels": 10138,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -5575,6 +5859,7 @@
         "id": "alaynabella-hollywood",
         "full-name": "Alaynabella Hollywood",
         "size": "small",
+        "sizepixels": 7742,
         "teams": [
             "Boston Flowers",
             "Seattle Garages",
@@ -5597,6 +5882,7 @@
         "id": "fletcher-yamamoto",
         "full-name": "Fletcher Yamamoto",
         "size": "small",
+        "sizepixels": 4235,
         "teams": [
             "Hawai'i Fridays",
             "San Francisco Lovers"
@@ -5617,6 +5903,7 @@
         "id": "farrell-seagull",
         "full-name": "Farrell Seagull",
         "size": "small",
+        "sizepixels": 6440,
         "teams": [
             "Miami Dale",
             "Seattle Garages",
@@ -5641,6 +5928,7 @@
         "id": "malik-destiny",
         "full-name": "Malik Destiny",
         "size": "small",
+        "sizepixels": 9372,
         "teams": [
             "Seattle Garages"
         ],
@@ -5659,6 +5947,7 @@
         "id": "august-sky",
         "full-name": "August Sky",
         "size": "small",
+        "sizepixels": 5750,
         "teams": [
             "Breckenridge Jazz Hands",
             "Dallas Steaks"
@@ -5673,6 +5962,7 @@
         "id": "cell-barajas",
         "full-name": "Cell Barajas",
         "size": "small",
+        "sizepixels": 13442,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -5691,6 +5981,7 @@
         "id": "winnie-hess",
         "full-name": "Winnie Hess",
         "size": "small",
+        "sizepixels": 6298,
         "teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs"
@@ -5711,11 +6002,12 @@
         "id": "washer-barajas",
         "full-name": "Washer Barajas",
         "size": "xlarge",
+        "sizepixels": 40831,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0081WasherBarajas_Sunbeams.png"
+            "0081WasherBarajas_Magic.png"
         ]
     },
     {
@@ -5723,6 +6015,7 @@
         "id": "atlas-jonbois",
         "full-name": "Atlas Jonbois",
         "size": "small",
+        "sizepixels": 9164,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -5741,6 +6034,7 @@
         "id": "son-scotch",
         "full-name": "Son Scotch",
         "size": "small",
+        "sizepixels": 4360,
         "teams": [
             "Houston Spies"
         ],
@@ -5759,6 +6053,7 @@
         "id": "sexton-wheerer",
         "full-name": "Sexton Wheerer",
         "size": "large",
+        "sizepixels": 25877,
         "teams": [
             "LA Unlimited Tacos"
         ],
@@ -5777,6 +6072,7 @@
         "id": "carmelo-plums",
         "full-name": "Carmelo Plums",
         "size": "small",
+        "sizepixels": 5880,
         "teams": [
             "Seattle Garages",
             "Canada Moist Talkers",
@@ -5806,6 +6102,7 @@
         "id": "chorby-soul",
         "full-name": "Chorby Soul",
         "size": "huge",
+        "sizepixels": 14136,
         "teams": [
             "Baltimore Crabs",
             "Boston Flowers",
@@ -5830,6 +6127,7 @@
         "id": "sigmund-castillo",
         "full-name": "Sigmund Castillo",
         "size": "large",
+        "sizepixels": 41499,
         "teams": [
             "San Francisco Lovers",
             "Hellmouth Sunbeams"
@@ -5844,6 +6142,7 @@
         "id": "lou-roseheart",
         "full-name": "Lou Roseheart",
         "size": "small",
+        "sizepixels": 6325,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -5862,6 +6161,7 @@
         "id": "beck-whitney",
         "full-name": "Beck Whitney",
         "size": "small",
+        "sizepixels": 5952,
         "teams": [
             "Miami Dale",
             "Boston Flowers",
@@ -5884,6 +6184,7 @@
         "id": "spears-taylor",
         "full-name": "Spears Taylor",
         "size": "large",
+        "sizepixels": 17136,
         "teams": [
             "Hawai'i Fridays",
             "Philly Pies",
@@ -5906,11 +6207,12 @@
         "id": "francisco-preston",
         "full-name": "Francisco Preston",
         "size": "small",
+        "sizepixels": 11440,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0071FranciscoPreston_Sunbeams.png"
+            "0071FranciscoPreston_Magic.png"
         ]
     },
     {
@@ -5918,6 +6220,7 @@
         "id": "leach-ingram",
         "full-name": "Leach Ingram",
         "size": "small",
+        "sizepixels": 10296,
         "teams": [
             "Kansas City Breath Mints"
         ],
@@ -5937,6 +6240,7 @@
         "id": "blood-hamburger",
         "full-name": "Blood Hamburger",
         "size": "small",
+        "sizepixels": 5695,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -5955,6 +6259,7 @@
         "id": "adalberto-tosser",
         "full-name": "Adalberto Tosser",
         "size": "small",
+        "sizepixels": 13746,
         "teams": [
             "Baltimore Crabs"
         ],
@@ -5973,6 +6278,7 @@
         "id": "oliver-notarobot",
         "full-name": "Oliver Notarobot",
         "size": "large",
+        "sizepixels": 28424,
         "teams": [
             "Baltimore Crabs",
             "Seattle Garages",
@@ -5995,6 +6301,7 @@
         "id": "tillman-henderson",
         "full-name": "Tillman Henderson",
         "size": "small",
+        "sizepixels": 4750,
         "teams": [
             "Baltimore Crabs",
             "Charleston Shoe Thieves"
@@ -6015,6 +6322,7 @@
         "id": "tot-fox",
         "full-name": "Tot Fox",
         "size": "small",
+        "sizepixels": 6960,
         "teams": [
             "Baltimore Crabs",
             "Breckenridge Jazz Hands"
@@ -6035,6 +6343,7 @@
         "id": "fitzgerald-blackburn",
         "full-name": "Fitzgerald Blackburn",
         "size": "small",
+        "sizepixels": 14535,
         "teams": [
             "San Francisco Lovers",
             "Houston Spies"
@@ -6055,6 +6364,7 @@
         "id": "elvis-figueroa",
         "full-name": "Elvis Figueroa",
         "size": "large",
+        "sizepixels": 18786,
         "teams": [
             "Philly Pies",
             "Hellmouth Sunbeams"
@@ -6075,6 +6385,7 @@
         "id": "cannonball-sports",
         "full-name": "Cannonball Sports",
         "size": "small",
+        "sizepixels": 11704,
         "teams": [
             "Miami Dale",
             "San Francisco Lovers"
@@ -6095,6 +6406,7 @@
         "id": "wyatt-pothos",
         "full-name": "Wyatt Pothos",
         "size": "small",
+        "sizepixels": 7584,
         "teams": [
             "Breckenridge Jazz Hands",
             "THE SHELLED ONE'S PODS",
@@ -6117,6 +6429,7 @@
         "id": "patty-fox",
         "full-name": "Patty Fox",
         "size": "small",
+        "sizepixels": 6390,
         "teams": [
             "New York Millennials"
         ],
@@ -6135,6 +6448,7 @@
         "id": "kichiro-guerra",
         "full-name": "Kichiro Guerra",
         "size": "small",
+        "sizepixels": 7056,
         "teams": [
             "San Francisco Lovers",
             "Ohio Worms"
@@ -6156,6 +6470,7 @@
         "id": "tamara-crankit",
         "full-name": "Tamara Crankit",
         "size": "small",
+        "sizepixels": 7592,
         "teams": [
             "Breckenridge Jazz Hands"
         ],
@@ -6178,6 +6493,7 @@
         "id": "sandie-turner",
         "full-name": "Sandie Turner",
         "size": "large",
+        "sizepixels": 19947,
         "teams": [
             "New York Millennials"
         ],
@@ -6196,11 +6512,12 @@
         "id": "inky-rutledge",
         "full-name": "Inky Rutledge",
         "size": "small",
+        "sizepixels": 7434,
         "teams": [
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0056InkyRutledge_Sunbeams.png"
+            "0056InkyRutledge_Magic.png"
         ],
         "credits": [
             {
@@ -6214,6 +6531,7 @@
         "id": "axel-trololol",
         "full-name": "Axel Trololol",
         "size": "large",
+        "sizepixels": 24990,
         "teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs",
@@ -6240,6 +6558,7 @@
         "id": "allison-abbott",
         "full-name": "Allison Abbott",
         "size": "small",
+        "sizepixels": 11421,
         "teams": [
             "Seattle Garages",
             "Dallas Steaks"
@@ -6260,6 +6579,7 @@
         "id": "knight-triumphant",
         "full-name": "Knight Triumphant",
         "size": "small",
+        "sizepixels": 15741,
         "teams": [
             "Atlantis Georgias",
             "San Francisco Lovers",
@@ -6282,6 +6602,7 @@
         "id": "joe-voorhees",
         "full-name": "Joe Voorhees",
         "size": "small",
+        "sizepixels": 8614,
         "teams": [
             "Canada Moist Talkers",
             "Charleston Shoe Thieves",
@@ -6306,6 +6627,7 @@
         "id": "goobie-ballson",
         "full-name": "Goobie Ballson",
         "size": "small",
+        "sizepixels": 14000,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -6325,6 +6647,7 @@
         "id": "nicholas-mora",
         "full-name": "Nicholas Mora",
         "size": "small",
+        "sizepixels": 6664,
         "teams": [
             "Philly Pies",
             "Hades Tigers"
@@ -6345,6 +6668,7 @@
         "id": "isaac-rubberman",
         "full-name": "Isaac Rubberman",
         "size": "large",
+        "sizepixels": 18720,
         "teams": [
             "Boston Flowers"
         ],
@@ -6363,6 +6687,7 @@
         "id": "pitching-machine",
         "full-name": "Pitching Machine",
         "size": "small",
+        "sizepixels": 11970,
         "teams": [
             "Seattle Garages",
             "San Francisco Lovers",
@@ -6389,6 +6714,7 @@
         "id": "thomas-dracaena",
         "full-name": "Thomas Dracaena",
         "size": "small",
+        "sizepixels": 5499,
         "teams": [
             "New York Millennials"
         ],
@@ -6407,6 +6733,7 @@
         "id": "cornelius-games",
         "full-name": "Cornelius Games",
         "size": "small",
+        "sizepixels": 7360,
         "teams": [
             "Charleston Shoe Thieves"
         ],
@@ -6425,6 +6752,7 @@
         "id": "rodriguez-internet",
         "full-name": "Rodriguez Internet",
         "size": "small",
+        "sizepixels": 9434,
         "teams": [
             "Kansas City Breath Mints"
         ],
@@ -6443,6 +6771,7 @@
         "id": "qais-dogwalker",
         "full-name": "Qais Dogwalker",
         "size": "small",
+        "sizepixels": 8800,
         "teams": [
             "Miami Dale"
         ],
@@ -6465,6 +6794,7 @@
         "id": "hahn-fox",
         "full-name": "Hahn Fox",
         "size": "small",
+        "sizepixels": 10985,
         "teams": [
             "Miami Dale",
             "Boston Flowers",
@@ -6487,6 +6817,7 @@
         "id": "sosa-hayes",
         "full-name": "Sosa Hayes",
         "size": "small",
+        "sizepixels": 9600,
         "teams": [
             "Houston Spies",
             "Mexico City Wild Wings"
@@ -6507,6 +6838,7 @@
         "id": "silvia-rugrat",
         "full-name": "Silvia Rugrat",
         "size": "small",
+        "sizepixels": 5504,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -6525,6 +6857,7 @@
         "id": "miguel-wheeler",
         "full-name": "Miguel Wheeler",
         "size": "small",
+        "sizepixels": 10850,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -6543,6 +6876,7 @@
         "id": "axel-cardenas",
         "full-name": "Axel Cardenas",
         "size": "small",
+        "sizepixels": 7693,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -6561,6 +6895,7 @@
         "id": "sebastian-telephone",
         "full-name": "Sebastian Telephone",
         "size": "small",
+        "sizepixels": 8771,
         "teams": [
             "Hall Stars",
             "Dallas Steaks"
@@ -6581,6 +6916,7 @@
         "id": "margarito-nava",
         "full-name": "Margarito Nava",
         "size": "small",
+        "sizepixels": 9782,
         "teams": [
             "Boston Flowers"
         ],
@@ -6599,6 +6935,7 @@
         "id": "annie-roland",
         "full-name": "Annie Roland",
         "size": "small",
+        "sizepixels": 12600,
         "teams": [
             "Yellowstone Magic"
         ],
@@ -6617,6 +6954,7 @@
         "id": "lars-taylor",
         "full-name": "Lars Taylor",
         "size": "small",
+        "sizepixels": 10842,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -6635,6 +6973,7 @@
         "id": "ziwa-mueller",
         "full-name": "Ziwa Mueller",
         "size": "small",
+        "sizepixels": 5617,
         "teams": [
             "Canada Moist Talkers"
         ],
@@ -6653,6 +6992,7 @@
         "id": "nolanestophia-patterson",
         "full-name": "Nolanestophia Patterson",
         "size": "small",
+        "sizepixels": 8241,
         "teams": [
             "Hawai'i Fridays",
             "Seattle Garages",
@@ -6677,6 +7017,7 @@
         "id": "kline-greenlemon",
         "full-name": "Kline Greenlemon",
         "size": "small",
+        "sizepixels": 5661,
         "teams": [
             "Dallas Steaks"
         ],
@@ -6695,6 +7036,7 @@
         "id": "nagomi-mcdaniel",
         "full-name": "Nagomi Mcdaniel",
         "size": "small",
+        "sizepixels": 15664,
         "teams": [
             "Baltimore Crabs",
             "Miami Dale",
@@ -6736,6 +7078,7 @@
         "id": "math-velazquez",
         "full-name": "Math Velazquez",
         "size": "large",
+        "sizepixels": 20400,
         "teams": [
             "Houston Spies"
         ],
@@ -6748,6 +7091,7 @@
         "id": "rivers-rosa",
         "full-name": "Rivers Rosa",
         "size": "small",
+        "sizepixels": 5402,
         "teams": [
             "Chicago Firefighters",
             "Ohio Worms"
@@ -6768,6 +7112,7 @@
         "id": "nan",
         "full-name": "NaN",
         "size": "small",
+        "sizepixels": 8100,
         "teams": [
             "Chicago Firefighters",
             "Hawai'i Fridays",
@@ -6803,6 +7148,7 @@
         "id": "york-silk",
         "full-name": "York Silk",
         "size": "small",
+        "sizepixels": 6811,
         "teams": [
             "Baltimore Crabs",
             "Hawai'i Fridays",
@@ -6833,6 +7179,7 @@
         "id": "parker-meng",
         "full-name": "Parker Meng",
         "size": "small",
+        "sizepixels": 6149,
         "teams": [
             "Baltimore Crabs",
             "Miami Dale",
@@ -6855,6 +7202,7 @@
         "id": "jaylen-hotdogfingers",
         "full-name": "Jaylen Hotdogfingers",
         "size": "small",
+        "sizepixels": 11284,
         "teams": [
             "Hawai'i Fridays",
             "Seattle Garages",
@@ -6891,6 +7239,7 @@
         "id": "zion-aliciakeyes",
         "full-name": "Zion Aliciakeyes",
         "size": "large",
+        "sizepixels": 35030,
         "teams": [
             "Hades Tigers"
         ],
@@ -6909,6 +7258,7 @@
         "id": "fish-summer",
         "full-name": "Fish Summer",
         "size": "large",
+        "sizepixels": 18981,
         "teams": [
             "Canada Moist Talkers",
             "Hades Tigers",
@@ -6937,6 +7287,7 @@
         "id": "gunther-o--brian",
         "full-name": "Gunther O' Brian",
         "size": "large",
+        "sizepixels": 19998,
         "teams": [
             "Charleston Shoe Thieves",
             "Mexico City Wild Wings"
@@ -6952,6 +7303,7 @@
         "id": "boyfriend-monreal",
         "full-name": "Boyfriend Monreal",
         "size": "small",
+        "sizepixels": 10366,
         "teams": [
             "Kansas City Breath Mints",
             "Hall Stars"
@@ -6972,6 +7324,7 @@
         "id": "don-elliot",
         "full-name": "Don Elliot",
         "size": "small",
+        "sizepixels": 6674,
         "teams": [
             "Miami Dale"
         ],
@@ -6984,6 +7337,7 @@
         "id": "randall-marijuana",
         "full-name": "Randall Marijuana",
         "size": "small",
+        "sizepixels": 8208,
         "teams": [
             "Hall Stars",
             "Breckenridge Jazz Hands",
@@ -7006,6 +7360,7 @@
         "id": "dominic-marijuana",
         "full-name": "Dominic Marijuana",
         "size": "large",
+        "sizepixels": 23370,
         "teams": [
             "Hall Stars",
             "New York Millennials"
@@ -7026,6 +7381,7 @@
         "id": "sixpack-dogwalker",
         "full-name": "Sixpack Dogwalker",
         "size": "large",
+        "sizepixels": 17056,
         "teams": [
             "Hawai'i Fridays",
             "Canada Moist Talkers",
@@ -7048,6 +7404,7 @@
         "id": "lowe-forbes",
         "full-name": "Lowe Forbes",
         "size": "small",
+        "sizepixels": 10472,
         "teams": [
             "Breckenridge Jazz Hands"
         ],
@@ -7066,6 +7423,7 @@
         "id": "alexandria-rosales",
         "full-name": "Alexandria Rosales",
         "size": "small",
+        "sizepixels": 7592,
         "teams": [
             "Houston Spies"
         ],
@@ -7084,6 +7442,7 @@
         "id": "baby-triumphant",
         "full-name": "Baby Triumphant",
         "size": "small",
+        "sizepixels": 10586,
         "teams": [
             "Chicago Firefighters"
         ],
@@ -7102,6 +7461,7 @@
         "id": "don-mitchell",
         "full-name": "Don Mitchell",
         "size": "small",
+        "sizepixels": 7920,
         "teams": [
             "San Francisco Lovers"
         ],
@@ -7120,6 +7480,7 @@
         "id": "jessica-telephone",
         "full-name": "Jessica Telephone",
         "size": "small",
+        "sizepixels": 9352,
         "teams": [
             "Kansas City Breath Mints",
             "Baltimore Crabs",
@@ -7152,6 +7513,7 @@
         "id": "forrest-best",
         "full-name": "Forrest Best",
         "size": "small",
+        "sizepixels": 13857,
         "teams": [
             "Baltimore Crabs",
             "Dallas Steaks"
@@ -7172,6 +7534,7 @@
         "id": "nagomi-nava",
         "full-name": "Nagomi Nava",
         "size": "large",
+        "sizepixels": 15496,
         "teams": [
             "Hellmouth Sunbeams"
         ],
@@ -7194,6 +7557,7 @@
         "id": "kiki-familia",
         "full-name": "Kiki Familia",
         "size": "small",
+        "sizepixels": 8625,
         "teams": [
             "Hall Stars",
             "Canada Moist Talkers"
@@ -7214,6 +7578,7 @@
         "id": "caligula-lotus",
         "full-name": "Caligula Lotus",
         "size": "large",
+        "sizepixels": 17172,
         "teams": [
             "Boston Flowers",
             "Hall Stars"
@@ -7234,6 +7599,7 @@
         "id": "landry-violence",
         "full-name": "Landry Violence",
         "size": "small",
+        "sizepixels": 10738,
         "teams": [
             "Hall Stars",
             "Hades Tigers"
@@ -7258,6 +7624,7 @@
         "id": "stephanie-winters",
         "full-name": "Stephanie Winters",
         "size": "small",
+        "sizepixels": 5762,
         "teams": [
             "Mexico City Wild Wings"
         ],
@@ -7276,13 +7643,14 @@
         "id": "cory-twelve",
         "full-name": "Cory Twelve",
         "size": "small",
+        "sizepixels": 7616,
         "teams": [
             "Boston Flowers",
-            "Hellmouth Sunbeams"
+            "Yellowstone Magic"
         ],
         "sprites": [
             "0005CoryTwelve_Flowers.png",
-            "0005CoryTwelve_Sunbeams.png"
+            "0005CoryTwelve_Magic.png"
         ],
         "credits": [
             {
@@ -7296,6 +7664,7 @@
         "id": "conner-haley",
         "full-name": "Conner Haley",
         "size": "large",
+        "sizepixels": 17160,
         "teams": [
             "Dallas Steaks"
         ],
@@ -7314,6 +7683,7 @@
         "id": "wyatt-quitter",
         "full-name": "Wyatt Quitter",
         "size": "small",
+        "sizepixels": 5750,
         "teams": [
             "Tokyo Lift",
             "THE SHELLED ONE'S PODS",
@@ -7336,6 +7706,7 @@
         "id": "mike-townsend",
         "full-name": "Mike Townsend",
         "size": "small",
+        "sizepixels": 5418,
         "teams": [
             "Seattle Garages"
         ],
@@ -7354,6 +7725,7 @@
         "id": "richmond-harrison",
         "full-name": "Richmond Harrison",
         "size": "large",
+        "sizepixels": 19964,
         "teams": [
             "Canada Moist Talkers",
             "Hades Tigers",
