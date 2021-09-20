@@ -145,6 +145,10 @@ def decidesize(sprites):
         # Adkins Gwiffin
         return ('huge', height*width)
 
+    if sprites[0][0:4] == "0376":
+        # Jaxon Buckley
+        return ('huge', height*width)
+
     if thing_is_within_box(sprite_box, small):
         return ('small', height*width)
     elif thing_is_within_box(sprite_box, large):

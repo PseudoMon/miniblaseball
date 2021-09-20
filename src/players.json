@@ -1,5 +1,85 @@
 [
     {
+        "index": 378,
+        "id": "kevelyn-jeff",
+        "full-name": "Kevelyn Jeff",
+        "size": "large",
+        "sizepixels": 17170,
+        "teams": [
+            "Mexico City Wild Wings"
+        ],
+        "sprites": [
+            "0378KevelynJeff_WildWings.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/thr33h3ad3ddrag",
+                "text": "@thr33h3ad3ddrag"
+            }
+        ]
+    },
+    {
+        "index": 377,
+        "id": "twofurious-puddles",
+        "full-name": "Twofurious Puddles",
+        "size": "large",
+        "sizepixels": 9576,
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0377TwofuriousPuddles_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 376,
+        "id": "jaxon-buckley",
+        "full-name": "Jaxon Buckley",
+        "size": "huge",
+        "sizepixels": 50806,
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0376JaxonBuckley_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/phoebegummy",
+                "text": "@phoebegummy"
+            },
+            {
+                "link": "https://twitter.com/Fancymancer",
+                "text": "@Fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 375,
+        "id": "magi-ruiz",
+        "full-name": "Magi Ruiz",
+        "size": "small",
+        "sizepixels": 5964,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0375MagiRuiz_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Nofacednerd",
+                "text": "@Nofacednerd"
+            }
+        ]
+    },
+    {
         "index": 374,
         "id": "neerie-mccloud",
         "full-name": "Neerie McCloud",
@@ -682,6 +762,63 @@
             {
                 "link": "https://twitter.com/bugsbenedict",
                 "text": "@bugsbenedict"
+            }
+        ]
+    },
+    {
+        "index": 340,
+        "id": "parker-macmillan",
+        "full-name": "Parker MacMillan",
+        "size": "small",
+        "sizepixels": 11218,
+        "teams": [
+            "Kola Boar",
+            "Incinerated Baltimore Crabs",
+            "Canada Artists",
+            "Dallas Cows",
+            "Downward Dogs",
+            "Laredo Excavators",
+            "Antarctic Fireballs",
+            "Hawai'i Fridays",
+            "Seattle Garages",
+            "Oklahoma Heartthrobs",
+            "Green Hill Hedgehogs",
+            "Alaskan Immortals",
+            "La Paz Llamas",
+            "Philly Pies",
+            "Oregon Psychics",
+            "Carolina Queens",
+            "Charleston Shoe Thieves",
+            "Hades Tigers",
+            "Minneapolis Truckers",
+            "Mallorca Whales"
+        ],
+        "sprites": [
+            "0340ParkerMacMillan_Boar.png",
+            "0340ParkerMacMillan_Brabs.png",
+            "0340ParkerMacMillan_CArtists.png",
+            "0340ParkerMacMillan_Cows.png",
+            "0340ParkerMacMillan_Dogs.png",
+            "0340ParkerMacMillan_Excavators.png",
+            "0340ParkerMacMillan_Fireballs.png",
+            "0340ParkerMacMillan_Fridays.png",
+            "0340ParkerMacMillan_Garages.png",
+            "0340ParkerMacMillan_Heartthrobs.png",
+            "0340ParkerMacMillan_Hedgehogs.png",
+            "0340ParkerMacMillan_Immortals.png",
+            "0340ParkerMacMillan_Llamas.png",
+            "0340ParkerMacMillan_Pies.png",
+            "0340ParkerMacMillan_Psychics.png",
+            "0340ParkerMacMillan_Queens.png",
+            "0340ParkerMacMillan_ShoeThieves.png",
+            "0340ParkerMacMillan_Tigers.png",
+            "0340ParkerMacMillan_Truckers.png",
+            "0340ParkerMacMillan_Whales.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
             }
         ]
     },

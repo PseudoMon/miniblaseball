@@ -33,9 +33,14 @@ for subleague_elem in teams_doc.elements():
         team_nickname = team_elem.to_section().field('nickname').required_string_value()
 
         teams_for_py[team_nickname] = team_name
+
         teams.append(team_name)
 
-    teams_for_json.append({"name": subleague_name, "teams": teams})
+     # Skip prehistory teams from the JSON file
+    if subleague_name != "Prehistory":
+        teams_for_json.append({"name": subleague_name, "teams": teams})
+
+
 
 print("Dumping to file...")
 with open('src/teams.json', 'w') as file:

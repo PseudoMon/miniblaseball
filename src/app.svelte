@@ -59,6 +59,7 @@
         }
 
         playersShown = unfilteredPlayers
+        applySort()
     }
 
     function filterPlayerName(nameToSearch, players) {
