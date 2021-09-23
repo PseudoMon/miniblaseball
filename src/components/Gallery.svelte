@@ -27,8 +27,20 @@
             let playerindex = div.dataset.playerindex 
             const player = players[playerindex]
 
-            const teamIndex = player['teams'].indexOf(team)
+            let teamIndex = player['teams'].indexOf(team)
             
+            if (player.id === "richmond-harrison" || player.id === "kichiro-guerra") {
+                // Exceptions for these two
+                // This is weakass, please refactor this later
+                if (team === "Ohio Worms") {
+                    teamIndex = 2
+                }
+
+                if (team === "Miami Dale") {
+                    teamIndex = 4
+                }
+            }
+
             div.dataset.imagesrc = `images/${player.sprites[teamIndex]}`
         }
     }
