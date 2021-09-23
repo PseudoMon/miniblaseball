@@ -1,5 +1,197 @@
 [
     {
+        "index": 388,
+        "id": "irnee-bluesky",
+        "full-name": "Irnee Bluesky",
+        "size": "small",
+        "sizepixels": 12740,
+        "teams": [
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "0388IrneeBluesky_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/miasmajesties",
+                "text": "@miasmajesties"
+            }
+        ]
+    },
+    {
+        "index": 387,
+        "id": "erin-jesaulenko",
+        "full-name": "Erin Jesaulenko",
+        "size": "large",
+        "sizepixels": 13400,
+        "teams": [
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "0387ErinJesaulenko_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://TheLair#3869",
+                "text": "TheLair#3869"
+            }
+        ]
+    },
+    {
+        "index": 386,
+        "id": "lottie-ceilingfan",
+        "full-name": "Lottie Ceilingfan",
+        "size": "small",
+        "sizepixels": 14329,
+        "teams": [
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "0386LottieCeilingfan_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/miasmajesties",
+                "text": "@miasmajesties"
+            }
+        ]
+    },
+    {
+        "index": 385,
+        "id": "clare-ballard",
+        "full-name": "Clare Ballard",
+        "size": "large",
+        "sizepixels": 28968,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0385ClareBallard_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fwiphy",
+                "text": "@fwiphy"
+            }
+        ]
+    },
+    {
+        "index": 384,
+        "id": "bates-bentley",
+        "full-name": "Bates Bentley",
+        "size": "small",
+        "sizepixels": 7650,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0384BatesBentley_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 383,
+        "id": "conrad-vaughan",
+        "full-name": "Conrad Vaughan",
+        "size": "small",
+        "sizepixels": 15604,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0383ConradVaughan_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/ViperSwansong",
+                "text": "@ViperSwansong"
+            }
+        ]
+    },
+    {
+        "index": 382,
+        "id": "sandie-carver",
+        "full-name": "Sandie Carver",
+        "size": "small",
+        "sizepixels": 10147,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0382SandieCarver_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/sunsetkite",
+                "text": "@sunsetkite"
+            }
+        ]
+    },
+    {
+        "index": 381,
+        "id": "anathema-elemefayo",
+        "full-name": "Anathema Elemefayo",
+        "size": "small",
+        "sizepixels": 8250,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0381AnathemaElemefayo_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/ViperSwansong",
+                "text": "@ViperSwansong"
+            }
+        ]
+    },
+    {
+        "index": 380,
+        "id": "winnie-mccall",
+        "full-name": "Winnie Mccall",
+        "size": "small",
+        "sizepixels": 12744,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0380WinnieMccall_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/XtraJewrestrial",
+                "text": "@XtraJewrestrial"
+            }
+        ]
+    },
+    {
+        "index": 379,
+        "id": "hatfield-suzuki",
+        "full-name": "Hatfield Suzuki",
+        "size": "small",
+        "sizepixels": 8694,
+        "teams": [
+            "New York Millennials",
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "0379HatfieldSuzuki_Millennials.png",
+            "0379HatfieldSuzuki_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/XtraJewrestrial",
+                "text": "@XtraJewrestrial"
+            }
+        ]
+    },
+    {
         "index": 378,
         "id": "kevelyn-jeff",
         "full-name": "Kevelyn Jeff",
@@ -306,10 +498,12 @@
         "sizepixels": 7638,
         "teams": [
             "Chicago Firefighters",
+            "Hades Tigers",
             "Mexico City Wild Wings"
         ],
         "sprites": [
             "0363MagsBanananana_Firefighters.png",
+            "0363MagsBanananana_Tigers.png",
             "0363MagsBanananana_WildWings.png"
         ],
         "credits": [
@@ -3216,10 +3410,12 @@
         "size": "small",
         "sizepixels": 3822,
         "teams": [
-            "Philly Pies"
+            "Philly Pies",
+            "Hades Tigers"
         ],
         "sprites": [
-            "0222BeasleyDay_Pies.png"
+            "0222BeasleyDay_Pies.png",
+            "0222BeasleyDay_Tigers.png"
         ],
         "credits": [
             {
@@ -3681,11 +3877,13 @@
         "sizepixels": 7379,
         "teams": [
             "Canada Moist Talkers",
-            "Charleston Shoe Thieves"
+            "Charleston Shoe Thieves",
+            "Hades Tigers"
         ],
         "sprites": [
             "0200LachlanShelton_MoistTalkers.png",
-            "0200LachlanShelton_ShoeThieves.png"
+            "0200LachlanShelton_ShoeThieves.png",
+            "0200LachlanShelton_Tigers.png"
         ],
         "credits": [
             {
@@ -5086,10 +5284,12 @@
         "size": "small",
         "sizepixels": 11766,
         "teams": [
-            "Breckenridge Jazz Hands"
+            "Breckenridge Jazz Hands",
+            "Hades Tigers"
         ],
         "sprites": [
-            "0131WaltonSports_JazzHands.png"
+            "0131WaltonSports_JazzHands.png",
+            "0131WaltonSports_Tigers.png"
         ],
         "credits": [
             {
