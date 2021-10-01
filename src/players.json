@@ -1,5 +1,206 @@
 [
     {
+        "index": 399,
+        "id": "eduardo-ingram",
+        "full-name": "Eduardo Ingram",
+        "size": "large",
+        "sizepixels": 14200,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0399EduardoIngram_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/viciathief",
+                "text": "@viciathief"
+            }
+        ]
+    },
+    {
+        "index": 398,
+        "id": "lucas-petty",
+        "full-name": "Lucas Petty",
+        "size": "small",
+        "sizepixels": 9943,
+        "teams": [
+            "Kansas City Breath Mints",
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0398LucasPetty_BreathMints.png",
+            "0398LucasPetty_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/goatedtoasts",
+                "text": "@goatedtoasts"
+            }
+        ]
+    },
+    {
+        "index": 397,
+        "id": "jacob-haynes",
+        "full-name": "Jacob Haynes",
+        "size": "xlarge",
+        "sizepixels": 34945,
+        "teams": [
+            "Kansas City Breath Mints",
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0397JacobHaynes_BreathMints.png",
+            "0397JacobHaynes_Flowers.png"
+        ]
+    },
+    {
+        "index": 396,
+        "id": "polkadot-zavala",
+        "full-name": "Polkadot Zavala",
+        "size": "small",
+        "sizepixels": 10850,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0396PolkadotZavala_BreathMints.png"
+        ]
+    },
+    {
+        "index": 395,
+        "id": "helga-washington",
+        "full-name": "Helga Washington",
+        "size": "large",
+        "sizepixels": 21816,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0395HelgaWashington_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/jennayow",
+                "text": "@jennayow"
+            }
+        ]
+    },
+    {
+        "index": 394,
+        "id": "whit-steakknife",
+        "full-name": "Whit Steakknife",
+        "size": "small",
+        "sizepixels": 11310,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0394WhitSteakknife_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/ghostwriterish",
+                "text": "@ghostwriterish"
+            }
+        ]
+    },
+    {
+        "index": 393,
+        "id": "oscar-vaughan",
+        "full-name": "Oscar Vaughan",
+        "size": "small",
+        "sizepixels": 5439,
+        "teams": [
+            "Kansas City Breath Mints",
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0393OscarVaughan_BreathMints.png",
+            "0393OscarVaughan_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/goatedtoasts",
+                "text": "@goatedtoasts"
+            }
+        ]
+    },
+    {
+        "index": 392,
+        "id": "marco-stink",
+        "full-name": "Marco Stink",
+        "size": "large",
+        "sizepixels": 19836,
+        "teams": [
+            "Kansas City Breath Mints",
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "0392MarcoStink_BreathMints.png",
+            "0392MarcoStink_Steaks.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/BearOverdrive",
+                "text": "@BearOverdrive"
+            }
+        ]
+    },
+    {
+        "index": 391,
+        "id": "jode-preston",
+        "full-name": "Jode Preston",
+        "size": "small",
+        "sizepixels": 7138,
+        "teams": [
+            "Kansas City Breath Mints",
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0391JodePreston_BreathMints.png",
+            "0391JodePreston_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/TheSunshinydayz",
+                "text": "@TheSunshinydayz"
+            }
+        ]
+    },
+    {
+        "index": 390,
+        "id": "kina-larsen",
+        "full-name": "Kina Larsen",
+        "size": "small",
+        "sizepixels": 8370,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0390KinaLarsen_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fraymyst",
+                "text": "@fraymyst"
+            }
+        ]
+    },
+    {
+        "index": 389,
+        "id": "hewitt-best",
+        "full-name": "Hewitt Best",
+        "size": "small",
+        "sizepixels": 6864,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0389HewittBest_BreathMints.png"
+        ]
+    },
+    {
         "index": 388,
         "id": "irnee-bluesky",
         "full-name": "Irnee Bluesky",
