@@ -107,7 +107,7 @@
 <style>
     .gallery {
         --hover-color: var(--color-soft);
-        --grid-width: 150px;
+        --grid-width: 160px;
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(var(--grid-width), 1fr));

@@ -1,5 +1,379 @@
 [
     {
+        "index": 425,
+        "id": "ogden-mendoza",
+        "full-name": "Ogden Mendoza",
+        "size": "small",
+        "sizepixels": 9685,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0425OgdenMendoza_JazzHands.png"
+        ]
+    },
+    {
+        "index": 424,
+        "id": "lancelot-kane",
+        "full-name": "Lancelot Kane",
+        "size": "small",
+        "sizepixels": 7011,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0424LancelotKane_JazzHands.png"
+        ]
+    },
+    {
+        "index": 423,
+        "id": "mikan-hammer",
+        "full-name": "Mikan Hammer",
+        "size": "large",
+        "sizepixels": 21200,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0423MikanHammer_JazzHands.png"
+        ]
+    },
+    {
+        "index": 422,
+        "id": "baby-doyle",
+        "full-name": "Baby Doyle",
+        "size": "small",
+        "sizepixels": 6324,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0422BabyDoyle_JazzHands.png"
+        ]
+    },
+    {
+        "index": 421,
+        "id": "gerund-pantheocide",
+        "full-name": "Gerund Pantheocide",
+        "size": "small",
+        "sizepixels": 6258,
+        "teams": [
+            "Chicago Firefighters",
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "0421GerundPantheocide_Firefighters.png",
+            "0421GerundPantheocide_Lift.png"
+        ]
+    },
+    {
+        "index": 420,
+        "id": "coolname-galvanic",
+        "full-name": "Coolname Galvanic",
+        "size": "small",
+        "sizepixels": 9072,
+        "teams": [
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "0420CoolnameGalvanic_Lift.png"
+        ]
+    },
+    {
+        "index": 419,
+        "id": "yusef-fenestrate",
+        "full-name": "Yusef Fenestrate",
+        "size": "small",
+        "sizepixels": 9891,
+        "teams": [
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "0419YusefFenestrate_Lift.png"
+        ]
+    },
+    {
+        "index": 418,
+        "id": "engine-eberhardt",
+        "full-name": "Engine Eberhardt",
+        "size": "small",
+        "sizepixels": 4681,
+        "teams": [
+            "Tokyo Lift",
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "0418EngineEberhardt_Lift.png",
+            "0418EngineEberhardt_Steaks.png"
+        ]
+    },
+    {
+        "index": 417,
+        "id": "speed-cimino",
+        "full-name": "Speed Cimino",
+        "size": "small",
+        "sizepixels": 6669,
+        "teams": [
+            "Green Hill Hedgehogs"
+        ],
+        "sprites": [
+            "0417SpeedCimino_Hedgehogs.png"
+        ]
+    },
+    {
+        "index": 416,
+        "id": "raúl-leal",
+        "full-name": "Raúl Leal",
+        "size": "huge",
+        "sizepixels": 48720,
+        "teams": [
+            "Miami Dale"
+        ],
+        "sprites": [
+            "0416RaúlLeal_Dale.png"
+        ]
+    },
+    {
+        "index": 415,
+        "id": "abner-pothos",
+        "full-name": "Abner Pothos",
+        "size": "small",
+        "sizepixels": 6644,
+        "teams": [
+            "Seattle Garages",
+            "Alaskan Immortals"
+        ],
+        "sprites": [
+            "0415AbnerPothos_Garages.png",
+            "0415AbnerPothos_Immortals.png"
+        ]
+    },
+    {
+        "index": 414,
+        "id": "mcdowell-karim",
+        "full-name": "Mcdowell Karim",
+        "size": "small",
+        "sizepixels": 4368,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0414McdowellKarim_Garages.png"
+        ]
+    },
+    {
+        "index": 413,
+        "id": "michelle-sportsman",
+        "full-name": "Michelle Sportsman",
+        "size": "small",
+        "sizepixels": 7700,
+        "teams": [
+            "Kansas City Breath Mints",
+            "Seattle Garages",
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0413MichelleSportsman_BreathMints.png",
+            "0413MichelleSportsman_Garages.png",
+            "0413MichelleSportsman_Tacos.png"
+        ]
+    },
+    {
+        "index": 412,
+        "id": "marion-shriffle",
+        "full-name": "Marion Shriffle",
+        "size": "small",
+        "sizepixels": 7293,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0412MarionShriffle_Garages.png"
+        ]
+    },
+    {
+        "index": 411,
+        "id": "brisket-friendo",
+        "full-name": "Brisket Friendo",
+        "size": "small",
+        "sizepixels": 10176,
+        "teams": [
+            "Seattle Garages",
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "0411BrisketFriendo_Garages.png",
+            "0411BrisketFriendo_Sunbeams.png"
+        ]
+    },
+    {
+        "index": 410,
+        "id": "lori-boston",
+        "full-name": "Lori Boston",
+        "size": "small",
+        "sizepixels": 10048,
+        "teams": [
+            "Hawai'i Fridays",
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0410LoriBoston_Fridays.png",
+            "0410LoriBoston_Garages.png"
+        ]
+    },
+    {
+        "index": 409,
+        "id": "lang-richardson",
+        "full-name": "Lang Richardson",
+        "size": "small",
+        "sizepixels": 8721,
+        "teams": [
+            "Seattle Garages",
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0409LangRichardson_Garages.png",
+            "0409LangRichardson_Pies.png"
+        ]
+    },
+    {
+        "index": 408,
+        "id": "arturo-huerta",
+        "full-name": "Arturo Huerta",
+        "size": "small",
+        "sizepixels": 5265,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0408ArturoHuerta_Garages.png"
+        ]
+    },
+    {
+        "index": 407,
+        "id": "tiana-cash",
+        "full-name": "Tiana Cash",
+        "size": "large",
+        "sizepixels": 15184,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0407TianaCash_Garages.png"
+        ]
+    },
+    {
+        "index": 406,
+        "id": "shaquille-torres",
+        "full-name": "Shaquille Torres",
+        "size": "small",
+        "sizepixels": 11524,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0406ShaquilleTorres_Garages.png"
+        ]
+    },
+    {
+        "index": 405,
+        "id": "derrick-krueger",
+        "full-name": "Derrick Krueger",
+        "size": "small",
+        "sizepixels": 6525,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0405DerrickKrueger_Garages.png"
+        ]
+    },
+    {
+        "index": 404,
+        "id": "bennett-browning",
+        "full-name": "Bennett Browning",
+        "size": "small",
+        "sizepixels": 9078,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0404BennettBrowning_Garages.png"
+        ]
+    },
+    {
+        "index": 403,
+        "id": "oliver-loofah",
+        "full-name": "Oliver Loofah",
+        "size": "small",
+        "sizepixels": 7656,
+        "teams": [
+            "Seattle Garages",
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "0403OliverLoofah_Garages.png",
+            "0403OliverLoofah_ShoeThieves.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/showzens",
+                "text": "@showzens"
+            }
+        ]
+    },
+    {
+        "index": 402,
+        "id": "wyatt-mason-x",
+        "full-name": "Wyatt Mason X",
+        "size": "small",
+        "sizepixels": 5916,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0402WyattMasonX_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/mathonwys",
+                "text": "@mathonwys"
+            }
+        ]
+    },
+    {
+        "index": 401,
+        "id": "lenjamin-zhuge",
+        "full-name": "Lenjamin Zhuge",
+        "size": "small",
+        "sizepixels": 6174,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0401LenjaminZhuge_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Mossnot",
+                "text": "@Mossnot"
+            }
+        ]
+    },
+    {
+        "index": 400,
+        "id": "emblem-warhorse",
+        "full-name": "Emblem Warhorse",
+        "size": "large",
+        "sizepixels": 21528,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0400EmblemWarhorse_Garages.png"
+        ]
+    },
+    {
         "index": 399,
         "id": "eduardo-ingram",
         "full-name": "Eduardo Ingram",
@@ -43,7 +417,7 @@
         "index": 397,
         "id": "jacob-haynes",
         "full-name": "Jacob Haynes",
-        "size": "xlarge",
+        "size": "huge",
         "sizepixels": 34945,
         "teams": [
             "Kansas City Breath Mints",
@@ -858,9 +1232,11 @@
         "size": "small",
         "sizepixels": 9177,
         "teams": [
+            "Hawai'i Fridays",
             "Atlantis Georgias"
         ],
         "sprites": [
+            "0355MordecaiKingbird_Fridays.png",
             "0355MordecaiKingbird_Georgias.png"
         ],
         "credits": [
@@ -1262,10 +1638,12 @@
         "size": "small",
         "sizepixels": 8000,
         "teams": [
+            "Seattle Garages",
             "San Francisco Lovers",
             "Mexico City Wild Wings"
         ],
         "sprites": [
+            "0337LiquidFriend_Garages.png",
             "0337LiquidFriend_Lovers.png",
             "0337LiquidFriend_WildWings.png"
         ],
@@ -2022,12 +2400,14 @@
         "teams": [
             "Miami Dale",
             "Seattle Garages",
-            "Houston Spies"
+            "Houston Spies",
+            "Hellmouth Sunbeams"
         ],
         "sprites": [
             "0299AvilaGuzman_Dale.png",
             "0299AvilaGuzman_Garages.png",
-            "0299AvilaGuzman_Spies.png"
+            "0299AvilaGuzman_Spies.png",
+            "0299AvilaGuzman_Sunbeams.png"
         ],
         "credits": [
             {
@@ -2204,11 +2584,13 @@
         "sizepixels": 6923,
         "teams": [
             "Kansas City Breath Mints",
+            "Seattle Garages",
             "New York Millennials",
             "Mexico City Wild Wings"
         ],
         "sprites": [
             "0291UnclePlasma_BreathMints.png",
+            "0291UnclePlasma_Garages.png",
             "0291UnclePlasma_Millennials.png",
             "0291UnclePlasma_WildWings.png"
         ],
@@ -2675,11 +3057,13 @@
         "sizepixels": 4826,
         "teams": [
             "Baltimore Crabs",
-            "Boston Flowers"
+            "Boston Flowers",
+            "Seattle Garages"
         ],
         "sprites": [
             "0268ParkerParra_Crabs.png",
-            "0268ParkerParra_Flowers.png"
+            "0268ParkerParra_Flowers.png",
+            "0268ParkerParra_Garages.png"
         ],
         "credits": [
             {
@@ -2740,10 +3124,12 @@
         "sizepixels": 17380,
         "teams": [
             "Seattle Garages",
+            "Carolina Queens",
             "Hades Tigers"
         ],
         "sprites": [
             "0265LennyMarijuana_Garages.png",
+            "0265LennyMarijuana_Queens.png",
             "0265LennyMarijuana_Tigers.png"
         ],
         "credits": [
@@ -2966,10 +3352,12 @@
         "size": "small",
         "sizepixels": 7203,
         "teams": [
+            "Seattle Garages",
             "Charleston Shoe Thieves",
             "LA Unlimited Tacos"
         ],
         "sprites": [
+            "0254FitzgeraldWanderlust_Garages.png",
             "0254FitzgeraldWanderlust_ShoeThieves.png",
             "0254FitzgeraldWanderlust_Tacos.png"
         ],
@@ -3632,10 +4020,12 @@
         "size": "small",
         "sizepixels": 6678,
         "teams": [
-            "Houston Spies"
+            "Houston Spies",
+            "Hellmouth Sunbeams"
         ],
         "sprites": [
-            "0221DoniaBailey_Spies.png"
+            "0221DoniaBailey_Spies.png",
+            "0221DoniaBailey_Sunbeams.png"
         ],
         "credits": [
             {
@@ -5143,10 +5533,12 @@
         "sizepixels": 10362,
         "teams": [
             "Chicago Firefighters",
+            "Hellmouth Sunbeams",
             "Hades Tigers"
         ],
         "sprites": [
             "0148DunlapFigueroa_Firefighters.png",
+            "0148DunlapFigueroa_Sunbeams.png",
             "0148DunlapFigueroa_Tigers.png"
         ],
         "credits": [
@@ -5412,7 +5804,7 @@
         "id": "betsy-trombone",
         "full-name": "Betsy Trombone",
         "size": "small",
-        "sizepixels": 9514,
+        "sizepixels": 9782,
         "teams": [
             "Seattle Garages",
             "Philly Pies"
@@ -5662,11 +6054,13 @@
         "sizepixels": 7276,
         "teams": [
             "Seattle Garages",
-            "Canada Moist Talkers"
+            "Canada Moist Talkers",
+            "Hellmouth Sunbeams"
         ],
         "sprites": [
             "0123QuackEnjoyable_Garages.png",
-            "0123QuackEnjoyable_MoistTalkers.png"
+            "0123QuackEnjoyable_MoistTalkers.png",
+            "0123QuackEnjoyable_Sunbeams.png"
         ],
         "credits": [
             {
@@ -5787,12 +6181,14 @@
         "teams": [
             "Seattle Garages",
             "Charleston Shoe Thieves",
-            "Houston Spies"
+            "Houston Spies",
+            "Hellmouth Sunbeams"
         ],
         "sprites": [
             "0117HowellFranklin_Garages.png",
             "0117HowellFranklin_ShoeThieves.png",
-            "0117HowellFranklin_Spies.png"
+            "0117HowellFranklin_Spies.png",
+            "0117HowellFranklin_Sunbeams.png"
         ],
         "credits": [
             {
@@ -7535,12 +7931,14 @@
             "Hawai'i Fridays",
             "Seattle Garages",
             "Philly Pies",
+            "LA Unlimited Tacos",
             "Hades Tigers"
         ],
         "sprites": [
             "0033NolanestophiaPatterson_Fridays.png",
             "0033NolanestophiaPatterson_Garages.png",
             "0033NolanestophiaPatterson_Pies.png",
+            "0033NolanestophiaPatterson_Tacos.png",
             "0033NolanestophiaPatterson_Tigers.png"
         ],
         "credits": [
@@ -8244,12 +8642,13 @@
         "id": "mike-townsend",
         "full-name": "Mike Townsend",
         "size": "small",
-        "sizepixels": 5418,
+        "sizepixels": 10800,
         "teams": [
             "Seattle Garages"
         ],
         "sprites": [
-            "0002MikeTownsend_Garages.png"
+            "0002MikeTownsend_Garages.png",
+            "0002MikeTownsend2_Garages.png"
         ],
         "credits": [
             {
