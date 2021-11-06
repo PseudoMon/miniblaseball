@@ -23,6 +23,12 @@
         ],
         "sprites": [
             "0424LancelotKane_JazzHands.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/VoxiSour",
+                "text": "@VoxiSour"
+            }
         ]
     },
     {
@@ -36,6 +42,12 @@
         ],
         "sprites": [
             "0423MikanHammer_JazzHands.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/VoxiSour",
+                "text": "@VoxiSour"
+            }
         ]
     },
     {
@@ -49,6 +61,12 @@
         ],
         "sprites": [
             "0422BabyDoyle_JazzHands.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/bunnevolence",
+                "text": "@bunnevolence"
+            }
         ]
     },
     {
@@ -64,6 +82,12 @@
         "sprites": [
             "0421GerundPantheocide_Firefighters.png",
             "0421GerundPantheocide_Lift.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/saltbuzzard",
+                "text": "@saltbuzzard"
+            }
         ]
     },
     {
@@ -77,6 +101,12 @@
         ],
         "sprites": [
             "0420CoolnameGalvanic_Lift.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/skelebells",
+                "text": "@skelebells"
+            }
         ]
     },
     {
@@ -90,6 +120,12 @@
         ],
         "sprites": [
             "0419YusefFenestrate_Lift.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/tredlocity",
+                "text": "@tredlocity"
+            }
         ]
     },
     {
@@ -105,6 +141,12 @@
         "sprites": [
             "0418EngineEberhardt_Lift.png",
             "0418EngineEberhardt_Steaks.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "C4NDL3W4X"
+            }
         ]
     },
     {
@@ -118,6 +160,12 @@
         ],
         "sprites": [
             "0417SpeedCimino_Hedgehogs.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Fancymancer",
+                "text": "@Fancymancer"
+            }
         ]
     },
     {
@@ -146,6 +194,12 @@
         "sprites": [
             "0415AbnerPothos_Garages.png",
             "0415AbnerPothos_Immortals.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/AAppariton",
+                "text": "@AAppariton"
+            }
         ]
     },
     {
@@ -159,6 +213,12 @@
         ],
         "sprites": [
             "0414McdowellKarim_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://ferretrix.tumblr.com",
+                "text": "ferretrix"
+            }
         ]
     },
     {
@@ -176,6 +236,12 @@
             "0413MichelleSportsman_BreathMints.png",
             "0413MichelleSportsman_Garages.png",
             "0413MichelleSportsman_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/khadobe",
+                "text": "@khadobe"
+            }
         ]
     },
     {
@@ -189,6 +255,12 @@
         ],
         "sprites": [
             "0412MarionShriffle_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/khadobe",
+                "text": "@khadobe"
+            }
         ]
     },
     {
@@ -204,6 +276,12 @@
         "sprites": [
             "0411BrisketFriendo_Garages.png",
             "0411BrisketFriendo_Sunbeams.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Mosssnot",
+                "text": "@Mosssnot"
+            }
         ]
     },
     {
@@ -219,6 +297,16 @@
         "sprites": [
             "0410LoriBoston_Fridays.png",
             "0410LoriBoston_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
+            },
+            {
+                "link": "https://twitter.com/what_cd",
+                "text": "@what_cd"
+            }
         ]
     },
     {
@@ -234,6 +322,12 @@
         "sprites": [
             "0409LangRichardson_Garages.png",
             "0409LangRichardson_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/likedrotten",
+                "text": "@likedrotten"
+            }
         ]
     },
     {
@@ -247,6 +341,12 @@
         ],
         "sprites": [
             "0408ArturoHuerta_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/arrowsuns",
+                "text": "@arrowsuns"
+            }
         ]
     },
     {
@@ -260,6 +360,12 @@
         ],
         "sprites": [
             "0407TianaCash_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -273,6 +379,12 @@
         ],
         "sprites": [
             "0406ShaquilleTorres_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/electronicbeth",
+                "text": "@electronicbeth"
+            }
         ]
     },
     {
@@ -286,6 +398,12 @@
         ],
         "sprites": [
             "0405DerrickKrueger_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -299,6 +417,12 @@
         ],
         "sprites": [
             "0404BennettBrowning_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
         ]
     },
     {
@@ -5815,6 +5939,10 @@
         ],
         "credits": [
             {
+                "link": "https://twitter.com/Dippitydoop",
+                "text": "@Dippitydoop"
+            },
+            {
                 "link": "",
                 "text": "cassiterine"
             }
@@ -7227,6 +7355,10 @@
             {
                 "link": "https://twitter.com/CDPNhyphenK",
                 "text": "@CDPNhyphenK"
+            },
+            {
+                "link": "https://twitter.com/elibeth",
+                "text": "@elibeth"
             }
         ]
     },
