@@ -1,0 +1,110 @@
+[
+    {
+        "index": 1,
+        "id": "baby-richmond",
+        "full-name": "Baby Richmond",
+        "size": "small",
+        "sizepixels": 3060,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "M001BabyRichmond_MoistTalkers.png"
+        ]
+    },
+    {
+        "index": 2,
+        "id": "pepito",
+        "full-name": "Pepito",
+        "size": "small",
+        "sizepixels": 6496,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "M002Pepito_Tacos.png"
+        ]
+    },
+    {
+        "index": 3,
+        "id": "priya-fox",
+        "full-name": "Priya Fox",
+        "size": "small",
+        "sizepixels": 7742,
+        "teams": [
+            "Miami Dale",
+            "Boston Flowers",
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "M003PriyaFox_Dale.png",
+            "M003PriyaFox_Flowers.png",
+            "M003PriyaFox_Sunbeams.png"
+        ]
+    },
+    {
+        "index": 4,
+        "id": "orb",
+        "full-name": "ORB",
+        "size": "small",
+        "sizepixels": 13778,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "M004ORB_MoistTalkers.png"
+        ]
+    },
+    {
+        "index": 5,
+        "id": "our-lady-of-perpetual-fridays",
+        "full-name": "Our Lady Of Perpetual Fridays",
+        "size": "large",
+        "sizepixels": 36418,
+        "teams": [
+            "Hawai'i Fridays"
+        ],
+        "sprites": [
+            "M005OurLadyOfPerpetualFridays_Fridays.png"
+        ]
+    },
+    {
+        "index": 6,
+        "id": "millie-the-bodega-cat",
+        "full-name": "Millie the Bodega Cat",
+        "size": "small",
+        "sizepixels": 6160,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "M006MillieTheBodegaCat_Millennials.png"
+        ]
+    },
+    {
+        "index": 7,
+        "id": "tigerberus",
+        "full-name": "Tigerberus",
+        "size": "huge",
+        "sizepixels": 76560,
+        "teams": [
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "M007Tigerberus_Tigers.png"
+        ]
+    },
+    {
+        "index": 8,
+        "id": "the-spearmint",
+        "full-name": "The Spearmint",
+        "size": "xlarge",
+        "sizepixels": 47800,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "M008TheSpearmint_BreathMints.png"
+        ]
+    }
+]

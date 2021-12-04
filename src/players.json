@@ -1,5 +1,81 @@
 [
     {
+        "index": 429,
+        "id": "mckinley-otten",
+        "full-name": "Mckinley Otten",
+        "size": "small",
+        "sizepixels": 11438,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0429MckinleyOtten_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/birbteef",
+                "text": "@birbteef"
+            }
+        ]
+    },
+    {
+        "index": 428,
+        "id": "pannonica-oko",
+        "full-name": "Pannonica Oko",
+        "size": "large",
+        "sizepixels": 10600,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0428PannonicaOko_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "hen"
+            }
+        ]
+    },
+    {
+        "index": 427,
+        "id": "nicholas-vincent",
+        "full-name": "Nicholas Vincent",
+        "size": "small",
+        "sizepixels": 13616,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0427NicholasVincent_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 426,
+        "id": "yummy-elliott",
+        "full-name": "Yummy Elliott",
+        "size": "small",
+        "sizepixels": 7986,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0426YummyElliott_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/birbteef",
+                "text": "@birbteef"
+            }
+        ]
+    },
+    {
         "index": 425,
         "id": "ogden-mendoza",
         "full-name": "Ogden Mendoza",

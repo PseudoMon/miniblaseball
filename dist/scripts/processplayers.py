@@ -11,6 +11,8 @@ PATH_TO_IMAGES = "dist/images/"
 PATH_TO_OUTPUT = "src/"
 
 def camelCase_to_normal(inputtext):
+    # Note: does not change capitalizations
+
     outputtext = ""
 
     for char in inputtext:
@@ -46,6 +48,9 @@ def getname(filename, is_guest=False):
     if "Polka Dot" in fullname:
         fullname = fullname.replace("Polka Dot", "PolkaDot")
 
+    if " The " in fullname:
+        fullname = fullname.replace(" The ", " the ")
+
     # turn e.g. McBlase I I to McBlase II 
     while "I I" in fullname:
         fullname = fullname.replace("I I", "II")
@@ -66,6 +71,8 @@ def getname(filename, is_guest=False):
     #     fullname = "Mooney Doctor II"
     elif fullname == "Mason M McMason":
         fullname = "Mason M. McMason"
+    elif fullname == "O R B":
+        fullname = "ORB"
 
     return fullname
 
@@ -289,11 +296,13 @@ def rearrange_alts(sprites):
         sprites.append(alt_sprite) # Add to end of list
         
 
-def process_single_player(playerid, is_guest=False):
-    # playerid should already be a string!
+def process_single_player(playerid, is_guest=False, prefix=False):
+    # playerid and prefix should already be a string!
 
     if is_guest:
         glob_path = PATH_TO_IMAGES + 'G' + playerid + '[A-Za-z]*.png'
+    elif prefix:
+        glob_path = PATH_TO_IMAGES + prefix + playerid + '[A-Za-z]*.png'
     else:
         glob_path = PATH_TO_IMAGES + playerid + '[A-Za-z]*.png'
 
@@ -348,11 +357,13 @@ def process_single_player(playerid, is_guest=False):
 
     return player
 
-def get_max_id(is_guest=False):
+def get_max_id(is_guest=False, is_mascot=False):
     """Get the largest ID / latest miniblaseballer created"""
 
     if is_guest:
         glob_path = PATH_TO_IMAGES + 'G[0-9]*.png'
+    elif is_mascot:
+        glob_path = PATH_TO_IMAGES + 'M[0-9]*.png'
     else:
         glob_path = PATH_TO_IMAGES + '[0-9][0-9][0-9][0-9]*.png'
 
@@ -363,7 +374,7 @@ def get_max_id(is_guest=False):
     # Get just the filename
     max_id_sprite = os.path.basename(max_id_path)    
     
-    if is_guest:
+    if is_guest or is_mascot:
         max_id = int(max_id_sprite[1:4])
     else:
         max_id = int(max_id_sprite[0:4])
@@ -376,6 +387,9 @@ players = []
 
 guest_max_id = get_max_id(is_guest = True)
 guest_players = []
+
+mascot_max_id = get_max_id(is_mascot = True)
+mascot_players = []
 
 print("\nProcessing {} main league players.".format(max_id))
 
@@ -407,6 +421,22 @@ for i in range(1, guest_max_id + 1):
     if player:
         guest_players.append(player)
 
+print("Gues players done")
+print("Now processing mascots")
+
+for i in range(1, mascot_max_id + 1):
+    playerid = str(i)
+
+    while len(playerid) < 3:
+        playerid = "0" + playerid
+
+    player = process_single_player(playerid, prefix="M")    
+
+    # Add player to the list
+    if player:
+        mascot_players.append(player)
+
+
 # Reverse data (so latest at the top)
 players.reverse()
 guest_players.reverse()
@@ -417,5 +447,9 @@ with open(PATH_TO_OUTPUT + 'players.json', 'w', encoding='utf-8') as file:
 
 with open(PATH_TO_OUTPUT + 'guestPlayers.json', 'w', encoding='utf-8') as file:
     json.dump(guest_players, file, indent=4, ensure_ascii=False)
+
+with open(PATH_TO_OUTPUT + 'mascotPlayers.json', 'w', encoding='utf-8') as file:
+    json.dump(mascot_players, file, indent=4, ensure_ascii=False)
+
 
 print("Done!")

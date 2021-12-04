@@ -52,6 +52,11 @@
             on:click={ (e) => switchGallery('guest') }>
             Guest Teams
         </span>
+        <span
+            class="{ selectedGallery === 'misc' ? 'active' : '' }"  
+            on:click={ (e) => switchGallery('misc') }>
+            Mascots & Misc
+        </span>
     </div>
 
     <form class="gallery-filter" on:submit={ (e) => {e.preventDefault()} }>

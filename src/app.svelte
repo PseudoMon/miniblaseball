@@ -14,6 +14,7 @@
     import GuestPlayersData from './guestPlayers.json'
     import TeamsData from './teams.json'
     import GuestTeamsData from './guestTeams.json'
+    import MascotPlayersData from './mascotPlayers.json'
 
     import TeamsList from './teamsReverseId.js'
     // This list contains teams in {teamname: index} format
@@ -39,7 +40,7 @@
     function getPlayerData(id) {
         id = decodeURI(id)
 
-        const allPlayers = PlayersData.concat(GuestPlayersData)
+        const allPlayers = PlayersData.concat(GuestPlayersData).concat(MascotPlayersData)
 
         return allPlayers.find(player => player.id === id)
     }
@@ -53,9 +54,14 @@
             shownTeamsData = TeamsData
         } 
 
-        if (chosenGallery === 'guest') {
+        else if (chosenGallery === 'guest') {
             unfilteredPlayers = GuestPlayersData
             shownTeamsData = GuestTeamsData
+        }
+
+        else if (chosenGallery === 'misc') {
+            unfilteredPlayers = MascotPlayersData
+            shownTeamsData = TeamsData
         }
 
         playersShown = unfilteredPlayers
