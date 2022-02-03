@@ -274,9 +274,11 @@
         --color-soft: #eee;
         --color-link: #5c5c5c;
 
-        --color-modalbg: #494a46;
-        --color-overlaybg: rgba(0,0,0,0.6);
-        --color-modaltext: #fff;
+        /*--color-modalbg: #494a46;*/
+        --color-modalbg: #ebebeb;
+        --color-overlaybg: rgba(106, 106, 106, 0.6);
+        --color-modaltext: #000;
+        --color-modalborder: #5b5b5b;
 
         --color-selectbg: #b3b3b3;
 
@@ -286,16 +288,19 @@
     }
 
     :global(body.darkmode) {
-        --color-bg: #1c1d1b;
+        --color-bg: #272825;
         --color-text: #fff;
         --color-soft: #2d2f32;
         --color-link: #848484;
 
-        --color-modalbg: #1c1d1b;
+        --color-modalbg: #353733;
+        --color-modalborder: #fff;
+        --color-modaltext: #fff;
+        --color-overlaybg: rgba(0,0,0,0.6);
 
         --color-selectbg: var(--color-soft);
-    }
-
+    
+}
     :global(a) {
         color: inherit;
     }

@@ -44,6 +44,6 @@
         bottom: 0;
         overflow-y: auto;
 
-        background-color: rgba(0,0,0,0.6);
+        background-color: var(--color-overlaybg);
     }
 </style>

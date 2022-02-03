@@ -182,7 +182,7 @@
     max-width: 95%;
     box-sizing: border-box;
     margin: 10px auto;
-    border: solid 3px #fff;
+    border: solid 3px var(--color-modalborder);
     padding: 2em;
 
     background-color: var(--color-modalbg);
