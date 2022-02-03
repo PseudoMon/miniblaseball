@@ -1,5 +1,43 @@
 [
     {
+        "index": 431,
+        "id": "becker-solis",
+        "full-name": "Becker Solis",
+        "size": "small",
+        "sizepixels": 5168,
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0431BeckerSolis_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 430,
+        "id": "comfort-septemberish",
+        "full-name": "Comfort Septemberish",
+        "size": "small",
+        "sizepixels": 7696,
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0430ComfortSeptemberish_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/TedFallengerSFW",
+                "text": "@TedFallengerSFW"
+            }
+        ]
+    },
+    {
         "index": 429,
         "id": "mckinley-otten",
         "full-name": "Mckinley Otten",
@@ -1333,9 +1371,11 @@
         "size": "small",
         "sizepixels": 2279,
         "teams": [
+            "Houston Spies",
             "Mexico City Wild Wings"
         ],
         "sprites": [
+            "0360JasperBlather_Spies.png",
             "0360JasperBlather_WildWings.png"
         ],
         "credits": [
@@ -1495,9 +1535,11 @@
         "size": "small",
         "sizepixels": 6732,
         "teams": [
+            "Houston Spies",
             "Mexico City Wild Wings"
         ],
         "sprites": [
+            "0352CatMcsriff_Spies.png",
             "0352CatMcsriff_WildWings.png"
         ],
         "credits": [
@@ -3745,10 +3787,12 @@
         "size": "small",
         "sizepixels": 5520,
         "teams": [
-            "Canada Moist Talkers"
+            "Canada Moist Talkers",
+            "Houston Spies"
         ],
         "sprites": [
-            "0244CommissionerVapor_MoistTalkers.png"
+            "0244CommissionerVapor_MoistTalkers.png",
+            "0244CommissionerVapor_Spies.png"
         ],
         "credits": [
             {
@@ -3828,12 +3872,14 @@
         "teams": [
             "Chicago Firefighters",
             "Seattle Garages",
+            "Houston Spies",
             "Dallas Steaks",
             "Hades Tigers"
         ],
         "sprites": [
             "0240PaulaMason_Firefighters.png",
             "0240PaulaMason_Garages.png",
+            "0240PaulaMason_Spies.png",
             "0240PaulaMason_Steaks.png",
             "0240PaulaMason_Tigers.png"
         ],
@@ -4866,11 +4912,13 @@
         "size": "small",
         "sizepixels": 4725,
         "teams": [
+            "Yellowstone Magic",
             "Hellmouth Sunbeams",
             "LA Unlimited Tacos",
             "Mexico City Wild Wings"
         ],
         "sprites": [
+            "0191WyattGlover_Magic.png",
             "0191WyattGlover_Sunbeams.png",
             "0191WyattGlover_Tacos.png",
             "0191WyattGlover_WildWings.png"
@@ -5451,9 +5499,11 @@
         "size": "small",
         "sizepixels": 9815,
         "teams": [
+            "Houston Spies",
             "Hellmouth Sunbeams"
         ],
         "sprites": [
+            "0161DudleyMueller_Spies.png",
             "0161DudleyMueller_Sunbeams.png"
         ],
         "credits": [
@@ -5733,11 +5783,13 @@
         "sizepixels": 10362,
         "teams": [
             "Chicago Firefighters",
+            "Houston Spies",
             "Hellmouth Sunbeams",
             "Hades Tigers"
         ],
         "sprites": [
             "0148DunlapFigueroa_Firefighters.png",
+            "0148DunlapFigueroa_Spies.png",
             "0148DunlapFigueroa_Sunbeams.png",
             "0148DunlapFigueroa_Tigers.png"
         ],
@@ -6259,11 +6311,13 @@
         "teams": [
             "Seattle Garages",
             "Canada Moist Talkers",
+            "Houston Spies",
             "Hellmouth Sunbeams"
         ],
         "sprites": [
             "0123QuackEnjoyable_Garages.png",
             "0123QuackEnjoyable_MoistTalkers.png",
+            "0123QuackEnjoyable_Spies.png",
             "0123QuackEnjoyable_Sunbeams.png"
         ],
         "credits": [
@@ -6665,11 +6719,13 @@
         "sizepixels": 8174,
         "teams": [
             "Kansas City Breath Mints",
-            "Charleston Shoe Thieves"
+            "Charleston Shoe Thieves",
+            "Houston Spies"
         ],
         "sprites": [
             "0105PudgeNakatamo_BreathMints.png",
-            "0105PudgeNakatamo_ShoeThieves.png"
+            "0105PudgeNakatamo_ShoeThieves.png",
+            "0105PudgeNakatamo_Spies.png"
         ]
     },
     {
