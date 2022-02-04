@@ -160,6 +160,10 @@ def decidesize(sprites):
         # Raul Leal
         return ('huge', height*width)
 
+    if sprites[0][0:4] == "M008":
+        # The Spearmint
+        return ('huge', height*width)
+
     if thing_is_within_box(sprite_box, small):
         return ('small', height*width)
     elif thing_is_within_box(sprite_box, large):

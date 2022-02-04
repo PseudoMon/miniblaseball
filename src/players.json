@@ -1,5 +1,70 @@
 [
     {
+        "index": 434,
+        "id": "zeruel-kramer",
+        "full-name": "Zeruel Kramer",
+        "size": "small",
+        "sizepixels": 13317,
+        "teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "0434ZeruelKramer_Crabs.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 433,
+        "id": "kaz-fiasco",
+        "full-name": "Kaz Fiasco",
+        "size": "large",
+        "sizepixels": 25519,
+        "teams": [
+            "Baltimore Crabs",
+            "Hellmouth Sunbeams",
+            "Ohio Worms"
+        ],
+        "sprites": [
+            "0433KazFiasco_Crabs.png",
+            "0433KazFiasco_Sunbeams.png",
+            "0433KazFiasco_Worms.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 432,
+        "id": "axel-campbell",
+        "full-name": "Axel Campbell",
+        "size": "small",
+        "sizepixels": 16150,
+        "teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "0432AxelCampbell_Crabs.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            },
+            {
+                "link": "https://twitter.com/saltbuzzard",
+                "text": "@saltbuzzard"
+            }
+        ]
+    },
+    {
         "index": 431,
         "id": "becker-solis",
         "full-name": "Becker Solis",

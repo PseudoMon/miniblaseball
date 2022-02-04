@@ -98,13 +98,26 @@
         "index": 8,
         "id": "the-spearmint",
         "full-name": "The Spearmint",
-        "size": "xlarge",
+        "size": "huge",
         "sizepixels": 47800,
         "teams": [
             "Kansas City Breath Mints"
         ],
         "sprites": [
             "M008TheSpearmint_BreathMints.png"
+        ]
+    },
+    {
+        "index": 9,
+        "id": "vix",
+        "full-name": "Vix",
+        "size": "small",
+        "sizepixels": 7473,
+        "teams": [
+            "Baltimore Crabs"
+        ],
+        "sprites": [
+            "M009Vix_Crabs.png"
         ]
     }
 ]
