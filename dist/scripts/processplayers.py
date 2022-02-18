@@ -58,21 +58,21 @@ def getname(filename, is_guest=False):
     if "Mac Millan" in fullname:
         fullname = fullname.replace("Mac Millan", "MacMillan")
 
+    if "V I" in fullname:
+        # for Wyatt Mason VI / VII / VIII
+        fullname = fullname.replace("V II", "VII")
+
     # special cases
     if fullname == "Na N":
         fullname = "NaN"
-    # elif fullname == "Gunther O Brian":
-    #     fullname = "Gunther O'Brian"
-    # elif fullname == "Evelton McBlase I I":
-    #     fullname = "Evelton McBlase II"
     elif fullname == "Nagomi McDaniel":
         fullname = "Nagomi Mcdaniel"
-    # elif fullname == "Mooney Doctor I I":
-    #     fullname = "Mooney Doctor II"
     elif fullname == "Mason M McMason":
         fullname = "Mason M. McMason"
     elif fullname == "O R B":
         fullname = "ORB"
+    elif fullname == "Jeff":
+        fullname = "JEFF!"
 
     return fullname
 
@@ -82,6 +82,9 @@ def idify(fullname):
     
     # For e.g. Mason M. McMason
     fullname = fullname.replace(".", "") 
+
+    # For JEFF!
+    fullname = fullname.replace("!", "")
 
     return fullname.lower().replace(" ", "-").replace("'","-")
 

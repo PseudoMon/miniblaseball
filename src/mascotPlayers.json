@@ -119,5 +119,31 @@
         "sprites": [
             "M009Vix_Crabs.png"
         ]
+    },
+    {
+        "index": 10,
+        "id": "jeff",
+        "full-name": "JEFF!",
+        "size": "large",
+        "sizepixels": 25878,
+        "teams": [
+            "Hellmouth Sunbeams"
+        ],
+        "sprites": [
+            "M010Jeff_Sunbeams.png"
+        ]
+    },
+    {
+        "index": 11,
+        "id": "philadelphia-philling",
+        "full-name": "Philadelphia Philling",
+        "size": "small",
+        "sizepixels": 14976,
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "M011PhiladelphiaPhilling_Pies.png"
+        ]
     }
 ]
