@@ -31,7 +31,12 @@ def getname(filename, is_guest=False):
     # Filename format:
     # e.g. 0007LandryViolence_Tigers.png
 
+    # exception for that moist talker's car
+    if filename == "M0141976VWGolfGTIMk1_MoistTalkers.png":
+        return "1976 VW Golf GTI Mk 1"
+
     # Remove file extension and take out the ID
+    # we're uhh assuming the file extension is 3 digits
     # Regular players have 4-digit id
     # Guest players have 3-digit id prefaced by G
     filename = filename[4:-4]
@@ -61,6 +66,14 @@ def getname(filename, is_guest=False):
     if "V I" in fullname:
         # for Wyatt Mason VI / VII / VIII
         fullname = fullname.replace("V II", "VII")
+
+    if "Mason X I" in fullname:
+        # for Wyatt Mason XI
+        fullname = fullname.replace("X I", "XI")
+
+    if "- " in fullname:
+        # this is usually for Korean name e.g. Ji-Eun
+        fullname = fullname.replace("- ", "-")
 
     # special cases
     if fullname == "Na N":
@@ -309,7 +322,9 @@ def process_single_player(playerid, is_guest=False, prefix=False):
     if is_guest:
         glob_path = PATH_TO_IMAGES + 'G' + playerid + '[A-Za-z]*.png'
     elif prefix:
-        glob_path = PATH_TO_IMAGES + prefix + playerid + '[A-Za-z]*.png'
+        glob_path = PATH_TO_IMAGES + prefix + playerid + '*.png'
+        # if we use [A-Za-z] here it'll break Moist Talkers' car
+        # ... why do we use it in the first place? we have regular id now
     else:
         glob_path = PATH_TO_IMAGES + playerid + '[A-Za-z]*.png'
 

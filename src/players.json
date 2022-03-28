@@ -1,5 +1,857 @@
 [
     {
+        "index": 509,
+        "id": "rush-valenzuela",
+        "full-name": "Rush Valenzuela",
+        "size": "small",
+        "sizepixels": 10842,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0509RushValenzuela_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 508,
+        "id": "geepa-beanpot",
+        "full-name": "Geepa Beanpot",
+        "size": "small",
+        "sizepixels": 9120,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0508GeepaBeanpot_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            },
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 507,
+        "id": "swamuel-mora",
+        "full-name": "Swamuel Mora",
+        "size": "small",
+        "sizepixels": 6950,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0507SwamuelMora_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 506,
+        "id": "wesley-poole",
+        "full-name": "Wesley Poole",
+        "size": "small",
+        "sizepixels": 12474,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0506WesleyPoole_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
+        ]
+    },
+    {
+        "index": 505,
+        "id": "gita-sparrow",
+        "full-name": "Gita Sparrow",
+        "size": "small",
+        "sizepixels": 8372,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0505GitaSparrow_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 504,
+        "id": "caleb-alvarado",
+        "full-name": "Caleb Alvarado",
+        "size": "small",
+        "sizepixels": 9086,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0504CalebAlvarado_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/crikadelic",
+                "text": "@crikadelic"
+            }
+        ]
+    },
+    {
+        "index": 503,
+        "id": "edric-tosser",
+        "full-name": "Edric Tosser",
+        "size": "small",
+        "sizepixels": 8151,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0503EdricTosser_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/necromgno",
+                "text": "@necromgno"
+            }
+        ]
+    },
+    {
+        "index": 502,
+        "id": "justice-spoon",
+        "full-name": "Justice Spoon",
+        "size": "small",
+        "sizepixels": 6401,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0502JusticeSpoon_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 501,
+        "id": "august-mina",
+        "full-name": "August Mina",
+        "size": "small",
+        "sizepixels": 7260,
+        "teams": [
+            "Dallas Steaks"
+        ],
+        "sprites": [
+            "0501AugustMina_Steaks.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/JoshCloss",
+                "text": "@JoshCloss"
+            }
+        ]
+    },
+    {
+        "index": 500,
+        "id": "slosh-truk",
+        "full-name": "Slosh Truk",
+        "size": "small",
+        "sizepixels": 9300,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0500SloshTruk_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/godspeedwagon",
+                "text": "@godspeedwagon"
+            }
+        ]
+    },
+    {
+        "index": 499,
+        "id": "lucien-patchwork",
+        "full-name": "Lucien Patchwork",
+        "size": "small",
+        "sizepixels": 15840,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0499LucienPatchwork_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/alyssalmpenney",
+                "text": "@alyssalmpenney"
+            }
+        ]
+    },
+    {
+        "index": 498,
+        "id": "amos-melon",
+        "full-name": "Amos Melon",
+        "size": "small",
+        "sizepixels": 12000,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0498AmosMelon_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/mackinithappen",
+                "text": "@mackinithappen"
+            }
+        ]
+    },
+    {
+        "index": 497,
+        "id": "london-simmons",
+        "full-name": "London Simmons",
+        "size": "small",
+        "sizepixels": 3395,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0497LondonSimmons_MoistTalkers.png"
+        ]
+    },
+    {
+        "index": 496,
+        "id": "kennedy-alstott",
+        "full-name": "Kennedy Alstott",
+        "size": "small",
+        "sizepixels": 5700,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0496KennedyAlstott_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/mailorlunare",
+                "text": "@mailorlunare"
+            }
+        ]
+    },
+    {
+        "index": 495,
+        "id": "trevino-merritt",
+        "full-name": "Trevino Merritt",
+        "size": "small",
+        "sizepixels": 7540,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0495TrevinoMerritt_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/mailorlunare",
+                "text": "@mailorlunare"
+            }
+        ]
+    },
+    {
+        "index": 494,
+        "id": "nova-gesundheit",
+        "full-name": "Nova Gesundheit",
+        "size": "small",
+        "sizepixels": 11426,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0494NovaGesundheit_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/kechmeifyoucan",
+                "text": "@kechmeifyoucan"
+            },
+            {
+                "link": "https://twitter.com/AlyssaLMPenney",
+                "text": "@AlyssaLMPenney"
+            }
+        ]
+    },
+    {
+        "index": 493,
+        "id": "bibby-trunbo",
+        "full-name": "Bibby Trunbo",
+        "size": "small",
+        "sizepixels": 7210,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0493BibbyTrunbo_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
+            }
+        ]
+    },
+    {
+        "index": 492,
+        "id": "jasper-coven",
+        "full-name": "Jasper Coven",
+        "size": "small",
+        "sizepixels": 7395,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0492JasperCoven_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/bigdamnproject",
+                "text": "@bigdamnproject"
+            }
+        ]
+    },
+    {
+        "index": 491,
+        "id": "saturday-elder",
+        "full-name": "Saturday Elder",
+        "size": "small",
+        "sizepixels": 15824,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "0491SaturdayElder_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "KeCH"
+            }
+        ]
+    },
+    {
+        "index": 490,
+        "id": "jasper-ji-eun",
+        "full-name": "Jasper Ji-Eun",
+        "size": "small",
+        "sizepixels": 14196,
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "0490JasperJi-Eun_Mechanics.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/tywyso",
+                "text": "@tywyso"
+            }
+        ]
+    },
+    {
+        "index": 489,
+        "id": "kofi-gildehaus",
+        "full-name": "Kofi Gildehaus",
+        "size": "large",
+        "sizepixels": 15232,
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "0489KofiGildehaus_Mechanics.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_pysics",
+                "text": "@_pysics"
+            }
+        ]
+    },
+    {
+        "index": 488,
+        "id": "wyatt-mason-xi",
+        "full-name": "Wyatt Mason XI",
+        "size": "small",
+        "sizepixels": 7080,
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "0488WyattMasonXI_Mechanics.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "esoterictriangle"
+            }
+        ]
+    },
+    {
+        "index": 487,
+        "id": "christian-combs",
+        "full-name": "Christian Combs",
+        "size": "small",
+        "sizepixels": 11088,
+        "teams": [
+            "Core Mechanics"
+        ],
+        "sprites": [
+            "0487ChristianCombs_Mechanics.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "epictoast"
+            }
+        ]
+    },
+    {
+        "index": 486,
+        "id": "howell-rocha",
+        "full-name": "Howell Rocha",
+        "size": "large",
+        "sizepixels": 30492,
+        "teams": [
+            "Miami Dale"
+        ],
+        "sprites": [
+            "0486HowellRocha_Dale.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/8loi88",
+                "text": "@8loi88"
+            }
+        ]
+    },
+    {
+        "index": 485,
+        "id": "russo-slugger",
+        "full-name": "Russo Slugger",
+        "size": "small",
+        "sizepixels": 13348,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0485RussoSlugger_JazzHands.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/VoxiSour",
+                "text": "@VoxiSour"
+            }
+        ]
+    },
+    {
+        "index": 484,
+        "id": "wade-howe",
+        "full-name": "Wade Howe",
+        "size": "large",
+        "sizepixels": 28908,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0484WadeHowe_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/pikatzke",
+                "text": "@pikatzke"
+            }
+        ]
+    },
+    {
+        "index": 483,
+        "id": "salih-ultrabass",
+        "full-name": "Salih Ultrabass",
+        "size": "small",
+        "sizepixels": 12240,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0483SalihUltrabass_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/awhekate",
+                "text": "@awhekate"
+            }
+        ]
+    },
+    {
+        "index": 482,
+        "id": "allan-kranch",
+        "full-name": "Allan Kranch",
+        "size": "small",
+        "sizepixels": 14325,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0482AllanKranch_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/pikatzke",
+                "text": "@pikatzke"
+            }
+        ]
+    },
+    {
+        "index": 481,
+        "id": "zesty-yaboi",
+        "full-name": "Zesty Yaboi",
+        "size": "small",
+        "sizepixels": 14508,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0481ZestyYaboi_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/artfulGruesome",
+                "text": "@artfulGruesome"
+            }
+        ]
+    },
+    {
+        "index": 480,
+        "id": "gloria-bugsnax",
+        "full-name": "Gloria Bugsnax",
+        "size": "large",
+        "sizepixels": 23187,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0480GloriaBugsnax_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/kaloliferart",
+                "text": "@kaloliferart"
+            }
+        ]
+    },
+    {
+        "index": 479,
+        "id": "king-weatherman",
+        "full-name": "King Weatherman",
+        "size": "small",
+        "sizepixels": 11016,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0479KingWeatherman_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/dipppitydoop",
+                "text": "@dipppitydoop"
+            }
+        ]
+    },
+    {
+        "index": 478,
+        "id": "owen-picklestein",
+        "full-name": "Owen Picklestein",
+        "size": "small",
+        "sizepixels": 7889,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0478OwenPicklestein_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/artfulGruesome",
+                "text": "@artfulGruesome"
+            }
+        ]
+    },
+    {
+        "index": 477,
+        "id": "zeboriah-wilson",
+        "full-name": "Zeboriah Wilson",
+        "size": "small",
+        "sizepixels": 15300,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0477ZeboriahWilson_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 476,
+        "id": "matheo-carpenter",
+        "full-name": "Matheo Carpenter",
+        "size": "small",
+        "sizepixels": 6678,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0476MatheoCarpenter_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/glassgoblin",
+                "text": "@glassgoblin"
+            }
+        ]
+    },
+    {
+        "index": 475,
+        "id": "jorge-ito",
+        "full-name": "Jorge Ito",
+        "size": "small",
+        "sizepixels": 8480,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0475JorgeIto_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/pewterbee",
+                "text": "@pewterbee"
+            }
+        ]
+    },
+    {
+        "index": 474,
+        "id": "castillo-turner",
+        "full-name": "Castillo Turner",
+        "size": "small",
+        "sizepixels": 9912,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0474CastilloTurner_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://kieren-sz.tumblr.com",
+                "text": "kieren-sz"
+            }
+        ]
+    },
+    {
+        "index": 473,
+        "id": "bryanaya-chang",
+        "full-name": "Bryanaya Chang",
+        "size": "small",
+        "sizepixels": 7592,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0473BryanayaChang_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 472,
+        "id": "ryan-bluff",
+        "full-name": "Ryan Bluff",
+        "size": "small",
+        "sizepixels": 11322,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0472RyanBluff_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://Caelum#6886",
+                "text": "Caelum#6886"
+            }
+        ]
+    },
+    {
+        "index": 471,
+        "id": "dimi-wobbler",
+        "full-name": "Dimi Wobbler",
+        "size": "small",
+        "sizepixels": 7725,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0471DimiWobbler_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://entipikal#8306",
+                "text": "entipikal#8306"
+            }
+        ]
+    },
+    {
+        "index": 470,
+        "id": "yips-kaneko",
+        "full-name": "Yips Kaneko",
+        "size": "large",
+        "sizepixels": 28773,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0470YipsKaneko_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "mitskifan"
+            }
+        ]
+    },
+    {
+        "index": 469,
+        "id": "nevaeh-flapper",
+        "full-name": "Nevaeh Flapper",
+        "size": "small",
+        "sizepixels": 11830,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0469NevaehFlapper_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/arrowsuns",
+                "text": "@arrowsuns"
+            }
+        ]
+    },
+    {
+        "index": 468,
+        "id": "ilhan-snowfall",
+        "full-name": "Ilhan Snowfall",
+        "size": "small",
+        "sizepixels": 10184,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0468IlhanSnowfall_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/tsawac",
+                "text": "@tsawac"
+            }
+        ]
+    },
+    {
+        "index": 467,
+        "id": "clara-knapp",
+        "full-name": "Clara Knapp",
+        "size": "small",
+        "sizepixels": 11020,
+        "teams": [
+            "Chicago Firefighters",
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0467ClaraKnapp_Firefighters.png",
+            "0467ClaraKnapp_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/arrowsuns",
+                "text": "@arrowsuns"
+            },
+            {
+                "link": "",
+                "text": "squirrel_saloli#6559"
+            }
+        ]
+    },
+    {
+        "index": 466,
+        "id": "ajax-black",
+        "full-name": "Ajax Black",
+        "size": "small",
+        "sizepixels": 11718,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0466AjaxBlack_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "mitskifan#4561"
+            },
+            {
+                "link": "",
+                "text": "entipikal#8306"
+            },
+            {
+                "link": "https://twitter.com/arrowsuns",
+                "text": "@arrowsuns"
+            }
+        ]
+    },
+    {
         "index": 465,
         "id": "phineas-wormthrice",
         "full-name": "Phineas Wormthrice",
@@ -1566,9 +2418,11 @@
         "size": "small",
         "sizepixels": 15604,
         "teams": [
+            "Breckenridge Jazz Hands",
             "New York Millennials"
         ],
         "sprites": [
+            "0383ConradVaughan_JazzHands.png",
             "0383ConradVaughan_Millennials.png"
         ],
         "credits": [
@@ -2537,11 +3391,13 @@
         "sizepixels": 8000,
         "teams": [
             "Seattle Garages",
+            "Breckenridge Jazz Hands",
             "San Francisco Lovers",
             "Mexico City Wild Wings"
         ],
         "sprites": [
             "0337LiquidFriend_Garages.png",
+            "0337LiquidFriend_JazzHands.png",
             "0337LiquidFriend_Lovers.png",
             "0337LiquidFriend_WildWings.png"
         ],
@@ -4299,12 +5155,17 @@
             "Canada Moist Talkers"
         ],
         "sprites": [
-            "0252JenkinsGood_MoistTalkers.png"
+            "0252JenkinsGood_MoistTalkers.png",
+            "0252JenkinsGood2_MoistTalkers.png"
         ],
         "credits": [
             {
                 "link": "https://twitter.com/spiral_joe",
                 "text": "@spiral_joe"
+            },
+            {
+                "link": "https://twitter.com/MackinItHappen",
+                "text": "@MackinItHappen"
             }
         ]
     },
@@ -6117,9 +6978,11 @@
         "size": "small",
         "sizepixels": 10664,
         "teams": [
+            "Boston Flowers",
             "Hellmouth Sunbeams"
         ],
         "sprites": [
+            "0163SuttonBishop_Flowers.png",
             "0163SuttonBishop_Sunbeams.png"
         ],
         "credits": [
@@ -8116,10 +8979,12 @@
         "size": "small",
         "sizepixels": 13746,
         "teams": [
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Boston Flowers"
         ],
         "sprites": [
-            "0068AdalbertoTosser_Crabs.png"
+            "0068AdalbertoTosser_Crabs.png",
+            "0068AdalbertoTosser_Flowers.png"
         ],
         "credits": [
             {
@@ -8976,6 +9841,7 @@
         "sizepixels": 8100,
         "teams": [
             "Chicago Firefighters",
+            "Boston Flowers",
             "Hawai'i Fridays",
             "San Francisco Lovers",
             "New York Millennials",
@@ -8987,6 +9853,7 @@
         ],
         "sprites": [
             "0028NaN_Firefighters.png",
+            "0028NaN_Flowers.png",
             "0028NaN_Fridays.png",
             "0028NaN_Lovers.png",
             "0028NaN_Millennials.png",
@@ -9065,6 +9932,7 @@
         "size": "small",
         "sizepixels": 11284,
         "teams": [
+            "Boston Flowers",
             "Hawai'i Fridays",
             "Seattle Garages",
             "Hall Stars",
@@ -9077,6 +9945,7 @@
             "Charleston Shoe Thieves"
         ],
         "sprites": [
+            "0025JaylenHotdogfingers_Flowers.png",
             "0025JaylenHotdogfingers_Fridays.png",
             "0025JaylenHotdogfingers_Garages.png",
             "0025JaylenHotdogfingers_HallStars.png",

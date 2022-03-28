@@ -10,6 +10,12 @@
         ],
         "sprites": [
             "M001BabyRichmond_MoistTalkers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/avery_helm",
+                "text": "@avery_helm"
+            }
         ]
     },
     {
@@ -23,6 +29,12 @@
         ],
         "sprites": [
             "M002Pepito_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/snafubravado",
+                "text": "@snafubravado"
+            }
         ]
     },
     {
@@ -66,6 +78,12 @@
         ],
         "sprites": [
             "M005OurLadyOfPerpetualFridays_Fridays.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -92,6 +110,12 @@
         ],
         "sprites": [
             "M007Tigerberus_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Sovenas_Ark",
+                "text": "@Sovenas_Ark"
+            }
         ]
     },
     {
@@ -105,6 +129,12 @@
         ],
         "sprites": [
             "M008TheSpearmint_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Randomentalist",
+                "text": "@Randomentalist"
+            }
         ]
     },
     {
@@ -131,6 +161,12 @@
         ],
         "sprites": [
             "M010Jeff_Sunbeams.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Krasi_Savov",
+                "text": "@Krasi_Savov"
+            }
         ]
     },
     {
@@ -144,6 +180,51 @@
         ],
         "sprites": [
             "M011PhiladelphiaPhilling_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/raevpet",
+                "text": "@raevpet"
+            }
+        ]
+    },
+    {
+        "index": 12,
+        "id": "homerun-eric",
+        "full-name": "Homerun Eric",
+        "size": "small",
+        "sizepixels": 5214,
+        "teams": [
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "M012HomerunEric_Garages.png"
+        ]
+    },
+    {
+        "index": 13,
+        "id": "bolter",
+        "full-name": "Bolter",
+        "size": "huge",
+        "sizepixels": 97846,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "M013Bolter_JazzHands.png"
+        ]
+    },
+    {
+        "index": 14,
+        "id": "1976-vw-golf-gti-mk-1",
+        "full-name": "1976 VW Golf GTI Mk 1",
+        "size": "xlarge",
+        "sizepixels": 21625,
+        "teams": [
+            "Canada Moist Talkers"
+        ],
+        "sprites": [
+            "M0141976VWGolfGTIMk1_MoistTalkers.png"
         ]
     }
 ]
