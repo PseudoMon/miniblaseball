@@ -1292,7 +1292,9 @@ default: 0
 team: pies
 former-teams:
 -garages
-credit: @HenryMarshallow
+credit: 
+- @HenryMarshallow
+- @MLeeLunsford
 default: 0
 
 #eugenia-bickle
@@ -2833,7 +2835,7 @@ credit: "epictoast"
 credit: "esoterictriangle"
 
 #kofi-gildehaus
-credit: @_pysics
+credit: @_pysics    
 
 #jasper-ji-eun
 credit: @tywyso
@@ -2900,6 +2902,27 @@ credit:
 
 #rush-valenzuela
 credit: @_waalkr
+
+#melton-telephone
+credit: @spleakerboy
+
+#clare-mccall
+credit: @_waalkr
+
+#alston-england
+credit: @_waalkr
+
+#zi-sliders
+credit: @necromngo
+
+#conrad-twelve
+credit: @necromngo 
+
+#doc-anice
+credit: @moliwogs
+
+#kennedy-cena
+credit: @hetreasky
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please

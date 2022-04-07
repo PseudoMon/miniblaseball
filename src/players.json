@@ -1,5 +1,140 @@
 [
     {
+        "index": 516,
+        "id": "kennedy-cena",
+        "full-name": "Kennedy Cena",
+        "size": "small",
+        "sizepixels": 11895,
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0516KennedyCena_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 515,
+        "id": "doc-anice",
+        "full-name": "Doc Anice",
+        "size": "small",
+        "sizepixels": 8758,
+        "teams": [
+            "Philly Pies"
+        ],
+        "sprites": [
+            "0515DocAnice_Pies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/moliwogs",
+                "text": "@moliwogs"
+            }
+        ]
+    },
+    {
+        "index": 514,
+        "id": "conrad-twelve",
+        "full-name": "Conrad Twelve",
+        "size": "small",
+        "sizepixels": 8456,
+        "teams": [
+            "Chicago Firefighters",
+            "Seattle Garages"
+        ],
+        "sprites": [
+            "0514ConradTwelve_Firefighters.png",
+            "0514ConradTwelve_Garages.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 513,
+        "id": "zi-sliders",
+        "full-name": "Zi Sliders",
+        "size": "small",
+        "sizepixels": 4794,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0513ZiSliders_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/necromngo",
+                "text": "@necromngo"
+            }
+        ]
+    },
+    {
+        "index": 512,
+        "id": "alston-england",
+        "full-name": "Alston England",
+        "size": "small",
+        "sizepixels": 11222,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0512AlstonEngland_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 511,
+        "id": "clare-mccall",
+        "full-name": "Clare Mccall",
+        "size": "small",
+        "sizepixels": 6493,
+        "teams": [
+            "Chicago Firefighters"
+        ],
+        "sprites": [
+            "0511ClareMccall_Firefighters.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 510,
+        "id": "melton-telephone",
+        "full-name": "Melton Telephone",
+        "size": "small",
+        "sizepixels": 7830,
+        "teams": [
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "0510MeltonTelephone_Magic.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/spleakerboy",
+                "text": "@spleakerboy"
+            }
+        ]
+    },
+    {
         "index": 509,
         "id": "rush-valenzuela",
         "full-name": "Rush Valenzuela",
@@ -943,9 +1078,11 @@
         "size": "small",
         "sizepixels": 8232,
         "teams": [
+            "Philly Pies",
             "Houston Spies"
         ],
         "sprites": [
+            "0460YeongHoBenitez_Pies.png",
             "0460YeongHoBenitez_Spies.png"
         ],
         "credits": [
@@ -6543,19 +6680,25 @@
         "id": "henry-marshallow",
         "full-name": "Henry Marshallow",
         "size": "small",
-        "sizepixels": 1058,
+        "sizepixels": 13195,
         "teams": [
             "Seattle Garages",
             "Philly Pies"
         ],
         "sprites": [
             "0185HenryMarshallow_Garages.png",
-            "0185HenryMarshallow_Pies.png"
+            "0185HenryMarshallow_Pies.png",
+            "0185HenryMarshallow2_Garages.png",
+            "0185HenryMarshallow2_Pies.png"
         ],
         "credits": [
             {
                 "link": "https://twitter.com/HenryMarshallow",
                 "text": "@HenryMarshallow"
+            },
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
             }
         ]
     },
