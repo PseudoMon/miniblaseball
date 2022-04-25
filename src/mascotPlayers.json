@@ -226,5 +226,24 @@
         "sprites": [
             "M0141976VWGolfGTIMk1_MoistTalkers.png"
         ]
+    },
+    {
+        "index": 15,
+        "id": "angelika-aufdiscord",
+        "full-name": "Angelika Aufdiscord",
+        "size": "small",
+        "sizepixels": 11008,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "M015AngelikaAufdiscord_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/tiny_revel",
+                "text": "@tiny_revel"
+            }
+        ]
     }
 ]

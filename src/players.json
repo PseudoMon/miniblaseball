@@ -1,5 +1,150 @@
 [
     {
+        "index": 523,
+        "id": "chorby-soul-v",
+        "full-name": "Chorby Soul V",
+        "size": "small",
+        "sizepixels": 10010,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0523ChorbySoulV_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            },
+            {
+                "link": "https://twitter.com/tiny_revel",
+                "text": "@tiny_revel"
+            }
+        ]
+    },
+    {
+        "index": 522,
+        "id": "ankle-halifax",
+        "full-name": "Ankle Halifax",
+        "size": "small",
+        "sizepixels": 4428,
+        "teams": [
+            "Atlantis Georgias",
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "0522AnkleHalifax_Georgias.png",
+            "0522AnkleHalifax_Lift.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 521,
+        "id": "nanci-grackle",
+        "full-name": "Nanci Grackle",
+        "size": "small",
+        "sizepixels": 9882,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0521NanciGrackle_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 520,
+        "id": "clove-ji-eun",
+        "full-name": "Clove Ji-Eun",
+        "size": "small",
+        "sizepixels": 13904,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0520CloveJi-Eun_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 519,
+        "id": "steals-chark",
+        "full-name": "Steals Chark",
+        "size": "small",
+        "sizepixels": 6946,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0519StealsChark_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 518,
+        "id": "randy-dennis",
+        "full-name": "Randy Dennis",
+        "size": "small",
+        "sizepixels": 7920,
+        "teams": [
+            "Miami Dale",
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0518RandyDennis_Dale.png",
+            "0518RandyDennis_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/mackinithappen",
+                "text": "@mackinithappen"
+            },
+            {
+                "link": "https://twitter.com/tiny_revel",
+                "text": "@tiny_revel"
+            }
+        ]
+    },
+    {
+        "index": 517,
+        "id": "frankie-hambone",
+        "full-name": "Frankie Hambone",
+        "size": "large",
+        "sizepixels": 19552,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0517FrankieHambone_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "Batty#0929"
+            }
+        ]
+    },
+    {
         "index": 516,
         "id": "kennedy-cena",
         "full-name": "Kennedy Cena",
@@ -2479,9 +2624,11 @@
         "size": "large",
         "sizepixels": 13400,
         "teams": [
+            "Atlantis Georgias",
             "Hades Tigers"
         ],
         "sprites": [
+            "0387ErinJesaulenko_Georgias.png",
             "0387ErinJesaulenko_Tigers.png"
         ],
         "credits": [
@@ -7470,10 +7617,12 @@
         "sizepixels": 9396,
         "teams": [
             "Seattle Garages",
+            "Atlantis Georgias",
             "Hades Tigers"
         ],
         "sprites": [
             "0147HirotoWilcox_Garages.png",
+            "0147HirotoWilcox_Georgias.png",
             "0147HirotoWilcox_Tigers.png"
         ],
         "credits": [
@@ -9557,6 +9706,7 @@
         "sizepixels": 11970,
         "teams": [
             "Seattle Garages",
+            "Atlantis Georgias",
             "San Francisco Lovers",
             "THE SHELLED ONE'S PODS",
             "LA Unlimited Tacos",
@@ -9564,6 +9714,7 @@
         ],
         "sprites": [
             "0048PitchingMachine_Garages.png",
+            "0048PitchingMachine_Georgias.png",
             "0048PitchingMachine_Lovers.png",
             "0048PitchingMachine_Pods.png",
             "0048PitchingMachine_Tacos.png",
@@ -10135,12 +10286,14 @@
         "teams": [
             "Canada Moist Talkers",
             "Hades Tigers",
-            "Baltimore Crabs"
+            "Baltimore Crabs",
+            "Atlantis Georgias"
         ],
         "sprites": [
             "0023FishSummer_MoistTalkers.png",
             "0023FishSummer_Tigers.png",
             "0023FishSummer2_Crabs.png",
+            "0023FishSummer2_Georgias.png",
             "0023FishSummer2_MoistTalkers.png",
             "0023FishSummer2_Tigers.png"
         ],
