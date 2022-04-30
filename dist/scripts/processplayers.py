@@ -65,12 +65,24 @@ def getname(filename, is_guest=False):
 
     if "V I" in fullname:
         # for Wyatt Mason VI / VII / VIII
-        fullname = fullname.replace("V II", "VII")
+        fullname = fullname.replace("V I", "VI")
+
+    if "Mason I V" in fullname:
+        # for Ivy beloved
+        fullname = fullname.replace("I V", "IV")
 
     if "Mason X I" in fullname:
         # for Wyatt Mason XI
         fullname = fullname.replace("X I", "XI")
 
+    if "Mason I X" in fullname:
+        # for Wyatt Mason XI
+        fullname = fullname.replace("I X", "IX")
+
+    if "Mason I X" in fullname:
+        # for Wyatt Mason IX
+        fullname = fullname.replace("I X", "IX")
+        
     if "- " in fullname:
         # this is usually for Korean name e.g. Ji-Eun
         fullname = fullname.replace("- ", "-")

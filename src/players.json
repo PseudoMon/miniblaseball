@@ -1,5 +1,291 @@
 [
     {
+        "index": 538,
+        "id": "wanda-schenn",
+        "full-name": "Wanda Schenn",
+        "size": "small",
+        "sizepixels": 8432,
+        "teams": [
+            "Chicago Firefighters",
+            "LA Unlimited Tacos",
+            "Ohio Worms"
+        ],
+        "sprites": [
+            "0538WandaSchenn_Firefighters.png",
+            "0538WandaSchenn_Tacos.png",
+            "0538WandaSchenn_Worms.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/_waalkr",
+                "text": "@_waalkr"
+            }
+        ]
+    },
+    {
+        "index": 537,
+        "id": "rat-batson",
+        "full-name": "Rat Batson",
+        "size": "small",
+        "sizepixels": 5883,
+        "teams": [
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0537RatBatson_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/birbteef",
+                "text": "@birbteef"
+            }
+        ]
+    },
+    {
+        "index": 535,
+        "id": "kelbasa-knuckles",
+        "full-name": "Kelbasa Knuckles",
+        "size": "small",
+        "sizepixels": 7434,
+        "teams": [
+            "Green Hill Hedgehogs"
+        ],
+        "sprites": [
+            "0535KelbasaKnuckles_Hedgehogs.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 534,
+        "id": "wyatt-mason-iv",
+        "full-name": "Wyatt Mason IV",
+        "size": "small",
+        "sizepixels": 4598,
+        "teams": [
+            "Atlantis Georgias",
+            "Dallas Steaks",
+            "LA Unlimited Tacos"
+        ],
+        "sprites": [
+            "0534WyattMasonIV_Georgias.png",
+            "0534WyattMasonIV_Steaks.png",
+            "0534WyattMasonIV_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/DrifterSoda",
+                "text": "@DrifterSoda"
+            },
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 533,
+        "id": "wyatt-mason-v",
+        "full-name": "Wyatt Mason V",
+        "size": "small",
+        "sizepixels": 3959,
+        "teams": [
+            "Miami Dale"
+        ],
+        "sprites": [
+            "0533WyattMasonV_Dale.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "guzmania#4173"
+            }
+        ]
+    },
+    {
+        "index": 532,
+        "id": "wyatt-mason-i",
+        "full-name": "Wyatt Mason I",
+        "size": "small",
+        "sizepixels": 5368,
+        "teams": [
+            "Tokyo Lift"
+        ],
+        "sprites": [
+            "0532WyattMasonI_Lift.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "buzzard#2015"
+            }
+        ]
+    },
+    {
+        "index": 531,
+        "id": "wyatt-mason-ix",
+        "full-name": "Wyatt Mason IX",
+        "size": "small",
+        "sizepixels": 3840,
+        "teams": [
+            "New York Millennials"
+        ],
+        "sprites": [
+            "0531WyattMasonIX_Millennials.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            }
+        ]
+    },
+    {
+        "index": 530,
+        "id": "tall-monteverde",
+        "full-name": "Tall Monteverde",
+        "size": "small",
+        "sizepixels": 6148,
+        "teams": [
+            "Charleston Shoe Thieves",
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0530TallMonteverde_ShoeThieves.png",
+            "0530TallMonteverde_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/dedsec_pony",
+                "text": "@dedsec_pony"
+            }
+        ]
+    },
+    {
+        "index": 529,
+        "id": "wyatt-mason-viii",
+        "full-name": "Wyatt Mason VIII",
+        "size": "small",
+        "sizepixels": 8265,
+        "teams": [
+            "Ohio Worms"
+        ],
+        "sprites": [
+            "0529WyattMasonVIII_Worms.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "suitablysolemn#3710"
+            }
+        ]
+    },
+    {
+        "index": 528,
+        "id": "wyatt-mason-ii",
+        "full-name": "Wyatt Mason II",
+        "size": "small",
+        "sizepixels": 6710,
+        "teams": [
+            "Breckenridge Jazz Hands"
+        ],
+        "sprites": [
+            "0528WyattMasonII_JazzHands.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/voxisour",
+                "text": "@voxisour"
+            }
+        ]
+    },
+    {
+        "index": 527,
+        "id": "wyatt-mason-vi",
+        "full-name": "Wyatt Mason VI",
+        "size": "small",
+        "sizepixels": 6076,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0527WyattMasonVI_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
+        ]
+    },
+    {
+        "index": 526,
+        "id": "wyatt-mason-xiii",
+        "full-name": "Wyatt Mason XIII",
+        "size": "small",
+        "sizepixels": 4104,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0526WyattMasonXIII_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/goatedtoasts",
+                "text": "@goatedtoasts"
+            }
+        ]
+    },
+    {
+        "index": 525,
+        "id": "wyatt-mason-xii",
+        "full-name": "Wyatt Mason XII",
+        "size": "small",
+        "sizepixels": 5797,
+        "teams": [
+            "Charleston Shoe Thieves"
+        ],
+        "sprites": [
+            "0525WyattMasonXII_ShoeThieves.png"
+        ]
+    },
+    {
+        "index": 524,
+        "id": "wyatt-mason-iii",
+        "full-name": "Wyatt Mason III",
+        "size": "small",
+        "sizepixels": 3570,
+        "teams": [
+            "Atlantis Georgias"
+        ],
+        "sprites": [
+            "0524WyattMasonIII_Georgias.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/calentines_day",
+                "text": "@calentines_day"
+            },
+            {
+                "link": "https://twitter.com/uwunium",
+                "text": "@uwunium"
+            },
+            {
+                "link": "https://twitter.com/mathonwys",
+                "text": "@mathonwys"
+            },
+            {
+                "link": "https://twitter.com/Dedsec_pony",
+                "text": "@Dedsec_pony"
+            }
+        ]
+    },
+    {
         "index": 523,
         "id": "chorby-soul-v",
         "full-name": "Chorby Soul V",
@@ -4514,10 +4800,12 @@
         "size": "small",
         "sizepixels": 14105,
         "teams": [
-            "Tokyo Lift"
+            "Tokyo Lift",
+            "LA Unlimited Tacos"
         ],
         "sprites": [
-            "0296SilvaireSemiquaver_Lift.png"
+            "0296SilvaireSemiquaver_Lift.png",
+            "0296SilvaireSemiquaver_Tacos.png"
         ],
         "credits": [
             {
@@ -5812,8 +6100,8 @@
         ],
         "credits": [
             {
-                "link": "https://twitter.com/rabbit_traps",
-                "text": "@rabbit_traps"
+                "link": "https://twitter.com/rabbittraps_",
+                "text": "@rabbittraps_"
             },
             {
                 "link": "https://twitter.com/snafubravado",
@@ -5968,11 +6256,13 @@
         "sizepixels": 13845,
         "teams": [
             "Breckenridge Jazz Hands",
-            "Hellmouth Sunbeams"
+            "Hellmouth Sunbeams",
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "0226HendricksRichardson_JazzHands.png",
-            "0226HendricksRichardson_Sunbeams.png"
+            "0226HendricksRichardson_Sunbeams.png",
+            "0226HendricksRichardson_Tacos.png"
         ],
         "credits": [
             {
@@ -7109,12 +7399,19 @@
         "id": "rat-mason",
         "full-name": "Rat Mason",
         "size": "small",
-        "sizepixels": 5940,
+        "sizepixels": 9750,
         "teams": [
             "LA Unlimited Tacos"
         ],
         "sprites": [
-            "0171RatMason_Tacos.png"
+            "0171RatMason_Tacos.png",
+            "0171RatMason2_Tacos.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/fancymancer",
+                "text": "@fancymancer"
+            }
         ]
     },
     {
@@ -9645,11 +9942,14 @@
         "size": "small",
         "sizepixels": 14000,
         "teams": [
-            "Chicago Firefighters"
+            "Chicago Firefighters",
+            "LA Unlimited Tacos"
         ],
         "sprites": [
             "0051GoobieBallson_Firefighters.png",
-            "0051GoobieBallson2_Firefighters.png"
+            "0051GoobieBallson1_Tacos.png",
+            "0051GoobieBallson2_Firefighters.png",
+            "0051GoobieBallson3_Firefighters.png"
         ],
         "credits": [
             {

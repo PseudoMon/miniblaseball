@@ -1209,8 +1209,7 @@ credit: @fancymancer
 default: 0
 
 #rat-mason
-team: tacos
-default: 0
+credit: @fancymancer
 
 #igneus-delacruz
 team: sunbeams
@@ -1632,7 +1631,7 @@ former-teams:
 -millennials
 -tigers
 credit:
-- @rabbit_traps
+- @rabbittraps_
 - @snafubravado
 default: 0
 
@@ -2975,6 +2974,29 @@ credit: @dedsec_pony
 
 #wyatt-mason-ix
 credit: @calentines_day
+
+#wyatt-mason-i
+credit: "buzzard#2015"
+
+#wyatt-mason-v
+credit: "guzmania#4173"
+
+#wyatt-mason-iv
+credit: 
+- @DrifterSoda
+- @calentines_day
+
+#kelbasa-knuckles
+credit: @hetreasky
+
+#blimp-hardison
+credit: 
+
+#rat-batson
+credit: @birbteef
+
+#wanda-schenn
+credit: @_waalkr
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 >> Guest players below this line please
