@@ -85,7 +85,7 @@
 </script>
 
 <div class="gallery">
-    {#each players as player, i}
+    {#each players as player, i (player.index)}
     <div
         style="{ player['size'] === 'huge' ? 'overflow: visible' : '' }"
 
