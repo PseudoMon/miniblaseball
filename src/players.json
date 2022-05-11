@@ -1,5 +1,100 @@
 [
     {
+        "index": 543,
+        "id": "gita-biscuits",
+        "full-name": "Gita Biscuits",
+        "size": "small",
+        "sizepixels": 12308,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0543GitaBiscuits_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/wayslidecool",
+                "text": "@wayslidecool"
+            }
+        ]
+    },
+    {
+        "index": 542,
+        "id": "yulia-skitter",
+        "full-name": "Yulia Skitter",
+        "size": "large",
+        "sizepixels": 13325,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0542YuliaSkitter_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            }
+        ]
+    },
+    {
+        "index": 541,
+        "id": "reece-saetang",
+        "full-name": "Reece Saetang",
+        "size": "small",
+        "sizepixels": 10112,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0541ReeceSaetang_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            }
+        ]
+    },
+    {
+        "index": 540,
+        "id": "jonathan-catalina",
+        "full-name": "Jonathan Catalina",
+        "size": "small",
+        "sizepixels": 12710,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0540JonathanCatalina_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            }
+        ]
+    },
+    {
+        "index": 539,
+        "id": "mindy-salad",
+        "full-name": "Mindy Salad",
+        "size": "small",
+        "sizepixels": 7008,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0539MindySalad_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/cocacolapanda1",
+                "text": "@cocacolapanda1"
+            }
+        ]
+    },
+    {
         "index": 538,
         "id": "wanda-schenn",
         "full-name": "Wanda Schenn",
@@ -38,6 +133,29 @@
             {
                 "link": "https://twitter.com/birbteef",
                 "text": "@birbteef"
+            }
+        ]
+    },
+    {
+        "index": 536,
+        "id": "blimp-hardison",
+        "full-name": "Blimp Hardison",
+        "size": "huge",
+        "sizepixels": 88800,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "0536BlimpHardison_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            },
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
             }
         ]
     },
@@ -1494,10 +1612,12 @@
         "size": "small",
         "sizepixels": 12159,
         "teams": [
+            "San Francisco Lovers",
             "Yellowstone Magic",
             "Houston Spies"
         ],
         "sprites": [
+            "0461YeongHoGarcia_Lovers.png",
             "0461YeongHoGarcia_Magic.png",
             "0461YeongHoGarcia_Spies.png"
         ]
@@ -4387,10 +4507,12 @@
         "size": "small",
         "sizepixels": 15168,
         "teams": [
-            "Hawai'i Fridays"
+            "Hawai'i Fridays",
+            "San Francisco Lovers"
         ],
         "sprites": [
-            "0316JacobWinner_Fridays.png"
+            "0316JacobWinner_Fridays.png",
+            "0316JacobWinner_Lovers.png"
         ],
         "credits": [
             {
@@ -4608,9 +4730,11 @@
         "size": "small",
         "sizepixels": 13944,
         "teams": [
+            "San Francisco Lovers",
             "Core Mechanics"
         ],
         "sprites": [
+            "0305FoxyPebble_Lovers.png",
             "0305FoxyPebble_Mechanics.png"
         ],
         "credits": [
@@ -4853,8 +4977,8 @@
         ],
         "credits": [
             {
-                "link": "https://â€œMaluminseâ€",
-                "text": "â€œMaluminseâ€"
+                "link": "",
+                "text": "Maluminse"
             }
         ]
     },
@@ -8821,8 +8945,8 @@
     },
     {
         "index": 105,
-        "id": "pudge-nakatamo",
-        "full-name": "Pudge Nakatamo",
+        "id": "pudge-nakamoto",
+        "full-name": "Pudge Nakamoto",
         "size": "small",
         "sizepixels": 8174,
         "teams": [
@@ -8831,9 +8955,15 @@
             "Houston Spies"
         ],
         "sprites": [
-            "0105PudgeNakatamo_BreathMints.png",
-            "0105PudgeNakatamo_ShoeThieves.png",
-            "0105PudgeNakatamo_Spies.png"
+            "0105PudgeNakamoto_BreathMints.png",
+            "0105PudgeNakamoto_ShoeThieves.png",
+            "0105PudgeNakamoto_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
         ]
     },
     {
@@ -9638,11 +9768,13 @@
         "sizepixels": 6960,
         "teams": [
             "Baltimore Crabs",
-            "Breckenridge Jazz Hands"
+            "Breckenridge Jazz Hands",
+            "San Francisco Lovers"
         ],
         "sprites": [
             "0065TotFox_Crabs.png",
-            "0065TotFox_JazzHands.png"
+            "0065TotFox_JazzHands.png",
+            "0065TotFox_Lovers.png"
         ],
         "credits": [
             {
@@ -10616,11 +10748,13 @@
         "sizepixels": 19998,
         "teams": [
             "Charleston Shoe Thieves",
-            "Mexico City Wild Wings"
+            "Mexico City Wild Wings",
+            "San Francisco Lovers"
         ],
         "sprites": [
             "0022GuntherO'Brian_ShoeThieves.png",
             "0022GuntherO'Brian_WildWings.png",
+            "0022GuntherOBrian_Lovers.png",
             "0022GuntherO'Brian2_ShoeThieves.png"
         ]
     },

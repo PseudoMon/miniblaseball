@@ -245,5 +245,43 @@
                 "text": "@tiny_revel"
             }
         ]
+    },
+    {
+        "index": 16,
+        "id": "joey-pizza",
+        "full-name": "Joey Pizza",
+        "size": "small",
+        "sizepixels": 8778,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "M016JoeyPizza_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/validtine",
+                "text": "@validtine"
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "id": "meatcute",
+        "full-name": "Meatcute",
+        "size": "huge",
+        "sizepixels": 83538,
+        "teams": [
+            "San Francisco Lovers"
+        ],
+        "sprites": [
+            "M017Meatcute_Lovers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
     }
 ]
