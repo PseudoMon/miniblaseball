@@ -1,5 +1,224 @@
 [
     {
+        "index": 554,
+        "id": "marco-escobar",
+        "full-name": "Marco Escobar",
+        "size": "small",
+        "sizepixels": 6670,
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0554MarcoEscobar_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "diff"
+            }
+        ]
+    },
+    {
+        "index": 553,
+        "id": "yrjö-kerfuffle",
+        "full-name": "Yrjö Kerfuffle",
+        "size": "large",
+        "sizepixels": 18564,
+        "teams": [
+            "Houston Spies",
+            "Hades Tigers"
+        ],
+        "sprites": [
+            "0553YrjöKerfuffle_Spies.png",
+            "0553YrjöKerfuffle_Tigers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 552,
+        "id": "eduardo-perez",
+        "full-name": "Eduardo Perez",
+        "size": "small",
+        "sizepixels": 8436,
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0552EduardoPerez_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/toxiclockwork",
+                "text": "@toxiclockwork"
+            }
+        ]
+    },
+    {
+        "index": 551,
+        "id": "jordan-hildebert",
+        "full-name": "Jordan Hildebert",
+        "size": "small",
+        "sizepixels": 8778,
+        "teams": [
+            "Charleston Shoe Thieves",
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0551JordanHildebert_ShoeThieves.png",
+            "0551JordanHildebert_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "",
+                "text": "diff"
+            },
+            {
+                "link": "",
+                "text": "Quail#5872"
+            }
+        ]
+    },
+    {
+        "index": 550,
+        "id": "jose-gravy",
+        "full-name": "Jose Gravy",
+        "size": "huge",
+        "sizepixels": 69696,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0550JoseGravy_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/hetreasky",
+                "text": "@hetreasky"
+            }
+        ]
+    },
+    {
+        "index": 549,
+        "id": "lyra-vitamin",
+        "full-name": "Lyra Vitamin",
+        "size": "large",
+        "sizepixels": 11343,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0549LyraVitamin_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Kidror19",
+                "text": "@Kidror19"
+            }
+        ]
+    },
+    {
+        "index": 548,
+        "id": "ruffian-scrobbles",
+        "full-name": "Ruffian Scrobbles",
+        "size": "small",
+        "sizepixels": 7521,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0548RuffianScrobbles_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/lira_anubis",
+                "text": "@lira_anubis"
+            }
+        ]
+    },
+    {
+        "index": 547,
+        "id": "jada-frederick",
+        "full-name": "Jada Frederick",
+        "size": "small",
+        "sizepixels": 15035,
+        "teams": [
+            "Boston Flowers"
+        ],
+        "sprites": [
+            "0547JadaFrederick_Flowers.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/Kidror19",
+                "text": "@Kidror19"
+            }
+        ]
+    },
+    {
+        "index": 546,
+        "id": "james-mora",
+        "full-name": "James Mora",
+        "size": "large",
+        "sizepixels": 20864,
+        "teams": [
+            "Hawai'i Fridays",
+            "Yellowstone Magic"
+        ],
+        "sprites": [
+            "0546JamesMora_Fridays.png",
+            "0546JamesMora_Magic.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/OleMountainMoss",
+                "text": "@OleMountainMoss"
+            }
+        ]
+    },
+    {
+        "index": 545,
+        "id": "norris-firestar",
+        "full-name": "Norris Firestar",
+        "size": "large",
+        "sizepixels": 27820,
+        "teams": [
+            "Houston Spies"
+        ],
+        "sprites": [
+            "0545NorrisFirestar_Spies.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/broodlordrush",
+                "text": "@broodlordrush"
+            }
+        ]
+    },
+    {
+        "index": 544,
+        "id": "dickerson-morse",
+        "full-name": "Dickerson Morse",
+        "size": "small",
+        "sizepixels": 11388,
+        "teams": [
+            "Kansas City Breath Mints"
+        ],
+        "sprites": [
+            "0544DickersonMorse_BreathMints.png"
+        ],
+        "credits": [
+            {
+                "link": "https://twitter.com/MLeeLunsford",
+                "text": "@MLeeLunsford"
+            }
+        ]
+    },
+    {
         "index": 543,
         "id": "gita-biscuits",
         "full-name": "Gita Biscuits",
@@ -1262,10 +1481,12 @@
         "size": "small",
         "sizepixels": 11016,
         "teams": [
-            "Boston Flowers"
+            "Boston Flowers",
+            "Yellowstone Magic"
         ],
         "sprites": [
-            "0479KingWeatherman_Flowers.png"
+            "0479KingWeatherman_Flowers.png",
+            "0479KingWeatherman_Magic.png"
         ],
         "credits": [
             {
@@ -5203,13 +5424,15 @@
         "id": "bright-zimmerman",
         "full-name": "Bright Zimmerman",
         "size": "small",
-        "sizepixels": 12877,
+        "sizepixels": 13904,
         "teams": [
+            "Kansas City Breath Mints",
             "Canada Moist Talkers",
             "Philly Pies",
             "Charleston Shoe Thieves"
         ],
         "sprites": [
+            "0283BrightZimmerman_BreathMints.png",
             "0283BrightZimmerman_MoistTalkers.png",
             "0283BrightZimmerman_Pies.png",
             "0283BrightZimmerman_ShoeThieves.png"
@@ -5872,10 +6095,12 @@
         "size": "small",
         "sizepixels": 5106,
         "teams": [
-            "Canada Moist Talkers"
+            "Canada Moist Talkers",
+            "Yellowstone Magic"
         ],
         "sprites": [
             "0251JesúsKoch_MoistTalkers.png",
+            "0251JesúsKoch2_Magic.png",
             "0251JesúsKoch2_MoistTalkers.png"
         ]
     },
